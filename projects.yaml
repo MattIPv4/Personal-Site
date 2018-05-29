@@ -1,0 +1,67 @@
+Unreal Designs:
+    type: "Web"
+    link: "https://unreal-designs.co.uk/"
+    image: "/projects/ud.png"
+    tools:
+        - PHPStorm
+        - HTML
+        - JS
+        - CSS
+        - PHP
+        - MySQL
+        - Git
+    desc: |
+        Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
+        alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
+        long lasting, bringing in many clients for the team and building up our experience.
+
+Discord Bots:
+    type: "Web"
+    link: "https://botz.mattcowley.co.uk/"
+    image: "/projects/botz.png"
+    tools:
+        - PHPStorm
+        - HTML
+        - JS
+        - CSS
+        - PHP
+        - MySQL
+        - Git
+        - PyCharm
+        - Python
+    desc: |
+        Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
+        streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
+        a site for them all, featuring their homepages as well as a large backend for stats logging.
+
+Rythm Homepage:
+    type: "Web"
+    link: "https://rythmbot.co/"
+    image: "/projects/rythmbot.png"
+    tools:
+        - PHPStorm
+        - HTML
+        - JS
+        - CSS
+        - PHP
+        - Git
+    desc: |
+        Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
+        site which was a template. Producing this site was great fun as there were very few requirements from the client
+        other than the content, so I had freedom of design. The site was designed to provide quick access to key info
+        and links for all vistors.
+
+Young Theatre:
+    type: "Theatre"
+    link: "https://www.youngtheatre.org.uk/"
+    image: "/projects/panto2016.jpg"
+    tools:
+        - Jands Vista
+        - Chamsys MagicQ
+        - ETC EOS
+        - QLab
+        - Cast WYSIWYG
+    desc: |
+        Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
+        team for many years now and have been part of many shows produced by the company. Over the multitude of shows
+        I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.

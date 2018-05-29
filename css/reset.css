@@ -1,0 +1,111 @@
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Projects */
+.project {
+    width: calc(50% - (15px * 2));
+    margin: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    background: #F5F7FA;
+    box-shadow: 4px 4px 0 0 #CCD1D9;
+}
+.projects:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-fix {
+    height: 1px;
+    width: 100%;
+    float: left;
+    visibility: hidden;
+}
+.project a {
+    text-decoration: none;
+}
+.project p.project-title {
+    font-weight: 900;
+    font-size: 1.25em;
+    color: #434A54;
+}
+.project p.project-link {
+    color: #4FC1E9;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+.project p.project-desc {
+    color: #434A54;
+    margin-bottom: 10px;
+}
+.project a:hover p.project-link {
+    color: #4A89DC;
+}
+.project .project-hide {
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+.project a:hover .project-hide {
+    max-height: 100vH;
+    transition: all .2s ease-in-out;
+    overflow: visible;
+}
+.project .project-img {
+    margin: 4px;
+    box-shadow: 4px 4px 0 0 #656D78;
+    box-sizing: border-box;;
+    height: auto;
+    max-height: 10em;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.project a:hover .project-img {
+    height: auto;
+    max-height: 1000px;
+}
+.project img {
+    width: 100%;
+    max-width: 100%;
+}
+.project-tools {
+    color: #434A54;
+    margin-bottom: 10px;
+}
+.project-tools i {
+    font-size: 1.2em;
+    font-family: inherit;
+    position: relative;
+}
+.project-tools i:before {
+    font-family: devicon;
+}
+.project-tools i .tip {
+    width: auto;
+    overflow: hidden;
+    padding: 3px 10px 5px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 102%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+    opacity: 0;
+
+    text-overflow: ellipsis;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    font-family: inherit;
+
+    transition: opacity .1s;
+}
+.project-tools i:hover .tip {
+    opacity: 1;
+}

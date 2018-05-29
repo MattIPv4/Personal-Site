@@ -1,0 +1,136 @@
+html, body {
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #292b37;
+    font-family: 'Droid Sans Mono', monospace;
+    animation: bg 5s linear infinite alternate;
+    /*text-shadow: 0px 1px 2px rgba(0,0,0,0.4);*/
+}
+
+.code {
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;*/
+    top: 10%;
+    left: 5%;
+    width: 90%;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 3vw;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+h1:after {
+    content: '';
+    height: 140%;
+    width: 1px;
+    background: transparent;
+    position: absolute;
+    display: block;
+    right: -1vw;
+    top: -20%;
+    animation: blink 1.2s linear infinite;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.print-cmd {
+    color: #00aba4;
+}
+
+.print-txt {
+    color: #dc3b3b;
+}
+
+.let {
+    color: #b73999;
+}
+
+.let-var {
+    color: #D18E62;
+}
+
+.func-cmd {
+    color: #94c66e;
+}
+
+.func-txt {
+    color: #8884c5;
+}
+
+.comment {
+    color: #52bc57;
+}
+
+@-moz-keyframes blink {
+    49% {
+        background: transparent;
+    }
+    50% {
+        background: #fff;
+    }
+    100% {
+        background: #fff;
+    }
+}
+
+@-webkit-keyframes blink {
+    49% {
+        background: transparent;
+    }
+    50% {
+        background: #fff;
+    }
+    100% {
+        background: #fff;
+    }
+}
+
+@-o-keyframes blink {
+    49% {
+        background: transparent;
+    }
+    50% {
+        background: #fff;
+    }
+    100% {
+        background: #fff;
+    }
+}
+
+@keyframes blink {
+    49% {
+        background: transparent;
+    }
+    50% {
+        background: #fff;
+    }
+    100% {
+        background: #fff;
+    }
+}

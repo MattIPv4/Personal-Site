@@ -1,0 +1,99 @@
+html, body {
+    font-family: 'Jura', sans-serif;
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(25deg, #56CCF2, #2F80ED);
+    animation: bg 5s linear infinite alternate;
+    /*text-shadow: 0px 1px 2px rgba(0,0,0,0.4);*/
+}
+
+@keyframes bg {
+    0% {
+        background: #56CCF2;
+    }
+    100% {
+        background: #2F80ED;
+    }
+}
+
+.content {
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+h1.title {
+    color: white;
+    font-size: 4vw;
+    display: inline;
+    font-weight: 500;
+}
+
+h1.title small {
+    font-family: 'Wire One', sans-serif;
+    font-size: 3vw;
+    opacity: 0.8;
+}
+
+h2 {
+    font-family: 'Wire One', sans-serif;
+    position: relative;
+    width: 100%;
+    font-size: 4vw;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 small {
+    font-size: 2.5vw;
+    opacity: 0.8;
+}
+
+h3 {
+    border-top: 2px solid #fff;
+    padding-top: 4px;
+    margin-top: 16px;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.contact li {
+    list-style-type: none;
+    float: left;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.contact li small {
+    opacity: 0.8;
+    font-size: 0.95em;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: #F5F7FA;
+    transition: color .2s;
+}
+
+.contact li a:hover {
+    color: #CCD1D9;
+}
+
+.contact li ~ li {
+    margin-left: 1vw;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+}
