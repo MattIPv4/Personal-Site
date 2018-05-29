@@ -1,4 +1,21 @@
 <?php
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
 
 $name = "Matt Cowley";
 
@@ -14,7 +31,8 @@ $links['Discord'] = "https://discord.gg/qyXqA7y";
 $links['Twitter'] = "https://twitter.com/MattIPv4/";
 $links['Patreon'] = "https://www.patreon.com/IPv4";
 
-function doToolMap($tools, $delim = " / ") {
+function doToolMap($tools, $delim = " / ")
+{
     $tool_map = [
         "phpstorm" => "devicon-phpstorm-plain",
 
@@ -44,8 +62,8 @@ function doToolMap($tools, $delim = " / ") {
     ];
     $final = [];
     foreach ($tools as $tool) {
-        if(array_key_exists(strtolower($tool), $tool_map)) {
-            $final[] = "<i class=\"".$tool_map[strtolower($tool)]."\"><span class=\"tip\">".$tool."</span></i>";
+        if (array_key_exists(strtolower($tool), $tool_map)) {
+            $final[] = "<i class=\"" . $tool_map[strtolower($tool)] . "\"><span class=\"tip\">" . $tool . "</span></i>";
         } else {
             $final[] = $tool;
         }
@@ -56,7 +74,7 @@ function doToolMap($tools, $delim = " / ") {
 require_once "spyc.php";
 $projects = Spyc::YAMLLoad(file_get_contents("projects.yaml"));
 
-if(isset($_GET['e'])) {
+if (isset($_GET['e'])) {
     $json = [
         'name' => $name,
         'motto' => $motto,
@@ -64,7 +82,7 @@ if(isset($_GET['e'])) {
         'projects' => $projects
     ];
 
-  header('Content-Type: application/json');
-  header("Access-Control-Allow-Origin: *");
-  echo json_encode($json, JSON_PRETTY_PRINT);
+    header('Content-Type: application/json');
+    header("Access-Control-Allow-Origin: *");
+    echo json_encode($json, JSON_PRETTY_PRINT);
 }

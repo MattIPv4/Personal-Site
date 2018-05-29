@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
 <!-- Site Codename: SWIFT -->
+<!--
+*  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+*  <https://github.com/MattIPv4/Personal-Site/>
+*  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+*  Please see <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> for the full license.
+-->
 
 <html>
 
@@ -8,10 +14,10 @@
 
 <head>
 
-    <link rel="stylesheet" href="/css/reset.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" />
-    <link rel="stylesheet" href="/css/swift.min.css" />
+    <link rel="stylesheet" href="/css/reset.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono"/>
+    <link rel="stylesheet" href="/css/swift.min.css"/>
 
     <?php include("head.php"); ?>
 
@@ -22,7 +28,9 @@
 <div class="code">
 
     <h1>
-        <span style="color: #97C774">H</span><span style="color: #B63E98">e</span><span style="color: #D18E62">l</span><span style="color: #DB3E41">l</span><span style="color: #1BABA5">o</span>,
+        <span style="color: #97C774">H</span><span style="color: #B63E98">e</span><span
+                style="color: #D18E62">l</span><span style="color: #DB3E41">l</span><span
+                style="color: #1BABA5">o</span>,
         I'm <?php echo $name; ?>.
     </h1>
 
@@ -41,14 +49,15 @@
         <?php foreach ($links as $linkTitle => $link) { ?>
             <a class="func-txt" href="<?php echo $link; ?>" target="_blank"><?php echo $linkTitle; ?></a>,
         <?php } ?>
-        <span class="let-var"><?php echo (rand(0, 1) ? 'true' : 'false'); ?></span>)
+        <span class="let-var"><?php echo(rand(0, 1) ? 'true' : 'false'); ?></span>)
 
     </h3>
 
     <h3><span class="let">class</span> <span class="print-cmd">Projects</span> <span class="func-cmd">{</span></h3>
 
     <div class="projects">
-        <?php $break = False; foreach ($projects as $projectTitle => $projectData) { ?>
+        <?php $break = False;
+        foreach ($projects as $projectTitle => $projectData) { ?>
             <div class="project">
                 <a href="<?php echo $projectData["link"]; ?>" target="_blank">
                     <p class="project-title">
@@ -70,7 +79,11 @@
                     </div>
                 </a>
             </div>
-            <?php if($break) { echo "<div class='project-fix'></div>";} $break = !$break; } ?>
+            <?php if ($break) {
+                echo "<div class='project-fix'></div>";
+            }
+            $break = !$break;
+        } ?>
     </div>
 
     <h3><span class="func-cmd">}</span> <span class="let-var">// End Projects class</span></h3>
