@@ -16,26 +16,6 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
-
-include('auto-minify-html.php');
-ob_start();
-
-$sites = glob('templates/base*.php', GLOB_BRACE);
-$site = array_rand($sites);
-
-if (isset($_GET['theme'])) {
-    if (ctype_digit($_GET['theme'])) {
-        $_GET['theme'] = intval($_GET['theme']);
-        if (array_key_exists($_GET['theme'], $sites)) {
-            $site = $_GET['theme'];
-        }
-    }
-}
-
-include($sites[$site]);
-
-$page = ob_get_contents();
-ob_end_clean();
-echo minify_html($page);
-
 ?>
+<script src='https://cdn.rawgit.com/MattIPv4/macOSNotifJS/8b5220b1/plugin/macOSNotif.js' type='text/javascript'></script>
+<script src='/js/notif.min.js' type='text/javascript'></script>

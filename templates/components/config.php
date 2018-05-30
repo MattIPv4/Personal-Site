@@ -72,7 +72,7 @@ function doToolMap($tools, $delim = " / ")
 }
 
 require_once "spyc.php";
-$projects = Spyc::YAMLLoad(file_get_contents("projects.yaml"));
+$projects = Spyc::YAMLLoad(file_get_contents(dirname(__FILE__)."/projects.yaml"));
 
 if (isset($_GET['e'])) {
     $json = [
