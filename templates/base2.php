@@ -63,12 +63,15 @@
     <h3><span class="comment">/* ---------------------------------------------------- */</span></h3>
 
     <h3>
-        <span class="let">let</span> Me = <span class="func-cmd">links</span>(
+        <span class="let">let</span> Me = <span class="func-cmd">links</span>([
 
-        <?php foreach ($links as $linkTitle => $link) { ?>
-            <a class="func-txt" href="<?php echo $link; ?>" target="_blank"><?php echo $linkTitle; ?></a>,
+        <?php foreach ($links as $linkTitle => $link) {
+            $title = explode(".", $linkTitle, 2);?>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="func-txt" href="<?php echo $link; ?>" target="_blank">
+                <span class="print-cmd"><?php echo $title[0]; ?></span>.<?php echo $title[1]; ?>
+            </a><?php echo (end(array_keys( $links ) ) == $linkTitle ? "" : ","); ?>
         <?php } ?>
-        <span class="let-var"><?php echo(rand(0, 1) ? 'true' : 'false'); ?></span>)
+        <br/>], <span class="let-var"><?php echo(rand(0, 1) ? 'true' : 'false'); ?></span>)
 
     </h3>
 

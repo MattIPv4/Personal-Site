@@ -53,9 +53,12 @@
     </h2>
 
     <ul class="contact">
-        <?php foreach ($links as $linkTitle => $link) { ?>
+        <?php foreach ($links as $linkTitle => $link) {
+            $linkTitle = explode(".", $linkTitle, 2); ?>
             <li>
-                <a href="<?php echo $link; ?>" target="_blank"><?php echo $linkTitle; ?></a>
+                <a href="<?php echo $link; ?>" target="_blank">
+                    <b><?php echo $linkTitle[0]; ?></b><small>.<?php echo $linkTitle[1]; ?></small>
+                </a>
             </li>
         <?php } ?>
     </ul>

@@ -24,12 +24,17 @@ $motto[] = "Website designer and developer. Digital graphic designer.";
 $motto[] = "Theatre technician (Stage management, electrics, lighting).";
 
 $links = [];
-$links['Email'] = "mailto:me@mattcowley.co.uk";
-$links['CV'] = "https://cv.mattcowley.co.uk/";
-$links['GitHub'] = "https://github.com/MattIPv4";
-$links['Discord'] = "https://discord.gg/qyXqA7y";
-$links['Twitter'] = "https://twitter.com/MattIPv4/";
-$links['Patreon'] = "https://www.patreon.com/IPv4";
+$links[] = "cv.mattcowley.co.uk";
+$links[] = "botz.mattcowley.co.uk";
+$links[] = "github.mattcowley.co.uk";
+$links[] = "discord.mattcowley.co.uk";
+$links[] = "patreon.mattcowley.co.uk";
+$links[] = "twitter.mattcowley.co.uk";
+
+foreach ($links as $i => $v) {
+    $links[$v] = "http://".$v."/";
+    unset($links[$i]);
+}
 
 function doToolMap($tools, $delim = " / ")
 {

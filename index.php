@@ -25,7 +25,7 @@ $site = array_rand($sites);
 
 if (isset($_GET['theme'])) {
     if (ctype_digit($_GET['theme'])) {
-        $_GET['theme'] = intval($_GET['theme']);
+        $_GET['theme'] = intval($_GET['theme'])-1;
         if (array_key_exists($_GET['theme'], $sites)) {
             $site = $_GET['theme'];
         }
