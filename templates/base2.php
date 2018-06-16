@@ -69,7 +69,7 @@
             $title = explode(".", $linkTitle, 2);?>
             <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="func-txt" href="<?php echo $link; ?>" target="_blank">
                 <span class="print-cmd"><?php echo $title[0]; ?></span>.<?php echo $title[1]; ?>
-            </a><?php echo (end(array_keys( $links ) ) == $linkTitle ? "" : ","); ?>
+            </a><?php echo (@end(array_keys( $links ) ) == $linkTitle ? "" : ","); ?>
         <?php } ?>
         <br/>], <span class="let-var"><?php echo(rand(0, 1) ? 'true' : 'false'); ?></span>)
 
