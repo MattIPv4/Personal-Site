@@ -1,7 +1,8 @@
 Unreal Designs:
+    display: true
     type: "Web"
     link: "https://unreal-designs.co.uk/"
-    image: "/projects/ud.png"
+    image: "/projects/unreal-designs.png"
     tools:
         - PHPStorm
         - HTML
@@ -16,9 +17,10 @@ Unreal Designs:
         long lasting, bringing in many clients for the team and building up our experience.
 
 Discord Bots:
-    type: "Web"
+    display: true
+    type: "Web/Application"
     link: "https://botz.mattcowley.co.uk/"
-    image: "/projects/botz.png"
+    image: "/projects/discord-bots.png"
     tools:
         - PHPStorm
         - HTML
@@ -34,7 +36,24 @@ Discord Bots:
         streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
         a site for them all, featuring their homepages as well as a large backend for stats logging.
 
+macOSNotifJS:
+    display: true
+    type: "Web"
+    link: "https://macosnotifjs.mattcowley.co.uk/"
+    image: "/projects/macosnotifjs.png"
+    tools:
+        - WebStorm
+        - JS (ES6)
+        - HTML
+        - CSS
+        - Git
+    desc: |
+        Creating a custom Javascript plugin to render macOS style notifications on a webpage. Designed to work on any
+        webpage with any browser that supports the new JavaScript ES6 syntax, including the new class syntax. Written
+        as an open source project to allow any user online to contribute to the project.
+
 Rythm Homepage:
+    display: false
     type: "Web"
     link: "https://rythmbot.co/"
     image: "/projects/rythmbot.png"
@@ -52,9 +71,10 @@ Rythm Homepage:
         and links for all vistors.
 
 Young Theatre:
+    display: true
     type: "Theatre"
     link: "https://www.youngtheatre.org.uk/"
-    image: "/projects/panto2016.jpg"
+    image: "/projects/youngtheatre-panto2016.jpg"
     tools:
         - Jands Vista
         - Chamsys MagicQ

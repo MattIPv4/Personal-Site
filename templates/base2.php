@@ -75,11 +75,11 @@
 
     </h3>
 
-    <h3><span class="let">class</span> <span class="print-cmd">Projects</span> <span class="func-cmd">{</span></h3>
+    <h3><span class="let">class</span> <span class="print-cmd">Personal_Projects</span> <span class="func-cmd">{</span></h3>
 
     <?php include("components/projects.php"); ?>
 
-    <h3><span class="func-cmd">}</span> <span class="let-var">// End Projects class</span></h3>
+    <h3><span class="func-cmd">}</span> <span class="let-var">// End Personal_Projects class</span></h3>
 
 </div>
 

@@ -64,7 +64,7 @@
     </ul>
     <br/><br/>
 
-    <h3>Projects</h3>
+    <h3>Personal Projects</h3>
 
     <?php include("components/projects.php"); ?>
 

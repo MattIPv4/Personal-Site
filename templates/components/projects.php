@@ -19,7 +19,8 @@
 ?>
 <div class="projects">
     <?php $break = False;
-    foreach ($projects as $projectTitle => $projectData) { ?>
+    foreach ($projects as $projectTitle => $projectData) {
+        if($projectData["display"] == false) { continue; } ?>
         <div class="project">
             <a href="<?php echo $projectData["link"]; ?>" target="_blank">
                 <p class="project-title">

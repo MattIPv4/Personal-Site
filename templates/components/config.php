@@ -41,11 +41,15 @@ function doToolMap($tools, $delim = " / ")
     $tool_map = [
         "phpstorm" => "devicon-phpstorm-plain",
 
+        "webstorm" => "devicon-webstorm-plain",
+
         "php" => "devicon-php-plain",
 
         "html" => "devicon-html5-plain",
 
         "js" => "devicon-javascript-plain",
+
+        "js (es6)" => "devicon-javascript-plain",
 
         "jquery" => "devicon-jquery-plain",
 
