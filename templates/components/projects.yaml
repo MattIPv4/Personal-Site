@@ -1,31 +1,13 @@
-Unreal Designs:
-    display: true
-    type: "Web"
-    link: "https://unreal-designs.co.uk/"
-    image: "/projects/unreal-designs.png"
-    tools:
-        - PHPStorm
-        - HTML
-        - JS
-        - CSS
-        - PHP
-        - MySQL
-        - Git
-    desc: |
-        Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
-        alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
-        long lasting, bringing in many clients for the team and building up our experience.
-
 Discord Bots:
     display: true
-    type: "Web/Application"
+    type: "Web / Application"
     link: "https://botz.mattcowley.co.uk/"
     image: "/projects/discord-bots.png"
     tools:
         - PHPStorm
         - HTML
-        - JS
-        - CSS
+        - JavaScript
+        - CSS3
         - PHP
         - MySQL
         - Git
@@ -36,16 +18,53 @@ Discord Bots:
         streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
         a site for them all, featuring their homepages as well as a large backend for stats logging.
 
-macOSNotifJS:
+The Meta List:
     display: true
-    type: "Web"
+    type: "Web / API"
+    link: "https://metalist.xyz/"
+    image: "/projects/metalist.png"
+    tools:
+        - PhpStorm
+        - HTML
+        - JavaScript
+        - CSS3
+        - PHP
+        - Sass
+        - MySQL
+        - Git
+    desc: |
+        Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
+        many bot lists to publish your bot on that it becomes a headache, so I created the meta list. The meta list
+        provides a single list of all known bot lists on Discord and a central API for bot developers to use.
+
+Unreal Designs:
+    display: true
+    type: "Web / Business"
+    link: "https://unreal-designs.co.uk/"
+    image: "/projects/unreal-designs.png"
+    tools:
+        - PHPStorm
+        - HTML
+        - JavaScript
+        - CSS3
+        - PHP
+        - MySQL
+        - Git
+    desc: |
+        Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
+        alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
+        long lasting, bringing in many clients for the team and building up our experience.
+
+macOSNotifJS:
+    display: false
+    type: "Web / Plugin"
     link: "https://macosnotifjs.mattcowley.co.uk/"
     image: "/projects/macosnotifjs.png"
     tools:
         - WebStorm
-        - JS (ES6)
+        - JavaScript (ES6)
         - HTML
-        - CSS
+        - CSS3
         - Git
     desc: |
         Creating a custom Javascript plugin to render macOS style notifications on a webpage. Designed to work on any
@@ -60,8 +79,8 @@ Rythm Homepage:
     tools:
         - PHPStorm
         - HTML
-        - JS
-        - CSS
+        - JavaScript
+        - CSS3
         - PHP
         - Git
     desc: |

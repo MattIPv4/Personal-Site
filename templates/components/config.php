@@ -38,6 +38,7 @@ foreach ($links as $i => $v) {
 
 function doToolMap($tools, $delim = " / ")
 {
+    /* http://konpa.github.io/devicon/ */
     $tool_map = [
         "phpstorm" => "devicon-phpstorm-plain",
 
@@ -49,11 +50,19 @@ function doToolMap($tools, $delim = " / ")
 
         "js" => "devicon-javascript-plain",
 
+        "javascript" => "devicon-javascript-plain",
+
         "js (es6)" => "devicon-javascript-plain",
+
+        "javascript (es6)" => "devicon-javascript-plain",
 
         "jquery" => "devicon-jquery-plain",
 
         "css" => "devicon-css3-plain",
+
+        "css3" => "devicon-css3-plain",
+
+        "sass" => "devicon-sass-original",
 
         "bootstrap" => "devicon-bootstrap-plain",
 
