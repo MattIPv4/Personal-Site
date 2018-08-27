@@ -18,11 +18,11 @@ Discord Bots:
         streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
         a site for them all, featuring their homepages as well as a large backend for stats logging.
 
-The Meta List:
+BotBlock:
     display: true
     type: "Web / API"
-    link: "https://metalist.xyz/"
-    image: "/projects/metalist.png"
+    link: "https://botblock.org/"
+    image: "/projects/botblock.png"
     tools:
         - PhpStorm
         - HTML
@@ -32,10 +32,11 @@ The Meta List:
         - Sass
         - MySQL
         - Git
+        - Photoshop
     desc: |
         Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
-        many bot lists to publish your bot on that it becomes a headache, so I created the meta list. The meta list
-        provides a single list of all known bot lists on Discord and a central API for bot developers to use.
+        many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
+        single list of all known bot lists on Discord and a central API for bot developers to use.
 
 Unreal Designs:
     display: true
@@ -50,6 +51,7 @@ Unreal Designs:
         - PHP
         - MySQL
         - Git
+        - Photoshop
     desc: |
         Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
         alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
