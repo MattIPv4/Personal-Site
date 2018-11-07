@@ -20,13 +20,16 @@
 <div class="projects">
     <?php $break = False;
     foreach ($projects as $projectTitle => $projectData) {
-        if($projectData["display"] == false) { continue; } ?>
-        <div class="project">
-            <a href="<?php echo $projectData["link"]; ?>" target="_blank">
-                <p class="project-title">
-                    <b><?php echo $projectTitle; ?></b> [<?php echo $projectData["type"]; ?>]
-                </p>
-                <span class="project-hide">
+        if ($projectData["display"] == false) {
+            continue;
+        } ?>
+        <div class="project-outer">
+            <div class="project">
+                <a href="<?php echo $projectData["link"]; ?>" target="_blank">
+                    <p class="project-title">
+                        <b><?php echo $projectTitle; ?></b> [<?php echo $projectData["type"]; ?>]
+                    </p>
+                    <div class="project-hide">
                         <p class="project-link">
                             <?php echo $projectData["link"]; ?>
                         </p>
@@ -36,11 +39,12 @@
                         <p class="project-desc">
                             <?php echo $projectData["desc"]; ?>
                         </p>
-                    </span>
-                <div class="project-img">
-                    <img src="<?php echo $projectData["image"]; ?>" alt="<?php echo $projectTitle; ?>"/>
-                </div>
-            </a>
+                    </div>
+                    <div class="project-img">
+                        <img src="<?php echo $projectData["image"]; ?>" alt="<?php echo $projectTitle; ?>"/>
+                    </div>
+                </a>
+            </div>
         </div>
         <?php if ($break) {
             echo "<div class='project-fix'></div>";

@@ -16,6 +16,7 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
+include("components/config.php");
 ?>
 <!DOCTYPE html>
 
@@ -28,29 +29,20 @@
 -->
 
 <html>
-
-<?php include("components/config.php"); ?>
-
 <head>
-
     <link rel="stylesheet" href="/css/reset.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono"/>
     <link rel="stylesheet" href="/css/swift.min.css"/>
-
     <?php include("components/head.php"); ?>
-
 </head>
 
 <body>
-
 <div class="code">
-
     <h1>
         <span style="color: #97C774">H</span><span style="color: #B63E98">e</span><span
                 style="color: #D18E62">l</span><span style="color: #DB3E41">l</span><span
-                style="color: #1BABA5">o</span>,
-        I'm <?php echo $name; ?>.
+                style="color: #1BABA5">o</span>, I'm <?php echo $name; ?>. <span class="cursor">|</span>
     </h1>
 
     <?php foreach ($motto as $msg) { ?>
@@ -59,31 +51,38 @@
         </h3>
     <?php } ?>
 
-
     <h3><span class="comment">/* ---------------------------------------------------- */</span></h3>
 
     <h3>
         <span class="let">let</span> Me = <span class="func-cmd">links</span>([
 
-        <?php foreach ($links as $linkTitle => $link) {
-            $title = explode(".", $linkTitle, 2);?>
-            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="func-txt" href="<?php echo $link; ?>" target="_blank">
-                <span class="print-cmd"><?php echo $title[0]; ?></span>.<?php echo $title[1]; ?>
-            </a><?php echo (@end(array_keys( $links ) ) == $linkTitle ? "" : ","); ?>
+        <?php foreach ($links as $linkData) {
+            $linkTitle = explode(".", $linkData[0], 2); ?>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="func-txt" href="http://<?php echo $linkData[0]; ?>/" target="_blank">
+            <span class="print-cmd"><?php echo $linkTitle[0]; ?></span>.<?php echo $linkTitle[1]; ?>
+            </a><?php echo(end($links) == $linkData ? "" : ","); ?>
+            <?php if (count($linkData) > 1 && !empty($linkData[1])) { ?>
+                <a class="comment" href="http://<?php echo $linkData[0]; ?>/" target="_blank">
+                    /* <?php echo $linkData[1]; ?> */</a>
+            <?php } ?>
         <?php } ?>
         <br/>], <span class="let-var"><?php echo(rand(0, 1) ? 'true' : 'false'); ?></span>)
 
     </h3>
 
-    <h3><span class="let">class</span> <span class="print-cmd">Featured_Personal_Projects</span> <span class="func-cmd">{</span></h3>
+    <h3>
+        <span class="let">class</span>
+        <span class="print-cmd"> FeaturedPersonalProjects</span> <span class="func-cmd">{</span>
+    </h3>
 
     <?php include("components/projects.php"); ?>
 
-    <h3><span class="func-cmd">}</span> <span class="let-var">// End Featured_Personal_Projects class</span></h3>
-
+    <h3>
+        <span class="func-cmd">}</span>
+        <span class="comment"> /* End FeaturedPersonalProjects class */</span>
+    </h3>
 </div>
 
-<?php include("components/notif.php"); ?>
+<?php //include("components/notif.php"); ?>
 </body>
-
 </html>

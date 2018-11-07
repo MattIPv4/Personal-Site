@@ -16,6 +16,7 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
+include("components/config.php");
 ?>
 <!DOCTYPE html>
 
@@ -28,22 +29,15 @@
 -->
 
 <html>
-
-<?php include("components/config.php"); ?>
-
 <head>
-
     <link rel="stylesheet" href="/css/reset.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura|Wire+One"/>
     <link rel="stylesheet" href="/css/blue.min.css"/>
-
     <?php include("components/head.php"); ?>
-
 </head>
 
 <body id="particles-js">
-
 <div class="content">
 
     <h1 class="title"><?php echo $name; ?></h1>
@@ -53,16 +47,19 @@
     </h2>
 
     <ul class="contact">
-        <?php foreach ($links as $linkTitle => $link) {
-            $linkTitle = explode(".", $linkTitle, 2); ?>
+        <?php foreach ($links as $linkData) {
+            $linkTitle = explode(".", $linkData[0], 2); ?>
             <li>
-                <a href="<?php echo $link; ?>" target="_blank">
-                    <b><?php echo $linkTitle[0]; ?></b><small>.<?php echo $linkTitle[1]; ?></small>
+                <a href="http://<?php echo $linkData[0]; ?>/" target="_blank">
+                    <b><?php echo $linkTitle[0]; ?></b>
+                    <small>.<?php echo $linkTitle[1]; ?></small>
+                    <?php if (count($linkData) > 1 && !empty($linkData[1])) { ?>
+                        <br/><i><?php echo $linkData[1]; ?></i>
+                    <?php } ?>
                 </a>
             </li>
         <?php } ?>
     </ul>
-    <br/><br/>
 
     <h3>Featured Personal Projects</h3>
 
@@ -71,10 +68,10 @@
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' type='text/javascript'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'
+        type='text/javascript'></script>
 <script src='/js/blue.min.js' type='text/javascript'></script>
-<?php include("components/notif.php"); ?>
+<?php //include("components/notif.php"); ?>
 
 </body>
-
 </html>

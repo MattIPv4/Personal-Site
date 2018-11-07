@@ -17,24 +17,19 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-$name = "Matt Cowley";
+$name = "Matt (IPv4) Cowley";
 
 $motto = [];
 $motto[] = "Website designer and developer. Digital graphic designer.";
 $motto[] = "Theatre technician (Stage management, electrics, lighting).";
 
 $links = [];
-$links[] = "cv.mattcowley.co.uk";
-$links[] = "botz.mattcowley.co.uk";
-$links[] = "github.mattcowley.co.uk";
-$links[] = "discord.mattcowley.co.uk";
-$links[] = "patreon.mattcowley.co.uk";
-$links[] = "twitter.mattcowley.co.uk";
-
-foreach ($links as $i => $v) {
-    $links[$v] = "http://".$v."/";
-    unset($links[$i]);
-}
+$links[] = ["cv.mattcowley.co.uk", ""];
+$links[] = ["botz.mattcowley.co.uk", "Discord Bots"];
+$links[] = ["github.mattcowley.co.uk", "/MattIPv4"];
+$links[] = ["discord.mattcowley.co.uk", "@IPv4#0001"];
+$links[] = ["patreon.mattcowley.co.uk", "/IPv4"];
+$links[] = ["twitter.mattcowley.co.uk", "@MattIPv4"];
 
 function doToolMap($tools, $delim = " / ")
 {
@@ -90,9 +85,14 @@ function doToolMap($tools, $delim = " / ")
 }
 
 require_once "spyc.php";
-$projects = Spyc::YAMLLoad(file_get_contents(dirname(__FILE__)."/projects.yaml"));
+$projects = Spyc::YAMLLoad(file_get_contents(dirname(__FILE__) . "/projects.yaml"));
 
-if (isset($_GET['e'])) {
+if (isset($_GET['json'])) {
+    foreach ($projects as $i => $project) {
+        if (!$project['display']) unset($projects[$i]);
+        else unset($projects[$i]['display']);
+    }
+
     $json = [
         'name' => $name,
         'motto' => $motto,
@@ -103,4 +103,5 @@ if (isset($_GET['e'])) {
     header('Content-Type: application/json');
     header("Access-Control-Allow-Origin: *");
     echo json_encode($json, JSON_PRETTY_PRINT);
+    die();
 }

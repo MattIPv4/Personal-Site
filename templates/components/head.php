@@ -31,6 +31,12 @@
 <meta name="description"
       content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>"/>
 
+<meta name="keywords"
+      content="matt, cowley, matt cowley, ipv4, matt ipv4, mattipv4, matt ipv4 cowley, matt (ipv4) cowley, website, websites, site, sites, homepage, matt website, matt ipv4 website, ipv4 website, matt site, matt ipv4 site, ipv4 site, theatre, theater, technical, technician, tech, theatre technician, theater technician, theatre tech, theater tech"/>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1"/>
+
 <meta rel="image_src"
       content="https://mattcowley.co.uk/header.png"/>
 
