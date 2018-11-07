@@ -17,6 +17,8 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 ?>
-<script src='https://cdn.rawgit.com/MattIPv4/macOSNotifJS/a1bd71a1/plugin/macOSNotif.js'
+<link href="https://cdn.jsdelivr.net/gh/MattIPv4/macOSNotifJS@466b3634a4d45dbd4fb2febe6cadd6a0f1609b0b/dist/macOSNotif.min.css"
+      rel="stylesheet"/>
+<script src='https://cdn.jsdelivr.net/gh/MattIPv4/macOSNotifJS@466b3634a4d45dbd4fb2febe6cadd6a0f1609b0b/dist/macOSNotif.min.js'
         type='text/javascript'></script>
 <script src='/js/notif.min.js' type='text/javascript'></script>
