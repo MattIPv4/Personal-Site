@@ -37,7 +37,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1"/>
 
-<meta rel="image_src"
+<link rel="image_src"
       content="https://mattcowley.co.uk/header.png"/>
 
 <link rel="canonical"
@@ -59,7 +59,7 @@
       content="<?php echo $name; ?>"/>
 
 <meta name="twitter:description"
-      content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>">
+      content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>"/>
 
 <meta name="twitter:image"
       content="https://mattcowley.co.uk/header.png"/>
