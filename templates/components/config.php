@@ -25,11 +25,12 @@ $motto[] = "Theatre technician (Stage management, electrics, lighting).";
 
 $links = [];
 $links[] = ["cv.mattcowley.co.uk", ""];
-$links[] = ["botz.mattcowley.co.uk", "Discord Bots"];
+//$links[] = ["botz.mattcowley.co.uk", "Discord Bots"];
 $links[] = ["github.mattcowley.co.uk", "/MattIPv4"];
 $links[] = ["discord.mattcowley.co.uk", "@IPv4#0001"];
 $links[] = ["patreon.mattcowley.co.uk", "/IPv4"];
 $links[] = ["twitter.mattcowley.co.uk", "@MattIPv4"];
+$links[] = ["linkedin.mattcowley.co.uk", ""];
 
 function doToolMap($tools, $delim = " / ")
 {
@@ -50,6 +51,10 @@ function doToolMap($tools, $delim = " / ")
         "js (es6)" => "devicon-javascript-plain",
 
         "javascript (es6)" => "devicon-javascript-plain",
+
+        "webpack" => "devicon-webpack-plain",
+
+        "babel" => "devicon-babel-plain",
 
         "jquery" => "devicon-jquery-plain",
 

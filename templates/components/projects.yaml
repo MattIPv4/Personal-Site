@@ -1,108 +1,110 @@
-Discord Bots:
-    display: true
-    type: "Web / Application"
-    link: "https://botz.mattcowley.co.uk/"
-    image: "/projects/discord-bots.png"
-    tools:
-        - PHPStorm
-        - HTML
-        - JavaScript
-        - CSS3
-        - PHP
-        - MySQL
-        - Git
-        - PyCharm
-        - Python
-    desc: |
-        Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
-        streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
-        a site for them all, featuring their homepages as well as a large backend for stats logging.
-
 BotBlock:
-    display: true
-    type: "Web / API"
-    link: "https://botblock.org/"
-    image: "/projects/botblock.png"
-    tools:
-        - PhpStorm
-        - HTML
-        - JavaScript
-        - CSS3
-        - PHP
-        - Sass
-        - MySQL
-        - Git
-        - Photoshop
-    desc: |
-        Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
-        many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
-        single list of all known bot lists on Discord and a central API for bot developers to use.
-
-Unreal Designs:
-    display: true
-    type: "Web / Business"
-    link: "https://unreal-designs.co.uk/"
-    image: "/projects/unreal-designs.png"
-    tools:
-        - PHPStorm
-        - HTML
-        - JavaScript
-        - CSS3
-        - PHP
-        - MySQL
-        - Git
-        - Photoshop
-    desc: |
-        Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
-        alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
-        long lasting, bringing in many clients for the team and building up our experience.
+  display: true
+  type: "Web / API"
+  link: "https://botblock.org/"
+  image: "/projects/botblock.png"
+  tools:
+      - PhpStorm
+      - HTML
+      - JavaScript
+      - CSS3
+      - PHP
+      - Sass
+      - MySQL
+      - Git
+      - Photoshop
+  desc: |
+    Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
+    many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
+    single list of all known bot lists on Discord and a central API for bot developers to use.
 
 macOSNotifJS:
-    display: false
-    type: "Web / Plugin"
-    link: "https://macosnotifjs.mattcowley.co.uk/"
-    image: "/projects/macosnotifjs.png"
-    tools:
-        - WebStorm
-        - JavaScript (ES6)
-        - HTML
-        - CSS3
-        - Git
-    desc: |
-        Creating a custom Javascript plugin to render macOS style notifications on a webpage. Designed to work on any
-        webpage with any browser that supports the new JavaScript ES6 syntax, including the new class syntax. Written
-        as an open source project to allow any user online to contribute to the project.
+  display: true
+  type: "Web / Plugin"
+  link: "https://macosnotif.js.org/"
+  image: "/projects/macosnotifjs.png"
+  tools:
+      - WebStorm
+      - JavaScript (ES6)
+      - Webpack
+      - Babel
+      - HTML
+      - CSS3
+      - Git
+  desc: |
+    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
+    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
+    user online to contribute to the project.
+
+Unreal Designs:
+  display: true
+  type: "Web / Business"
+  link: "https://unreal-designs.co.uk/"
+  image: "/projects/unreal-designs.png"
+  tools:
+      - PHPStorm
+      - HTML
+      - JavaScript
+      - CSS3
+      - PHP
+      - MySQL
+      - Git
+      - Photoshop
+  desc: |
+    Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
+    alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
+    long lasting, bringing in many clients for the team and building up our experience.
+
+Discord Bots:
+  display: true
+  type: "Web / Application"
+  link: "https://botz.mattcowley.co.uk/"
+  image: "/projects/discord-bots.png"
+  tools:
+      - PHPStorm
+      - HTML
+      - JavaScript
+      - CSS3
+      - PHP
+      - MySQL
+      - Git
+      - PyCharm
+      - Python
+  desc: |
+    Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
+    streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
+    a site for them all, featuring their homepages as well as a large backend for stats logging.
 
 Rythm Homepage:
-    display: false
-    type: "Web"
-    link: "https://rythmbot.co/"
-    image: "/projects/rythmbot.png"
-    tools:
-        - PHPStorm
-        - HTML
-        - JavaScript
-        - CSS3
-        - PHP
-        - Git
-    desc: |
-        Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
-        site which was a template. Producing this site was great fun as there were very few requirements from the client
-        other than the content, so I had freedom of design. The site was designed to provide quick access to key info
-        and links for all vistors.
+  display: false
+  type: "Web"
+  link: "https://rythmbot.co/"
+  image: "/projects/rythmbot.png"
+  tools:
+      - PHPStorm
+      - HTML
+      - JavaScript
+      - CSS3
+      - PHP
+      - Git
+  desc: |
+    Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
+    site which was a template. Producing this site was great fun as there were very few requirements from the client
+    other than the content, so I had freedom of design. The site was designed to provide quick access to key info
+    and links for all vistors.
 
 Young Theatre:
-    display: true
-    type: "Theatre"
-    link: "https://www.youngtheatre.org.uk/"
-    image: "/projects/youngtheatre-panto2016.jpg"
-    tools:
-        - Jands Vista
-        - Chamsys MagicQ
-        - ETC EOS
-        - QLab
-        - Cast WYSIWYG
-    desc: |
-        Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
-        team for many years now and have been part of many shows produced by the company. Over the multitude of shows
-        I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.
+  display: false
+  type: "Theatre"
+  link: "https://www.youngtheatre.org.uk/"
+  image: "/projects/youngtheatre-panto2016.jpg"
+  tools:
+      - Jands Vista
+      - Chamsys MagicQ
+      - ETC EOS
+      - QLab
+      - Cast WYSIWYG
+  desc: |
+    Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
+    team for many years now and have been part of many shows produced by the company. Over the multitude of shows
+    I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.
