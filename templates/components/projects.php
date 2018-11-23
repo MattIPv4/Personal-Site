@@ -27,7 +27,7 @@
             <div class="project">
                 <a href="<?php echo $projectData["link"]; ?>" target="_blank">
                     <p class="project-title">
-                        <b><?php echo $projectTitle; ?></b> [<?php echo $projectData["type"]; ?>]
+                        <b><?php echo $projectTitle; ?></b>
                     </p>
                     <div class="project-hide">
                         <p class="project-link">
@@ -40,7 +40,8 @@
                             <?php echo $projectData["desc"]; ?>
                         </p>
                     </div>
-                    <div class="project-img">
+                    <div class="project-img"
+                         style="background-image: url('<?php echo $projectData["image"]; ?>'); background-position: <?php echo $projectData["image-position"]; ?> center; background-size: cover;">
                         <img src="<?php echo $projectData["image"]; ?>" alt="<?php echo $projectTitle; ?>"/>
                     </div>
                 </a>

@@ -110,14 +110,20 @@ table {
     transition: all .2s ease-in-out;
 }
 
+.project .project-img img {
+    width: 100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
 .project a:hover .project-img {
     height: auto;
     max-height: 1000px;
 }
 
-.project img {
-    width: 100%;
-    max-width: 100%;
+.project a:hover .project-img img {
+    opacity: 1;
 }
 
 .project-tools {

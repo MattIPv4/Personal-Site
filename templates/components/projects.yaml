@@ -1,8 +1,25 @@
+JetBrains Community:
+  display: true
+  type: "Community"
+  link: "https://discord.gg/dJK27sh"
+  image: "/projects/jetbrains-community.png"
+  image-position: "center"
+  tools:
+    - PyCharm
+    - Python
+    - Git
+    - Photoshop
+  desc: |
+    Creating and managing a large community of JetBrains users and team members on Discord where they can all chat with
+    each other about JetBrains products and projects as well as pretty much anything else. To help the community, JetBot
+    was created; a python Discord bot that provides information via commands about JetBrains.
+
 BotBlock:
   display: true
   type: "Web / API"
   link: "https://botblock.org/"
   image: "/projects/botblock.png"
+  image-position: "top"
   tools:
       - PhpStorm
       - HTML
@@ -23,6 +40,7 @@ macOSNotifJS:
   type: "Web / Plugin"
   link: "https://macosnotif.js.org/"
   image: "/projects/macosnotifjs.png"
+  image-position: "top"
   tools:
       - WebStorm
       - JavaScript (ES6)
@@ -41,6 +59,7 @@ Unreal Designs:
   type: "Web / Business"
   link: "https://unreal-designs.co.uk/"
   image: "/projects/unreal-designs.png"
+  image-position: "top"
   tools:
       - PHPStorm
       - HTML
@@ -56,10 +75,11 @@ Unreal Designs:
     long lasting, bringing in many clients for the team and building up our experience.
 
 Discord Bots:
-  display: true
+  display: false
   type: "Web / Application"
   link: "https://botz.mattcowley.co.uk/"
   image: "/projects/discord-bots.png"
+  image-position: "top"
   tools:
       - PHPStorm
       - HTML
@@ -80,6 +100,7 @@ Rythm Homepage:
   type: "Web"
   link: "https://rythmbot.co/"
   image: "/projects/rythmbot.png"
+  image-position: "top"
   tools:
       - PHPStorm
       - HTML
@@ -98,6 +119,7 @@ Young Theatre:
   type: "Theatre"
   link: "https://www.youngtheatre.org.uk/"
   image: "/projects/youngtheatre-panto2016.jpg"
+  image-position: "top"
   tools:
       - Jands Vista
       - Chamsys MagicQ
