@@ -20,8 +20,9 @@
 $name = "Matt (IPv4) Cowley";
 
 $motto = [];
-$motto[] = "Website designer and developer. Digital graphic designer.";
-$motto[] = "Theatre technician (Stage management, electrics, lighting).";
+$motto[] = ["Community Management, Website Design &amp; Development, Software Engineering.", false];
+$motto[] = ["HTML, JavaScript, CSS, SASS, PHP 5 &amp; 7, Python 3", true];
+$motto[] = ["Stage Management, Production Electrics, Lighting.", false];
 
 $links = [];
 $links[] = ["cv.mattcowley.co.uk", ""];

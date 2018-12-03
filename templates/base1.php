@@ -42,9 +42,11 @@ include("components/config.php");
 
     <h1 class="title"><?php echo $name; ?></h1>
 
-    <h2>
-        <?php echo implode("<br/>", $motto); ?>
-    </h2>
+    <?php foreach ($motto as $msg) {
+        echo($msg[1] ? "<h4>" : "<h2>");
+        echo $msg[0];
+        echo($msg[1] ? "</h4>" : "</h2>");
+    } ?>
 
     <ul class="contact">
         <?php foreach ($links as $linkData) {

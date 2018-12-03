@@ -47,7 +47,11 @@ include("components/config.php");
 
     <?php foreach ($motto as $msg) { ?>
         <h3>
-            <span class="print-cmd">print</span>(<span class="print-txt">"<?php echo $msg; ?>"</span>)
+            <?php if (!$msg[1]) { ?>
+                <span class="print-cmd">print</span>(<span class="print-txt">"<?php echo $msg[0]; ?>"</span>)
+            <?php } else { ?>
+                <span class="comment">/* <?php echo $msg[0]; ?> */</span>
+            <?php } ?>
         </h3>
     <?php } ?>
 
