@@ -16,6 +16,7 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
+$description = $name.": ".implode(" ", array_map(function ($x) { return $x[0]; }, array_filter($motto, function ($x) { return !$x[1]; })));
 ?>
 <link rel="icon" type="image/png" href="me.png"/>
 <link rel="shortcut-icon" type="image/png" href="me.png"/>
@@ -29,7 +30,7 @@
       content="<?php echo $name; ?>"/>
 
 <meta name="description"
-      content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>"/>
+      content="<?php echo $description; ?>"/>
 
 <meta name="keywords"
       content="matt, cowley, matt cowley, ipv4, matt ipv4, mattipv4, matt ipv4 cowley, matt (ipv4) cowley, website, websites, site, sites, homepage, matt website, matt ipv4 website, ipv4 website, matt site, matt ipv4 site, ipv4 site, theatre, theater, technical, technician, tech, theatre technician, theater technician, theatre tech, theater tech"/>
@@ -59,7 +60,7 @@
       content="<?php echo $name; ?>"/>
 
 <meta name="twitter:description"
-      content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>"/>
+      content="<?php echo $description; ?>"/>
 
 <meta name="twitter:image"
       content="https://mattcowley.co.uk/header.png"/>
@@ -80,7 +81,7 @@
       content="<?php echo $name; ?>"/>
 
 <meta prefix="og: http://ogp.me/ns#" property="og:description"
-      content="<?php echo $name; ?>: <?php echo implode(" | ", $motto); ?>"/>
+      content="<?php echo $description; ?>"/>
 
 <meta prefix="og: http://ogp.me/ns#" property="og:url"
       content="https://mattcowley.co.uk/"/>
