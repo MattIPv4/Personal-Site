@@ -57,6 +57,14 @@ h3 {
     color: #fff;
 }
 
+h3 a, h3 a:visited {
+    color: #ddd;
+}
+
+h3 a:hover, h3 a:focus {
+    color: #aaa;
+}
+
 h4 {
     color: #fff;
 }

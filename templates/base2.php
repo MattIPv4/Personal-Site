@@ -55,6 +55,12 @@ include("components/config.php");
         </h3>
     <?php } ?>
 
+    <h3>
+        <span class="let">let</span> Contact =
+        <span class="func-cmd">email</span>("<a class="func-txt"
+                                                href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>")
+    </h3>
+
     <h3><span class="comment">/* ---------------------------------------------------- */</span></h3>
 
     <h3>
@@ -62,9 +68,10 @@ include("components/config.php");
 
         <?php foreach ($links as $linkData) {
             $linkTitle = explode(".", $linkData[0], 2); ?>
-            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="func-txt" href="http://<?php echo $linkData[0]; ?>/" target="_blank">
-            <span class="print-cmd"><?php echo $linkTitle[0]; ?></span>.<?php echo $linkTitle[1]; ?>
-            </a><?php echo(end($links) == $linkData ? "" : ","); ?>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;"<a class="func-txt" href="http://<?php echo $linkData[0]; ?>/"
+                                             target="_blank">
+                <span class="print-cmd"><?php echo $linkTitle[0]; ?></span>.<?php echo $linkTitle[1]; ?>
+            </a>"<?php echo(end($links) == $linkData ? "" : ","); ?>
             <?php if (count($linkData) > 1 && !empty($linkData[1])) { ?>
                 <a class="comment" href="http://<?php echo $linkData[0]; ?>/" target="_blank">
                     /* <?php echo $linkData[1]; ?> */</a>

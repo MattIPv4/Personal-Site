@@ -18,6 +18,7 @@
  */
 
 $name = "Matt (IPv4) Cowley";
+$email = "me@mattcowley.co.uk";
 
 $motto = [];
 $motto[] = ["Community Management, Website Design &amp; Development, Software Engineering.", false];

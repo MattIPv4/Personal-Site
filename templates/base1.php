@@ -48,6 +48,8 @@ include("components/config.php");
         echo($msg[1] ? "</h4>" : "</h2>");
     } ?>
 
+    <h3>Get in touch: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></h3>
+
     <ul class="contact">
         <?php foreach ($links as $linkData) {
             $linkTitle = explode(".", $linkData[0], 2); ?>
