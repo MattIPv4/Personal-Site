@@ -91,9 +91,12 @@ $description = $name . ": " . implode(" ", array_map(function ($x) {
       content="https://mattcowley.co.uk/"/>
 
 <meta prefix="og: http://ogp.me/ns#" property="og:image"
-      content="https://mattcowley.co.uk/header.png"/>
+      content="http://mattcowley.co.uk/header.png"/>
 
 <meta prefix="og: http://ogp.me/ns#" property="og:image:url"
+      content="http://mattcowley.co.uk/header.png"/>
+
+<meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url"
       content="https://mattcowley.co.uk/header.png"/>
 
 <meta name="theme-color" content="#7289DA"/>
