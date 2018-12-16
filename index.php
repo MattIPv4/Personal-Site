@@ -20,19 +20,19 @@
 include('auto-minify-html.php');
 ob_start();
 
-$sites = glob('templates/base*.php', GLOB_BRACE);
-$site = array_rand($sites);
+$sites = [];
+foreach (glob('templates/*.php', GLOB_BRACE) as $site) {
+    $sites[] = str_replace("templates/", "", str_replace(".php", "", $site));
+}
+$site = $sites[array_rand($sites)];
 
 if (isset($_GET['theme'])) {
-    if (ctype_digit($_GET['theme'])) {
-        $_GET['theme'] = intval($_GET['theme']) - 1;
-        if (array_key_exists($_GET['theme'], $sites)) {
-            $site = $_GET['theme'];
-        }
+    if (in_array($_GET['theme'], $sites)) {
+        $site = $_GET['theme'];
     }
 }
 
-include($sites[$site]);
+include("templates/".$site.".php");
 
 $page = ob_get_contents();
 ob_end_clean();
