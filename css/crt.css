@@ -1,5 +1,6 @@
 html {
     background: #222;
+    width: 100%;
 }
 
 body {
@@ -11,12 +12,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .output {
     animation: crt-output 10ms infinite;
     padding: 3rem 2rem;
     flex: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @keyframes crt-output {
@@ -142,10 +146,12 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul li {
     flex-grow: 0;
+    margin-top: 0.2em;
 }
 
 ul li + li {
