@@ -39,29 +39,23 @@ function doToolMap($tools, $delim = " / ")
     /* http://konpa.github.io/devicon/ */
     $tool_map = [
         "phpstorm" => "devicon-phpstorm-plain",
-
         "webstorm" => "devicon-webstorm-plain",
+        "pycharm" => "devicon-pycharm-plain",
 
         "php" => "devicon-php-plain",
-
         "html" => "devicon-html5-plain",
 
         "js" => "devicon-javascript-plain",
-
         "javascript" => "devicon-javascript-plain",
-
         "js (es6)" => "devicon-javascript-plain",
-
         "javascript (es6)" => "devicon-javascript-plain",
 
         "webpack" => "devicon-webpack-plain",
-
         "babel" => "devicon-babel-plain",
 
         "jquery" => "devicon-jquery-plain",
 
         "css" => "devicon-css3-plain",
-
         "css3" => "devicon-css3-plain",
 
         "sass" => "devicon-sass-original",
@@ -73,12 +67,13 @@ function doToolMap($tools, $delim = " / ")
         "laravel" => "devicon-laravel-plain",
 
         "git" => "devicon-git-plain",
+        "github" => "devicon-github-plain",
 
         "python" => "devicon-python-plain",
 
-        "pycharm" => "devicon-pycharm-plain",
-
         "photoshop" => "devicon-photoshop-plain",
+
+        "twitter" => "devicon-twitter-plain",
     ];
     $final = [];
     foreach ($tools as $tool) {

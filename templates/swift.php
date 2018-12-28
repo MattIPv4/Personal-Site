@@ -83,14 +83,14 @@ include("components/config.php");
 
     <h3>
         <span class="let">class</span>
-        <span class="print-cmd"> FeaturedPersonalProjects</span> <span class="func-cmd">{</span>
+        <span class="print-cmd"> FeaturedProjects</span> <span class="func-cmd">{</span>
     </h3>
 
     <?php include("components/projects.php"); ?>
 
     <h3>
         <span class="func-cmd">}</span>
-        <span class="comment"> /* End FeaturedPersonalProjects class */</span>
+        <span class="comment"> /* End FeaturedProjects class */</span>
     </h3>
 </div>
 

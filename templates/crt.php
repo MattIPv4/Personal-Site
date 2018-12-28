@@ -65,7 +65,7 @@ include("components/config.php");
         <?php } ?>
     </ul>
 
-    <h3>Featured Personal Projects</h3>
+    <h3>Featured Projects</h3>
 
     <?php include("components/projects.php"); ?>
 
