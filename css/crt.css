@@ -16,16 +16,19 @@ body {
 }
 
 .output {
-    animation: crt-output 10ms infinite;
     padding: 3rem 2rem;
     flex: 1;
     width: 100%;
     box-sizing: border-box;
 }
 
+h1, h2, h3, ul li a {
+    animation: crt-output 10ms infinite;
+}
+
 @keyframes crt-output {
     0% {
-        opacity: 0.85;
+        opacity: 0.9;
     }
     100% {
         opacity: 1;
@@ -35,13 +38,13 @@ body {
 .scanlines {
     pointer-events: none;
     background: linear-gradient(
-            to right,
+            to bottom,
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0) 50%,
             rgba(0, 0, 0, 0.3) 70%,
             rgba(255, 255, 255, 0.75)
     );
-    background-size: 0.5rem 100%;
+    background-size: 100% 0.5rem;
     position: fixed;
     top: 0;
     left: 0;

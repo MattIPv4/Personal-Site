@@ -33,7 +33,7 @@ include("components/config.php");
     <link rel="stylesheet" href="/css/reset.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P"/>
-    <link rel="stylesheet" href="/css/8bit.css"/>
+    <link rel="stylesheet" href="/css/8bit<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
     <?php include("components/head.php"); ?>
 </head>
 
