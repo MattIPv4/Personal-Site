@@ -21,9 +21,15 @@ $name = "Matt (IPv4) Cowley";
 $email = "me@mattcowley.co.uk";
 
 $motto = [];
-$motto[] = ["Community Management, Website Design &amp; Development, Software Engineering.", false];
+
+$motto[] = ["Community Manager @ cdnjs.com / Developer Relations @ js.org", false];
+$motto[] = ["&nbsp;", true];
+
+$motto[] = ["Community Management, Website Design &amp; Development, Software Engineering", false];
 $motto[] = ["HTML, JavaScript, CSS, SASS, PHP 5 &amp; 7, Python 3", true];
-$motto[] = ["Stage Management, Production Electrics, Lighting.", false];
+
+$motto[] = ["Stage Management, Production Electrics, Lighting", false];
+$motto[] = ["&nbsp;", true];
 
 $links = [];
 $links[] = ["cv.mattcowley.co.uk", ""];
