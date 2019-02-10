@@ -16,8 +16,8 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
-$description = $name . ": " . implode(" ", array_map(function ($x) {
-        return $x[0];
+$description = $name . ": " . implode(" - ", array_map(function ($x) {
+        return html_entity_decode($x[0]);
     }, array_filter($motto, function ($x) {
         return !$x[1];
     })));
