@@ -55,7 +55,7 @@ $description = $name . ": " . implode(" - ", array_map(function ($x) {
       content="summary_large_image">
 
 <meta name="twitter:site"
-      content="https://mattcowley.co.uk/"/>
+      content="@MattIPv4"/>
 
 <meta name="twitter:creator"
       content="@MattIPv4"/>
