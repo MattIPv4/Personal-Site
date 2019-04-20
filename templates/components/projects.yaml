@@ -1,3 +1,34 @@
+cdnjs.com:
+  display: true
+  type: "Community"
+  link: "https://cdnjs.com"
+  image: "/projects/cdnjs.png"
+  image-position: "center"
+  tools:
+    - WebStorm
+    - Twitter
+    - Git
+    - GitHub
+    - Photoshop
+  desc: |
+    cdnjs is a free and open-source CDN service that serves resources to 9.1% of all websites. I volunteer my time with
+    cdnjs, working with the community around the project through Twitter and the Discord server. I also work with the
+    sponsors of the project including Cloudflare and StatusPage to ensure the CDN service is maintained.
+
+js.org:
+  display: true
+  type: "Community"
+  link: "https://js.org"
+  image: "/projects/js-org.png"
+  image-position: "center"
+  tools:
+    - Git
+    - GitHub
+  desc: |
+    js.org is a simple project run by the GitHub user @indus along with myself. The aim is to allow anyone to request a
+    js.org subdomain for their project's website. We manage this through a GitHub repository and a single file that
+    tracks all the active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
+
 JetBrains Community:
   display: true
   type: "Community"
@@ -31,22 +62,6 @@ PyDMXControl:
     Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
     office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
     uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
-
-cdnjs.com:
-  display: true
-  type: "Community"
-  link: "https://cdnjs.com"
-  image: "/projects/cdnjs.png"
-  image-position: "center"
-  tools:
-    - Twitter
-    - Git
-    - GitHub
-    - Photoshop
-  desc: |
-    cdnjs was an open source CDN service that I encountered some time ago and soon realised that their Twitter was not
-    maintained and there was absolutely no form of community being built around this service. With this in mind, I
-    reached out to one of the founders and soon became the community manager running the Twitter and Discord server.
 
 BotBlock:
   display: true
@@ -91,7 +106,7 @@ macOSNotifJS:
     user online to contribute to the project.
 
 Unreal Designs:
-  display: true
+  display: false
   type: "Web / Business"
   link: "https://unreal-designs.co.uk/"
   image: "/projects/unreal-designs.png"
