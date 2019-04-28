@@ -2,7 +2,7 @@
 var pixelVwWidth = 1.5; // Measured in vw
 var pixelVwHeight = pixelVwWidth; // Measured in vw
 var pixelAnimate = false; // Lag-inducing
-var pixelColor = "#4FC1E9"; // Base color for pixels
+var pixelColor = "#195d80"; // Base color for pixels
 
 // Default BG
 document.getElementById("background").style.background = pixelColor;

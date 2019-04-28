@@ -32,7 +32,7 @@ include("components/config.php");
 <head>
     <link rel="stylesheet" href="/css/reset.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323"/>
     <link rel="stylesheet" href="/css/8bit<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
     <?php include("components/head.php"); ?>
 </head>
@@ -72,8 +72,9 @@ include("components/config.php");
 
 <?php include("components/projects.php"); ?>
 
-<div id="background"></div>
-<script src='/js/8bit.js' type='text/javascript'></script>
+<?php include("components/themes.php"); ?>
+<!--<div id="background"></div>
+<script src='/js/8bit.js' type='text/javascript'></script>-->
 <?php //include("components/notif.php"); ?>
 
 </body>

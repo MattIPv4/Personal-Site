@@ -1,12 +1,25 @@
+html, body {
+    background-color: #6c91d9;
+    background-image: url("8bit.png");
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
 body {
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 2px 2px #fff;
+    font-family: 'VT323', monospace;
+    text-shadow: 1px 1px #fff, 2px 2px #fff, 3px 3px #fff;
     vertical-align: middle;
     text-align: center;
 }
 
 h1 {
-    margin: 1rem;
+    margin: 0 0 1rem;
+    padding: 1rem 0 0;
     font-size: 2.25rem;
 }
 
@@ -27,17 +40,24 @@ a {
     border-bottom: 4px #fff dashed;
 }
 
-ul li a {
-    color: #fff;
-    line-height: 1.4;
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 ul li {
-    margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 ul li:first-child {
-    margin-top: 0;
+    margin-left: 0;
+}
+
+ul li a {
+    color: #fff;
+    line-height: 1.4;
 }
 
 section, .project {
