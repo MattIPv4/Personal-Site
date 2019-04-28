@@ -69,6 +69,7 @@ include("components/config.php");
 
     <?php include("components/projects.php"); ?>
 
+    <?php include("components/themes.php"); ?>
 </div>
 <div class="scanlines"></div>
 

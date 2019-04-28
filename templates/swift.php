@@ -92,6 +92,8 @@ include("components/config.php");
         <span class="func-cmd">}</span>
         <span class="comment"> /* End FeaturedProjects class */</span>
     </h3>
+
+    <?php include("components/themes.php"); ?>
 </div>
 
 <?php //include("components/notif.php"); ?>
