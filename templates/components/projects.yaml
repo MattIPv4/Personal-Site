@@ -29,8 +29,45 @@ js.org:
     js.org subdomain for their project's website. We manage this through a GitHub repository and a single file that
     tracks all the active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
 
-JetBrains Community:
+PyDMXControl:
+ display: true
+ type: "Python"
+ link: "https://github.com/MattIPv4/PyDMXControl"
+ image: "/projects/pydmxcontrol.png"
+ image-position: "center"
+ tools:
+   - PyCharm
+   - Python
+   - Git
+   - GitHub
+   - Photoshop
+ desc: |
+   Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
+   office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
+   uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
+
+macOSNotifJS:
   display: true
+  type: "Web / Plugin"
+  link: "https://macosnotif.js.org/"
+  image: "/projects/macosnotifjs.png"
+  image-position: "top"
+  tools:
+    - WebStorm
+    - JavaScript (ES6)
+    - Webpack
+    - Babel
+    - HTML
+    - CSS3
+    - Git
+    - GitHub
+  desc: |
+    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
+    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
+    user online to contribute to the project.
+
+JetBrains Community:
+  display: false
   type: "Community"
   link: "https://discord.gg/dJK27sh"
   image: "/projects/jetbrains-community.png"
@@ -46,25 +83,8 @@ JetBrains Community:
     each other about JetBrains products and projects as well as pretty much anything else. To help the community, JetBot
     was created; a python Discord bot that provides information via commands about JetBrains.
 
-PyDMXControl:
-  display: true
-  type: "Python"
-  link: "https://github.com/MattIPv4/PyDMXControl"
-  image: "/projects/pydmxcontrol.png"
-  image-position: "center"
-  tools:
-    - PyCharm
-    - Python
-    - Git
-    - GitHub
-    - Photoshop
-  desc: |
-    Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
-    office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
-    uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
-
 BotBlock:
-  display: true
+  display: false
   type: "Web / API"
   link: "https://botblock.org/"
   image: "/projects/botblock.png"
@@ -84,26 +104,6 @@ BotBlock:
     Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
     many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
     single list of all known bot lists on Discord and a central API for bot developers to use.
-
-macOSNotifJS:
-  display: true
-  type: "Web / Plugin"
-  link: "https://macosnotif.js.org/"
-  image: "/projects/macosnotifjs.png"
-  image-position: "top"
-  tools:
-      - WebStorm
-      - JavaScript (ES6)
-      - Webpack
-      - Babel
-      - HTML
-      - CSS3
-      - Git
-      - GitHub
-  desc: |
-    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
-    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
-    user online to contribute to the project.
 
 Unreal Designs:
   display: false
