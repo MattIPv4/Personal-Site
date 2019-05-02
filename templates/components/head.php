@@ -114,3 +114,10 @@ $description = $name . ": " . implode(" - ", array_map(function ($x) {
 
     gtag('config', 'UA-113826252-1');
 </script>
+
+<!-- Global styles -->
+<link rel="stylesheet" href="/css/reset<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"
+      ntegrity="sha256-4LcvM6Kisp2RIksJbr9MdLdjZrVxALxPqi0SwWmymPI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+      integrity="sha256-7rF6RaSKyh16288E3hVdzQtHyzatA2MQRGu0cf6pqqM=" crossorigin="anonymous" />

@@ -30,11 +30,9 @@ include("components/config.php");
 
 <html>
 <head>
-    <link rel="stylesheet" href="/css/reset.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"/>
+    <?php include("components/head.php"); ?>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura|Wire+One"/>
     <link rel="stylesheet" href="/css/blue<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
-    <?php include("components/head.php"); ?>
 </head>
 
 <body id="particles-js">

@@ -141,8 +141,23 @@ table {
     position: relative;
 }
 
+/* Fix fonts for icons */
 .project-tools i:before {
-    font-family: devicon;
+    font-weight: normal;
+}
+
+.project-tools i[class*="devicon"]:before {
+    font-family: "devicon";
+}
+
+.project-tools i.fa:before,
+.project-tools i.far:before,
+.project-tools i.fas:before {
+    font-family: "Font Awesome 5 Free";
+}
+
+.project-tools i.fab:before {
+    font-family: "Font Awesome 5 Brands";
 }
 
 .project-tools i .tip {
