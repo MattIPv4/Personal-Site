@@ -5,15 +5,16 @@ cdnjs.com:
   image: "/projects/cdnjs.png"
   image-position: "center"
   tools:
-    - WebStorm
+    - Discourse
     - Twitter
     - Git
     - GitHub
+    - WebStorm
     - Photoshop
   desc: |
-    cdnjs is a free and open-source CDN service that serves resources to 9.1% of all websites. I volunteer my time with
-    cdnjs, working with the community around the project through Twitter and the Discord server. I also work with the
-    sponsors of the project including Cloudflare and StatusPage to ensure the CDN service is maintained.
+    cdnjs is a free and open-source CDN service that serves resources to 9.2% of all websites. I volunteer my time with
+    cdnjs, working with the community around the project through Twitter, GitHub and our Discourse forum. I also work
+    with the sponsors of the project including Cloudflare and StatusPage to ensure the CDN service is maintained.
 
 js.org:
   display: true

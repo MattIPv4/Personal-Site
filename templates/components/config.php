@@ -48,38 +48,38 @@ function doToolMap($tools, $delim = " / ")
         "webstorm" => "devicon-webstorm-plain",
         "pycharm" => "devicon-pycharm-plain",
 
-        "php" => "devicon-php-plain",
-        "html" => "devicon-html5-plain",
+        "php" => "fab fa-php",
+        "html" => "fab fa-html5",
 
-        "js" => "devicon-javascript-plain",
-        "javascript" => "devicon-javascript-plain",
-        "js (es6)" => "devicon-javascript-plain",
-        "javascript (es6)" => "devicon-javascript-plain",
+        "js" => "fab fa-js",
+        "javascript" => "fab fa-js",
+        "js (es6)" => "fab fa-js",
+        "javascript (es6)" => "fab fa-js",
 
         "webpack" => "devicon-webpack-plain",
         "babel" => "devicon-babel-plain",
 
         "jquery" => "devicon-jquery-plain",
 
-        "css" => "devicon-css3-plain",
-        "css3" => "devicon-css3-plain",
+        "css" => "fab fa-css3",
+        "css3" => "fab fa-css3",
+        "sass" => "fab fa-sass",
 
-        "sass" => "devicon-sass-original",
-
-        "bootstrap" => "devicon-bootstrap-plain",
+        "bootstrap" => "fab fa-bootstrap",
 
         "mysql" => "devicon-mysql-plain",
-
         "laravel" => "devicon-laravel-plain",
 
         "git" => "devicon-git-plain",
-        "github" => "devicon-github-plain",
+        "github" => "fab fa-github",
 
-        "python" => "devicon-python-plain",
+        "python" => "fab fa-python",
 
         "photoshop" => "devicon-photoshop-plain",
 
-        "twitter" => "devicon-twitter-plain",
+        "twitter" => "fab fa-twitter",
+        "discord" => "fab fa-discord",
+        "discourse" => "fab fa-discourse",
     ];
     $final = [];
     foreach ($tools as $tool) {
