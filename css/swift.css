@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     position: absolute;
     background: #292b37;
-    font-family: 'Droid Sans Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 16px;
     animation: bg 5s linear infinite alternate;
 }

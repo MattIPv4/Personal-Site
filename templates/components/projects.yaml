@@ -12,9 +12,12 @@ cdnjs.com:
     - WebStorm
     - Photoshop
   desc: |
-    cdnjs is a free and open-source CDN service that serves resources to 9.2% of all websites. I volunteer my time with
-    cdnjs, working with the community around the project through Twitter, GitHub and our Discourse forum. I also work
-    with the sponsors of the project including Cloudflare and StatusPage to ensure the CDN service is maintained.
+    **cdnjs is a free and open-source CDN service that serves resources to
+    [9.2% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I volunteer my time with
+    cdnjs, working with the community around the project through [Twitter](https://twitter.com/cdnjs),
+    [GitHub](https://github.com/cdnjs/cdnjs) and our [Discourse forum](https://cdnjs.discourse.group/). I also work
+    with the sponsors of the project including [Cloudflare](https://cloudflare.com) and
+    [StatusPage](https://statuspage.io) to ensure the CDN service is maintained.
 
 js.org:
   display: true
@@ -26,9 +29,10 @@ js.org:
     - Git
     - GitHub
   desc: |
-    js.org is a simple project run by the GitHub user @indus along with myself. The aim is to allow anyone to request a
-    js.org subdomain for their project's website. We manage this through a GitHub repository and a single file that
-    tracks all the active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
+    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
+    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
+    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
+    active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
 
 PyDMXControl:
  display: true

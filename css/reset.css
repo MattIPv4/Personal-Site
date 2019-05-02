@@ -84,6 +84,12 @@ table {
 .project p.project-desc {
     color: #434A54;
     margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.project p.project-desc strong,
+.project p.project-desc b {
+    font-weight: bold;
 }
 
 .project a:hover p.project-link {
@@ -98,7 +104,7 @@ table {
     transition: all .2s ease-in-out;
 }
 
-.project a:hover .project-hide {
+.project:hover .project-hide {
     max-height: 100vH;
     transition: all .2s ease-in-out;
     overflow: visible;
@@ -121,12 +127,12 @@ table {
     transition: all .2s ease-in-out;
 }
 
-.project a:hover .project-img {
+.project:hover .project-img {
     height: auto;
     max-height: 1000px;
 }
 
-.project a:hover .project-img img {
+.project:hover .project-img img {
     opacity: 1;
 }
 

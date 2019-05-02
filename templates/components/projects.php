@@ -29,17 +29,21 @@
                     <p class="project-title">
                         <b><?php echo $projectTitle; ?></b>
                     </p>
-                    <div class="project-hide">
+                </a>
+                <div class="project-hide">
+                    <a href="<?php echo $projectData["link"]; ?>" target="_blank">
                         <p class="project-link">
                             <?php echo $projectData["link"]; ?>
                         </p>
-                        <p class="project-tools">
-                            <?php echo doToolMap($projectData["tools"]); ?>
-                        </p>
-                        <p class="project-desc">
-                            <?php echo $projectData["desc"]; ?>
-                        </p>
-                    </div>
+                    </a>
+                    <p class="project-tools">
+                        <?php echo doToolMap($projectData["tools"]); ?>
+                    </p>
+                    <p class="project-desc">
+                        <?php echo doMarkdown($projectData["desc"]); ?>
+                    </p>
+                </div>
+                <a href="<?php echo $projectData["link"]; ?>" target="_blank">
                     <div class="project-img"
                          style="background-image: url('<?php echo $projectData["image"]; ?>'); background-position: <?php echo $projectData["image-position"]; ?> center; background-size: cover;">
                         <img src="<?php echo $projectData["image"]; ?>" alt="<?php echo $projectTitle; ?>"/>

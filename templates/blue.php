@@ -31,8 +31,8 @@ include("components/config.php");
 <html>
 <head>
     <?php include("components/head.php"); ?>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura|Wire+One"/>
-    <link rel="stylesheet" href="/css/blue<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura:400,700|Wire+One"/>
+    <link rel="stylesheet" href="/css/blue<?php echo(isset($_GET['dev']) ? '' : '.min'); ?>.css"/>
 </head>
 
 <body id="particles-js">

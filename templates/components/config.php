@@ -92,6 +92,13 @@ function doToolMap($tools, $delim = " / ")
     return implode($delim, $final);
 }
 
+require_once "Parsedown.php";
+function doMarkdown($text)
+{
+    $Parsedown = new Parsedown();
+    return $Parsedown->line($text);
+}
+
 require_once "spyc.php";
 $projects = Spyc::YAMLLoad(file_get_contents(dirname(__FILE__) . "/projects.yaml"));
 

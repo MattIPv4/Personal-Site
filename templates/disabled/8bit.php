@@ -32,7 +32,7 @@ include("components/config.php");
 <head>
     <?php include("components/head.php"); ?>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323"/>
-    <link rel="stylesheet" href="/css/8bit<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
+    <link rel="stylesheet" href="/css/8bit<?php echo(isset($_GET['dev']) ? '' : '.min'); ?>.css"/>
 </head>
 
 <body>

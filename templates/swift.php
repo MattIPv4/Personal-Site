@@ -31,8 +31,8 @@ include("components/config.php");
 <html>
 <head>
     <?php include("components/head.php"); ?>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono"/>
-    <link rel="stylesheet" href="/css/swift<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700"/>
+    <link rel="stylesheet" href="/css/swift<?php echo(isset($_GET['dev']) ? '' : '.min'); ?>.css"/>
 </head>
 
 <body>
