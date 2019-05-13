@@ -28,8 +28,6 @@ $description = $name . ": " . implode(" - ", array_map(function ($x) {
 
 <title><?php echo $name; ?></title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
 <meta name="title"
       content="<?php echo $name; ?>"/>
 
@@ -115,9 +113,18 @@ $description = $name . ": " . implode(" - ", array_map(function ($x) {
     gtag('config', 'UA-113826252-1');
 </script>
 
+<!-- Google AdSense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4266526051230566",
+        enable_page_level_ads: true
+    });
+</script>
+
 <!-- Global styles -->
-<link rel="stylesheet" href="/css/reset<?php echo (isset($_GET['dev'])?'':'.min');?>.css"/>
+<link rel="stylesheet" href="/css/reset<?php echo(isset($_GET['dev']) ? '' : '.min'); ?>.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"
-      ntegrity="sha256-4LcvM6Kisp2RIksJbr9MdLdjZrVxALxPqi0SwWmymPI=" crossorigin="anonymous" />
+      ntegrity="sha256-4LcvM6Kisp2RIksJbr9MdLdjZrVxALxPqi0SwWmymPI=" crossorigin="anonymous"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-      integrity="sha256-7rF6RaSKyh16288E3hVdzQtHyzatA2MQRGu0cf6pqqM=" crossorigin="anonymous" />
+      integrity="sha256-7rF6RaSKyh16288E3hVdzQtHyzatA2MQRGu0cf6pqqM=" crossorigin="anonymous"/>
