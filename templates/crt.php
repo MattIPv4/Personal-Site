@@ -67,7 +67,7 @@ include("components/config.php");
 
     <?php include("components/projects.php"); ?>
 
-    <?php include("components/themes.php"); ?>
+    <?php include("components/footer.php"); ?>
 </div>
 <div class="scanlines"></div>
 

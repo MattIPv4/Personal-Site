@@ -67,7 +67,7 @@ include("components/config.php");
 
     <?php include("components/projects.php"); ?>
 
-    <?php include("components/themes.php"); ?>
+    <?php include("components/footer.php"); ?>
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' type='text/javascript'></script>

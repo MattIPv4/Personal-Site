@@ -70,7 +70,7 @@ include("components/config.php");
 
 <?php include("components/projects.php"); ?>
 
-<?php include("components/themes.php"); ?>
+<?php include("components/footer.php"); ?>
 <!--<div id="background"></div>
 <script src='/js/8bit.js' type='text/javascript'></script>-->
 <?php //include("components/notif.php"); ?>
