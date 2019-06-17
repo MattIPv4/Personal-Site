@@ -22,7 +22,7 @@ $email = "me@mattcowley.co.uk";
 
 $motto = [];
 
-$motto[] = ["Community Manager @ cdnjs.com / Developer Relations @ js.org", false];
+$motto[] = ["Community Manager @ DigitalOcean 🦈 Community Manager @ cdnjs.com 💬 Developer Relations @ js.org 📝", false];
 $motto[] = ["&nbsp;", true];
 
 $motto[] = ["Community Management, Website Design &amp; Development, Software Engineering", false];
