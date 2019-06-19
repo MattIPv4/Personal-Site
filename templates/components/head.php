@@ -2,7 +2,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,11 +16,16 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
-$description = $name . ": " . implode(" - ", array_map(function ($x) {
-        return html_entity_decode($x[0]);
-    }, array_filter($motto, function ($x) {
-        return !$x[1];
-    })));
+$description = "";
+foreach ($motto as $item) {
+    if ($item[2]) {
+        if (!$item[1]) {
+            $description .= " -";
+        }
+        $description .= " " . $item[0];
+    }
+}
+$description = $name . ": " . ltrim($description, " -");
 ?>
 <link rel="icon" type="image/png" href="me.png"/>
 <link rel="shortcut-icon" type="image/png" href="me.png"/>

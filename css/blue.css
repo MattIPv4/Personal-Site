@@ -1,3 +1,21 @@
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
+
 html, body {
     font-family: 'Jura', sans-serif;
     font-size: 16px;
@@ -42,11 +60,12 @@ h2 {
     font-family: 'Wire One', sans-serif;
     position: relative;
     width: 100%;
-    font-size: 3em;
+    font-size: 3rem;
     color: #fff;
     font-weight: 200;
     margin-top: 10px;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 h3 {
@@ -67,6 +86,8 @@ h3 a:hover, h3 a:focus {
 
 h4 {
     color: #fff;
+    font-size: 1.6rem;
+    font-weight: 200;
 }
 
 .contact {

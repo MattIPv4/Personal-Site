@@ -1,3 +1,22 @@
+DigitalOcean:
+  display: true
+  type: "Community"
+  link: "https://digitalocean.com/community"
+  image: "/projects/digitalocean.jpg"
+  image-position: "center"
+  tools:
+    - Slack
+    - Git
+    - GitHub
+    - RubyMine
+    - Rails
+  desc: |
+    **DigitalOcean is a cloud hosting provider with an ever-growing community**. I work remotely with the rest of the
+    community team at DigitalOcean to manage the day-to-day operations of the community
+    [Questions](https://do.co/questions) & [Tutorials](https://do.co/tutorials) sites, moderating new content posted to
+    ensure all users have a great time as well as working with the engineering team for the community sites to bring
+    better experiences to our users.
+
 cdnjs.com:
   display: true
   type: "Community"
@@ -6,6 +25,7 @@ cdnjs.com:
   image-position: "center"
   tools:
     - Discourse
+    - Slack
     - Twitter
     - Git
     - GitHub
@@ -18,6 +38,29 @@ cdnjs.com:
     [GitHub](https://github.com/cdnjs/cdnjs) and our [Discourse forum](https://cdnjs.discourse.group/). I also work
     with the sponsors of the project including [Cloudflare](https://cloudflare.com) and
     [StatusPage](https://statuspage.io) to ensure the CDN service is maintained.
+
+MagicCap:
+  display: true
+  type: "Web / Application"
+  link: "https://magiccap.me"
+  image: "/projects/magiccap.png"
+  image-position: "center"
+  tools:
+    - WebStorm
+    - JavaScript
+    - NodeJS
+    - VueJS
+    - HTML
+    - CSS3
+    - TypeScript
+    - Git
+    - GitHub
+  desc: |
+    **MagicCap is an open-source, versatile image/GIF capture suite for Mac and Linux**. I originally started out as an
+    [open-source contributor to MagicCap](https://github.com/MagicCap/MagicCap), making minor changes to the CSS behind
+    the UI. However, I soon became heavily involved with the project, responsible for the majority of the user interface
+    but also the user experience that it provided. I now also handle a large amount of organization administration,
+    reviewing PRs and managing error reports.
 
 js.org:
   display: true
@@ -60,6 +103,7 @@ macOSNotifJS:
   tools:
     - WebStorm
     - JavaScript (ES6)
+    - NodeJS
     - Webpack
     - Babel
     - HTML

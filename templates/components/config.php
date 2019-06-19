@@ -2,7 +2,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2018 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -20,16 +20,16 @@
 $name = "Matt (IPv4) Cowley";
 $email = "me@mattcowley.co.uk";
 
-$motto = [];
+$motto = []; //[str, small, in desc]
 
-$motto[] = ["Community Manager @ DigitalOcean 🦈 Community Manager @ cdnjs.com 💬 Developer Relations @ js.org 📝", false];
-$motto[] = ["&nbsp;", true];
+$motto[] = ["Community Manager @ DigitalOcean 🦈 Community Manager @ cdnjs.com 💬", false, true];
+$motto[] = ["UI/UX Developer @ MagicCap 💻 Developer Relations @ js.org 📝", true, true];
 
-$motto[] = ["Community Management, Website Design &amp; Development, Software Engineering", false];
-$motto[] = ["HTML, JavaScript, CSS, SASS, PHP 5 &amp; 7, Python 3", true];
+$motto[] = ["Community Management, Website Design &amp; Development, Software Engineering 🖥", false, true];
+$motto[] = ["HTML, JavaScript, CSS, SASS, PHP 5 &amp; 7, NodeJS, Python 3.6 &amp; 3.7", true, false];
 
-$motto[] = ["Stage Management, Production Electrics, Lighting", false];
-$motto[] = ["&nbsp;", true];
+$motto[] = ["Stage Management, Production Electrics, Lighting 💡", false, true];
+$motto[] = ["&nbsp;", true, false];
 
 $links = [];
 $links[] = ["cv.mattcowley.co.uk", ""];
@@ -47,6 +47,7 @@ function doToolMap($tools, $delim = " / ")
         "phpstorm" => "devicon-phpstorm-plain",
         "webstorm" => "devicon-webstorm-plain",
         "pycharm" => "devicon-pycharm-plain",
+        "rubymine" => "devicon-rubymine-plain",
 
         "php" => "fab fa-php",
         "html" => "fab fa-html5",
@@ -56,6 +57,10 @@ function doToolMap($tools, $delim = " / ")
         "js (es6)" => "fab fa-js",
         "javascript (es6)" => "fab fa-js",
 
+        "nodejs" => "fab fa-node-js",
+        "vuejs" => "fab fa-vuejs",
+
+        "typescript" => "devicon-typescript-plain",
         "webpack" => "devicon-webpack-plain",
         "babel" => "devicon-babel-plain",
 
@@ -69,6 +74,7 @@ function doToolMap($tools, $delim = " / ")
 
         "mysql" => "devicon-mysql-plain",
         "laravel" => "devicon-laravel-plain",
+        "rails" => "devicon-rails-plain",
 
         "git" => "devicon-git-plain",
         "github" => "fab fa-github",
@@ -80,6 +86,7 @@ function doToolMap($tools, $delim = " / ")
         "twitter" => "fab fa-twitter",
         "discord" => "fab fa-discord",
         "discourse" => "fab fa-discourse",
+        "slack" => "fab fa-slack",
     ];
     $final = [];
     foreach ($tools as $tool) {
