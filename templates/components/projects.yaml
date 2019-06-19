@@ -2,7 +2,7 @@ DigitalOcean:
   display: true
   type: "Community"
   link: "https://digitalocean.com/community"
-  image: "/projects/digitalocean.jpg"
+  image: "/projects/digitalocean.png"
   image-position: "center"
   tools:
     - Slack
