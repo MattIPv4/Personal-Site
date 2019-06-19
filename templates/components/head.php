@@ -22,7 +22,7 @@ foreach ($motto as $item) {
         if (!$item[1]) {
             $description .= " -";
         }
-        $description .= " " . $item[0];
+        $description .= " " . html_entity_decode($item[0]);
     }
 }
 $description = $name . ": " . ltrim($description, " -");
