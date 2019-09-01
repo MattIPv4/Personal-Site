@@ -15,39 +15,35 @@
  *   along with this program. If not, please see
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
-html {
-  background: linear-gradient(25deg, #56CCF2, #2F80ED);
-  animation: bg 5s linear infinite alternate; }
 
-@keyframes bg {
-  0% {
-    background: #56CCF2; }
-  100% {
-    background: #2F80ED; } }
-body {
-  background: transparent; }
+// Util func for themes to load their styles
+function loadCSS(style) {
+    var link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('href', style);
+    document.head.appendChild(link);
+}
 
-.content h1, .content h2, .content h3, .content h4 {
-  font-weight: 400; }
-.content h3 {
-  border-top: 2px solid #fff;
-  padding-top: 4px; }
-  .content h3 a, .content h3 a:visited {
-    color: #ddd; }
-  .content h3 a:hover, .content h3 a:focus {
-    color: #aaa; }
-.content .contact li a, .content .contact li a:visited {
-  color: #F5F7FA; }
-.content .contact li a:hover, .content .contact li a:focus {
-  color: #CCD1D9; }
+// Load a theme's styling & custom JS
+function loadTheme(theme) {
+    // Load theme styling
+    loadCSS('css/' + theme + '.css');
 
-.particles-js-canvas-el {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  z-index: -1; }
+    // Load theme custom JS
+    var js = document.createElement('script');
+    js.setAttribute('onload', 'window._theme()');
+    js.setAttribute('src', 'js/' + theme + '.js');
+    document.body.appendChild(js);
+}
 
-/*# sourceMappingURL=blue.css.map */
+// Pick a random theme and load it
+function randomTheme() {
+    var themes = [
+        'blue'
+    ];
+
+    loadTheme(themes[Math.floor(Math.random() * themes.length)]);
+}
+
+// Go!
+randomTheme();
