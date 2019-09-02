@@ -1,0 +1,151 @@
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
+body {
+  color: #14fdce;
+  font-size: 18px;
+  -webkit-font-smoothing: none;
+  line-height: 1.2; }
+  body .content h1, body .content h2, body .content h3, body .content ul li a {
+    animation: crt-output 10ms infinite; }
+@keyframes crt-output {
+  0% {
+    opacity: 0.95; }
+  100% {
+    opacity: 1; } }
+  body .content h1, body .content h2, body .content h3, body .content h4 {
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase; }
+  body .content h1 {
+    color: #81f3fd;
+    text-shadow: 0 0.1rem 1rem rgba(129, 243, 253, 0.75);
+    letter-spacing: 0.1em;
+    font-size: 4em; }
+    body .content h1::selection,
+    body .content h1 *::selection {
+      color: #fff;
+      background: #81f3fd; }
+    body .content h1 span {
+      animation: crt-blink 1s infinite; }
+@keyframes crt-blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  50.1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+  body .content h2, body .content h4 {
+    color: #effdff;
+    text-shadow: 0 0.1rem 1rem rgba(239, 253, 255, 0.95);
+    letter-spacing: 0.0em; }
+    body .content h2::selection,
+    body .content h2 *::selection, body .content h4::selection,
+    body .content h4 *::selection {
+      color: #111;
+      background: #effdff; }
+    body .content h2 small, body .content h4 small {
+      font-size: 0.7em;
+      line-height: 1; }
+  body .content h3,
+  body .content h3 * {
+    color: #81f3fd;
+    text-shadow: 0 0.1rem 0.5rem #81f3fd;
+    letter-spacing: -0.01rem;
+    font-size: 2.25rem;
+    opacity: 0.75;
+    margin-top: 4rem; }
+    body .content h3::selection,
+    body .content h3 *::selection {
+      color: #fff;
+      background: #81f3fd; }
+  body .content h3 a,
+  body .content h3 a:visited {
+    color: #b2fffd; }
+  body .content h3 a:hover,
+  body .content h3 a:focus {
+    color: #81f3fd; }
+  body .content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    body .content ul li {
+      flex-grow: 0;
+      margin-top: 0.2em; }
+      body .content ul li + li {
+        margin-left: 0.3em; }
+      body .content ul li a {
+        text-shadow: 0 0.1rem 1rem rgba(239, 253, 255, 0.95);
+        letter-spacing: 0.0em; }
+        body .content ul li a::selection {
+          color: #111;
+          background: #effdff; }
+      body .content ul li a,
+      body .content ul li a:visited {
+        color: #effdff; }
+      body .content ul li a:hover,
+      body .content ul li a:focus {
+        color: #b2fffd; }
+  body .content a {
+    text-decoration: underline; }
+  body .content .projects .project-outer .project {
+    background: #effdff;
+    box-shadow: 0 0.1rem 1rem rgba(239, 253, 255, 0.95); }
+    body .content .projects .project-outer .project .project-img {
+      box-shadow: inset 0 0.1rem 1rem rgba(239, 253, 255, 0.95); }
+    body .content .projects .project-outer .project .project-tools i .tip {
+      background: rgba(129, 243, 253, 0.8);
+      box-shadow: 0 0.1rem 0.5rem #81f3fd;
+      color: #111; }
+  body .scanlines {
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.3) 70%, rgba(255, 255, 255, 0.75));
+    background-size: 100% 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15; }
+    body .scanlines::before {
+      background: rgba(129, 243, 253, 0.65);
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: crt-bg 750ms infinite; }
+@keyframes crt-bg {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0.9; }
+  40% {
+    opacity: 1; }
+  60% {
+    opacity: 0.95; }
+  80% {
+    opacity: 0.9; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=crt.css.map */
