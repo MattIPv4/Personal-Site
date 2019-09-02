@@ -38,10 +38,20 @@ function loadTheme(theme) {
 
 // Pick a random theme and load it
 function randomTheme() {
+    // Define all themes
     var themes = [
-        'blue'
+        'blue',
+        'crt'
     ];
 
+    // Allow theme selection
+    var url = new URL(window.location.href);
+    var theme = url.searchParams.get('theme').toString().toLowerCase();
+    if (theme && themes.indexOf(theme) !== -1) {
+        return loadTheme(theme)
+    }
+
+    // Random
     loadTheme(themes[Math.floor(Math.random() * themes.length)]);
 }
 
