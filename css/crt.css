@@ -60,9 +60,14 @@ body {
     body .content h4 *::selection {
       color: #111;
       background: #effdff; }
-    body .content h2 small, body .content h4 small {
-      font-size: 0.7em;
-      line-height: 1; }
+  body .content h4 {
+    font-size: 1.4em; }
+    body .content h4:before {
+      content: "(";
+      padding-right: .1em; }
+    body .content h4:after {
+      content: ")";
+      padding-left: .1em; }
   body .content h3,
   body .content h3 * {
     color: #81f3fd;
