@@ -1,0 +1,128 @@
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
+
+.content {
+  h1 {
+    margin-bottom: 65px;
+  }
+
+  h2 {
+    margin: 25px 0;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    margin: 25px 0;
+    font-size: 1.35em;
+  }
+
+  .cursor {
+    width: 2px;
+    position: relative;
+    display: inline-block;
+    left: -.35em;
+    animation: blink 1.2s linear infinite;
+    color: transparent;
+    background: #fff;
+  }
+
+  @keyframes blink {
+    49% {
+      background: transparent;
+    }
+    50% {
+      background: #fff;
+    }
+    100% {
+      background: #fff;
+    }
+  }
+
+  .print-cmd, .contact li a b {
+    color: #00aba4;
+  }
+
+  .print-txt {
+    color: #dc3b3b;
+  }
+
+  .let {
+    color: #b73999;
+  }
+
+  .let-var {
+    color: #D18E62;
+  }
+
+  .func-cmd {
+    color: #94c66e;
+  }
+
+  .func-txt, a, a:visited {
+    color: #8884c5;
+  }
+
+  a:focus, a:hover {
+    color: #4d4985;
+  }
+
+  .comment, h4, .contact li a i {
+    color: #52bc57;
+    text-decoration: none;
+
+    &:before {
+      content: "/* ";
+    }
+
+    &:after {
+      content: " */";
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 0 0 0 45px;
+
+    li {
+      font-size: 1.5em;
+      margin: 0;
+
+      a {
+        b {
+          &:before {
+            color: #fff;
+            content: "\"";
+          }
+        }
+
+        small {
+          font-size: 1em;
+
+          &:after {
+            color: #fff;
+            content: "\", "
+          }
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -92,11 +92,11 @@ html, body {
   margin: 5%; }
   .content h1 {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 25px 0; }
   .content h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 15px 0 5px; }
   .content h4 {
     font-size: 1.6em;
@@ -104,7 +104,7 @@ html, body {
     margin: 5px 0; }
   .content h3 {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 25px 0 15px; }
   .content a, .content a:visited {
     text-decoration: none;

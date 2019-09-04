@@ -19,58 +19,54 @@
 html {
   background: linear-gradient(25deg, #56CCF2, #2F80ED);
   animation: bg 5s linear infinite alternate;
-}
 
-@keyframes bg {
-  0% {
-    background: #56CCF2;
-  }
-  100% {
-    background: #2F80ED;
-  }
-}
-
-body {
-  background: transparent;
-}
-
-.content {
-  h1, h2, h3, h4 {
-    font-weight: 400;
-  }
-
-  h3 {
-    border-top: 2px solid #fff;
-    padding-top: 4px;
-
-    a, a:visited {
-      color: #ddd;
+  @keyframes bg {
+    0% {
+      background: #56CCF2;
     }
-
-    a:hover, a:focus {
-      color: #aaa;
+    100% {
+      background: #2F80ED;
     }
   }
 
-  .contact {
-    li {
-      a, a:visited {
-        color: #F5F7FA;
+  body {
+    background: transparent;
+
+    .content {
+      h3 {
+        border-top: 2px solid #fff;
+        padding-top: 4px;
+
+        a, a:visited {
+          color: #ddd;
+        }
+
+        a:hover, a:focus {
+          color: #aaa;
+        }
       }
 
-      a:hover, a:focus {
-        color: #CCD1D9;
+      .contact {
+        li {
+          a, a:visited {
+            color: #F5F7FA;
+          }
+
+          a:hover, a:focus {
+            color: #CCD1D9;
+          }
+        }
       }
     }
-  }
-}
 
-.particles-js-canvas-el {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  z-index: -1;
+    .particles-js-canvas-el {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
 }

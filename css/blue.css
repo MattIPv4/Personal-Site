@@ -18,36 +18,31 @@
 html {
   background: linear-gradient(25deg, #56CCF2, #2F80ED);
   animation: bg 5s linear infinite alternate; }
-
 @keyframes bg {
   0% {
     background: #56CCF2; }
   100% {
     background: #2F80ED; } }
-body {
-  background: transparent; }
-
-.content h1, .content h2, .content h3, .content h4 {
-  font-weight: 400; }
-.content h3 {
-  border-top: 2px solid #fff;
-  padding-top: 4px; }
-  .content h3 a, .content h3 a:visited {
-    color: #ddd; }
-  .content h3 a:hover, .content h3 a:focus {
-    color: #aaa; }
-.content .contact li a, .content .contact li a:visited {
-  color: #F5F7FA; }
-.content .contact li a:hover, .content .contact li a:focus {
-  color: #CCD1D9; }
-
-.particles-js-canvas-el {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  z-index: -1; }
+  html body {
+    background: transparent; }
+    html body .content h3 {
+      border-top: 2px solid #fff;
+      padding-top: 4px; }
+      html body .content h3 a, html body .content h3 a:visited {
+        color: #ddd; }
+      html body .content h3 a:hover, html body .content h3 a:focus {
+        color: #aaa; }
+    html body .content .contact li a, html body .content .contact li a:visited {
+      color: #F5F7FA; }
+    html body .content .contact li a:hover, html body .content .contact li a:focus {
+      color: #CCD1D9; }
+    html body .particles-js-canvas-el {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      z-index: -1; }
 
 /*# sourceMappingURL=blue.css.map */

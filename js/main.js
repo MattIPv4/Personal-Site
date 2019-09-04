@@ -41,7 +41,8 @@ function randomTheme() {
     // Define all themes
     var themes = [
         'blue',
-        'crt'
+        'crt',
+        'swift'
     ];
 
     // Allow theme selection
