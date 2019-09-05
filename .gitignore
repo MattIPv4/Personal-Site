@@ -2,3 +2,4 @@
 web.config
 .user.ini
 .sass-cache/
+node_modules/

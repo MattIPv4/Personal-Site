@@ -16,6 +16,10 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
+function doParticles(id, config) {
+    if (window.hasOwnProperty('particlesJS')) return window.particlesJS(id, config);
+}
+
 window._theme = function () {
     delete window._theme;
 
@@ -24,7 +28,7 @@ window._theme = function () {
         delete window._callback;
 
         document.body.setAttribute('id', 'body');
-        particlesJS('body', {
+        doParticles('body', {
             'particles': {
                 'number': {
                     'value': 50

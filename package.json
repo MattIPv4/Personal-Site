@@ -1,0 +1,23 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "My humble personal homepage, made with a tiny bit but not much care.",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint js/*",
+    "lint:fix": "eslint js/* --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattIPv4/Personal-Site.git"
+  },
+  "author": "Matt (IPv4)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MattIPv4/Personal-Site/issues"
+  },
+  "homepage": "https://github.com/MattIPv4/Personal-Site#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  }
+}

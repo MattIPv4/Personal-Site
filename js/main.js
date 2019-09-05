@@ -48,7 +48,7 @@ function pickTheme() {
     var url = new URL(window.location.href);
     var theme = url.searchParams.get('theme');
     if (theme && themes.indexOf(theme.toString().toLowerCase()) !== -1) {
-        return loadTheme(theme.toString().toLowerCase())
+        return loadTheme(theme.toString().toLowerCase());
     }
 
     // Random theme

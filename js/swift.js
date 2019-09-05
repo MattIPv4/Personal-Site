@@ -43,7 +43,7 @@ function hello() {
 }
 
 function taglines() {
-    const elms = document.querySelectorAll('.content h2');
+    var elms = document.querySelectorAll('.content h2');
     for (var i = 0; i < elms.length; i++) {
         var elm = elms[i];
         var cmd = document.createElement('span');
