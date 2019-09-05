@@ -4,8 +4,10 @@
   "description": "My humble personal homepage, made with a tiny bit but not much care.",
   "main": "index.html",
   "scripts": {
-    "lint": "eslint js/*",
-    "lint:fix": "eslint js/* --fix"
+    "lint": "npm run lint:js && npm run lint:html",
+    "lint:js": "eslint js/*",
+    "lint:js:fix": "eslint js/* --fix",
+    "lint:html": "linthtml *.html"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/MattIPv4/Personal-Site#readme",
   "devDependencies": {
+    "@linthtml/linthtml": "^0.2.6",
     "eslint": "^6.3.0"
   }
 }
