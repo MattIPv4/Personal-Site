@@ -4,15 +4,16 @@
   "description": "My humble personal homepage, made with a tiny bit but not much care.",
   "main": "index.html",
   "scripts": {
-    "lint": "npm run lint:js && npm run lint:html",
-    "lint:js": "eslint js/*",
-    "lint:js:fix": "eslint js/* --fix",
+    "lint": "npm run lint:js && npm run lint:scss && npm run lint:html",
+    "lint:js": "eslint js/*.js",
+    "lint:js:fix": "eslint js/*.js --fix",
+    "lint:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "lint:html": "linthtml *.html",
     "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static",
     "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
     "build:js": "parcel build js/*.js --out-dir build/js --public-url ./",
     "build:html": "html-minifier index.html -c .htmlminrc -o build/index.html",
-    "build:static": "copyfiles --up 1 static/* static/**/* build"
+    "build:static": "copyfiles --up 1 static/{*,**/*} build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "eslint": "^6.3.0",
     "html-minifier": "^4.0.0",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.23.0-module.beta.1"
+    "sass": "^1.23.0-module.beta.1",
+    "sass-lint": "^1.13.1"
   }
 }

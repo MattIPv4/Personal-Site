@@ -22,6 +22,7 @@ jobs:
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@2.0.0
         env:
+          NODE_ENV: development
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build

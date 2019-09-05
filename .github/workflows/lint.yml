@@ -16,9 +16,14 @@ jobs:
         with:
           node-version: 12.10.0
 
-      - name: npm install and lint
-        run: |
-          npm install
-          npm run lint
+      - name: Install
+        run: npm install
         env:
+          NODE_ENV: development
+          CI: true
+
+      - name: Lint
+        run: npm run lint
+        env:
+          NODE_ENV: development
           CI: true
