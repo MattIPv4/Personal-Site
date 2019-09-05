@@ -36,8 +36,7 @@ function loadTheme(theme) {
     document.body.appendChild(js);
 }
 
-// Pick a random theme and load it
-function randomTheme() {
+function pickTheme() {
     // Define all themes
     var themes = [
         'blue',
@@ -45,16 +44,16 @@ function randomTheme() {
         'swift'
     ];
 
-    // Allow theme selection
+    // Allow URL ?theme selection
     var url = new URL(window.location.href);
     var theme = url.searchParams.get('theme');
     if (theme && themes.indexOf(theme.toString().toLowerCase()) !== -1) {
         return loadTheme(theme.toString().toLowerCase())
     }
 
-    // Random
+    // Random theme
     loadTheme(themes[Math.floor(Math.random() * themes.length)]);
 }
 
 // Go!
-randomTheme();
+pickTheme();

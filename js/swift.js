@@ -27,12 +27,14 @@ function hello() {
     var title = document.querySelector('.content h1');
     title.textContent = ', I\'m ' + title.textContent + '. ';
     var hello = document.createElement('span');
-    'Hello'.split('').forEach((l, i) => {
+    var chars = 'Hello'.split('');
+    for (var i = 0; i < chars.length; i++) {
+        var char = chars[i];
         var span = document.createElement('span');
         span.style.color = colors[i % colors.length];
-        span.textContent = l;
+        span.textContent = char;
         hello.appendChild(span);
-    });
+    }
     title.insertBefore(hello, title.childNodes[0] || null);
     var cur = document.createElement('span');
     cur.className = 'cursor';
@@ -41,7 +43,9 @@ function hello() {
 }
 
 function taglines() {
-    document.querySelectorAll('.content h2').forEach(elm => {
+    const elms = document.querySelectorAll('.content h2');
+    for (var i = 0; i < elms.length; i++) {
+        var elm = elms[i];
         var cmd = document.createElement('span');
         cmd.textContent = 'print';
         cmd.className = 'print-cmd';
@@ -55,7 +59,7 @@ function taglines() {
         elm.appendChild(open);
         elm.appendChild(txt);
         elm.appendChild(close);
-    });
+    }
 }
 
 function email() {
