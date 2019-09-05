@@ -5,7 +5,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "rules": {
-        "camelcase": ["error"],
+        "camelcase": "error",
 
         "comma-dangle": ["error", {
             "arrays": "never",
