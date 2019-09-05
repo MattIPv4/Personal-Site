@@ -17,7 +17,7 @@
  */
 
 function doParticles(id, config) {
-    if (window.hasOwnProperty('particlesJS')) return window.particlesJS(id, config);
+    if (Object.prototype.hasOwnProperty.call(window, 'particlesJS')) return window.particlesJS(id, config);
 }
 
 window._theme = function () {
