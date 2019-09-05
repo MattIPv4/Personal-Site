@@ -2,4 +2,6 @@
 web.config
 .user.ini
 .sass-cache/
+.cache/
 node_modules/
+build/

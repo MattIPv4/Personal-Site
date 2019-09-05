@@ -4,11 +4,15 @@
   "description": "My humble personal homepage, made with a tiny bit but not much care.",
   "main": "index.html",
   "scripts": {
-    "test": "npm run lint",
     "lint": "npm run lint:js && npm run lint:html",
     "lint:js": "eslint js/*",
     "lint:js:fix": "eslint js/* --fix",
-    "lint:html": "linthtml *.html"
+    "lint:html": "linthtml *.html",
+    "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static",
+    "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
+    "build:js": "parcel build js/*.js --out-dir build/js --public-url ./",
+    "build:html": "html-minifier index.html -c .htmlminrc -o build/index.html",
+    "build:static": "copyfiles --up 1 static/* static/**/* build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,10 @@
   "homepage": "https://github.com/MattIPv4/Personal-Site#readme",
   "devDependencies": {
     "@linthtml/linthtml": "^0.2.6",
-    "eslint": "^6.3.0"
+    "copyfiles": "^2.1.1",
+    "eslint": "^6.3.0",
+    "html-minifier": "^4.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.23.0-module.beta.1"
   }
 }
