@@ -16,13 +16,14 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-html, body {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  font-family: 'Ubuntu Mono', monospace;
-  color: #fff;
+html,
+body {
   background: #0d0e1a;
+  color: #fff;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .content {
@@ -52,39 +53,41 @@ html, body {
     margin: 25px 0 15px;
   }
 
-  a, a:visited {
+  a,
+  a:visited {
+    color: #34d;
     text-decoration: none;
-    color: #333fdd;
     transition: color .2s;
   }
 
-  a:hover, a:focus {
-    color: #5588ff;
+  a:hover,
+  a:focus {
+    color: #58f;
   }
 
   .contact {
-    list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
+    list-style: none;
     margin-top: 20px;
+    padding: 0;
 
     li {
-      font-weight: 400;
-      font-size: 1.2em;
-      margin: 0 0 10px 10px;
       display: inline-block;
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 0 0 10px 10px;
 
       a {
         small {
-          opacity: 0.8;
-          font-size: 0.95em;
+          font-size: .95em;
+          opacity: .8;
         }
 
         i {
-          opacity: 0.8;
-          font-size: 0.8em;
+          font-size: .8em;
+          opacity: .8;
         }
       }
     }
