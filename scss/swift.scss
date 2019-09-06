@@ -16,7 +16,8 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-html, body {
+html,
+body {
   background: #292b37;
 }
 
@@ -26,38 +27,45 @@ html, body {
   }
 
   h2 {
-    margin: 25px 0;
     font-size: 1.5em;
+    margin: 25px 0;
   }
 
   h4 {
-    margin: 25px 0;
     font-size: 1.35em;
+    margin: 25px 0;
   }
 
   .cursor {
-    width: 2px;
-    position: relative;
+    animation: blink 1.2s linear infinite;
+    background: #fff;
+    color: transparent;
     display: inline-block;
     left: -.35em;
-    animation: blink 1.2s linear infinite;
-    color: transparent;
-    background: #fff;
+    position: relative;
+    width: 2px;
   }
 
   @keyframes blink {
+    0% {
+      background: #fff;
+    }
+
     49% {
       background: transparent;
     }
+
     50% {
       background: #fff;
     }
+
     100% {
       background: #fff;
     }
   }
 
-  .print-cmd, .contact li a b {
+  .print-cmd,
+  .contact li a b {
     color: #00aba4;
   }
 
@@ -70,30 +78,35 @@ html, body {
   }
 
   .let-var {
-    color: #D18E62;
+    color: #d18e62;
   }
 
   .func-cmd {
     color: #94c66e;
   }
 
-  .func-txt, a, a:visited {
+  .func-txt,
+  a,
+  a:visited {
     color: #8884c5;
   }
 
-  a:focus, a:hover {
+  a:focus,
+  a:hover {
     color: #4d4985;
   }
 
-  .comment, h4, .contact li a i {
+  .comment,
+  h4,
+  .contact li a i {
     color: #52bc57;
     text-decoration: none;
 
-    &:before {
+    &::before {
       content: "/* ";
     }
 
-    &:after {
+    &::after {
       content: " */";
     }
   }
@@ -108,7 +121,7 @@ html, body {
 
       a {
         b {
-          &:before {
+          &::before {
             color: #fff;
             content: "\"";
           }
@@ -117,9 +130,9 @@ html, body {
         small {
           font-size: 1em;
 
-          &:after {
+          &::after {
             color: #fff;
-            content: "\", "
+            content: "\", ";
           }
         }
 
