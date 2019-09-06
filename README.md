@@ -1,7 +1,7 @@
 <!-- Source: https://github.com/MattIPv4/template/blob/master/README.md -->
 
 <!-- Title -->
-<h1 align="center" id="Personal-Site">
+<h1 align="center" id="personal-site">
     Personal Site
 </h1>
 
@@ -10,7 +10,6 @@
 
 <!-- Badges -->
 <p align="center">
-    <img src="https://img.shields.io/badge/php-7.x-blue.svg?style=flat-square" alt="PHP Versions">
     <a href="http://slack.mattcowley.co.uk/" target="_blank">
         <img src="https://img.shields.io/badge/slack-MattIPv4-blue.svg?style=flat-square" alt="Slack">
     </a>
@@ -21,8 +20,7 @@
 <!-- Content -->
 ## mattcowley.co.uk
 
-This is my little custom homepage website, made using good ol' PHP.\
-Designed to run multiple different themes with the same principle content from config.php & projects.yaml
+This is my little custom homepage website, using GitHub Actions to build & deploy to gh-pages.
 
 <!-- Contributing -->
 ## Contributing
@@ -46,6 +44,7 @@ Need support with this project or have found an issue?
 Not found what you need?
 * Create a GitHub issue here to report the situation, as much detail as you can!
 * _or,_ You can join our Slack workspace to discuss the issue or to get support for the project:
+
 <a href="http://slack.mattcowley.co.uk/" target="_blank">
     <img src="https://img.shields.io/badge/slack-MattIPv4-blue.svg?logo=slack&logoWidth=30&logoColor=blue&style=popout-square" alt="Slack" height="60">
 </a>

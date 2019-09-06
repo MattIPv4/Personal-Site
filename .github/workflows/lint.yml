@@ -1,0 +1,29 @@
+name: Linting
+
+on: [push, pull_request]
+
+jobs:
+  install-and-lint:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Use Node.js 12.10.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.10.0
+
+      - name: Install
+        run: npm install
+        env:
+          NODE_ENV: development
+          CI: true
+
+      - name: Lint
+        run: npm run lint
+        env:
+          NODE_ENV: development
+          CI: true

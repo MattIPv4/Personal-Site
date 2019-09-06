@@ -1,0 +1,77 @@
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
+
+html {
+  animation: bg 5s linear infinite alternate;
+  background: linear-gradient(25deg, #56ccf2, #2f80ed);
+
+  @keyframes bg {
+    0% {
+      background: #56ccf2;
+    }
+
+    100% {
+      background: #2f80ed;
+    }
+  }
+
+  body {
+    background: transparent;
+
+    .content {
+      h3 {
+        border-top: 2px solid #fff;
+        padding-top: 4px;
+
+        a,
+        a:visited {
+          color: #ddd;
+        }
+
+        a:hover,
+        a:focus {
+          color: #aaa;
+        }
+      }
+
+      .contact {
+        li {
+          a,
+          a:visited {
+            color: #f5f7fa;
+          }
+
+          a:hover,
+          a:focus {
+            color: #ccd1d9;
+          }
+        }
+      }
+    }
+
+    .particles-js-canvas-el {
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}
