@@ -19,6 +19,14 @@ jobs:
         with:
           node-version: 12.10.0
 
+      - name: Install and Lint
+        run: |
+          npm ci
+          npm run lint
+        env:
+          NODE_ENV: development
+          CI: true
+
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@2.0.0
         env:
@@ -26,4 +34,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+          BUILD_SCRIPT: npm ci && npm run build

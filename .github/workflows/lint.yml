@@ -17,7 +17,7 @@ jobs:
           node-version: 12.10.0
 
       - name: Install
-        run: npm install
+        run: npm ci
         env:
           NODE_ENV: development
           CI: true
