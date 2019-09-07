@@ -8,7 +8,7 @@
     "lint:js": "eslint js/*.js",
     "lint:js:fix": "eslint js/*.js --fix",
     "lint:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
-    "lint:html": "linthtml *.html",
+    "lint:html": "linthtml templates/*.html",
     "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static",
     "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
     "build:js": "parcel build js/*.js --out-dir build/js --public-url ./",
@@ -31,7 +31,11 @@
     "eslint": "^6.3.0",
     "html-minifier": "^4.0.0",
     "parcel-bundler": "^1.12.3",
+    "posthtml": "^0.11.6",
+    "posthtml-expressions": "^1.1.1",
+    "posthtml-include": "^1.2.0",
     "sass": "^1.23.0-module.beta.1",
-    "sass-lint": "^1.13.1"
+    "sass-lint": "^1.13.1",
+    "yaml": "^1.6.0"
   }
 }

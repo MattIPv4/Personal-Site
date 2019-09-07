@@ -1,0 +1,27 @@
+<div class="project-outer">
+    <div class="project">
+        <a href="{{ link }}" target="_blank" rel="noopener">
+            <p class="project-title"><b>{{ name }}</b></p>
+        </a>
+        <div class="project-hide">
+            <a href="{{ link }}" target="_blank" rel="noopener">
+                <p class="project-link">{{ link }}</p>
+            </a>
+            <p class="project-tools">
+                <each loop="icon, index in icons">
+                    <if condition="index !== 0"> / </if>
+                    <i class="{{ icon.classes }}"><span class="tip">{{ icon.name }}</span></i>
+                </each>
+            </p>
+            <p class="project-desc" markdown>
+                {{ desc }}
+            </p>
+        </div>
+        <a href="{{ link }}" target="_blank" rel="noopener">
+            <div class="project-img"
+                 style="background-image:url({{ image }});background-position:{{ position }} center;background-size:cover;">
+                <img src="{{ image }}" alt="{{ name }}"/>
+            </div>
+        </a>
+    </div>
+</div>
