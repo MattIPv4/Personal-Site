@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "1.0.0",
   "description": "My humble personal homepage, made with a tiny bit but not much care.",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "lint": "npm run lint:js && npm run lint:scss && npm run lint:html",
     "lint:js": "eslint *.js",
@@ -32,6 +32,7 @@
     "copyfiles": "^2.1.1",
     "eslint": "^6.3.0",
     "html-minifier": "^4.0.0",
+    "markdown-it": "^9.1.0",
     "parcel-bundler": "^1.12.3",
     "posthtml": "^0.11.6",
     "posthtml-expressions": "^1.1.1",
