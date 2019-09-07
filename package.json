@@ -5,14 +5,16 @@
   "main": "index.html",
   "scripts": {
     "lint": "npm run lint:js && npm run lint:scss && npm run lint:html",
-    "lint:js": "eslint js/*.js",
-    "lint:js:fix": "eslint js/*.js --fix",
+    "lint:js": "eslint *.js",
+    "lint:js:fix": "eslint *.js --fix",
     "lint:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "lint:html": "linthtml templates/*.html",
     "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static",
     "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
     "build:js": "parcel build js/*.js --out-dir build/js --public-url ./",
-    "build:html": "html-minifier index.html -c .htmlminrc -o build/index.html",
+    "build:html": "npm run build:html:posthtml && npm run build:html:minify",
+    "build:html:posthtml": "node index.js",
+    "build:html:minify": "html-minifier build/index.html -c .htmlminrc -o build/index.html",
     "build:static": "copyfiles --up 1 static/{*,**/*} build"
   },
   "repository": {

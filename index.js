@@ -1,9 +1,5 @@
-const { readFileSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 const { parse } = require('yaml');
-
-const posthtml = require('posthtml');
-const expressions = require('posthtml-expressions');
-const include = require('posthtml-include');
 
 const toolMap = {
     'phpstorm': 'devicon-phpstorm-plain',
@@ -51,7 +47,6 @@ const toolMap = {
     'slack': 'fab fa-slack'
 };
 
-const html = readFileSync('templates/index.html', 'utf8');
 const yaml = parse(readFileSync('projects.yaml', 'utf8'));
 const projects = Object.keys(yaml).map(key => {
     const data = yaml[key];
@@ -71,9 +66,15 @@ const projects = Object.keys(yaml).map(key => {
     return data;
 }).filter(x => x.display);
 
+const posthtml = require('posthtml');
+const expressions = require('posthtml-expressions');
+const include = require('posthtml-include');
+
+const html = readFileSync('templates/index.html', 'utf8');
+
 posthtml([
     include({ encoding: 'utf8' }),
     expressions({ locals: { projects } }),
 ])
     .process(html)
-    .then((result) => console.log(result.html));
+    .then((result) => writeFileSync('build/index.html', result.html, { flag: 'w+' }));
