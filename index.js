@@ -20,6 +20,7 @@ const { readFileSync, writeFileSync } = require('fs');
 const { parse } = require('yaml');
 const md = require('markdown-it')();
 
+// Define all the icons for the tools
 const toolMap = {
     'phpstorm': 'devicon-phpstorm-plain',
     'webstorm': 'devicon-webstorm-plain',
@@ -66,10 +67,11 @@ const toolMap = {
     'slack': 'fab fa-slack'
 };
 
+// Get the projects in a usable data format
 const yaml = parse(readFileSync('projects.yaml', 'utf8'));
 const projects = Object.keys(yaml).map(key => {
-    const data = yaml[key];
     // Name
+    const data = yaml[key];
     data.name = key;
 
     // Icons
@@ -77,8 +79,8 @@ const projects = Object.keys(yaml).map(key => {
         const key = tool.toString().toLowerCase();
         if (!(key in toolMap)) return tool;
         return {
-            "classes": toolMap[key],
-            "name": tool
+            classes: toolMap[key],
+            name: tool
         };
     });
 
@@ -88,12 +90,15 @@ const projects = Object.keys(yaml).map(key => {
     return data;
 }).filter(x => x.display);
 
+// Load all the PostHTML requirements
 const posthtml = require('posthtml');
 const expressions = require('posthtml-expressions');
 const include = require('posthtml-include');
 
+// Get the source html
 const html = readFileSync('templates/index.html', 'utf8');
 
+// Render it
 posthtml([
     include({ encoding: 'utf8' }),
     expressions({ locals: { projects } }),
