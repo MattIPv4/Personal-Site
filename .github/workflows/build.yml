@@ -32,6 +32,7 @@ jobs:
         env:
           NODE_ENV: development
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          CNAME: mattcowley.co.uk
           BRANCH: gh-pages
           FOLDER: build
           BUILD_SCRIPT: npm ci && npm run build
