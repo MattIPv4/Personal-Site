@@ -9,13 +9,14 @@
     "test:js:fix": "eslint *.js --fix",
     "test:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "test:html": "linthtml templates/*.html",
-    "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static",
+    "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static && npm run build:images",
     "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
     "build:js": "parcel build js/*.js --out-dir build/js --public-url ./",
     "build:html": "npm run build:html:posthtml && npm run build:html:minify",
     "build:html:posthtml": "node index.js",
     "build:html:minify": "html-minifier build/index.html -c .htmlminrc -o build/index.html",
-    "build:static": "copyfiles --up 1 static/{*,**/*} build"
+    "build:static": "copyfiles --up 1 static/{*,**/*} build",
+    "build:images": "node images/main.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "posthtml-include": "^1.2.0",
     "sass": "^1.23.0-module.beta.1",
     "sass-lint": "^1.13.1",
+    "sharp": "^0.23.0",
     "yaml": "^1.6.0"
   }
 }

@@ -2,7 +2,7 @@ DigitalOcean:
   display: true
   type: "Community"
   link: "https://digitalocean.com/community"
-  image: "projects/digitalocean.png"
+  image: "digitalocean"
   position: "center"
   tools:
     - Slack
@@ -21,7 +21,7 @@ cdnjs.com:
   display: true
   type: "Community"
   link: "https://cdnjs.com"
-  image: "projects/cdnjs.png"
+  image: "cdnjs"
   position: "center"
   tools:
     - Discourse
@@ -43,7 +43,7 @@ MagicCap:
   display: true
   type: "Web / Application"
   link: "https://magiccap.me"
-  image: "projects/magiccap.png"
+  image: "magiccap"
   position: "center"
   tools:
     - WebStorm
@@ -66,7 +66,7 @@ js.org:
   display: true
   type: "Community"
   link: "https://js.org"
-  image: "projects/js-org.png"
+  image: "js-org"
   position: "center"
   tools:
     - Git
@@ -81,7 +81,7 @@ PyDMXControl:
   display: true
   type: "Python"
   link: "https://github.com/MattIPv4/PyDMXControl"
-  image: "projects/pydmxcontrol.png"
+  image: "pydmxcontrol"
   position: "center"
   tools:
     - PyCharm
@@ -98,7 +98,7 @@ macOSNotifJS:
   display: true
   type: "Web / Plugin"
   link: "https://macosnotif.js.org/"
-  image: "projects/macosnotifjs.png"
+  image: "macosnotifjs"
   position: "top"
   tools:
     - WebStorm
@@ -119,7 +119,7 @@ JetBrains Community:
   display: false
   type: "Community"
   link: "https://discord.gg/dJK27sh"
-  image: "projects/jetbrains-community.png"
+  image: "jetbrains-community"
   position: "center"
   tools:
     - PyCharm
@@ -136,7 +136,7 @@ BotBlock:
   display: false
   type: "Web / API"
   link: "https://botblock.org/"
-  image: "projects/botblock.png"
+  image: "botblock"
   position: "top"
   tools:
       - PhpStorm
@@ -158,7 +158,7 @@ Unreal Designs:
   display: false
   type: "Web / Business"
   link: "https://unreal-designs.co.uk/"
-  image: "projects/unreal-designs.png"
+  image: "unreal-designs"
   position: "top"
   tools:
       - PHPStorm
@@ -179,7 +179,7 @@ Discord Bots:
   display: false
   type: "Web / Application"
   link: "https://botz.mattcowley.co.uk/"
-  image: "projects/discord-bots.png"
+  image: "discord-bots"
   position: "top"
   tools:
       - PHPStorm
@@ -201,7 +201,7 @@ Rythm Homepage:
   display: false
   type: "Web"
   link: "https://rythmbot.co/"
-  image: "projects/rythmbot.png"
+  image: "rythmbot"
   position: "top"
   tools:
       - PHPStorm
@@ -221,7 +221,7 @@ Young Theatre:
   display: false
   type: "Theatre"
   link: "https://www.youngtheatre.org.uk/"
-  image: "projects/youngtheatre-panto2016.jpg"
+  image: "youngtheatre-panto2016"
   position: "top"
   tools:
       - Jands Vista
