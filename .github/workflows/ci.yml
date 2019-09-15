@@ -1,12 +1,9 @@
-name: Build and Deploy
+name: CI
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
-  build-and-deploy:
+  test-build-deploy:
 
     runs-on: ubuntu-latest
 
@@ -14,25 +11,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Use Node.js 12.10.0
+      - name: Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 12.10.0
 
-      - name: Install and Lint
-        run: |
-          npm ci
-          npm run lint
+      - name: Install
+        run: npm ci
         env:
           NODE_ENV: development
           CI: true
 
-      - name: Build and Deploy
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@2.0.0
         env:
-          NODE_ENV: development
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          CNAME: mattcowley.co.uk
+          BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: npm ci && npm run build
