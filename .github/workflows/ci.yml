@@ -33,6 +33,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@2.0.0
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          CNAME: mattcowley.co.uk
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: build
