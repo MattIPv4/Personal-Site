@@ -39,6 +39,21 @@ cdnjs.com:
     with the sponsors of the project including [Cloudflare](https://cloudflare.com) and
     [StatusPage](https://statuspage.io) to ensure the CDN service is maintained.
 
+js.org:
+  display: true
+  type: "Community"
+  link: "https://js.org"
+  image: "js-org"
+  position: "center"
+  tools:
+    - Git
+    - GitHub
+  desc: |
+    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
+    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
+    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
+    active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
+
 MagicCap:
   display: true
   type: "Web / Application"
@@ -61,21 +76,6 @@ MagicCap:
     the UI. However, I soon became heavily involved with the project, responsible for the majority of the user interface
     but also the user experience that it provided. I now also handle a large amount of organization administration,
     reviewing PRs and managing error reports.
-
-js.org:
-  display: true
-  type: "Community"
-  link: "https://js.org"
-  image: "js-org"
-  position: "center"
-  tools:
-    - Git
-    - GitHub
-  desc: |
-    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
-    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
-    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
-    active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
 
 PyDMXControl:
   display: true
