@@ -1,0 +1,213 @@
+/**
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2020 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+ */
+
+$dark: #000a19;
+$blue: #0069ff;
+$white: #fff;
+$black: #000;
+
+html,
+body {
+  background: $dark;
+}
+
+.content {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+
+  &,
+  > section,
+  > section > .inner,
+  > section > .inner > .inner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > section {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3rem;
+    min-height: 100vh;
+    max-width: 1200px;
+
+    &#main {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border: 2px solid $black;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        width: 200px;
+        background: $white;
+      }
+
+      &::after {
+        width: 120px;
+        border-radius: 60px;
+        height: 160px;
+        background: $dark;
+        bottom: 60px;
+      }
+
+      > .inner {
+        align-items: flex-start;
+        border: 2px solid $black;
+        border-radius: 4px;
+        z-index: 1;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          border: 2px solid $black;
+          left: 50%;
+          transform: translateX(-50%);
+          max-width: 100%;
+          width: 400px;
+          border-radius: 4px;
+          height: 35px;
+          background: $white;
+          bottom: 0;
+        }
+
+        > .inner2 {
+          align-items: flex-start;
+          border: 8px solid $white;
+          border-radius: 4px;
+          padding: .75rem;
+          background: $dark;
+          z-index: 2;
+
+          h1, h2, h4 {
+            text-align: left;
+          }
+
+          h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $blue;
+            position: relative;
+            margin-top: 0;
+
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: -14px;
+              height: 4px;
+              width: 100%;
+              background: $white;
+            }
+          }
+
+          h2,
+          h4,
+          .projects-link {
+            font-size: 1.2rem;
+            font-weight: 400;
+          }
+
+          .email,
+          a {
+            font-weight: 600;
+            font-size: 1.6rem;
+          }
+
+          a {
+            color: $blue;
+
+            &,
+            small,
+            i {
+              transition: color .3s ease-in-out;
+            }
+
+            &:hover {
+              &,
+              small,
+              i {
+                color: #fff;
+              }
+            }
+          }
+
+          .contact {
+            margin-left: -10px;
+
+            b {
+              color: #fff;
+            }
+
+            small,
+            i {
+              color: $blue;
+              opacity: 1;
+            }
+          }
+
+          .projects-link {
+            color: #fff;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+
+            i {
+              font-size: 1.3em;
+              font-weight: 600;
+              color: $blue;
+              margin-right: .25em;
+            }
+          }
+        }
+      }
+    }
+
+    &#projects {
+      .projects {
+        margin: 0 -15px;
+
+        .project {
+          a {
+            .project-link {
+              color: $blue;
+            }
+
+            &:hover {
+              .project-link {
+                color: $dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
