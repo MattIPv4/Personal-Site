@@ -1,4 +1,4 @@
-DigitalOcean:
+DigitalOcean Community:
   display: true
   type: "Community"
   link: "https://digitalocean.com/community"
@@ -17,7 +17,7 @@ DigitalOcean:
     ensure all users have a great time as well as working with the engineering team for the community sites to bring
     better experiences to our users.
 
-cdnjs.com:
+cdnjs.com - Cloudflare:
   display: true
   type: "Community"
   link: "https://cdnjs.com"
@@ -33,11 +33,12 @@ cdnjs.com:
     - Photoshop
   desc: |
     **cdnjs is a free and open-source CDN service that serves resources to
-    [9.2% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I volunteer my time with
-    cdnjs, working with the community around the project through [Twitter](https://twitter.com/cdnjs),
-    [GitHub](https://github.com/cdnjs/cdnjs) and our [Discourse forum](https://cdnjs.discourse.group/). I also work
-    with the sponsors of the project including [Cloudflare](https://cloudflare.com) and
-    [StatusPage](https://statuspage.io) to ensure the CDN service is maintained.
+    [10.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
+    [Cloudflare](https://cloudflare.com) on contract to help maintain and moderate cdnjs, working with the community
+    around the project through [Twitter](https://twitter.com/cdnjs), [GitHub](https://github.com/cdnjs/cdnjs) and our
+    [Discourse forum](https://cdnjs.discourse.group/). I also work with the sponsors of the project such as
+    [Algolia](https://algolia.com) and [StatusPage](https://statuspage.io) to ensure the CDN service and website are
+    maintained.
 
 js.org:
   display: true
