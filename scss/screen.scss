@@ -26,55 +26,97 @@ body {
   background: $dark;
 }
 
+@keyframes bg-scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
 .content {
   margin: 0;
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+
+  .bg {
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    > div {
+      height: 100%;
+      transform: translateX(-5%) rotate(-3deg) translateY(3vw);
+      width: 110%;
+
+      &::before {
+        animation: bg-scroll linear 45s infinite;
+        background-image: url("img/cubes.svg");
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        background-size: contain;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 65%;
+        left: 0;
+        opacity: .15;
+        position: absolute;
+        width: 200%;
+      }
+    }
+  }
 
   &,
   > section,
   > section > .inner,
   > section > .inner > .inner2 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 
   > section {
-    font-family: 'Open Sans', sans-serif;
-    padding: 3rem;
-    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
     max-width: 1200px;
+    min-height: 100vh;
+    padding: 3rem;
 
     &#main {
       position: relative;
 
       &::before,
       &::after {
-        content: '';
-        display: block;
-        position: absolute;
         border: 2px solid $black;
+        content: "";
+        display: block;
         left: 50%;
-        transform: translateX(-50%);
         max-width: 100%;
+        position: absolute;
+        transform: translateX(-50%);
       }
 
       &::before {
+        background: $white;
+        bottom: 0;
         position: absolute;
         top: 50%;
-        bottom: 0;
         width: 200px;
-        background: $white;
       }
 
       &::after {
-        width: 120px;
-        border-radius: 60px;
-        height: 160px;
         background: $dark;
+        border-radius: 60px;
         bottom: 60px;
+        height: 160px;
+        width: 120px;
       }
 
       > .inner {
@@ -84,47 +126,49 @@ body {
         z-index: 1;
 
         &::after {
-          content: '';
-          display: block;
-          position: absolute;
-          border: 2px solid $black;
-          left: 50%;
-          transform: translateX(-50%);
-          max-width: 100%;
-          width: 400px;
-          border-radius: 4px;
-          height: 35px;
           background: $white;
+          border: 2px solid $black;
+          border-radius: 4px;
           bottom: 0;
+          content: "";
+          display: block;
+          height: 35px;
+          left: 50%;
+          max-width: 100%;
+          position: absolute;
+          transform: translateX(-50%);
+          width: 400px;
         }
 
         > .inner2 {
           align-items: flex-start;
+          background: $dark;
           border: 8px solid $white;
           border-radius: 4px;
           padding: .75rem;
-          background: $dark;
           z-index: 2;
 
-          h1, h2, h4 {
+          h1,
+          h2,
+          h4 {
             text-align: left;
           }
 
           h1 {
+            color: $blue;
             font-size: 2.5rem;
             font-weight: 700;
-            color: $blue;
-            position: relative;
             margin-top: 0;
+            position: relative;
 
             &::after {
-              content: '';
-              display: block;
-              position: absolute;
-              bottom: -14px;
-              height: 4px;
-              width: 100%;
               background: $white;
+              bottom: -14px;
+              content: "";
+              display: block;
+              height: 4px;
+              position: absolute;
+              width: 100%;
             }
           }
 
@@ -137,8 +181,8 @@ body {
 
           .email,
           a {
-            font-weight: 600;
             font-size: 1.6rem;
+            font-weight: 600;
           }
 
           a {
@@ -154,7 +198,7 @@ body {
               &,
               small,
               i {
-                color: #fff;
+                color: $white;
               }
             }
           }
@@ -163,7 +207,7 @@ body {
             margin-left: -10px;
 
             b {
-              color: #fff;
+              color: $white;
             }
 
             small,
@@ -174,15 +218,15 @@ body {
           }
 
           .projects-link {
-            color: #fff;
-            margin-top: 2rem;
+            color: $white;
             display: flex;
             flex-direction: row;
+            margin-top: 2rem;
 
             i {
+              color: $blue;
               font-size: 1.3em;
               font-weight: 600;
-              color: $blue;
               margin-right: .25em;
             }
           }

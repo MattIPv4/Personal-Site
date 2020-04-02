@@ -62,4 +62,10 @@ window._theme = function () {
     span.appendChild(document.createTextNode(' Featured Projects'));
     a.appendChild(span);
     inner2.appendChild(a);
+
+    // Add the animated bg
+    var bg = document.createElement('div');
+    bg.className = 'bg';
+    bg.appendChild(document.createElement('div'));
+    content.insertBefore(bg, content.firstChild);
 };
