@@ -67,6 +67,12 @@ body {
   .print-cmd,
   .contact li a b {
     color: #00aba4;
+    transition: color .2s;
+  }
+
+  .contact li a:focus b,
+  .contact li a:hover b {
+    color: #007873;
   }
 
   .print-txt {
