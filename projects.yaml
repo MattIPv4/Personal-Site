@@ -53,7 +53,7 @@ js.org:
     **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
     for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
     subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
-    active CNAMEs. My main task is to review all new pull requests to enure they meet our standards.
+    active CNAMEs. My main task is to review all new pull requests to ensure they meet our standards.
 
 MagicCap:
   display: true
