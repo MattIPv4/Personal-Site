@@ -31,20 +31,20 @@
   },
   "homepage": "https://github.com/MattIPv4/Personal-Site#readme",
   "devDependencies": {
-    "@linthtml/linthtml": "^0.2.6",
-    "copyfiles": "^2.1.1",
-    "eslint": "^6.3.0",
+    "@linthtml/linthtml": "^0.5.1",
+    "copyfiles": "^2.4.0",
+    "eslint": "^7.13.0",
     "html-minifier": "^4.0.0",
     "http-server": "^0.12.3",
-    "markdown-it": "^9.1.0",
+    "markdown-it": "^12.0.2",
     "nodemon": "^2.0.6",
-    "parcel-bundler": "^1.12.3",
-    "posthtml": "^0.11.6",
-    "posthtml-expressions": "^1.1.1",
-    "posthtml-include": "^1.2.0",
-    "sass": "^1.23.0-module.beta.1",
+    "parcel-bundler": "^1.12.4",
+    "posthtml": "^0.13.4",
+    "posthtml-expressions": "^1.6.2",
+    "posthtml-include": "^1.6.0",
+    "sass": "^1.29.0",
     "sass-lint": "^1.13.1",
-    "sharp": "^0.23.0",
-    "yaml": "^1.6.0"
+    "sharp": "^0.26.2",
+    "yaml": "^1.10.0"
   }
 }
