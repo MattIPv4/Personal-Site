@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2020 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -114,29 +114,63 @@ body {
       }
     }
 
-    h3,
-    h3 * {
-      color: rgba(129, 243, 253, 1);
-      font-size: 2.25rem;
-      letter-spacing: -.01rem;
-      margin-top: 4rem;
-      opacity: .75;
-      text-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
+    h2,
+    h3 {
+      &,
+      * {
+        color: rgba(129, 243, 253, 1);
+        letter-spacing: -.01rem;
+        text-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
 
-      &::selection {
-        background: rgba(129, 243, 253, 1);
-        color: #fff;
+        &::selection {
+          background: rgba(129, 243, 253, 1);
+          color: #fff;
+        }
       }
     }
 
-    h3 a,
-    h3 a:visited {
-      color: rgba(178, 255, 253, 1);
+    h2 {
+      opacity: .8;
+
+      &,
+      * {
+        font-size: 2.25rem;
+      }
     }
 
-    h3 a:hover,
-    h3 a:focus {
-      color: rgba(129, 243, 253, 1);
+    h3 {
+      opacity: .7;
+
+      &,
+      * {
+        font-size: 2rem;
+      }
+    }
+
+    h4,
+    h3.email {
+      margin-top: 45px;
+    }
+
+    h3,
+    ul {
+      a {
+        &,
+        &:visited {
+          color: rgba(239, 253, 255, 1);
+          text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+        }
+
+        &:hover,
+        &:focus {
+          color: rgba(178, 255, 253, 1);
+        }
+
+        &::selection {
+          background: rgba(239, 253, 255, 1);
+          color: #111;
+        }
+      }
     }
 
     ul {
@@ -155,22 +189,6 @@ body {
 
         a {
           letter-spacing: 0;
-          text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
-
-          &::selection {
-            background: rgba(239, 253, 255, 1);
-            color: #111;
-          }
-        }
-
-        a,
-        a:visited {
-          color: rgba(239, 253, 255, 1);
-        }
-
-        a:hover,
-        a:focus {
-          color: rgba(178, 255, 253, 1);
         }
       }
     }
