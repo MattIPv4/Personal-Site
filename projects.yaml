@@ -1,4 +1,4 @@
-DigitalOcean Community:
+DigitalOcean:
   display: true
   type: "Community"
   link: "https://digitalocean.com/community"
@@ -8,16 +8,19 @@ DigitalOcean Community:
     - Slack
     - Git
     - GitHub
+    - WebStorm
+    - VueJS
     - RubyMine
     - Rails
   desc: |
     **DigitalOcean is a cloud hosting provider with an ever-growing community**. I work remotely with the rest of the
-    community team at DigitalOcean to manage the day-to-day operations of the community
+    community engineering team at DigitalOcean to work on the Community platform, as well as continuing to build out our
+    set of [open-source community tools](https://github.com/topics/digitalocean-community-tools). I malso work with the
+    community management team to help manage the day-to-day operations of the community
     [Questions](https://do.co/questions) & [Tutorials](https://do.co/tutorials) sites, moderating new content posted to
-    ensure all users have a great time as well as working with the engineering team for the community sites to bring
-    better experiences to our users.
+    ensure all users have a great time as well as escalating questions to folks.
 
-cdnjs.com - Cloudflare:
+cdnjs (Cloudflare):
   display: true
   type: "Community"
   link: "https://cdnjs.com"
@@ -33,7 +36,7 @@ cdnjs.com - Cloudflare:
     - Photoshop
   desc: |
     **cdnjs is a free and open-source CDN service that serves resources to
-    [10.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
+    [11.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
     [Cloudflare](https://cloudflare.com) on contract to help maintain and moderate cdnjs, working with the community
     around the project through [Twitter](https://twitter.com/cdnjs), [GitHub](https://github.com/cdnjs/cdnjs) and our
     [Discourse forum](https://cdnjs.discourse.group/). I also work with the sponsors of the project such as
@@ -54,6 +57,46 @@ js.org:
     for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
     subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
     active CNAMEs. My main task is to review all new pull requests to ensure they meet our standards.
+
+Hacktoberfest (DigitalOcean):
+  display: true
+  type: "Community"
+  link: "https://hacktoberfest.digitalocean.com/"
+  image: "hacktoberfest"
+  position: "top"
+  tools:
+    - Twitter
+    - Git
+    - GitHub
+    - RubyMine
+    - Rails
+  desc: |
+    **Hacktoberfest encourages folks to get involved in open source. Open source is changing the world – one pull
+    request at a time**. As part of my work for [DigitalOcean](https://www.digitalocean.com/), I get to help out with
+    their Hacktoberfest program, a community program to encourage folks to participate in open source. Primarily, I help
+    with the social and support engagement, answering support tickets and responding to
+    [tweets](https://twitter.com/hacktoberfest). I also help out our engineering team with the
+    [Hacktoberfest Rails app](https://github.com/digitalocean/hacktoberfest).
+
+1.1.1.1 DNS over Discord (Cloudflare):
+  display: true
+  type: "Web / Application"
+  link: "https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord"
+  image: "dns-over-discord"
+  position: "bottom"
+  tools:
+    - WebStorm
+    - JavaScript
+    - NodeJS
+    - Git
+    - GitHub
+  desc: |
+    **The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
+    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. Written in Node.js,
+    using an Express web server to respond to Discord webhooks for their new
+    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature, the
+    [DNS over Discord (1.1.1.1)](https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord) provides users a
+    free and simple way to make DNS lookups via Discord chat.
 
 MagicCap:
   display: true
