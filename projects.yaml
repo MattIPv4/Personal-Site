@@ -98,6 +98,28 @@ Hacktoberfest (DigitalOcean):
     [DNS over Discord (1.1.1.1)](https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord) provides users a
     free and simple way to make DNS lookups via Discord chat.
 
+PogChampOfTheDay:
+  display: true
+  type: "Web"
+  link: "https://pogchamp.today/"
+  image: "pogchamp"
+  position: "center"
+  tools:
+    - WebStorm
+      - NodeJS
+    - JavaScript
+    - HTML
+    - CSS3
+    - Git
+    - GitHub
+  desc: |
+    **Each day brings a new PogChamp emote to Twitch. View the latest PogChamp of the Day at
+    [pogchamp.today](https://pogchamp.today/)**. This little web application reveals the current PogChamp of the Day on
+    [Twitch](https://www.twitch.tv/), with automation via GitHub Actions to fetch the latest PogChamp emote from the
+    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) and build the updated site. The
+    entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on GitHub
+    Actions and Pages to operate.
+
 MagicCap:
   display: true
   type: "Web / Application"
