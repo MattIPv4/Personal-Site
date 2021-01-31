@@ -92,11 +92,10 @@ Hacktoberfest (DigitalOcean):
     - GitHub
   desc: |
     **The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
-    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. Written in Node.js,
-    using an Express web server to respond to Discord webhooks for their new
-    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature, the
-    [DNS over Discord (1.1.1.1)](https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord) provides users a
-    free and simple way to make DNS lookups via Discord chat.
+    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. The bot is written in
+    JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) -- hosted via
+    [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
+    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
 
 PogChampOfTheDay:
   display: true
