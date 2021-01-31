@@ -160,7 +160,7 @@ PyDMXControl:
     uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
 
 macOSNotifJS:
-  display: true
+  display: false
   type: "Web / Plugin"
   link: "https://macosnotif.js.org/"
   image: "macosnotifjs"
