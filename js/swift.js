@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2020 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,68 +16,68 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-function hello() {
-    var colors = [
+const hello = () => {
+    const colors = [
         '#97C774',
         '#B63E98',
         '#D18E62',
         '#DB3E41',
         '#1BABA5'
     ];
-    var title = document.querySelector('.content h1');
+    const title = document.querySelector('.content h1');
     title.textContent = ', I\'m ' + title.textContent + '. ';
-    var hello = document.createElement('span');
-    var chars = 'Hello'.split('');
-    for (var i = 0; i < chars.length; i++) {
-        var char = chars[i];
-        var span = document.createElement('span');
+    const hello = document.createElement('span');
+    const chars = 'Hello'.split('');
+    for (let i = 0; i < chars.length; i++) {
+        const char = chars[i];
+        const span = document.createElement('span');
         span.style.color = colors[i % colors.length];
         span.textContent = char;
         hello.appendChild(span);
     }
     title.insertBefore(hello, title.childNodes[0] || null);
-    var cur = document.createElement('span');
+    const cur = document.createElement('span');
     cur.className = 'cursor';
     cur.textContent = '|';
     title.appendChild(cur);
-}
+};
 
-function taglines() {
-    var elms = document.querySelectorAll('.content h2, .content h3:not(.email):not(.featured)');
-    for (var i = 0; i < elms.length; i++) {
-        var elm = elms[i];
-        var cmd = document.createElement('span');
+const taglines = () => {
+    const elms = document.querySelectorAll('.content h2, .content h3:not(.email):not(.featured)');
+    for (let i = 0; i < elms.length; i++) {
+        const elm = elms[i];
+        const cmd = document.createElement('span');
         cmd.textContent = 'print';
         cmd.className = 'print-cmd';
-        var open = document.createTextNode('(');
-        var txt = document.createElement('span');
+        const open = document.createTextNode('(');
+        const txt = document.createElement('span');
         txt.textContent = '"' + elm.textContent + '"';
         txt.className = 'print-txt';
-        var close = document.createTextNode(')');
+        const close = document.createTextNode(')');
         elm.innerHTML = '';
         elm.appendChild(cmd);
         elm.appendChild(open);
         elm.appendChild(txt);
         elm.appendChild(close);
     }
-}
+};
 
-function email() {
-    var elm = document.querySelector('.content .email');
-    var lett = document.createElement('span');
+const email = () => {
+    const elm = document.querySelector('.content .email');
+    const lett = document.createElement('span');
     lett.className = 'let';
     lett.textContent = 'let';
-    var contact = document.createTextNode(' Contact = ');
-    var func = document.createElement('span');
+    const contact = document.createTextNode(' Contact = ');
+    const func = document.createElement('span');
     func.className = 'func-cmd';
     func.textContent = 'email';
-    var open = document.createTextNode('("');
-    var link = elm.querySelector('a');
-    var mid = document.createTextNode('", ');
-    var port = document.createElement('span');
+    const open = document.createTextNode('("');
+    const link = elm.querySelector('a');
+    const mid = document.createTextNode('", ');
+    const port = document.createElement('span');
     port.className = 'let-var';
     port.textContent = '25';
-    var close = document.createTextNode(')');
+    const close = document.createTextNode(')');
     elm.innerHTML = '';
     elm.appendChild(lett);
     elm.appendChild(contact);
@@ -87,50 +87,50 @@ function email() {
     elm.appendChild(mid);
     elm.appendChild(port);
     elm.appendChild(close);
-}
+};
 
-function contact() {
+const contact = () => {
     // Before
-    var h3 = document.createElement('h3');
-    var lett = document.createElement('span');
+    const h3Before = document.createElement('h3');
+    const lett = document.createElement('span');
     lett.className = 'let';
     lett.textContent = 'let';
-    var me = document.createTextNode(' Me = ');
-    var func = document.createElement('span');
+    const me = document.createTextNode(' Me = ');
+    const func = document.createElement('span');
     func.className = 'func-cmd';
     func.textContent = 'links';
-    var open = document.createTextNode('([');
-    h3.appendChild(lett);
-    h3.appendChild(me);
-    h3.appendChild(func);
-    h3.appendChild(open);
-    h3.style.marginBottom = '0';
-    document.querySelector('.content .contact').insertAdjacentElement('beforeBegin', h3);
+    const open = document.createTextNode('([');
+    h3Before.appendChild(lett);
+    h3Before.appendChild(me);
+    h3Before.appendChild(func);
+    h3Before.appendChild(open);
+    h3Before.style.marginBottom = '0';
+    document.querySelector('.content .contact').insertAdjacentElement('beforeBegin', h3Before);
 
     // After
-    h3 = document.createElement('h3');
-    var start = document.createTextNode('], ');
-    var bool = document.createElement('span');
+    const h3After = document.createElement('h3');
+    const start = document.createTextNode('], ');
+    const bool = document.createElement('span');
     bool.className = 'let-var';
     bool.textContent = Math.round(Math.random()) ? 'true' : 'false';
-    var end = document.createTextNode(')');
-    h3.appendChild(start);
-    h3.appendChild(bool);
-    h3.appendChild(end);
-    h3.style.marginTop = '0';
-    document.querySelector('.content .contact').insertAdjacentElement('afterEnd', h3);
-}
+    const end = document.createTextNode(')');
+    h3After.appendChild(start);
+    h3After.appendChild(bool);
+    h3After.appendChild(end);
+    h3After.style.marginTop = '0';
+    document.querySelector('.content .contact').insertAdjacentElement('afterEnd', h3After);
+};
 
-function projects() {
+const projects = () => {
     // Before
-    var elm = document.querySelector('.content .featured');
-    var classs = document.createElement('span');
+    const elm = document.querySelector('.content .featured');
+    const classs = document.createElement('span');
     classs.className = 'let';
     classs.textContent = 'class';
-    var name = document.createElement('span');
+    const name = document.createElement('span');
     name.className = 'print-cmd';
     name.textContent = ' FeaturedProjects ';
-    var open = document.createElement('span');
+    const open = document.createElement('span');
     open.className = 'func-cmd';
     open.textContent = '{';
     elm.innerHTML = '';
@@ -139,19 +139,19 @@ function projects() {
     elm.appendChild(open);
 
     // After
-    var h3 = document.createElement('h3');
-    var close = document.createElement('span');
+    const h3 = document.createElement('h3');
+    const close = document.createElement('span');
     close.className = 'func-cmd';
     close.textContent = '} ';
-    var comment = document.createElement('span');
+    const comment = document.createElement('span');
     comment.className = 'comment';
     comment.textContent = 'End FeaturedProjects class';
     h3.appendChild(close);
     h3.appendChild(comment);
     document.querySelector('.content .projects').insertAdjacentElement('afterEnd', h3);
-}
+};
 
-window._theme = function () {
+window._theme = () => {
     delete window._theme;
 
     hello();

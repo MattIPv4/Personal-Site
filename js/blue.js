@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,15 +16,15 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-function doParticles(id, config) {
+const doParticles = (id, config) => {
     if (Object.prototype.hasOwnProperty.call(window, 'particlesJS')) return window.particlesJS(id, config);
-}
+};
 
-window._theme = function () {
+window._theme = () => {
     delete window._theme;
 
     // Background particles
-    window._callback = function () {
+    window._callback = () => {
         delete window._callback;
 
         document.body.setAttribute('id', 'body');
@@ -86,10 +86,9 @@ window._theme = function () {
                 }
             },
             'retina_detect': true
-        }, function () {
-        });
+        }, () => {});
     };
-    var js = document.createElement('script');
+    const js = document.createElement('script');
     js.setAttribute('onload', 'window._callback()');
     js.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js');
     document.body.appendChild(js);

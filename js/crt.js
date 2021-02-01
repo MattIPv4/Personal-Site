@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,16 +16,16 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-window._theme = function () {
+window._theme = () => {
     delete window._theme;
 
     // Typing
-    var span = document.createElement('span');
+    const span = document.createElement('span');
     span.textContent = '_';
     document.querySelector('.content h1').appendChild(span);
 
     // Custom BG
-    var bg = document.createElement('div');
+    const bg = document.createElement('div');
     bg.className = 'scanlines';
     document.body.appendChild(bg);
 };

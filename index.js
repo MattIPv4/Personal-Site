@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -101,7 +101,7 @@ const html = readFileSync('templates/index.html', 'utf8');
 // Render it
 posthtml([
     include({ encoding: 'utf8' }),
-    expressions({ locals: { projects } }),
+    expressions({ locals: { projects } })
 ])
     .process(html)
     .then((result) => writeFileSync('build/index.html', result.html, { flag: 'w+' }));

@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -17,43 +17,43 @@
  */
 
 // Util func for themes to load their styles
-function loadCSS(style) {
-    var link = document.createElement('link');
+const loadCSS = style => {
+    const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('href', style);
     document.head.appendChild(link);
-}
+};
 
 // Load a theme's styling & custom JS
-function loadTheme(theme) {
+const loadTheme = theme => {
     // Load theme styling
     loadCSS('css/' + theme + '.css');
 
     // Load theme custom JS
-    var js = document.createElement('script');
+    const js = document.createElement('script');
     js.setAttribute('onload', 'window._theme()');
     js.setAttribute('src', 'js/' + theme + '.js');
     document.body.appendChild(js);
-}
+};
 
-function pickTheme() {
+const pickTheme = () => {
     // Define all themes
-    var themes = [
+    const themes = [
         'blue',
         'crt',
         'swift'
     ];
 
     // Allow URL ?theme selection
-    var url = new URL(window.location.href);
-    var theme = url.searchParams.get('theme');
+    const url = new URL(window.location.href);
+    const theme = url.searchParams.get('theme');
     if (theme && themes.indexOf(theme.toString().toLowerCase()) !== -1) {
         return loadTheme(theme.toString().toLowerCase());
     }
 
     // Random theme
     loadTheme(themes[Math.floor(Math.random() * themes.length)]);
-}
+};
 
 // Go!
 pickTheme();

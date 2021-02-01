@@ -1,71 +1,72 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": false
+    'env': {
+        'browser': true,
+        'es6': true,
+        'node': true
     },
-    "extends": "eslint:recommended",
-    "rules": {
-        "camelcase": "error",
-        "comma-dangle": [
-            "error",
+    'extends': 'eslint:recommended',
+    'rules': {
+        'camelcase': 'error',
+        'comma-dangle': [
+            'error',
             {
-                "arrays": "never",
-                "objects": "never",
-                "imports": "never",
-                "exports": "never",
-                "functions": "never"
+                'arrays': 'never',
+                'objects': 'never',
+                'imports': 'never',
+                'exports': 'never',
+                'functions': 'never'
             }
         ],
-        "comma-spacing": [
-            "error",
+        'comma-spacing': [
+            'error',
             {
-                "before": false,
-                "after": true
+                'before': false,
+                'after': true
             }
         ],
-        "comma-style": [
-            "error",
-            "last"
+        'comma-style': [
+            'error',
+            'last'
         ],
-        "curly": [
-            "error",
-            "multi-line"
+        'curly': [
+            'error',
+            'multi-line'
         ],
-        "eol-last": "error",
-        "indent": [
-            "error",
+        'eol-last': 'error',
+        'indent': [
+            'error',
             4
         ],
-        "no-extra-parens": "error",
-        "no-mixed-spaces-and-tabs": "error",
-        "no-multi-spaces": "error",
-        "no-multi-str": "error",
-        "object-curly-newline": [
-            "error",
+        'no-extra-parens': 'error',
+        'no-mixed-spaces-and-tabs': 'error',
+        'no-multi-spaces': 'error',
+        'no-multi-str': 'error',
+        'object-curly-newline': [
+            'error',
             {
-                "multiline": true,
-                "consistent": true
+                'multiline': true,
+                'consistent': true
             }
         ],
-        "object-curly-spacing": [
-            "error",
-            "always"
+        'object-curly-spacing': [
+            'error',
+            'always'
         ],
-        "quotes": [
-            "error",
-            "single",
+        'quotes': [
+            'error',
+            'single',
             {
-                "avoidEscape": true,
-                "allowTemplateLiterals": false
+                'avoidEscape': true,
+                'allowTemplateLiterals': false
             }
         ],
-        "semi": [
-            "error",
-            "always"
+        'semi': [
+            'error',
+            'always'
         ],
-        "yoda": [
-            "error",
-            "never"
-        ],
+        'yoda': [
+            'error',
+            'never'
+        ]
     }
 };
