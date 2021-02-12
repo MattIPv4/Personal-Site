@@ -2,10 +2,26 @@
   button: View GitHub Profile
   link: https://github.com/MattIPv4
 
+- content: 👀 Want to look at the source code for this site or many of my other projects?
+  button: View my GitHub Profile
+  link: https://github.com/MattIPv4
+
 - content: 👋 Want to know more about my life and each day? I tweet far too much about everything.
   button: Follow my Twitter
   link: https://twitter.com/MattIPv4
 
-- content: I'm looking for a girlfriend! If you're genuinely interested, I have a form, 'cause why not. 💙
+- content: 👀 Interested in how my day is going and what I'm doing in life?
+  button: Follow me on Twitter
+  link: https://twitter.com/MattIPv4
+
+- content: 🤖 Use Discord and want to run DNS lookups from in your own Discord server?
+  button: Get the 1.1.1.1 Bot
+  link: https://dns-over-discord.v4.wtf
+
+- content: ⚙️ Need a quick and secure way to add CSS or JS libraries to your website?
+  button: Try out cdnjs
+  link: https://cdnjs.com
+
+- content: 😶 I'm looking for a girlfriend! If you're genuinely interested, I have a form, 'cause why not.
   button: See the form
   link: https://forms.gle/CCrw2MmZR9hGfFyH9

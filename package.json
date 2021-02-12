@@ -17,7 +17,7 @@
     "build:html:minify": "html-minifier build/index.html -c .htmlminrc -o build/index.html",
     "build:static": "copyfiles --up 1 static/{*,**/*} build",
     "build:images": "node images/main.js",
-    "dev": "nodemon -e html,js,scss,yaml --watch templates --watch js --watch scss --watch *.yaml --exec \"npm run build && npm run dev:serve\"",
+    "dev": "nodemon -e html,js,scss,yaml --watch templates --watch js --watch scss --watch \\*.yaml --exec \"npm run build && npm run dev:serve\"",
     "dev:serve": "http-server build"
   },
   "repository": {

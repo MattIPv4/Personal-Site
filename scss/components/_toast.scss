@@ -20,7 +20,7 @@ $width: 18rem;
 $base: #2f80ed;
 $bg: lighten(desaturate($base, 75%), 50%);
 $text: darken(desaturate(invert($bg), 90%), 25%);
-$button: lighten($base, 10%);
+$button: lighten($base, 15%);
 
 .toast {
   position: fixed;
@@ -36,6 +36,29 @@ $button: lighten($base, 10%);
   border-radius: .25rem;
   line-height: 1.25;
   font-size: 1rem;
+
+  > div {
+    display: flex;
+    flex-wrap: nowrap;
+
+    > p {
+      flex: 1;
+    }
+
+    > a {
+      flex: 0 0 auto;
+      cursor: pointer;
+      opacity: .5;
+      padding: .1rem;
+      margin: 0 0 0 .15rem;
+      transition: opacity .2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
 
   > a {
     display: block;

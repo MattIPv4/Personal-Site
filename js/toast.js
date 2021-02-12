@@ -23,16 +23,31 @@ const loadToast = () => {
     const wrapper = document.createElement('div');
     wrapper.className = 'toast';
     wrapper.style.opacity = '0';
+    document.body.appendChild(wrapper);
+
+    const content = document.createElement('div');
+    wrapper.appendChild(content);
+
     const text = document.createElement('p');
     text.innerText = toast.content;
+    content.appendChild(text);
+
+    const close = document.createElement('a');
+    close.textContent = '✕';
+    close.addEventListener('click', () => {
+        wrapper.style.opacity = '0';
+        setTimeout(() => {
+            document.body.removeChild(wrapper);
+        }, 1000);
+    });
+    content.appendChild(close);
+
     const button = document.createElement('a');
     button.innerText = toast.button;
     button.href = toast.link;
-    wrapper.appendChild(text);
     wrapper.appendChild(button);
-    document.body.appendChild(wrapper);
+
     window.requestAnimationFrame(() => wrapper.style.opacity = '');
-    // TODO: Close button
 };
 
 // Go!
