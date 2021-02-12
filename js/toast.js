@@ -16,7 +16,24 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-@import "components/reset";
-@import "components/content";
-@import "components/projects";
-@import "components/toast";
+const data = require('../toasts.yaml');
+
+const loadToast = () => {
+    const toast = data[Math.floor(Math.random() * data.length)];
+    const wrapper = document.createElement('div');
+    wrapper.className = 'toast';
+    wrapper.style.opacity = '0';
+    const text = document.createElement('p');
+    text.innerText = toast.content;
+    const button = document.createElement('a');
+    button.innerText = toast.button;
+    button.href = toast.link;
+    wrapper.appendChild(text);
+    wrapper.appendChild(button);
+    document.body.appendChild(wrapper);
+    window.requestAnimationFrame(() => wrapper.style.opacity = '');
+    // TODO: Close button
+};
+
+// Go!
+loadToast();

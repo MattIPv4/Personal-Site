@@ -16,7 +16,41 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-@import "components/reset";
-@import "components/content";
-@import "components/projects";
-@import "components/toast";
+$width: 18rem;
+$base: #2f80ed;
+$bg: lighten(desaturate($base, 75%), 50%);
+$text: darken(desaturate(invert($bg), 90%), 25%);
+$button: lighten($base, 10%);
+
+.toast {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: $width;
+  max-width: $width;
+  background: $bg;
+  box-shadow: 4px 4px 0 0 darken($bg, 10%);
+  color: $text;
+  transition: opacity 1s ease-in-out;
+  padding: .75rem;
+  border-radius: .25rem;
+  line-height: 1.25;
+  font-size: 1rem;
+
+  > a {
+    display: block;
+    background: $button;
+    color: $text;
+    text-decoration: none;
+    padding: .25rem;
+    border-radius: .25rem;
+    text-align: center;
+    transition: background .2s ease-in-out;
+    margin: .5rem 0 0;
+
+    &:hover,
+    &:focus {
+      background: darken($button, 10%);
+    }
+  }
+}
