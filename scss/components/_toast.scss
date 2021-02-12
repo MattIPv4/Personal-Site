@@ -23,19 +23,19 @@ $text: darken(desaturate(invert($bg), 90%), 25%);
 $button: lighten($base, 15%);
 
 .toast {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: $width;
-  max-width: $width;
   background: $bg;
+  border-radius: .25rem;
+  bottom: 1rem;
   box-shadow: 4px 4px 0 0 darken($bg, 10%);
   color: $text;
-  transition: opacity 1s ease-in-out;
-  padding: .75rem;
-  border-radius: .25rem;
-  line-height: 1.25;
   font-size: 1rem;
+  line-height: 1.25;
+  max-width: $width;
+  padding: .75rem;
+  position: fixed;
+  right: 1rem;
+  transition: opacity 1s ease-in-out;
+  width: $width;
 
   > div {
     display: flex;
@@ -46,11 +46,11 @@ $button: lighten($base, 15%);
     }
 
     > a {
-      flex: 0 0 auto;
       cursor: pointer;
+      flex: 0 0 auto;
+      margin: 0 0 0 .15rem;
       opacity: .5;
       padding: .1rem;
-      margin: 0 0 0 .15rem;
       transition: opacity .2s ease-in-out;
 
       &:hover,
@@ -61,15 +61,15 @@ $button: lighten($base, 15%);
   }
 
   > a {
-    display: block;
     background: $button;
-    color: $text;
-    text-decoration: none;
-    padding: .25rem;
     border-radius: .25rem;
-    text-align: center;
-    transition: background .2s ease-in-out;
+    color: $text;
+    display: block;
     margin: .5rem 0 0;
+    padding: .25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s ease-in-out;
 
     &:hover,
     &:focus {

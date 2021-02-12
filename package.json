@@ -8,6 +8,7 @@
     "test:js": "eslint *.js",
     "test:js:fix": "eslint *.js --fix",
     "test:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
+    "test:scss:fix": "sass-lint-auto-fix \"scss/{*,**/*}.scss\"",
     "test:html": "linthtml templates/*.html",
     "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static && npm run build:images",
     "build:scss": "parcel build scss/*.scss --out-dir build/css --public-url ./",
@@ -44,6 +45,7 @@
     "posthtml-include": "^1.6.0",
     "sass": "^1.29.0",
     "sass-lint": "^1.13.1",
+    "sass-lint-auto-fix": "^0.21.2",
     "sharp": "^0.26.2",
     "yaml": "^1.10.0"
   }
