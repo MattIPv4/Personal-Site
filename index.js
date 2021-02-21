@@ -67,11 +67,19 @@ const toolMap = {
     'slack': 'fab fa-slack'
 };
 
+// Load in the main config yaml
+const config = parse(readFileSync('config.yaml', 'utf8'));
+config.meta.description = config.meta.description.replace(/\s*[\r\n]\s*/g, ' ');
+config.meta.keywords = config.meta.keywords.join(', ');
+for (const link of config.contact.links) {
+    link.title = md.renderInline(link.title).replace(/<(\/?)i>/g, '<$1small>');
+}
+
 // Get the projects in a usable data format
-const yaml = parse(readFileSync('projects.yaml', 'utf8'));
-const projects = Object.keys(yaml).map(key => {
+const projectsRaw = parse(readFileSync('projects.yaml', 'utf8'));
+const projects = Object.keys(projectsRaw).map(key => {
     // Name
-    const data = yaml[key];
+    const data = projectsRaw[key];
     data.name = key;
 
     // Icons
@@ -101,7 +109,7 @@ const html = readFileSync('templates/index.html', 'utf8');
 // Render it
 posthtml([
     include({ encoding: 'utf8' }),
-    expressions({ locals: { projects } })
+    expressions({ locals: { config, projects } })
 ])
     .process(html)
     .then((result) => writeFileSync('build/index.html', result.html, { flag: 'w+' }));

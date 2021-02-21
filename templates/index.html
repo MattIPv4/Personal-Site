@@ -21,82 +21,82 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Matt (IPv4) Cowley</title>
+    <title>{{ config.title }}</title>
 
     <!-- Basic meta -->
     <meta name="title"
-          content="Matt (IPv4) Cowley"/>
+          content="{{ config.title }}"/>
     <meta name="description"
-          content="Community Platform Manager @ DigitalOcean 🦈 Maintainer of cdnjs.com @ Cloudflare ⛅️ Developer Relations @ js.org 📝 Open-source maintainer & avid supporter 💻 - Community Management, Website Design & Development, Software Engineering 🖥 - Stage Management, Production Electrics, Lighting 💡"/>
+          content="{{ config.meta.description }}"/>
     <meta name="keywords"
-          content="matt, cowley, matt cowley, ipv4, matt ipv4, mattipv4, matt ipv4 cowley, matt (ipv4) cowley, website, websites, site, sites, homepage, matt website, matt ipv4 website, ipv4 website, matt site, matt ipv4 site, ipv4 site, theatre, theater, technical, technician, tech, theatre technician, theater technician, theatre tech, theater tech"/>
+          content="{{ config.meta.keywords }}"/>
     <link rel="image_src"
-          content="https://assets.mattcowley.co.uk/header/header.png"/>
+          content="{{ config.meta.banner }}"/>
     <meta name="theme-color"
-          content="#0069ff"/>
+          content="{{ config.meta.color }}"/>
 
     <!-- Icons -->
     <link rel="icon" type="image/png"
-          href="https://assets.mattcowley.co.uk/head/transp/goggles/head_t_g.png"/>
+          href="{{ config.meta.icon }}"/>
     <link rel="shortcut-icon" type="image/png"
-          href="https://assets.mattcowley.co.uk/head/transp/goggles/head_t_g.png"/>
+          href="{{ config.meta.icon }}"/>
     <link rel="apple-touch-icon" type="image/png"
-          href="https://assets.mattcowley.co.uk/head/transp/goggles/head_t_g.png"/>
+          href="{{ config.meta.icon }}"/>
 
     <!-- Canonical -->
     <link rel="canonical"
-          href="https://mattcowley.co.uk/"/>
+          href="{{ config.meta.url }}"/>
     <meta name="canonicalURL"
-          content="https://mattcowley.co.uk/"/>
+          content="{{ config.meta.url }}"/>
 
     <!-- Twitter meta -->
     <meta name="twitter:card"
           content="summary_large_image">
     <meta name="twitter:site"
-          content="@MattIPv4"/>
+          content="{{ config.meta.twitter }}"/>
     <meta name="twitter:creator"
-          content="@MattIPv4"/>
+          content="{{ config.meta.twitter }}"/>
     <meta name="twitter:title"
-          content="Matt (IPv4) Cowley"/>
+          content="{{ config.title }}"/>
     <meta name="twitter:description"
-          content="Community Platform Manager @ DigitalOcean 🦈 Maintainer of cdnjs.com @ Cloudflare ⛅️ Developer Relations @ js.org 📝 Open-source maintainer & avid supporter 💻 - Community Management, Website Design & Development, Software Engineering 🖥 - Stage Management, Production Electrics, Lighting 💡"/>
+          content="{{ config.meta.description }}"/>
     <meta name="twitter:image"
-          content="https://assets.mattcowley.co.uk/header/header.png"/>
+          content="{{ config.meta.banner }}"/>
     <meta name="twitter:url"
-          content="https://mattcowley.co.uk/"/>
+          content="{{ config.meta.url }}"/>
 
     <!-- OG meta -->
     <meta prefix="og: http://ogp.me/ns#" property="og:title"
-          content="Matt (IPv4) Cowley"/>
+          content="{{ config.title }}"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:type"
           content="website"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:locale"
           content="en_GB"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:site_name"
-          content="Matt (IPv4) Cowley"/>
+          content="{{ config.title }}"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:description"
-          content="Community Platform Manager @ DigitalOcean 🦈 Maintainer of cdnjs.com @ Cloudflare ⛅️ Developer Relations @ js.org 📝 Open-source maintainer & avid supporter 💻 - Community Management, Website Design & Development, Software Engineering 🖥 - Stage Management, Production Electrics, Lighting 💡"/>
+          content="{{ config.meta.description }}"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:url"
-          content="https://mattcowley.co.uk/"/>
+          content="{{ config.meta.url }}"/>
     <meta prefix="og: http://ogp.me/ns#" property="og:image"
-          content="https://assets.mattcowley.co.uk/header/header.png"/>
+          content="{{ config.meta.banner }}"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113826252-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google.analytics }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', 'UA-113826252-1');
+        gtag('config', '{{ config.google.analytics }}');
     </script>
 
     <!-- Google AdSense -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-4266526051230566",
+            google_ad_client: '{{ config.google.adsense.client }}',
             enable_page_level_ads: true
         });
     </script>
@@ -113,55 +113,29 @@
 <body>
 <div class="content">
     <!-- Intro -->
-    <h1>Matt (IPv4) Cowley</h1>
+    <h1>{{ config.title }}</h1>
 
     <h4>What I do:</h4>
-    <h2>Community Platform Manager @ DigitalOcean 🦈️</h2>
-    <h2>Maintainer of cdnjs.com @ Cloudflare ⛅</h2>
-    <h3>Developer Relations @ js.org 📝</h3>
-    <h3>Open-source maintainer &amp; avid supporter 💻</h3>
+    <each loop="item in config.roles">
+        <h2>{{ item }}️</h2>
+    </each>
 
     <h4>What I'm interested in:</h4>
-    <h2>Community Management, Website Design &amp; Development, Software Engineering 🖥</h2>
-    <h3>HTML, JavaScript, CSS, SASS, PHP 5 &amp; 7, NodeJS, Python 3.6 &amp; 3.7</h3>
-    <h2>Stage Management, Production Electrics, Lighting 💡</h2>
+    <each loop="item in config.interests">
+        <h3>{{ item }}️</h3>
+    </each>
 
     <!-- Contact -->
-    <h3 class="email">Get in touch: <a href="mailto:me@mattcowley.co.uk">me@mattcowley.co.uk</a></h3>
+    <h3 class="email">Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></h3>
     <ul class="contact">
-        <li>
-            <a href="https://twitter.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>twitter</b><small>.mattcowley.co.uk</small>
-                <br/><i>@MattIPv4</i></a>
-        </li>
-        <li>
-            <a href="https://github.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>github</b><small>.mattcowley.co.uk</small>
-                <br/><i>@MattIPv4</i>
-            </a>
-        </li>
-        <li>
-            <a href="https://twitch.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>twitch</b><small>.mattcowley.co.uk</small>
-                <br/><i>@MattIPv4</i></a>
-        </li>
-        <li>
-            <a href="https://cv.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>cv</b><small>.mattcowley.co.uk</small>
-            </a>
-        </li>
-        <li>
-            <a href="https://linkedin.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>linkedin</b><small>.mattcowley.co.uk</small>
-                <br/><i>matt-ipv4-cowley</i>
-            </a>
-        </li>
-        <li>
-            <a href="https://sponsors.mattcowley.co.uk/" target="_blank" rel="noopener">
-                <b>sponsors</b><small>.mattcowley.co.uk</small>
-                <br/><i>@MattIPv4</i>
-            </a>
-        </li>
+        <each loop="item in config.contact.links">
+            <li>
+                <a href="{{ item.url }}" target="_blank" rel="noopener">
+                    {{{ item.title }}}
+                    <br/><i>{{ item.username }}</i>
+                </a>
+            </li>
+        </each>
     </ul>
 
     <!-- Projects -->
@@ -177,8 +151,9 @@
 
     <!-- Ad -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle" style="display:flex;justify-content:center" data-ad-client="ca-pub-4266526051230566"
-         data-ad-slot="9114202102" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:flex;justify-content:center"
+         data-ad-client="{{ config.google.adsense.client }}" data-ad-slot="{{ config.google.adsense.slot }}"
+         data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
