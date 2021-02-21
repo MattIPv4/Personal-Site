@@ -1,300 +1,321 @@
-DigitalOcean:
-  display: true
-  type: "Community"
-  link: "https://digitalocean.com/community"
-  image: "digitalocean"
-  position: "center"
-  tools:
-    - Slack
-    - Git
-    - GitHub
-    - WebStorm
-    - VueJS
-    - RubyMine
-    - Rails
+- title: DigitalOcean
+  role: Community Platform Manager
+  tags:
+    - Community
+    - Engineering
+    - Open-source
+  dates:
+    start: June 2019
+    end: ~
+  headline: Helping millions of developers easily build, test, manage, and scale applications of any size - faster than ever before.
+  link: https://digitalocean.com/community
+  image:
+    file: digitalocean
+    position: center
   desc: |
-    **DigitalOcean is a cloud hosting provider with an ever-growing community**. I work remotely with the rest of the
-    community engineering team at DigitalOcean to work on the Community platform, as well as continuing to build out our
-    set of [open-source community tools](https://github.com/topics/digitalocean-community-tools). I malso work with the
-    community management team to help manage the day-to-day operations of the community
-    [Questions](https://do.co/questions) & [Tutorials](https://do.co/tutorials) sites, moderating new content posted to
-    ensure all users have a great time as well as escalating questions to folks.
+    * Working as part of the engineering team for the Community platform to continually evolve the feature-set provided
+    on the site to better the experience for our Community users across our Q&A section, our Community Tools listings,
+    and our vast collection of tutorial content, as well as working with internal teams using the platform.
 
-cdnjs (Cloudflare):
-  display: true
-  type: "Community"
-  link: "https://cdnjs.com"
-  image: "cdnjs"
-  position: "center"
-  tools:
-    - Discourse
-    - Slack
-    - Twitter
-    - Git
-    - GitHub
-    - WebStorm
-    - Photoshop
-  desc: |
-    **cdnjs is a free and open-source CDN service that serves resources to
-    [11.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
-    [Cloudflare](https://cloudflare.com) on contract to help maintain and moderate cdnjs, working with the community
-    around the project through [Twitter](https://twitter.com/cdnjs), [GitHub](https://github.com/cdnjs/cdnjs) and our
-    [Discourse forum](https://cdnjs.discourse.group/). I also work with the sponsors of the project such as
-    [Algolia](https://algolia.com) and [StatusPage](https://statuspage.io) to ensure the CDN service and website are
-    maintained.
+    * Leading and co-ordinating the continued development of our
+    [open-source Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
+    such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx). Working with community contributions to
+    triage issues reported on GitHub effectively, shipping new features based on community issues and pull requests.
 
-js.org:
-  display: true
-  type: "Community"
-  link: "https://js.org"
-  image: "js-org"
-  position: "center"
-  tools:
-    - Git
-    - GitHub
-  desc: |
-    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
-    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
-    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
-    active CNAMEs. My main task is to review all new pull requests to ensure they meet our standards.
+    * Running our GitHub open-source outreach program, reaching out to new contributors on any of the
+    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean/), thanking them for
+    being involved with our projects and sending them a swag pack as a gift for contributing.
 
-Hacktoberfest (DigitalOcean):
-  display: true
-  type: "Community"
-  link: "https://hacktoberfest.digitalocean.com/"
-  image: "hacktoberfest"
-  position: "top"
-  tools:
-    - Twitter
-    - Git
-    - GitHub
-    - RubyMine
-    - Rails
-  desc: |
-    **Hacktoberfest encourages folks to get involved in open source. Open source is changing the world – one pull
-    request at a time**. As part of my work for [DigitalOcean](https://www.digitalocean.com/), I get to help out with
-    their Hacktoberfest program, a community program to encourage folks to participate in open source. Primarily, I help
-    with the social and support engagement, answering support tickets and responding to
-    [tweets](https://twitter.com/hacktoberfest). I also help out our engineering team with the
-    [Hacktoberfest Rails app](https://github.com/digitalocean/hacktoberfest).
+    * Part of the core team for Hacktoberfest 2019 and 2020, responsible for handling all social and support enagement
+    through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
+    Also a principal engineer for maintaining the
+    [open-source Ruby on Rails Hacktoberfest application](https://github.com/digitalocean/hacktoberfest/) that powers
+    the whole event and website.
 
-1.1.1.1 DNS over Discord (Cloudflare):
-  display: true
-  type: "Web / Application"
-  link: "https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord"
-  image: "dns-over-discord"
-  position: "bottom"
-  tools:
-    - WebStorm
-    - JavaScript
-    - NodeJS
-    - Git
-    - GitHub
-  desc: |
-    **The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
-    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. The bot is written in
-    JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) -- hosted via
-    [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
-    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
+    * Moderating the [DigitalOcean Community](https://www.digitalocean.com/community/) on a daily basis, handling any
+    user reports as well as the automated spam filter systems in place. Responding to any users who reach out when their
+    post is caught in the automated filters.
 
-PogChampOfTheDay:
-  display: true
-  type: "Web"
-  link: "https://pogchamp.today/"
-  image: "pogchamp"
-  position: "center"
-  tools:
-    - WebStorm
-      - NodeJS
-    - JavaScript
-    - HTML
-    - CSS3
-    - Git
-    - GitHub
-  desc: |
-    **Each day brings a new PogChamp emote to Twitch. View the latest PogChamp of the Day at
-    [pogchamp.today](https://pogchamp.today/)**. This little web application reveals the current PogChamp of the Day on
-    [Twitch](https://www.twitch.tv/), with automation via GitHub Actions to fetch the latest PogChamp emote from the
-    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) and build the updated site. The
-    entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on GitHub
-    Actions and Pages to operate.
+    * Collaborating with the community management team to ensure the platform provides the features they need to
+    effectively work with our community and assisting them with engaging on
+    [Community Questions and Answers](https://www.digitalocean.com/community/questions), as well as escalting issues
+    internally to support teams when appropriate and improving processes for triaging feedback provided by our users.
 
-MagicCap:
-  display: true
-  type: "Web / Application"
-  link: "https://magiccap.me"
-  image: "magiccap"
-  position: "center"
-  tools:
-    - WebStorm
-    - JavaScript
-    - NodeJS
-    - VueJS
-    - HTML
-    - CSS3
-    - TypeScript
-    - Git
-    - GitHub
-  desc: |
-    **MagicCap is an open-source, versatile image/GIF capture suite for Mac and Linux**. I originally started out as an
-    [open-source contributor to MagicCap](https://github.com/MagicCap/MagicCap), making minor changes to the CSS behind
-    the UI. However, I soon became heavily involved with the project, responsible for the majority of the user interface
-    but also the user experience that it provided. I now also handle a large amount of organization administration,
-    reviewing PRs and managing error reports.
-
-PyDMXControl:
-  display: true
-  type: "Python"
-  link: "https://github.com/MattIPv4/PyDMXControl"
-  image: "pydmxcontrol"
-  position: "center"
-  tools:
-    - PyCharm
-    - Python
-    - Git
-    - GitHub
-    - Photoshop
-  desc: |
-    Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
-    office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
-    uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
-
-macOSNotifJS:
-  display: false
-  type: "Web / Plugin"
-  link: "https://macosnotif.js.org/"
-  image: "macosnotifjs"
-  position: "top"
-  tools:
-    - WebStorm
-    - JavaScript (ES6)
-    - NodeJS
-    - Webpack
-    - Babel
-    - HTML
-    - CSS3
-    - Git
-    - GitHub
-  desc: |
-    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
-    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
-    user online to contribute to the project.
-
-JetBrains Community:
-  display: false
-  type: "Community"
-  link: "https://discord.gg/dJK27sh"
-  image: "jetbrains-community"
-  position: "center"
-  tools:
-    - PyCharm
-    - Python
-    - Git
-    - GitHub
-    - Photoshop
-  desc: |
-    Creating and managing a large community of JetBrains users and team members on Discord where they can all chat with
-    each other about JetBrains products and projects as well as pretty much anything else. To help the community, JetBot
-    was created; a python Discord bot that provides information via commands about JetBrains.
-
-BotBlock:
-  display: false
-  type: "Web / API"
-  link: "https://botblock.org/"
-  image: "botblock"
-  position: "top"
-  tools:
-      - PhpStorm
-      - HTML
-      - JavaScript
-      - CSS3
-      - PHP
-      - Sass
-      - MySQL
-      - Git
-      - GitHub
-      - Photoshop
-  desc: |
-    Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
-    many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
-    single list of all known bot lists on Discord and a central API for bot developers to use.
-
-Unreal Designs:
-  display: false
-  type: "Web / Business"
-  link: "https://unreal-designs.co.uk/"
-  image: "unreal-designs"
-  position: "top"
-  tools:
-      - PHPStorm
-      - HTML
-      - JavaScript
-      - CSS3
-      - PHP
-      - MySQL
-      - Git
-      - GitHub
-      - Photoshop
-  desc: |
-    Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
-    alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
-    long lasting, bringing in many clients for the team and building up our experience.
-
-Discord Bots:
-  display: false
-  type: "Web / Application"
-  link: "https://botz.mattcowley.co.uk/"
-  image: "discord-bots"
-  position: "top"
-  tools:
-      - PHPStorm
-      - HTML
-      - JavaScript
-      - CSS3
-      - PHP
-      - MySQL
-      - Git
-      - GitHub
-      - PyCharm
-      - Python
-  desc: |
-    Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
-    streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
-    a site for them all, featuring their homepages as well as a large backend for stats logging.
-
-Rythm Homepage:
-  display: false
-  type: "Web"
-  link: "https://rythmbot.co/"
-  image: "rythmbot"
-  position: "top"
-  tools:
-      - PHPStorm
-      - HTML
-      - JavaScript
-      - CSS3
-      - PHP
-      - Git
-      - GitHub
-  desc: |
-    Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
-    site which was a template. Producing this site was great fun as there were very few requirements from the client
-    other than the content, so I had freedom of design. The site was designed to provide quick access to key info
-    and links for all vistors.
-
-Young Theatre:
-  display: false
-  type: "Theatre"
-  link: "https://www.youngtheatre.org.uk/"
-  image: "youngtheatre-panto2016"
-  position: "top"
-  tools:
-      - Jands Vista
-      - Chamsys MagicQ
-      - ETC EOS
-      - QLab
-      - Cast WYSIWYG
-  desc: |
-    Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
-    team for many years now and have been part of many shows produced by the company. Over the multitude of shows
-    I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.
+#cdnjs (Cloudflare):
+#  display: true
+#  type: "Community"
+#  link: "https://cdnjs.com"
+#  image: "cdnjs"
+#  position: "center"
+#  tools:
+#    - Discourse
+#    - Slack
+#    - Twitter
+#    - Git
+#    - GitHub
+#    - WebStorm
+#    - Photoshop
+#  desc: |
+#    **cdnjs is a free and open-source CDN service that serves resources to
+#    [11.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
+#    [Cloudflare](https://cloudflare.com) on contract to help maintain and moderate cdnjs, working with the community
+#    around the project through [Twitter](https://twitter.com/cdnjs), [GitHub](https://github.com/cdnjs/cdnjs) and our
+#    [Discourse forum](https://cdnjs.discourse.group/). I also work with the sponsors of the project such as
+#    [Algolia](https://algolia.com) and [StatusPage](https://statuspage.io) to ensure the CDN service and website are
+#    maintained.
+#
+#js.org:
+#  display: true
+#  type: "Community"
+#  link: "https://js.org"
+#  image: "js-org"
+#  position: "center"
+#  tools:
+#    - Git
+#    - GitHub
+#  desc: |
+#    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
+#    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
+#    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
+#    active CNAMEs. My main task is to review all new pull requests to ensure they meet our standards.
+#
+#Hacktoberfest (DigitalOcean):
+#  display: true
+#  type: "Community"
+#  link: "https://hacktoberfest.digitalocean.com/"
+#  image: "hacktoberfest"
+#  position: "top"
+#  tools:
+#    - Twitter
+#    - Git
+#    - GitHub
+#    - RubyMine
+#    - Rails
+#  desc: |
+#    **Hacktoberfest encourages folks to get involved in open source. Open source is changing the world – one pull
+#    request at a time**. As part of my work for [DigitalOcean](https://www.digitalocean.com/), I get to help out with
+#    their Hacktoberfest program, a community program to encourage folks to participate in open source. Primarily, I help
+#    with the social and support engagement, answering support tickets and responding to
+#    [tweets](https://twitter.com/hacktoberfest). I also help out our engineering team with the
+#    [Hacktoberfest Rails app](https://github.com/digitalocean/hacktoberfest).
+#
+#1.1.1.1 DNS over Discord (Cloudflare):
+#  display: true
+#  type: "Web / Application"
+#  link: "https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord"
+#  image: "dns-over-discord"
+#  position: "bottom"
+#  tools:
+#    - WebStorm
+#    - JavaScript
+#    - NodeJS
+#    - Git
+#    - GitHub
+#  desc: |
+#    **The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
+#    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. The bot is written in
+#    JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) -- hosted via
+#    [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
+#    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
+#
+#PogChampOfTheDay:
+#  display: true
+#  type: "Web"
+#  link: "https://pogchamp.today/"
+#  image: "pogchamp"
+#  position: "center"
+#  tools:
+#    - WebStorm
+#      - NodeJS
+#    - JavaScript
+#    - HTML
+#    - CSS3
+#    - Git
+#    - GitHub
+#  desc: |
+#    **Each day brings a new PogChamp emote to Twitch. View the latest PogChamp of the Day at
+#    [pogchamp.today](https://pogchamp.today/)**. This little web application reveals the current PogChamp of the Day on
+#    [Twitch](https://www.twitch.tv/), with automation via GitHub Actions to fetch the latest PogChamp emote from the
+#    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) and build the updated site. The
+#    entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on GitHub
+#    Actions and Pages to operate.
+#
+#MagicCap:
+#  display: true
+#  type: "Web / Application"
+#  link: "https://magiccap.me"
+#  image: "magiccap"
+#  position: "center"
+#  tools:
+#    - WebStorm
+#    - JavaScript
+#    - NodeJS
+#    - VueJS
+#    - HTML
+#    - CSS3
+#    - TypeScript
+#    - Git
+#    - GitHub
+#  desc: |
+#    **MagicCap is an open-source, versatile image/GIF capture suite for Mac and Linux**. I originally started out as an
+#    [open-source contributor to MagicCap](https://github.com/MagicCap/MagicCap), making minor changes to the CSS behind
+#    the UI. However, I soon became heavily involved with the project, responsible for the majority of the user interface
+#    but also the user experience that it provided. I now also handle a large amount of organization administration,
+#    reviewing PRs and managing error reports.
+#
+#PyDMXControl:
+#  display: true
+#  type: "Python"
+#  link: "https://github.com/MattIPv4/PyDMXControl"
+#  image: "pydmxcontrol"
+#  position: "center"
+#  tools:
+#    - PyCharm
+#    - Python
+#    - Git
+#    - GitHub
+#    - Photoshop
+#  desc: |
+#    Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
+#    office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
+#    uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
+#
+#macOSNotifJS:
+#  display: false
+#  type: "Web / Plugin"
+#  link: "https://macosnotif.js.org/"
+#  image: "macosnotifjs"
+#  position: "top"
+#  tools:
+#    - WebStorm
+#    - JavaScript (ES6)
+#    - NodeJS
+#    - Webpack
+#    - Babel
+#    - HTML
+#    - CSS3
+#    - Git
+#    - GitHub
+#  desc: |
+#    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
+#    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
+#    user online to contribute to the project.
+#
+#JetBrains Community:
+#  display: false
+#  type: "Community"
+#  link: "https://discord.gg/dJK27sh"
+#  image: "jetbrains-community"
+#  position: "center"
+#  tools:
+#    - PyCharm
+#    - Python
+#    - Git
+#    - GitHub
+#    - Photoshop
+#  desc: |
+#    Creating and managing a large community of JetBrains users and team members on Discord where they can all chat with
+#    each other about JetBrains products and projects as well as pretty much anything else. To help the community, JetBot
+#    was created; a python Discord bot that provides information via commands about JetBrains.
+#
+#BotBlock:
+#  display: false
+#  type: "Web / API"
+#  link: "https://botblock.org/"
+#  image: "botblock"
+#  position: "top"
+#  tools:
+#      - PhpStorm
+#      - HTML
+#      - JavaScript
+#      - CSS3
+#      - PHP
+#      - Sass
+#      - MySQL
+#      - Git
+#      - GitHub
+#      - Photoshop
+#  desc: |
+#    Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
+#    many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
+#    single list of all known bot lists on Discord and a central API for bot developers to use.
+#
+#Unreal Designs:
+#  display: false
+#  type: "Web / Business"
+#  link: "https://unreal-designs.co.uk/"
+#  image: "unreal-designs"
+#  position: "top"
+#  tools:
+#      - PHPStorm
+#      - HTML
+#      - JavaScript
+#      - CSS3
+#      - PHP
+#      - MySQL
+#      - Git
+#      - GitHub
+#      - Photoshop
+#  desc: |
+#    Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
+#    alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
+#    long lasting, bringing in many clients for the team and building up our experience.
+#
+#Discord Bots:
+#  display: false
+#  type: "Web / Application"
+#  link: "https://botz.mattcowley.co.uk/"
+#  image: "discord-bots"
+#  position: "top"
+#  tools:
+#      - PHPStorm
+#      - HTML
+#      - JavaScript
+#      - CSS3
+#      - PHP
+#      - MySQL
+#      - Git
+#      - GitHub
+#      - PyCharm
+#      - Python
+#  desc: |
+#    Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
+#    streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
+#    a site for them all, featuring their homepages as well as a large backend for stats logging.
+#
+#Rythm Homepage:
+#  display: false
+#  type: "Web"
+#  link: "https://rythmbot.co/"
+#  image: "rythmbot"
+#  position: "top"
+#  tools:
+#      - PHPStorm
+#      - HTML
+#      - JavaScript
+#      - CSS3
+#      - PHP
+#      - Git
+#      - GitHub
+#  desc: |
+#    Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
+#    site which was a template. Producing this site was great fun as there were very few requirements from the client
+#    other than the content, so I had freedom of design. The site was designed to provide quick access to key info
+#    and links for all vistors.
+#
+#Young Theatre:
+#  display: false
+#  type: "Theatre"
+#  link: "https://www.youngtheatre.org.uk/"
+#  image: "youngtheatre-panto2016"
+#  position: "top"
+#  tools:
+#      - Jands Vista
+#      - Chamsys MagicQ
+#      - ETC EOS
+#      - QLab
+#      - Cast WYSIWYG
+#  desc: |
+#    Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
+#    team for many years now and have been part of many shows produced by the company. Over the multitude of shows
+#    I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.

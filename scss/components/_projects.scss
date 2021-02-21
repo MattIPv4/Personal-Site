@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -17,154 +17,156 @@
  */
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .project {
+    .project-meta,
+    .project-info {
+      display: flex;
+      flex-direction: row;
 
-  .project-fix {
-    height: 1px;
-    visibility: hidden;
-    width: 100%;
-  }
-
-  .project-outer {
-    flex-grow: 1;
-    max-width: 100%;
-    min-width: 250px;
-    width: 50%;
-
-    .project {
-      background: #f5f7fa;
-      box-shadow: 4px 4px 0 0 #ccd1d9;
-      margin: 15px;
-      padding: 10px;
-
-      a {
-        text-decoration: none;
-
-        &:hover p.project-link {
-          color: #4a89dc;
-        }
-      }
-
-      p {
-        &.project-title {
-          color: #434a54;
-          font-size: 1.25em;
-          font-weight: 900;
-        }
-
-        &.project-link {
-          color: #4fc1e9;
-          line-height: 1.3em;
-          margin-bottom: 10px;
-        }
-
-        &.project-desc {
-          color: #434a54;
-          font-weight: normal;
-          margin-bottom: 10px;
-
-          strong,
-          b {
-            font-weight: bold;
-          }
-        }
-      }
-
-      .project-hide {
-        display: inline-block;
-        height: auto;
-        max-height: 0;
-        overflow: hidden;
-        transition: all .2s ease-in-out;
-
-        .project-tools {
-          color: #434a54;
-          margin-bottom: 10px;
-
-          i {
-            font-family: inherit;
-            font-size: 1.2em;
-            position: relative;
-
-            &::before {
-              font-weight: normal;
-            }
-
-            &[class*="devicon"]::before {
-              font-family: "devicon";
-            }
-
-            &.fa::before,
-            &.far::before,
-            &.fas::before {
-              font-family: "Font Awesome 5 Free";
-            }
-
-            &.fab::before {
-              font-family: "Font Awesome 5 Brands";
-            }
-
-            .tip {
-              background: rgba(0, 0, 0, .8);
-              border-radius: 6px;
-              bottom: 102%;
-              color: #fff;
-              font-family: inherit;
-              left: 50%;
-              line-height: 1;
-              opacity: 0;
-              overflow: hidden;
-              padding: 3px 10px 5px;
-              pointer-events: none;
-              position: absolute;
-              text-align: center;
-              text-overflow: ellipsis;
-              transform: translateX(-50%);
-              transition: opacity .1s;
-              width: auto;
-              z-index: 1;
-            }
-
-            &:hover .tip {
-              opacity: 1;
-            }
-          }
-        }
-      }
-
-      &:hover .project-hide {
-        max-height: 100vH;
-        overflow: visible;
-        transition: all .2s ease-in-out;
-      }
-
-      .project-img {
-        box-shadow: 4px 4px 0 0 #656d78;
-        box-sizing: border-box;
-        height: auto;
-        margin: 4px;
-        max-height: 10em;
-        overflow: hidden;
-        transition: all .2s ease-in-out;
-
-        img {
-          max-width: 100%;
-          opacity: 0;
-          transition: all .2s ease-in-out;
-          width: 100%;
-        }
-      }
-
-      &:hover .project-img {
-        height: auto;
-        max-height: 1000px;
-
-        img {
-          opacity: 1;
-        }
+      > div {
+        flex: 1;
       }
     }
   }
+
+  //.project-outer {
+  //  flex-grow: 1;
+  //  max-width: 100%;
+  //  min-width: 250px;
+  //  width: 50%;
+  //
+  //  .project {
+  //    background: #f5f7fa;
+  //    box-shadow: 4px 4px 0 0 #ccd1d9;
+  //    margin: 15px;
+  //    padding: 10px;
+  //
+  //    a {
+  //      text-decoration: none;
+  //
+  //      &:hover p.project-link {
+  //        color: #4a89dc;
+  //      }
+  //    }
+  //
+  //    p {
+  //      &.project-title {
+  //        color: #434a54;
+  //        font-size: 1.25em;
+  //        font-weight: 900;
+  //      }
+  //
+  //      &.project-link {
+  //        color: #4fc1e9;
+  //        line-height: 1.3em;
+  //        margin-bottom: 10px;
+  //      }
+  //
+  //      &.project-desc {
+  //        color: #434a54;
+  //        font-weight: normal;
+  //        margin-bottom: 10px;
+  //
+  //        strong,
+  //        b {
+  //          font-weight: bold;
+  //        }
+  //      }
+  //    }
+  //
+  //    .project-hide {
+  //      display: inline-block;
+  //      height: auto;
+  //      max-height: 0;
+  //      overflow: hidden;
+  //      transition: all .2s ease-in-out;
+  //
+  //      .project-tools {
+  //        color: #434a54;
+  //        margin-bottom: 10px;
+  //
+  //        i {
+  //          font-family: inherit;
+  //          font-size: 1.2em;
+  //          position: relative;
+  //
+  //          &::before {
+  //            font-weight: normal;
+  //          }
+  //
+  //          &[class*="devicon"]::before {
+  //            font-family: "devicon";
+  //          }
+  //
+  //          &.fa::before,
+  //          &.far::before,
+  //          &.fas::before {
+  //            font-family: "Font Awesome 5 Free";
+  //          }
+  //
+  //          &.fab::before {
+  //            font-family: "Font Awesome 5 Brands";
+  //          }
+  //
+  //          .tip {
+  //            background: rgba(0, 0, 0, .8);
+  //            border-radius: 6px;
+  //            bottom: 102%;
+  //            color: #fff;
+  //            font-family: inherit;
+  //            left: 50%;
+  //            line-height: 1;
+  //            opacity: 0;
+  //            overflow: hidden;
+  //            padding: 3px 10px 5px;
+  //            pointer-events: none;
+  //            position: absolute;
+  //            text-align: center;
+  //            text-overflow: ellipsis;
+  //            transform: translateX(-50%);
+  //            transition: opacity .1s;
+  //            width: auto;
+  //            z-index: 1;
+  //          }
+  //
+  //          &:hover .tip {
+  //            opacity: 1;
+  //          }
+  //        }
+  //      }
+  //    }
+  //
+  //    &:hover .project-hide {
+  //      max-height: 100vH;
+  //      overflow: visible;
+  //      transition: all .2s ease-in-out;
+  //    }
+  //
+  //    .project-img {
+  //      box-shadow: 4px 4px 0 0 #656d78;
+  //      box-sizing: border-box;
+  //      height: auto;
+  //      margin: 4px;
+  //      max-height: 10em;
+  //      overflow: hidden;
+  //      transition: all .2s ease-in-out;
+  //
+  //      img {
+  //        max-width: 100%;
+  //        opacity: 0;
+  //        transition: all .2s ease-in-out;
+  //        width: 100%;
+  //      }
+  //    }
+  //
+  //    &:hover .project-img {
+  //      height: auto;
+  //      max-height: 1000px;
+  //
+  //      img {
+  //        opacity: 1;
+  //      }
+  //    }
+  //  }
+  //}
 }

@@ -20,83 +20,22 @@ const { readFileSync, writeFileSync } = require('fs');
 const { parse } = require('yaml');
 const md = require('markdown-it')();
 
-// Define all the icons for the tools
-const toolMap = {
-    'phpstorm': 'devicon-phpstorm-plain',
-    'webstorm': 'devicon-webstorm-plain',
-    'pycharm': 'devicon-pycharm-plain',
-    'rubymine': 'devicon-rubymine-plain',
-
-    'php': 'fab fa-php',
-    'html': 'fab fa-html5',
-
-    'js': 'fab fa-js',
-    'javascript': 'fab fa-js',
-    'js (es6)': 'fab fa-js',
-    'javascript (es6)': 'fab fa-js',
-
-    'nodejs': 'fab fa-node-js',
-    'vuejs': 'fab fa-vuejs',
-
-    'typescript': 'devicon-typescript-plain',
-    'webpack': 'devicon-webpack-plain',
-    'babel': 'devicon-babel-plain',
-
-    'jquery': 'devicon-jquery-plain',
-
-    'css': 'fab fa-css3',
-    'css3': 'fab fa-css3',
-    'sass': 'fab fa-sass',
-
-    'bootstrap': 'fab fa-bootstrap',
-
-    'mysql': 'devicon-mysql-plain',
-    'laravel': 'devicon-laravel-plain',
-    'rails': 'devicon-rails-plain',
-
-    'git': 'devicon-git-plain',
-    'github': 'fab fa-github',
-
-    'python': 'fab fa-python',
-
-    'photoshop': 'devicon-photoshop-plain',
-
-    'twitter': 'fab fa-twitter',
-    'discord': 'fab fa-discord',
-    'discourse': 'fab fa-discourse',
-    'slack': 'fab fa-slack'
-};
+const mdExtLinks = md => md.replace(/<a(.+?)>/g, '<a$1 target="_blank" rel="noopener">');
 
 // Load in the main config yaml
 const config = parse(readFileSync('config.yaml', 'utf8'));
 config.meta.description = config.meta.description.replace(/\s*[\r\n]\s*/g, ' ');
 config.meta.keywords = config.meta.keywords.join(', ');
 for (const link of config.contact.links) {
-    link.title = md.renderInline(link.title).replace(/<(\/?)i>/g, '<$1small>');
+    link.title = mdExtLinks(md.renderInline(link.title).replace(/<(\/?)i>/g, '<$1small>'));
 }
 
-// Get the projects in a usable data format
-const projectsRaw = parse(readFileSync('projects.yaml', 'utf8'));
-const projects = Object.keys(projectsRaw).map(key => {
-    // Name
-    const data = projectsRaw[key];
-    data.name = key;
-
-    // Icons
-    data.icons = data.tools.map(tool => {
-        const key = tool.toString().toLowerCase();
-        if (!(key in toolMap)) return tool;
-        return {
-            classes: toolMap[key],
-            name: tool
-        };
-    });
-
-    // Markdown
-    data.desc = md.renderInline(data.desc).replace(/<a (.+?)>/g, '<a $1 target="_blank" rel="noopener">');
-
-    return data;
-}).filter(x => x.display);
+// Load in all the projects
+const projects = parse(readFileSync('projects.yaml', 'utf8'));
+for (const project of projects) {
+    project.headline = mdExtLinks(md.renderInline(project.headline));
+    project.desc = mdExtLinks(md.render(project.desc));
+}
 
 // Load all the PostHTML requirements
 const posthtml = require('posthtml');

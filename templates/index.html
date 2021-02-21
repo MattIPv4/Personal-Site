@@ -105,10 +105,6 @@
     <link rel="stylesheet" href="css/base.css"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400&display=swap&subset=latin-ext"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"
-          integrity="sha256-4LcvM6Kisp2RIksJbr9MdLdjZrVxALxPqi0SwWmymPI=" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-          integrity="sha256-7rF6RaSKyh16288E3hVdzQtHyzatA2MQRGu0cf6pqqM=" crossorigin="anonymous"/>
 </head>
 <body>
 <div class="content">
@@ -141,11 +137,10 @@
     <!-- Projects -->
     <h3 class="featured">Featured Projects</h3>
     <div class="projects">
-        <each loop="value, index in projects">
-            <scope with="value">
+        <each loop="item in projects">
+            <scope with="item">
                 <include src="templates/project.html"></include>
             </scope>
-            <if condition="index % 2 !== 0"><div class="project-fix"></div></if>
         </each>
     </div>
 
