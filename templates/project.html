@@ -17,37 +17,40 @@
 -->
 
 <div class="project">
-    <div class="project-meta">
-        <div>
+    <div class="project-info">
+        <div class="project-meta">
             <p class="project-title">{{ title }}</p>
             <p class="project-role">{{ role }}</p>
 
             <div class="project-dates">
                 <p class="project-start">{{ dates.start }}</p>
-                <if condition="dates.end === null">
-                    <p class="project-end active">Present</p>
+                <if condition="dates.start !== dates.end">
+                    <if condition="dates.end === null">
+                        <p class="project-end active">Present</p>
+                    </if>
+                    <else>
+                        <p class="project-end">{{ dates.end }}</p>
+                    </else>
                 </if>
-                <else>
-                    <p class="project-end">{{ dates.end }}</p>
-                </else>
             </div>
-        </div>
 
-        <div class="project-tags">
-            <each loop="item in tags">
-                <p class="project-tag">{{ item }}</p>
-            </each>
-        </div>
-    </div>
+            <div class="project-tags">
+                <each loop="item in tags">
+                    <p class="project-tag">{{ item }}</p>
+                </each>
+            </div>
 
-    <div class="project-info">
-        <div>
-            <p class="project-headline">{{{ headline }}}</p>
-            <p class="project-link">
-                <a href="{{ link }}" target="_blank" rel="noopener">
-                    {{ link }}
-                </a>
-            </p>
+            <div class="project-details">
+                <p class="project-headline">{{{ headline }}}</p>
+                <p class="project-link">
+                    <each loop="item, index in links">
+                        <if condition="index !== 0">&nbsp;/&nbsp;</if>
+                        <a href="{{ item }}" target="_blank" rel="noopener">
+                            {{ item }}
+                        </a>
+                    </each>
+                </p>
+            </div>
         </div>
 
         <div class="project-img">

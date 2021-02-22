@@ -153,7 +153,8 @@ body {
     }
 
     h3,
-    ul {
+    ul,
+    .project-link {
       a {
         &,
         &:visited {
@@ -195,21 +196,6 @@ body {
 
     a {
       text-decoration: underline;
-    }
-
-    .projects .project-outer .project {
-      background: rgba(239, 253, 255, 1);
-      box-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
-
-      .project-img {
-        box-shadow: inset 0 .1rem 1rem rgba(239, 253, 255, .95);
-      }
-
-      .project-tools i .tip {
-        background: rgba(129, 243, 253, .8);
-        box-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
-        color: #111;
-      }
     }
   }
 

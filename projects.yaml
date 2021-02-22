@@ -1,3 +1,21 @@
+#- title: Thing
+#  role: Thing
+#  tags:
+#    - Thing
+#    - Thing
+#  dates:
+#    start: Thing
+#    end: ~
+#  headline: Thing
+#  links:
+#    - Thing
+#    - Thing
+#  image:
+#    file: Thing
+#    position: center
+#  desc: |
+#    Thing
+
 - title: DigitalOcean
   role: Community Platform Manager
   tags:
@@ -8,7 +26,9 @@
     start: June 2019
     end: ~
   headline: Helping millions of developers easily build, test, manage, and scale applications of any size - faster than ever before.
-  link: https://digitalocean.com/community
+  links:
+    - https://digitalocean.com/community
+    - https://github.com/do-community/
   image:
     file: digitalocean
     position: center
@@ -41,105 +61,113 @@
     [Community Questions and Answers](https://www.digitalocean.com/community/questions), as well as escalting issues
     internally to support teams when appropriate and improving processes for triaging feedback provided by our users.
 
-#cdnjs (Cloudflare):
-#  display: true
-#  type: "Community"
-#  link: "https://cdnjs.com"
-#  image: "cdnjs"
-#  position: "center"
-#  tools:
-#    - Discourse
-#    - Slack
-#    - Twitter
-#    - Git
-#    - GitHub
-#    - WebStorm
-#    - Photoshop
-#  desc: |
-#    **cdnjs is a free and open-source CDN service that serves resources to
-#    [11.5% of all websites](https://w3techs.com/technologies/details/cd-cdnjs/all/all)**. I work for
-#    [Cloudflare](https://cloudflare.com) on contract to help maintain and moderate cdnjs, working with the community
-#    around the project through [Twitter](https://twitter.com/cdnjs), [GitHub](https://github.com/cdnjs/cdnjs) and our
-#    [Discourse forum](https://cdnjs.discourse.group/). I also work with the sponsors of the project such as
-#    [Algolia](https://algolia.com) and [StatusPage](https://statuspage.io) to ensure the CDN service and website are
-#    maintained.
-#
-#js.org:
-#  display: true
-#  type: "Community"
-#  link: "https://js.org"
-#  image: "js-org"
-#  position: "center"
-#  tools:
-#    - Git
-#    - GitHub
-#  desc: |
-#    **js.org is a simple project with the aim to allow anyone to request a js.org subdomain for their project's website
-#    for free**. The project is run by the GitHub user [@indus](https://github.com/indus) along with myself. We manage the
-#    subdomains through a [GitHub repository](https://github.com/js-org/js.org) and a single file that tracks all the
-#    active CNAMEs. My main task is to review all new pull requests to ensure they meet our standards.
-#
-#Hacktoberfest (DigitalOcean):
-#  display: true
-#  type: "Community"
-#  link: "https://hacktoberfest.digitalocean.com/"
-#  image: "hacktoberfest"
-#  position: "top"
-#  tools:
-#    - Twitter
-#    - Git
-#    - GitHub
-#    - RubyMine
-#    - Rails
-#  desc: |
-#    **Hacktoberfest encourages folks to get involved in open source. Open source is changing the world – one pull
-#    request at a time**. As part of my work for [DigitalOcean](https://www.digitalocean.com/), I get to help out with
-#    their Hacktoberfest program, a community program to encourage folks to participate in open source. Primarily, I help
-#    with the social and support engagement, answering support tickets and responding to
-#    [tweets](https://twitter.com/hacktoberfest). I also help out our engineering team with the
-#    [Hacktoberfest Rails app](https://github.com/digitalocean/hacktoberfest).
-#
-#1.1.1.1 DNS over Discord (Cloudflare):
-#  display: true
-#  type: "Web / Application"
-#  link: "https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord"
-#  image: "dns-over-discord"
-#  position: "bottom"
-#  tools:
-#    - WebStorm
-#    - JavaScript
-#    - NodeJS
-#    - Git
-#    - GitHub
-#  desc: |
-#    **The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
-#    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https)**. The bot is written in
-#    JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) -- hosted via
-#    [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
-#    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
-#
-#PogChampOfTheDay:
-#  display: true
-#  type: "Web"
-#  link: "https://pogchamp.today/"
-#  image: "pogchamp"
-#  position: "center"
-#  tools:
-#    - WebStorm
-#      - NodeJS
-#    - JavaScript
-#    - HTML
-#    - CSS3
-#    - Git
-#    - GitHub
-#  desc: |
-#    **Each day brings a new PogChamp emote to Twitch. View the latest PogChamp of the Day at
-#    [pogchamp.today](https://pogchamp.today/)**. This little web application reveals the current PogChamp of the Day on
-#    [Twitch](https://www.twitch.tv/), with automation via GitHub Actions to fetch the latest PogChamp emote from the
-#    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) and build the updated site. The
-#    entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on GitHub
-#    Actions and Pages to operate.
-#
+- title: cdnjs / Cloudflare
+  role: Open-source Maintainer
+  tags:
+    - Community
+    - Engineering
+    - Open-source
+  dates:
+    start: October 2018
+    end: ~
+  headline: "The #1 free and open source CDN built to make life easier for developers."
+  links:
+    - https://cdnjs.com/
+    - https://github.com/cdnjs/
+  image:
+    file: cdnjs
+    position: center
+  desc: |
+    * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure reliability of service for
+    cdnjs, as we continue to serve [over 210 billion requests a month](https://github.com/cdnjs/cf-stats) to
+    [over 12% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
+
+    * Assisting external contributors wanting to add libraries to cdnjs by developing
+    [updated documentation for cdnjs on GitHub](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md), as well
+    as ensuring we can respond on GitHub to issues that are being created and reviewing any pull requests submitted by
+    contributors to add new libraries.
+
+    * Responsible for managing the [cdnjs Twitter account](https://twitter.com/cdnjs) (and
+    [status account](https://twitter.com/cdnjsStatus)), providing support to those who ask reach out to us on social and
+    triaging any reported issues to be passed onto the team for further investigation.
+
+    * Continuing to work with sponsoring companies such as [Heroku](https://www.heroku.com/),
+    [Algolia](https://www.algolia.com/), and [Atlassian Statuspage](https://www.atlassian.com/software/statuspage) to
+    retain and grow the sponsorships that we have for their services that help keep cdnjs running.
+
+- title: js.org
+  role: Developer Relations
+  tags:
+    - Community
+    - Open-source
+  dates:
+    start: October 2018
+    end: ~
+  headline: js.org provides free js.org subdomains to JavaScript projects on GitHub for free through GitHub.
+  links:
+    - https://js.org
+    - https://github.com/js-org/js.org
+  image:
+    file: js-org
+    position: center
+  desc: |
+    * Directly responsible for triaging issues and reviewing pull requests made by third-party developers requesting
+    their custom js.org subdomains on the [js.org GitHub repository](https://github.com/js-org/js.org), ensuring they
+    meet our standards for being granted a free subdomain.
+
+    * Building out [automation to handle the annual cleanup](https://github.com/MattIPv4/js.org-cleanup) of the js.org
+    active file to ensure all subdomains are valid, liaising with contributors on subdomains which have failed checks
+    to resolve any issues.
+
+    * Working with the js.org team and external contributors to develop new PR review and management systems through
+    continuous integration (CI), working to remove the need for intesive human review of every domain request.
+
+- title: 1.1.1.1 DNS over Discord
+  role: Standalone Project
+  tags:
+    - Engineering
+    - Open-source
+  dates:
+    start: August 2019
+    end: ~
+  headline: Ever wanted to make DNS requests from the comfort of your Discord server? Well now you can, thanks to the @1.1.1.1 bot.
+  links:
+    - https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord
+    - https://dns-over-discord.v4.wtf/invite
+  image:
+    file: dns-over-discord
+    position: bottom
+  desc: |
+    * The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
+    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https).
+
+    * The bot is written in JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) --
+    hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
+    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
+
+- title: PogChamp of the Day
+  role: Standalone Project
+  tags:
+    - Engineering
+    - Open-source
+  dates:
+    start: January 2021
+    end: ~
+  headline: Your new PogChamp is... View the new Twitch PogChamp and the history of the PogChamp of the Day at pogchamp.today
+  links:
+    - https://pogchamp.today/
+    - https://github.com/MattIPv4/pogchamp
+  image:
+    file: pogchamp
+    position: center
+  desc: |
+    * This web-app reveals the new PogChamp emote for [Twitch](https://www.twitch.tv/), mirroring the style that Twitch
+    used in many of their motion-graphics, as well as documenting the history of the PogChamp of the Day.
+
+    * The entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on
+    GitHub Actions and Pages to operate, with automation build using the
+    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) to detect new PogChamp emotes.
+
 #MagicCap:
 #  display: true
 #  type: "Web / Application"

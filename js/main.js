@@ -55,5 +55,29 @@ const pickTheme = () => {
     loadTheme(themes[Math.floor(Math.random() * themes.length)]);
 };
 
+const handleProjects = () => {
+    // Get all the projects
+    const projects = [...document.querySelectorAll('.project')];
+
+    for (const project of projects) {
+        // Register the click handler
+        project.querySelector('.project-info').addEventListener('click', e => {
+            // Don't trigger if clicking on link
+            if (e.target.nodeName === 'A') return;
+
+            // Toggle desc visibility
+            const desc = project.querySelector('.project-desc');
+            desc.style.display = desc.style.display === 'none' ? '' : 'none';
+        });
+
+        // Hide the desc by default
+        project.querySelector('.project-desc').style.display = 'none';
+
+        // Enable the hover styles
+        project.querySelector('.project-info').classList.add('has-js');
+    }
+};
+
 // Go!
 pickTheme();
+handleProjects();
