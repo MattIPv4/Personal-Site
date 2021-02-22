@@ -168,6 +168,88 @@
     GitHub Actions and Pages to operate, with automation build using the
     [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) to detect new PogChamp emotes.
 
+- title: JetBrains Community
+  role: Community Manager
+  tags:
+    - Community
+    - Open-source
+  dates:
+    start: April 2018
+    end: ~
+  headline: JetBrains Community is the Reddit and Discord community for all things JetBrains.
+  links:
+    - https://discord.gg/jetbrains
+    - https://www.reddit.com/r/jetbrains/
+  image:
+    file: jetbrains-community
+    position: center
+  desc: |
+    * Creating and managing a large community of JetBrains users and team members on
+    [Discord](https://discord.com/invite/jetbrains) where community members can all chat and interact with each other in
+    a safe environment, asking for and receiving help around JetBrains products and projects as well as having open
+    discussion about almost anything.
+
+    * Working with the team at JetBrains to create [unique branding](https://github.com/JetBrains-Community/brand)
+    in-line with overall JetBrains branding for the community and to ensure that our operations align with what they
+    expect of a user group.
+
+    * Expanding the community beyond Discord into a
+    [large network of sub-communities on Reddit](https://www.reddit.com/user/SupremeDesigner/m/jetbrains_community/),
+    including [r/JetBrains](https://www.reddit.com/r/Jetbrains/) and [r/PyCharm](https://www.reddit.com/r/pycharm/).
+
+- title: Young Theatre
+  role: Chief In-House Electrician
+  tags:
+    - Live Production
+  dates:
+    start: February 2014
+    end: September 2019
+  headline: A youth theatre group run by young people for young people.
+  links:
+    - https://www.youngtheatre.org.uk/
+  image:
+    file: youngtheatre-panto2016
+    position: top
+  desc: |
+    * Responsible for continual maintenance of all electrical equipment within the theatre company, including lighting
+    fixtures, power distribution, control equipment, etc.
+
+    * Training new members on the crew on basics electrical saftey, how to wire common connectors used in the theatre,
+    and the basics of power and lighting in the venue.
+
+    * Responsible for the installation, wiring and checking of any practical effects used in productions, ensuring they
+    are safe to be used on stage.
+
+    * Acting production electrician or stage electrics during performances put on by the theatre company, responsible
+    for practical effects and overall power distribution during productions.
+
+- title: Blink FM
+  role: Programme Controller
+  tags:
+    - Live Production
+    - Live Broadcasting
+  dates:
+    start: October 2014
+    end: September 2017
+  headline: A local, youth run radio station that broadcasts online to all and via FM radio to areas of South Bucks.
+  links:
+    - https://internetradiouk.com/blink-fm/
+  image:
+    file: blink-fm
+    position: bottom
+  desc: |
+    * Responsible for co-ordinating with different presenters to establish an ongoing, flexible schedule for when shows
+    are on air, ensuring that all content follows
+    [Ofcom guidelines](https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-codes/broadcast-code) and is safe to
+    broadcast on air.
+
+    * Providing assistance to youth presenters in the studio to ensure that their shows run smoothly and are broadcast
+    successfully, training and aiding them in using studio equipment including the Auto DJ and Myriad systems.
+
+    * Working with the Blink team and the parent team at Wycombe Youth Action to continue to grow the radio station,
+    including aquiring new and improved equipment, as well as developing a new website and graphics package for the
+    station to boost the brand.
+
 #MagicCap:
 #  display: true
 #  type: "Web / Application"
@@ -228,23 +310,6 @@
 #    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
 #    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
 #    user online to contribute to the project.
-#
-#JetBrains Community:
-#  display: false
-#  type: "Community"
-#  link: "https://discord.gg/dJK27sh"
-#  image: "jetbrains-community"
-#  position: "center"
-#  tools:
-#    - PyCharm
-#    - Python
-#    - Git
-#    - GitHub
-#    - Photoshop
-#  desc: |
-#    Creating and managing a large community of JetBrains users and team members on Discord where they can all chat with
-#    each other about JetBrains products and projects as well as pretty much anything else. To help the community, JetBot
-#    was created; a python Discord bot that provides information via commands about JetBrains.
 #
 #BotBlock:
 #  display: false
@@ -330,20 +395,3 @@
 #    site which was a template. Producing this site was great fun as there were very few requirements from the client
 #    other than the content, so I had freedom of design. The site was designed to provide quick access to key info
 #    and links for all vistors.
-#
-#Young Theatre:
-#  display: false
-#  type: "Theatre"
-#  link: "https://www.youngtheatre.org.uk/"
-#  image: "youngtheatre-panto2016"
-#  position: "top"
-#  tools:
-#      - Jands Vista
-#      - Chamsys MagicQ
-#      - ETC EOS
-#      - QLab
-#      - Cast WYSIWYG
-#  desc: |
-#    Young Theatre is a theatre group for young people, run by young people. I have been a part of their technical
-#    team for many years now and have been part of many shows produced by the company. Over the multitude of shows
-#    I have gained a large amount of experience with all aspects of technical theatre in an enjoyable environment.
