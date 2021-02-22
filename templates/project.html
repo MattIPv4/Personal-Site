@@ -44,7 +44,9 @@
                 <p class="project-headline">{{{ headline }}}</p>
                 <p class="project-link">
                     <each loop="item, index in links">
-                        <if condition="index !== 0">&nbsp;/&nbsp;</if>
+                        <if condition="index !== 0">
+                            <span>&nbsp;/&nbsp;</span>
+                        </if>
                         <a href="{{ item }}" target="_blank" rel="noopener">
                             {{ item }}
                         </a>

@@ -27,6 +27,9 @@ const hello = () => {
     const title = document.querySelector('.content h1');
     title.textContent = ', I\'m ' + title.textContent + '. ';
     const hello = document.createElement('span');
+    const wave = document.createElement('span');
+    wave.textContent = '👋 ';
+    hello.appendChild(wave);
     const chars = 'Hello'.split('');
     for (let i = 0; i < chars.length; i++) {
         const char = chars[i];

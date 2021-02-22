@@ -23,6 +23,10 @@ const doParticles = (id, config) => {
 window._theme = () => {
     delete window._theme;
 
+    // Wave
+    const heading = document.querySelector('.content h1');
+    heading.textContent = '👋 Hi, I\'m ' + heading.textContent;
+
     // Background particles
     window._callback = () => {
         delete window._callback;

@@ -23,6 +23,11 @@
     .project-info {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
 
       &.has-js {
         border-radius: .25em;
@@ -41,7 +46,7 @@
       }
 
       .project-meta {
-        flex: 1;
+        flex: 1 1 auto;
 
         .project-title {
           font-size: 1.15em;
@@ -99,22 +104,43 @@
           }
 
           .project-link {
-            a {
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
+
+            a,
+            span {
               display: inline-block;
+            }
+
+            a {
+              @media only screen and (max-width: 768px) {
+                margin: .125em 0;
+                word-break: break-all;
+              }
+            }
+
+            span {
+              @media only screen and (max-width: 768px) {
+                display: none;
+              }
             }
           }
         }
       }
 
       .project-img {
-        flex: 0 1;
+        flex: 0 1 auto;
         height: 10em;
         margin: .5em;
+        max-width: 100%;
         width: auto;
 
         img {
           border-radius: .25em;
           height: 100%;
+          max-width: 100%;
           object-fit: cover;
           width: auto;
         }

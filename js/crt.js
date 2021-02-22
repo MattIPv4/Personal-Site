@@ -19,10 +19,14 @@
 window._theme = () => {
     delete window._theme;
 
+    // Wave
+    const heading = document.querySelector('.content h1');
+    heading.textContent = '👋 Hi, I\'m ' + heading.textContent;
+
     // Typing
     const span = document.createElement('span');
     span.textContent = '_';
-    document.querySelector('.content h1').appendChild(span);
+    heading.appendChild(span);
 
     // Custom BG
     const bg = document.createElement('div');
