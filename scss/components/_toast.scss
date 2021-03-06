@@ -28,13 +28,13 @@ $button: lighten($base, 15%);
   bottom: 1rem;
   box-shadow: 4px 4px 0 0 darken($bg, 10%);
   color: $text;
-  text-shadow: none;
   font-size: 1rem;
   line-height: 1.25;
   max-width: $width;
   padding: .75rem;
   position: fixed;
   right: 1rem;
+  text-shadow: none;
   transition: opacity 1s ease-in-out;
   width: $width;
 
