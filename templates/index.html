@@ -111,28 +111,41 @@
     <!-- Intro -->
     <h1>{{ config.title }}</h1>
 
-    <h4>What I do:</h4>
-    <each loop="item in config.roles">
-        <h2>{{ item }}️</h2>
-    </each>
+    <div class="intro">
+        <div class="main{{ config.rail.length ? '' : ' full' }}">
+            <h4>What I do:</h4>
+            <each loop="item in config.roles">
+                <h2>{{ item }}️</h2>
+            </each>
 
-    <h4>What I'm interested in:</h4>
-    <each loop="item in config.interests">
-        <h3>{{ item }}️</h3>
-    </each>
+            <h4>What I'm interested in:</h4>
+            <each loop="item in config.interests">
+                <h3>{{ item }}️</h3>
+            </each>
 
-    <!-- Contact -->
-    <h3 class="email">Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></h3>
-    <ul class="contact">
-        <each loop="item in config.contact.links">
-            <li>
-                <a href="{{ item.url }}" target="_blank" rel="noopener">
-                    {{{ item.title }}}
-                    <br/><i>{{ item.username }}</i>
-                </a>
-            </li>
-        </each>
-    </ul>
+            <!-- Contact -->
+            <h3 class="email">Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></h3>
+            <ul class="contact">
+                <each loop="item in config.contact.links">
+                    <li>
+                        <a href="{{ item.url }}" target="_blank" rel="noopener">
+                            {{{ item.title }}}
+                            <br/><i>{{ item.username }}</i>
+                        </a>
+                    </li>
+                </each>
+            </ul>
+        </div>
+
+        <if condition="config.rail.length">
+            <div class="rail">
+                <each loop="item in config.rail">
+                    <h5>{{ item.title }}</h5>
+                    {{{ item.content }}}
+                </each>
+            </div>
+        </if>
+    </div>
 
     <!-- Projects -->
     <h3 class="featured">Featured Projects</h3>

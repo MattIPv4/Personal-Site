@@ -23,7 +23,7 @@ body {
 
 .content {
   h1 {
-    margin-bottom: 65px;
+    margin: .5em 0 .75em;
   }
 
   h2,
@@ -32,11 +32,13 @@ body {
     margin: 25px 0;
   }
 
-  h4 {
+  h4,
+  h5 {
     font-size: 1.35em;
   }
 
   h4,
+  h5,
   h3.email {
     margin: 45px 0 25px;
   }
@@ -109,6 +111,7 @@ body {
 
   .comment,
   h4,
+  h5,
   .contact li a i {
     color: #52bc57;
     text-decoration: none;

@@ -28,6 +28,7 @@ $button: lighten($base, 15%);
   bottom: 1rem;
   box-shadow: 4px 4px 0 0 darken($bg, 10%);
   color: $text;
+  text-shadow: none;
   font-size: 1rem;
   line-height: 1.25;
   max-width: $width;
