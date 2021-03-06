@@ -14,6 +14,10 @@
   button: Follow me on Twitter
   link: https://twitter.com/MattIPv4
 
+- content: 🤔 Curious about what the current thing is that's on my mind or that I'm working on?
+  button: Get the latest on my Twitter
+  link: https://twitter.com/MattIPv4
+
 - content: 🤖 Use Discord and want to run DNS lookups from in your own Discord server?
   button: Get the 1.1.1.1 Bot
   link: https://dns-over-discord.v4.wtf
@@ -23,6 +27,10 @@
   link: https://cdnjs.com
 
 - content: 🦅 Interested in wildlife conservation and helping species heal?
+  button: Check out Alveus Sanctuary
+  link: https://www.alveussanctuary.org/
+
+- content: 🦅 Curious about the intersection of streaming and wildlife conservation?
   button: Check out Alveus Sanctuary
   link: https://www.alveussanctuary.org/
 
