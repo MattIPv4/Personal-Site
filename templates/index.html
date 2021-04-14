@@ -113,15 +113,22 @@
 
     <div class="intro">
         <div class="main{{ config.rail.length ? '' : ' full' }}">
-            <h4>What I do:</h4>
-            <each loop="item in config.roles">
-                <h2>{{ item }}️</h2>
-            </each>
-
-            <h4>What I'm interested in:</h4>
-            <each loop="item in config.interests">
-                <h3>{{ item }}️</h3>
-            </each>
+            <!-- Main Items -->
+            <div class="items">
+                <each loop="item in config.main">
+                    <div>
+                        <h4>{{ item.title }}</h4>
+                        <each loop="subitem in item.items">
+                            <if condition="item.size === 'h2'">
+                                <h2>{{ subitem }}️</h2>
+                            </if>
+                            <elseif condition="item.size === 'h3'">
+                                <h3>{{ subitem }}️</h3>
+                            </elseif>
+                        </each>
+                    </div>
+                </each>
+            </div>
 
             <!-- Contact -->
             <h3 class="email">Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></h3>
@@ -137,6 +144,7 @@
             </ul>
         </div>
 
+        <!-- Right Rail Items -->
         <if condition="config.rail.length">
             <div class="rail">
                 <each loop="item in config.rail">

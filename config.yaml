@@ -59,17 +59,37 @@ google:
     client: ca-pub-4266526051230566
     slot: 9114202102
 
-roles:
-  - Community Platform Manager @ DigitalOcean 🦈️
-  - Maintainer of cdnjs.com @ Cloudflare ⛅
-  - Developer Relations @ js.org 📝
-  - Open-source maintainer & avid supporter 💻
+main:
+  - title: "What I do:"
+    size: h2
+    items:
+      - Community Platform Manager @ DigitalOcean 🦈️
+      - Maintainer of cdnjs.com @ Cloudflare ⛅
+      - Developer Relations @ js.org 📝
+      - Open-source maintainer & avid supporter 💻
 
-interests:
-  - Community Management, Developer Relations, Open-Source Advocacy 🥑
-  - Software Engineering, Full-stack Development (Node.js, Ruby on Rails, Vue.js) 🖥
-  - Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
-  - Stage Management, Production Electrics, Lighting 💡
+  - title: "Who I am:"
+    size: h3
+    items:
+      - 20 y/o based near London, UK 📍
+      - Studying BSc Computing @ University 🎓
+
+  - title: "What I'm interested in:"
+    size: h3
+    items:
+      - Community Management, Developer Relations, Open-Source Advocacy 🥑
+      - Software Engineering, Full-stack Development (Node.js, Ruby on Rails, Vue.js) 🖥
+      - Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
+      - Stage Management, Production Electrics, Lighting 💡
+
+rail: []
+#rail:
+#  - title: "Education:"
+#    content: |
+#      * Studying BSc Computing @ University of Buckingham.
+#      * AAB in Computer Science, Maths & Business Studies at A Level.
+#      * 9 in Maths with an A in Additional Maths (FSMQ), Computing, Physics & Geography at GCSE.
+#      * 8/6 in English Lit/Lang and a B in Biology, Chemistry, Art, French & RS at GCSE.
 
 contact:
   email: me@mattcowley.co.uk
@@ -93,12 +113,3 @@ contact:
     - title: "**sponsors**_.mattcowley.co.uk_"
       username: "@MattIPv4"
       url: https://sponsors.mattcowley.co.uk/
-
-rail: []
-#rail:
-#  - title: "Education:"
-#    content: |
-#      * Studying BSc Computing @ University of Buckingham.
-#      * AAB in Computer Science, Maths & Business Studies at A Level.
-#      * 9 in Maths with an A in Additional Maths (FSMQ), Computing, Physics & Geography at GCSE.
-#      * 8/6 in English Lit/Lang and a B in Biology, Chemistry, Art, French & RS at GCSE.
