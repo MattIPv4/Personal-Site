@@ -132,7 +132,7 @@
 
       .project-img {
         flex: 0 1 auto;
-        height: 10em;
+        height: 10em; // Make sure to update images/main.js and templates/project.html if height changes
         margin: .5em;
         max-width: 100%;
         width: auto;

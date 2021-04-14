@@ -20,6 +20,15 @@ const path = require('path');
 const { existsSync, mkdirSync, readdirSync  } = require('fs');
 const sharp = require('sharp');
 
+const sharpResize = (base, image) => sharp(path.join(base, image)).resize(284, 160, {
+    fit: 'contain',
+    background: { r: 0, g: 0, b: 0, alpha: 0 }
+});
+
+const sharpSave = (sharp, dir, image, type) => sharp.toFile(
+    path.join(dir, image.split('.').slice(0, -1).join('.') + '.' + type)
+);
+
 const main = async () => {
     // Create output dir
     const dir = path.join(__dirname, '..', 'build', 'projects') ;
@@ -32,14 +41,15 @@ const main = async () => {
     // Resize & compress images
     for(let i = 0; i < images.length; i++) {
         const image = images[i];
-        await sharp(path.join(base, image))
-            .resize(null, 200)
-            .png({
-                compressionLevel: 9,
-                palette: true
-            })
-            .toFile(path.join(dir, image.split('.').slice(0, -1).join('.') + '.png'));
+        await sharpSave(sharpResize(base, image).png({
+            compressionLevel: 9,
+            palette: true
+        }), dir, image, 'png');
+        await sharpSave(sharpResize(base, image).webp({
+            lossless: true,
+            reductionEffort: 6
+        }), dir, image, 'webp');
     }
 };
 
-main();
+main().then();

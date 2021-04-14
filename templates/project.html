@@ -56,10 +56,13 @@
         </div>
 
         <div class="project-img">
-            <img src="projects/{{ image.file }}.png"
+            <img src="projects/{{ image.file }}.webp"
+                 onerror="this.onerror=null; this.src='projects/{{ image.file }}.png'"
                  alt="{{ title }}"
                  style="object-position: {{ image.position }} center;"
                  loading="lazy"
+                 height="160"
+                 width="284"
             />
         </div>
     </div>
