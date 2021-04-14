@@ -22,11 +22,15 @@
   button: Get the 1.1.1.1 Bot
   link: https://dns-over-discord.v4.wtf
 
+- content: 🤖 Did you know you can now peform DNS lookups from Discord chat?
+  button: Get the 1.1.1.1 Bot
+  link: https://dns-over-discord.v4.wtf
+
 - content: ⚙️ Need a quick and secure way to add CSS or JS libraries to your website?
   button: Try out cdnjs
   link: https://cdnjs.com
 
-- content: 🦅 Interested in wildlife conservation and helping species heal?
+- content: 🦅 Interested in wildlife conservation, education and helping species heal?
   button: Check out Alveus Sanctuary
   link: https://www.alveussanctuary.org/
 
@@ -34,6 +38,10 @@
   button: Check out Alveus Sanctuary
   link: https://www.alveussanctuary.org/
 
-- content: 😶 I'm looking for a girlfriend! If you're genuinely interested, I have a form, 'cause why not.
-  button: See the form
-  link: https://forms.gle/CCrw2MmZR9hGfFyH9
+- content: 🤔 Need help with system administration, development or anything tech-adjacent?
+  button: Ask the DigitalOcean Community
+  link: https://www.digitalocean.com/community/questions
+
+- content: 📖 Want to learn more about system administration, development and beyond?
+  button: Check out the DigitalOcean Community
+  link: https://www.digitalocean.com/community/tutorials
