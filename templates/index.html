@@ -93,7 +93,7 @@
           content="{{ config.meta.banner }}"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google.analytics }}"></script>
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id={{ config.google.analytics }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -103,19 +103,16 @@
         gtag('config', '{{ config.google.analytics }}');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: '{{ config.google.adsense.client }}',
-            enable_page_level_ads: true
-        });
-    </script>
-
     <!-- Global styles -->
     <link rel="stylesheet" href="css/base.css"/>
+
+    <!-- Async font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400&display=swap&subset=latin-ext"
-          rel="stylesheet">
+          rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400&display=swap&subset=latin-ext"
+              rel="stylesheet"/>
+    </noscript>
 </head>
 <body>
 <div class="content">
@@ -177,12 +174,15 @@
     </div>
 
     <!-- Ad -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle" style="display:flex;justify-content:center"
          data-ad-client="{{ config.google.adsense.client }}" data-ad-slot="{{ config.google.adsense.slot }}"
          data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: '{{ config.google.adsense.client }}',
+            enable_page_level_ads: true
+        });
     </script>
 
     <!-- Theme loader -->
