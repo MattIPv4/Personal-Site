@@ -95,6 +95,29 @@
     [Algolia](https://www.algolia.com/), and [Atlassian Statuspage](https://www.atlassian.com/software/statuspage) to
     retain and grow the sponsorships that we have for their services that help keep cdnjs running.
 
+- title: DNS over Discord (1.1.1.1)
+  role: Standalone Project
+  tags:
+    - Engineering
+    - Open-source
+  dates:
+    start: August 2019
+    end: ~
+  headline: Ever wanted to make DNS requests from the comfort of your Discord server? Well now you can, thanks to the @1.1.1.1 bot.
+  links:
+    - https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord
+    - https://dns-over-discord.v4.wtf/invite
+  image:
+    file: dns-over-discord
+    position: bottom
+  desc: |
+    * The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
+    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https).
+
+    * The bot is written in JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) --
+    hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
+    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
+
 - title: js.org
   role: Developer Relations
   tags:
@@ -121,29 +144,6 @@
 
     * Working with the js.org team and external contributors to develop new PR review and management systems through
     continuous integration (CI), working to remove the need for intesive human review of every domain request.
-
-- title: 1.1.1.1 DNS over Discord
-  role: Standalone Project
-  tags:
-    - Engineering
-    - Open-source
-  dates:
-    start: August 2019
-    end: ~
-  headline: Ever wanted to make DNS requests from the comfort of your Discord server? Well now you can, thanks to the @1.1.1.1 bot.
-  links:
-    - https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord
-    - https://dns-over-discord.v4.wtf/invite
-  image:
-    file: dns-over-discord
-    position: bottom
-  desc: |
-    * The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
-    [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https).
-
-    * The bot is written in JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) --
-    hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
-    [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
 
 - title: PogChamp of the Day
   role: Standalone Project
