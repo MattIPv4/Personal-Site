@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2019 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -33,10 +33,10 @@ const main = async () => {
     for(let i = 0; i < images.length; i++) {
         const image = images[i];
         await sharp(path.join(base, image))
-            .resize(600)
+            .resize(null, 200)
             .png({
                 compressionLevel: 9,
-                quality: 10
+                palette: true
             })
             .toFile(path.join(dir, image.split('.').slice(0, -1).join('.') + '.png'));
     }
