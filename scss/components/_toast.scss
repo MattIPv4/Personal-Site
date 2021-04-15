@@ -38,6 +38,13 @@ $button: lighten($base, 15%);
   transition: opacity 1s ease-in-out;
   width: $width;
 
+  &:not(.scrolled) {
+    @media only screen and (max-width: 768px) {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
   > div {
     display: flex;
     flex-wrap: nowrap;

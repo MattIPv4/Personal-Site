@@ -18,11 +18,14 @@
 
 const data = require('../toasts.yaml');
 
+let hasScrolled = false;
+
 const loadToast = () => {
     const toast = data[Math.floor(Math.random() * data.length)];
     const wrapper = document.createElement('div');
     wrapper.className = 'toast';
     wrapper.style.opacity = '0';
+    wrapper.style.pointerEvents = 'none';
     document.body.appendChild(wrapper);
 
     const content = document.createElement('div');
@@ -47,7 +50,17 @@ const loadToast = () => {
     button.href = toast.link;
     wrapper.appendChild(button);
 
-    window.requestAnimationFrame(() => wrapper.style.opacity = '');
+    document.addEventListener('scroll', () => {
+        if (hasScrolled) return;
+        if (window.scrollY < window.innerHeight * (2 / 3)) return;
+        hasScrolled = true;
+        wrapper.className += ' scrolled';
+    });
+
+    window.requestAnimationFrame(() => {
+        wrapper.style.opacity = '';
+        wrapper.style.pointerEvents = '';
+    });
 };
 
 // Go!
