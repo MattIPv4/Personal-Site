@@ -114,6 +114,10 @@
     * The 1.1.1.1 DNS over Discord bot allows anyone to perform DNS lookups directly in Discord, via the
     [DNS over HTTPS 1.1.1.1 resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https).
 
+    * Includes support for performing whois lookups on IP addresses, domain names and ASNs via the
+    [web-whois package](https://www.npmjs.com/package/web-whois) thanks to the awesome
+    [rdap.cloud](https://rdap.cloud/), [whoisjs](https://whoisjs.com/) and [cfwho](https://cfwho.com/) services.
+
     * The bot is written in JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) --
     hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
     [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
