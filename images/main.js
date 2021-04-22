@@ -20,10 +20,22 @@ const path = require('path');
 const { existsSync, mkdirSync, readdirSync  } = require('fs');
 const sharp = require('sharp');
 
-const sharpResize = (base, image) => sharp(path.join(base, image)).resize(284, 160, {
-    fit: 'contain',
-    background: { r: 0, g: 0, b: 0, alpha: 0 }
-});
+const sharpResize = async (base, image) => {
+    // Resize without padding
+    const { data, info } = await sharp(path.join(base, image))
+        .resize(284, 160, { fit: 'inside' })
+        .toBuffer({ resolveWithObject: true });
+
+    // Create the rounded corners mask
+    const mask = new Buffer(
+        `<svg><rect x="0" y="0" width="${info.width}" height="${info.height}" rx="4" ry="4"/></svg>`
+    );
+
+    // Round the corners and pad to the fixed size
+    return sharp(data)
+        .composite([{ input: mask, blend: 'dest-in' }])
+        .resize(284, 160, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } });
+};
 
 const sharpSave = (sharp, dir, image, type) => sharp.toFile(
     path.join(dir, image.split('.').slice(0, -1).join('.') + '.' + type)
@@ -41,11 +53,12 @@ const main = async () => {
     // Resize & compress images
     for(let i = 0; i < images.length; i++) {
         const image = images[i];
-        await sharpSave(sharpResize(base, image).png({
+        const resized = await sharpResize(base, image);
+        await sharpSave(resized.png({
             compressionLevel: 9,
             palette: true
         }), dir, image, 'png');
-        await sharpSave(sharpResize(base, image).webp({
+        await sharpSave(resized.webp({
             lossless: true,
             reductionEffort: 6
         }), dir, image, 'webp');
