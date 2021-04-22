@@ -18,6 +18,9 @@
 
 $blue1: darken(#56ccf2, 50%);
 $blue2: darken(#2f80ed, 50%);
+$link: lighten(#2f80ed, 20%);
+$link-subtle: lighten(#2f80ed, 30%);
+$link-active: #2f80ed;
 
 html {
   animation: bg 5s linear infinite alternate;
@@ -50,25 +53,42 @@ html {
       .project-link {
         a,
         a:visited {
-          color: #ddd;
+          color: $link;
         }
 
         a:hover,
         a:focus {
-          color: #aaa;
+          color: $link-active;
         }
       }
 
       .contact {
         li {
-          a,
-          a:visited {
-            color: #f5f7fa;
-          }
+          a {
+            &,
+            &:visited {
+              color: $link;
 
-          a:hover,
-          a:focus {
-            color: #ccd1d9;
+              &,
+              small,
+              i {
+                transition: color .2s;
+              }
+
+              small,
+              i {
+                color: $link-subtle;
+              }
+            }
+
+            &:hover,
+            &:focus {
+              &,
+              small,
+              i {
+                color: $link-active;
+              }
+            }
           }
         }
       }

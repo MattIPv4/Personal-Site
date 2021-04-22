@@ -27,7 +27,7 @@ const config = parse(readFileSync('config.yaml', 'utf8'));
 config.meta.description = config.meta.description.replace(/\s*[\r\n]\s*/g, ' ');
 config.meta.keywords = config.meta.keywords.join(', ');
 for (const link of config.contact.links) {
-    link.title = mdExtLinks(md.renderInline(link.title).replace(/<(\/?)i>/g, '<$1small>'));
+    link.title = mdExtLinks(md.renderInline(link.title).replace(/<(\/?)em>/g, '<$1small>'));
 }
 for (const item of config.rail) {
     item.content = mdExtLinks(md.render(item.content));
