@@ -45,3 +45,11 @@
 - content: 📖 Want to learn more about system administration, development and beyond?
   button: Try the DigitalOcean Community
   link: https://www.digitalocean.com/community/tutorials
+
+- content: 🤖 Looking for a utility bot for your Discord that provides logging, moderation and more?
+  button: Try out Restarter v3
+  link: https://restarter.mattcowley.co.uk
+
+- content: 🤖 In need of automatic channel reactions for Discord, or reaction roles?
+  button: Check out Restarter v3
+  link: https://restarter.mattcowley.co.uk
