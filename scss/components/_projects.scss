@@ -116,8 +116,9 @@
 
             a {
               @media only screen and (max-width: 768px) {
-                margin: .125em 0;
                 word-break: break-all;
+                margin: .25em 0;
+                padding: .25em 0;
               }
             }
 
