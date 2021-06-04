@@ -55,9 +55,9 @@ meta:
 
 google:
   analytics: UA-113826252-1
-  adsense:
-    client: ca-pub-4266526051230566
-    slot: 9114202102
+#  adsense:
+#    client: ca-pub-4266526051230566
+#    slot: 9114202102
 
 main:
   - title: "What I do:"
