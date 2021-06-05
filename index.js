@@ -36,6 +36,10 @@ for (const item of config.rail) {
 // Load in all the projects
 const projects = parse(readFileSync('projects.yaml', 'utf8'));
 for (const project of projects) {
+    project.slug = project.title.toLowerCase()
+        .replace(/^[a-z0-9-_]/g, '-')
+        .replace(/-{2,}/g, '-')
+        .replace(/(^-+|-+$)/g, '');
     project.headline = mdExtLinks(md.renderInline(project.headline));
     project.desc = mdExtLinks(md.render(project.desc));
 }

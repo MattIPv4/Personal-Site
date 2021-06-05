@@ -35,7 +35,8 @@
         padding: 1em 1em 0;
         transition: background-color .2s linear;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: rgba(255, 255, 255, .05);
         }
 

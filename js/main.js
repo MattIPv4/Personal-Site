@@ -55,20 +55,34 @@ const pickTheme = () => {
     loadTheme(themes[Math.floor(Math.random() * themes.length)]);
 };
 
+const handleProject = (project, event) => {
+    // Don't trigger if clicking on link
+    if (event.target.nodeName === 'A') return;
+
+    // Don't do anything else
+    event.preventDefault();
+
+    // Get the desc
+    const desc = project.querySelector('.project-desc');
+    const toExpand = desc.style.display === 'none';
+
+    // Toggle desc visibility
+    desc.style.display = toExpand ? '' : 'none';
+
+    // Toggle aria
+    project.querySelector('.project-info').setAttribute('aria-expanded', toExpand ? 'true' : 'false');
+};
+
 const handleProjects = () => {
     // Get all the projects
     const projects = [...document.querySelectorAll('.project')];
 
     for (const project of projects) {
         // Register the click handler
-        project.querySelector('.project-info').addEventListener('click', e => {
-            // Don't trigger if clicking on link
-            if (e.target.nodeName === 'A') return;
-
-            // Toggle desc visibility
-            const desc = project.querySelector('.project-desc');
-            desc.style.display = desc.style.display === 'none' ? '' : 'none';
-        });
+        project.querySelector('.project-info')
+            .addEventListener('click', e => handleProject(project, e));
+        project.querySelector('.project-info')
+            .addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && handleProject(project, e));
 
         // Hide the desc by default
         project.querySelector('.project-desc').style.display = 'none';

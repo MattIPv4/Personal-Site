@@ -17,7 +17,13 @@
 -->
 
 <div class="project">
-    <div class="project-info">
+    <div id="project-{{ slug }}"
+         class="project-info"
+         aria-expanded="false"
+         aria-controls="project-{{ slug }}-desc"
+         tabindex="0"
+         role="button"
+    >
         <div class="project-meta">
             <p class="project-title">{{ title }}</p>
             <p class="project-role">{{ role }}</p>
@@ -67,7 +73,10 @@
         </div>
     </div>
 
-    <div class="project-desc">
+    <div id="project-{{ slug }}-desc"
+         class="project-desc"
+         aria-labelledby="project-{{ slug }}"
+    >
         {{{ desc }}}
     </div>
 </div>
