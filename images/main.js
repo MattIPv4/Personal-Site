@@ -27,7 +27,7 @@ const sharpResize = async (base, image) => {
         .toBuffer({ resolveWithObject: true });
 
     // Create the rounded corners mask
-    const mask = new Buffer(
+    const mask = Buffer.from(
         `<svg><rect x="0" y="0" width="${info.width}" height="${info.height}" rx="4" ry="4"/></svg>`
     );
 
