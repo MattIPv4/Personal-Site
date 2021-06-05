@@ -16,6 +16,7 @@
     "id-class-style": "dash",
     "class-no-dup": true,
     "class-style": none,
+    "id-style": none,
     "img-req-alt": true,
     "img-req-src": true,
     "html-valid-content-model": true,
