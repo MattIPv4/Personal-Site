@@ -110,6 +110,16 @@ const contact = () => {
     h3Before.style.marginBottom = '0';
     document.querySelector('.content .contact').insertAdjacentElement('beforeBegin', h3Before);
 
+    // Links
+    const elms = document.querySelectorAll('.contact a');
+    for (let i = 0; i < elms.length; i++) {
+        const elm = elms[i];
+        const span = document.createElement('span');
+        span.appendChild(elm.querySelector('strong'));
+        span.appendChild(elm.querySelector('small'));
+        elm.insertBefore(span, elm.firstChild);
+    }
+
     // After
     const h3After = document.createElement('h3');
     const start = document.createTextNode('], ');

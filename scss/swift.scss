@@ -144,19 +144,26 @@ body {
       }
 
       a {
-        b {
+        text-decoration: none;
+
+        span {
           &::before {
             color: #fff;
             content: "\"";
           }
-        }
-
-        small {
-          font-size: 1em;
 
           &::after {
             color: #fff;
             content: "\", ";
+          }
+
+          strong {
+            text-decoration: underline;
+          }
+
+          small {
+            text-decoration: underline;
+            font-size: 1em;
           }
         }
 
