@@ -95,6 +95,36 @@
     [Algolia](https://www.algolia.com/), and [Atlassian Statuspage](https://www.atlassian.com/software/statuspage) to
     retain and grow the sponsorships that we have for their services that help keep cdnjs running.
 
+- title: Restarter v3
+  role: Standalone Project
+  tags:
+    - Engineering
+  dates:
+    start: September 2017
+    end: ~
+  headline: A utility bot for Discord servers, featuring automatic channel reactions, reaction roles, server logging, moderation, and so much more.
+  links:
+    - https://restarter.mattcowley.co.uk
+  image:
+    file: restarter
+    position: center
+  desc: |
+    * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python all the way back
+    in 2017, and is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve
+    over 12,000 servers with assorted utility and moderation functionality.
+
+    * The bot runs in a distributed fashion across multiple processes, tied together through network calls and a shared
+    database backing the whole system. Included in the bot are a wide range of utiltiy functions designed to make
+    running a Discord server easier, such as [ChannelReacts](https://restarter.mattcowley.co.uk/docs/#channelreacts),
+    one of the most popular features in the bot, which allows server administrators to set the bot to automatically
+    [add reactions](https://support.discord.com/hc/en-us/articles/360041139231-Adding-Emojis-and-Reactions) to new
+    messages posted in a channel.
+
+    * Alongside the utility functions, Restarter also provides server administrators and moderators with a strong set
+    of [core moderation functions](https://restarter.mattcowley.co.uk/docs/#moderation), such as the ability to ban and
+    kick users with a full [log of actions taken](https://restarter.mattcowley.co.uk/docs/#modlog), as well as features
+    to [automatically remove messages](https://restarter.mattcowley.co.uk/docs/#filtering) containing Discord invites.
+
 - title: DNS over Discord (1.1.1.1)
   role: Standalone Project
   tags:
