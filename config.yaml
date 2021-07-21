@@ -106,10 +106,10 @@ contact:
       username: "@MattIPv4"
       url: https://twitch.mattcowley.co.uk/
 
-    - title: "**linkedin**_.mattcowley.co.uk_"
-      username: matt-ipv4-cowley
-      url: https://linkedin.mattcowley.co.uk/
-
     - title: "**sponsors**_.mattcowley.co.uk_"
       username: "@MattIPv4"
       url: https://sponsors.mattcowley.co.uk/
+
+    - title: "**discord**_.mattcowley.co.uk_"
+      username: ""
+      url: https://discord.mattcowley.co.uk/
