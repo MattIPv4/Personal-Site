@@ -63,25 +63,30 @@ main:
   - title: "What I do:"
     size: h2
     items:
-      - Community Platform Manager @ DigitalOcean 🦈️
-      - Maintainer of cdnjs.com @ Cloudflare ⛅
-      - Web Developer @ Rythm 🎧
-      - Developer Relations @ js.org 📝
-      - Open-source maintainer & avid supporter 💻
+      - title: Community Platform Manager @ DigitalOcean 🦈️
+        link: https://digitalocean.com/community
+      - title: Maintainer of cdnjs.com @ Cloudflare ⛅
+        link: https://cdnjs.com
+      - title: Web Developer @ Rythm 🎧
+        link: https://rythm.fm
+      - title: Developer Relations @ js.org 📝
+        link: https://js.org
+      - title: Open-source maintainer & avid supporter 💻
+        link: https://github.mattcowley.co.uk
 
   - title: "Who I am:"
     size: h3
     items:
-      - 20 y/o based near London, UK 📍
-      - Studying BSc Computing @ University 🎓
+      - title: 20 y/o based near London, UK 📍
+      - title: Studying BSc Computing @ University 🎓
 
   - title: "What I'm interested in:"
     size: h3
     items:
-      - Community Management, Developer Relations, Open-Source Advocacy 🥑
-      - Software Engineering, Full-stack Development (Node, Vue, React, Next, Nuxt) 🖥
-      - Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
-      - Stage Management, Production Electrics, Lighting 💡
+      - title: Community Management, Developer Relations, Open-Source Advocacy 🥑
+      - title: Software Engineering, Full-stack Development (Node, Vue, React, Next, Nuxt) 🖥
+      - title: Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
+      - title: Stage Management, Production Electrics, Lighting 💡
 
 rail: []
 #rail:

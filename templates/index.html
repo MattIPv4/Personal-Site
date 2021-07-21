@@ -124,12 +124,16 @@
                     <div>
                         <h4>{{ item.title }}</h4>
                         <each loop="subitem in item.items">
-                            <if condition="item.size === 'h2'">
-                                <h2>{{ subitem }}️</h2>
-                            </if>
-                            <elseif condition="item.size === 'h3'">
-                                <h3>{{ subitem }}️</h3>
-                            </elseif>
+                            <{{{ item.size }}}>
+                                <if condition="subitem.link">
+                                    <a href="{{ subitem.link }}" target="_blank" rel="noopener">
+                                        {{ subitem.title }}️
+                                    </a>
+                                </if>
+                                <else>
+                                    {{ subitem.title }}️
+                                </else>
+                            </{{{ item.size }}}>
                         </each>
                     </div>
                 </each>

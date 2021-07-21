@@ -54,7 +54,9 @@ const taglines = () => {
         cmd.className = 'print-cmd';
         const open = document.createTextNode('(');
         const txt = document.createElement('span');
-        txt.textContent = '"' + elm.textContent + '"';
+        txt.appendChild(document.createTextNode('"'));
+        while (elm.firstChild) txt.appendChild(elm.firstChild);
+        txt.appendChild(document.createTextNode('"'));
         txt.className = 'print-txt';
         const close = document.createTextNode(')');
         elm.innerHTML = '';

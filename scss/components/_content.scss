@@ -63,6 +63,22 @@ body {
         > div {
           margin: 0 1em;
         }
+
+        h2,
+        h3,
+        h4 {
+          a {
+            &,
+            &:visited {
+              text-decoration: none;
+              color: inherit;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
 
