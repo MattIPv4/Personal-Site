@@ -20,7 +20,10 @@ const { readFileSync, writeFileSync } = require('fs');
 const { parse } = require('yaml');
 const md = require('markdown-it')();
 
+const environment = process.env.SITE_ENV || 'web';
+
 const mdExtLinks = md => md.replace(/<a(.+?)>/g, '<a$1 target="_blank" rel="noopener">');
+const environmentFilter = item => environment === 'web' ? (item.web ?? true) : (environment === 'print' ? (item.print ?? true) : true);
 
 // Load in the main config yaml
 const config = parse(readFileSync('config.yaml', 'utf8'));
@@ -32,9 +35,10 @@ for (const link of config.contact.links) {
 for (const item of config.rail) {
     item.content = mdExtLinks(md.render(item.content));
 }
+config.main = config.main.filter(environmentFilter);
 
 // Load in all the projects
-const projects = parse(readFileSync('projects.yaml', 'utf8'));
+const projects = parse(readFileSync('projects.yaml', 'utf8')).filter(environmentFilter);
 for (const project of projects) {
     project.slug = project.title.toLowerCase()
         .replace(/^[a-z0-9-_]/g, '-')
@@ -55,7 +59,7 @@ const html = readFileSync('templates/index.html', 'utf8');
 // Render it
 posthtml([
     include({ encoding: 'utf8' }),
-    expressions({ locals: { config, projects } })
+    expressions({ locals: { environment, config, projects } })
 ])
     .process(html)
     .then((result) => writeFileSync('build/index.html', result.html, { flag: 'w+' }));

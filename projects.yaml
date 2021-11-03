@@ -1,5 +1,7 @@
 #- title: Thing
 #  role: Thing
+#  web: true
+#  print: true
 #  tags:
 #    - Thing
 #    - Thing
@@ -18,6 +20,8 @@
 
 - title: DigitalOcean
   role: Community Platform Manager
+  web: true
+  print: true
   tags:
     - Community
     - Engineering
@@ -63,6 +67,8 @@
 
 - title: cdnjs / Cloudflare
   role: Open-source Maintainer
+  web: true
+  print: true
   tags:
     - Community
     - Engineering
@@ -97,6 +103,8 @@
 
 - title: Restarter v3
   role: Standalone Project
+  web: true
+  print: false
   tags:
     - Engineering
   dates:
@@ -127,6 +135,8 @@
 
 - title: DNS over Discord (1.1.1.1)
   role: Standalone Project
+  web: true
+  print: false
   tags:
     - Engineering
     - Open-source
@@ -154,6 +164,8 @@
 
 - title: js.org
   role: Developer Relations
+  web: true
+  print: true
   tags:
     - Community
     - Open-source
@@ -181,6 +193,8 @@
 
 - title: PogChamp of the Day
   role: Standalone Project
+  web: true
+  print: false
   tags:
     - Engineering
     - Open-source
@@ -204,6 +218,8 @@
 
 - title: JetBrains Community
   role: Community Manager
+  web: true
+  print: true
   tags:
     - Community
     - Open-source
@@ -233,6 +249,8 @@
 
 - title: Young Theatre
   role: Chief In-House Electrician
+  web: true
+  print: true
   tags:
     - Live Production
   dates:
@@ -259,6 +277,8 @@
 
 - title: Blink FM
   role: Programme Controller
+  web: true
+  print: true
   tags:
     - Live Production
     - Live Broadcasting
