@@ -1,0 +1,54 @@
+name: Test, Build and deploy
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set Node.js version from .nvmrc
+        id: set-node
+        run: echo "::set-output name=node::$(cat .nvmrc)"
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ steps.set-node.outputs.node }}
+
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+        env:
+          NODE_ENV: development
+          CI: true
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build site
+        run: npm run build
+
+      - name: Add CNAME
+        if: github.ref == 'refs/heads/master'
+        run: echo "mattcowley.co.uk" > build/CNAME
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true
+          single-commit: true
