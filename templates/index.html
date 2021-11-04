@@ -23,16 +23,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>{{ config.title }}</title>
 
-    <!-- Preload -->
-    <link rel="preload" href="js/main.js" as="script"/>
-    <link rel="preload" href="js/toast.js" as="script"/>
-    <link rel="preload" href="css/base.css" as="style"/>
-    <link rel="preload" href="js/blue.js" as="script"/>
-    <link rel="preload" href="css/blue.css" as="style"/>
-    <link rel="preload" href="js/crt.js" as="script"/>
-    <link rel="preload" href="css/crt.css" as="style"/>
-    <link rel="preload" href="js/swift.js" as="script"/>
-    <link rel="preload" href="css/swift.css" as="style"/>
+    <if condition="environment === 'web'">
+        <!-- Preload -->
+        <link rel="preload" href="js/main.js" as="script"/>
+        <link rel="preload" href="js/toast.js" as="script"/>
+        <link rel="preload" href="css/base.css" as="style"/>
+        <link rel="preload" href="js/blue.js" as="script"/>
+        <link rel="preload" href="css/blue.css" as="style"/>
+        <link rel="preload" href="js/crt.js" as="script"/>
+        <link rel="preload" href="css/crt.css" as="style"/>
+        <link rel="preload" href="js/swift.js" as="script"/>
+        <link rel="preload" href="css/swift.css" as="style"/>
+    </if>
 
     <!-- Basic meta -->
     <meta name="title"
@@ -103,6 +105,11 @@
     <!-- Global styles -->
     <link rel="stylesheet" href="css/base.css"/>
 
+    <if condition="environment === 'print'">
+        <!-- Print styles -->
+        <link rel="stylesheet" href="css/print.css"/>
+    </if>
+
     <!-- Async font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400&display=swap&subset=latin-ext"
           rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -114,9 +121,14 @@
 <body>
 <div class="content">
     <!-- Intro -->
-    <h1>{{ config.title }}</h1>
-
+    <if condition="environment === 'web'">
+        <h1>{{ config.title }}</h1>
+    </if>
     <div class="intro">
+        <if condition="environment === 'print'">
+            <h1>{{ config.title }}</h1>
+        </if>
+
         <div class="main{{ config.rail.length ? '' : ' full' }}">
             <!-- Main Items -->
             <div class="items">
@@ -127,11 +139,11 @@
                             <{{{ item.size }}}>
                                 <if condition="subitem.link">
                                     <a href="{{ subitem.link }}" target="_blank" rel="noopener">
-                                        {{ subitem.title }}️
+                                        {{{ subitem.title }}}️
                                     </a>
                                 </if>
                                 <else>
-                                    {{ subitem.title }}️
+                                    {{{ subitem.title }}}️
                                 </else>
                             </{{{ item.size }}}>
                         </each>
@@ -165,8 +177,13 @@
     </div>
 
     <!-- Projects -->
-    <h3 class="featured">Featured Projects</h3>
+    <if condition="environment === 'web'">
+        <h3 class="featured">Featured Projects</h3>
+    </if>
     <div class="projects">
+        <if condition="environment === 'print'">
+            <h2>Projects and Experience</h2>
+        </if>
         <each loop="item in projects">
             <scope with="item">
                 <include src="templates/project.html"></include>
@@ -186,9 +203,11 @@
         </script>
     </if>
 
-    <!-- Theme loader -->
-    <script src="js/main.js"></script>
-    <script async src="js/toast.js"></script>
+    <if condition="environment === 'web'">
+        <!-- Theme loader -->
+        <script src="js/main.js"></script>
+        <script async src="js/toast.js"></script>
+    </if>
 </div>
 </body>
 </html>

@@ -32,6 +32,11 @@ config.meta.keywords = config.meta.keywords.join(', ');
 for (const link of config.contact.links) {
     link.title = mdExtLinks(md.renderInline(link.title).replace(/<(\/?)em>/g, '<$1small>'));
 }
+for (const item of config.main) {
+    for (const item2 of item.items) {
+        item2.title = mdExtLinks(md.renderInline(item2.title));
+    }
+}
 for (const item of config.rail) {
     item.content = mdExtLinks(md.render(item.content));
 }
