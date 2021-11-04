@@ -102,12 +102,14 @@
     </script>
     <script async defer src="https://www.google-analytics.com/analytics.js"></script>
 
-    <!-- Global styles -->
-    <link rel="stylesheet" href="css/base.css"/>
+    <if condition="environment === 'web'">
+        <!-- Global styles -->
+        <link rel="stylesheet" href="css/base.css"/>
+    </if>
 
     <if condition="environment === 'print'">
         <!-- Print styles -->
-        <link rel="stylesheet" href="css/print.css"/>
+        <link expand="true" rel="stylesheet" href="css/print.css"/>
     </if>
 
     <!-- Async font -->
