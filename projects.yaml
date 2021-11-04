@@ -37,33 +37,28 @@
     file: digitalocean
     position: center
   desc: |
-    * Working as part of the engineering team for the Community platform to continually evolve the feature-set provided
-    on the site to better the experience for our Community users across our Q&A section, our Community Tools listings,
-    and our vast collection of tutorial content, as well as working with internal teams using the platform.
+    * Architecting and developing a brand new stack to support the Community website and the marketing site, based on a
+    Next.js client statically exported and served by a CDN, integrating with a set of Node.js API micro-services to
+    provide static and dynamic content as well as refreshing exported pages on the CDN, all deployed on multi-DC
+    Kubernetes infrastructure.
+
+    * Part of the core team for Hacktoberfest as the engineer developing the internal API service that integrates with
+    GitHub and GitLab to track contributors and power the program, as well as assisting in handling social and support
+    through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
+
+    * Maintaining the legacy Rails Community platform, evolving the feature-set provided on the site to better the
+    experience for our Community users and internal teams across the Q&A section, Community Tools listings, and vast
+    collection of tutorial content.
 
     * Leading and co-ordinating the continued development of our
     [open-source Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
     such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx). Working with community contributions to
     triage issues reported on GitHub effectively, shipping new features based on community issues and pull requests.
 
-    * Running our GitHub open-source outreach program, reaching out to new contributors on any of the
-    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean/), thanking them for
-    being involved with our projects and sending them a swag pack as a gift for contributing.
-
-    * Part of the core team for Hacktoberfest 2019 and 2020, responsible for handling all social and support enagement
-    through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
-    Also a principal engineer for maintaining the
-    [open-source Ruby on Rails Hacktoberfest application](https://github.com/digitalocean/hacktoberfest/) that powers
-    the whole event and website.
-
-    * Moderating the [DigitalOcean Community](https://www.digitalocean.com/community/) on a daily basis, handling any
-    user reports as well as the automated spam filter systems in place. Responding to any users who reach out when their
-    post is caught in the automated filters.
-
-    * Collaborating with the community management team to ensure the platform provides the features they need to
-    effectively work with our community and assisting them with engaging on
-    [Community Questions and Answers](https://www.digitalocean.com/community/questions), as well as escalting issues
-    internally to support teams when appropriate and improving processes for triaging feedback provided by our users.
+    * Running outreach programs for super-users on the Community site and open-source contributors, rewarding active
+    members answering questions and new contributors to
+    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean/). Thanking them for
+    getting involved with our community and rewarding them with a swag pack.
 
 - title: cdnjs / Cloudflare
   role: Open-source Maintainer
@@ -219,7 +214,7 @@
 - title: JetBrains Community
   role: Community Manager
   web: true
-  print: true
+  print: false
   tags:
     - Community
     - Open-source
