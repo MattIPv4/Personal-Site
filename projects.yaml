@@ -38,13 +38,14 @@
     position: center
   desc: |
     * Architecting and developing a brand new stack to support the Community website and the marketing site, based on a
-    Next.js client statically exported and served by a CDN, integrating with a set of Node.js API micro-services to
-    provide static and dynamic content as well as refreshing exported pages on the CDN, all deployed on multi-DC
-    Kubernetes infrastructure.
+    [Next.js](https://nextjs.org/) client statically exported and served by a CDN, integrating with a set of Node.js API
+    micro-services to provide static and dynamic content as well as refreshing exported pages on the CDN, all deployed
+    on multi-DC Kubernetes infrastructure.
 
-    * Part of the core team for Hacktoberfest as the engineer developing the internal API service that integrates with
-    GitHub and GitLab to track contributors and power the program, as well as assisting in handling social and support
-    through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
+    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) as the engineer developing the
+    internal API service that integrates with [GitHub](https://github.com/) and [GitLab](https://gitlab.com/) to track
+    contributors and power the program, as well as assisting in handling social and support through the
+    [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
 
     * Maintaining the legacy Rails Community platform, evolving the feature-set provided on the site to better the
     experience for our Community users and internal teams across the Q&A section, Community Tools listings, and vast
@@ -81,7 +82,7 @@
   desc: |
     * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure reliability of service for
     cdnjs, as we continue to serve [over 210 billion requests a month](https://github.com/cdnjs/cf-stats) to
-    [over 12% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
+    [over 13% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
 
     * Assisting external contributors wanting to add libraries to cdnjs by developing
     [updated documentation for cdnjs on GitHub](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md), as well
@@ -156,6 +157,37 @@
     * The bot is written in JavaScript, and is [open-source on GitHub](https://github.com/MattIPv4/DNS-over-Discord) --
     hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
     [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
+
+- title: Rythm
+  role: Web Developer
+  web: true
+  print: true
+  tags:
+    - Engineering
+  dates:
+    start: March 2021
+    end: ~
+    other:
+      - start: November 2017
+        end: May 2018
+  headline: You, your friends, and some good tunes. Rythm makes it possible to listen to your favorite music with all your friends.
+  links:
+    - https://rythm.fm
+  image:
+    file: rythm
+    position: center
+  desc: |
+    * Working with the team at Rythm to deliver a unique website experience for the over 20 million communities using
+    Rythm and exploring the features of the service, utilising [Nuxt.js](https://nuxtjs.org/) statically exported via a
+    custom CI pipeline and deployed to internal Kubernetes infrastructure for resilliancy.
+
+    * Developing a fully client-side checkout experience for new customers, integrating directly with an in-house
+    payments API as well as with Chargebee and Stripe to provide a seamless flow for the user, allowing them to quickly
+    gain access to paid features of the service online.
+
+    * Previously, working with a team of developers to build the original web dashboard for Rythm in PHP (Laravel),
+    integrating with the private API for the bot. Also, developing ancilliary support bots for the team, such as support
+    automation and donations integrations, and assisting in providing technical customer support.
 
 - title: js.org
   role: Developer Relations
@@ -425,22 +457,3 @@
 #    streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
 #    a site for them all, featuring their homepages as well as a large backend for stats logging.
 #
-#Rythm Homepage:
-#  display: false
-#  type: "Web"
-#  link: "https://rythmbot.co/"
-#  image: "rythmbot"
-#  position: "top"
-#  tools:
-#      - PHPStorm
-#      - HTML
-#      - JavaScript
-#      - CSS3
-#      - PHP
-#      - Git
-#      - GitHub
-#  desc: |
-#    Rythm is one of the largest bots on Discord with a focus on music. My job was the task of redesigning the old
-#    site which was a template. Producing this site was great fun as there were very few requirements from the client
-#    other than the content, so I had freedom of design. The site was designed to provide quick access to key info
-#    and links for all vistors.

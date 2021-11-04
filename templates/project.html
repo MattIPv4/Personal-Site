@@ -32,11 +32,17 @@
                 <p class="project-start">{{ dates.start }}</p>
                 <if condition="dates.start !== dates.end">
                     <if condition="dates.end === null">
-                        <p class="project-end active">Present</p>
+                        <p class="project-end active">&nbsp;-&nbsp;Present</p>
                     </if>
                     <else>
-                        <p class="project-end">{{ dates.end }}</p>
+                        <p class="project-end">&nbsp;-&nbsp;{{ dates.end }}</p>
                     </else>
+                </if>
+                <if condition="dates.other">
+                    <each loop="item in dates.other">
+                        <p class="project-start">, {{ item.start }}</p>
+                        <p class="project-end">&nbsp;-&nbsp;{{ item.end }}</p>
+                    </each>
                 </if>
             </div>
 
