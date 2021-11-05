@@ -22,7 +22,8 @@ const html5ToPdf = require('html5-to-pdf');
 const run = async () => {
     const html5ToPDF = new html5ToPdf({
         inputPath: path.join(__dirname, 'build', 'print.html'),
-        outputPath: path.join(__dirname, 'build', 'print.pdf')
+        outputPath: path.join(__dirname, 'build', 'print.pdf'),
+        launchOptions: { args: [ '--no-sandbox' ] }
     });
 
     await html5ToPDF.start();
