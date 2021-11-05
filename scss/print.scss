@@ -40,7 +40,7 @@ body {
     }
 
     &::after {
-      content: '';
+      content: "";
     }
   }
 
@@ -84,8 +84,8 @@ body {
             margin: .5em 0;
 
             em {
-              font-style: italic;
               font-size: .85em;
+              font-style: italic;
             }
           }
         }
@@ -134,13 +134,13 @@ body {
             position: relative;
 
             &::before {
-              content: '';
+              background: rgba(0, 0, 0, .2);
+              content: "";
               display: block;
+              height: 1px;
               position: absolute;
               top: -.5em;
-              height: 1px;
               width: 3em;
-              background: rgba(0, 0, 0, .2);
             }
           }
 
@@ -167,8 +167,8 @@ body {
               &:not(:last-child) {
                 padding: 0 1ch 0 0;
 
-                &:after {
-                  content: ', ';
+                &::after {
+                  content: ", ";
                 }
               }
             }
@@ -194,21 +194,21 @@ body {
           position: relative;
 
           &::before {
-            content: '';
+            background: rgba(0, 0, 0, .2);
+            content: "";
             display: block;
+            height: 1px;
+            left: -1em;
             position: absolute;
             top: .5em;
-            left: -1em;
-            height: 1px;
             width: .5em;
-            background: rgba(0, 0, 0, .2);
           }
         }
       }
 
       a {
         &::after {
-          content: ' (' attr(href) ')';
+          content: " (" attr(href) ")";
           font-size: .85em;
           font-style: italic;
         }

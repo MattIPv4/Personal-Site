@@ -20,7 +20,6 @@
     "img-req-alt": true,
     "img-req-src": true,
     "html-valid-content-model": true,
-    "head-valid-content-model": true,
     "href-style": false,
     "link-req-noopener": true,
     "label-req-for": true,
