@@ -70,12 +70,6 @@
           flex-wrap: wrap;
 
           .project-end {
-            &::before {
-              content: "-";
-              font-style: normal;
-              padding: 0 .25em;
-            }
-
             &.active {
               font-style: italic;
             }

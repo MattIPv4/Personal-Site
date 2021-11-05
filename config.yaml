@@ -63,6 +63,8 @@ google:
 main:
   - title: "What I do:"
     size: h2
+    web: true
+    print: true
     items:
       - title: Community Platform Manager @ DigitalOcean 🦈️
         link: https://digitalocean.com/community
@@ -77,11 +79,15 @@ main:
 
   - title: "Who I am:"
     size: h3
+    web: true
+    print: false
     items:
       - title: 20 y/o based near London, UK 📍
       - title: Studying BSc Computing @ University 🎓
 
   - title: "What I'm interested in:"
+    web: true
+    print: true
     size: h3
     items:
       - title: Community Management, Developer Relations, Open-Source Advocacy 🥑
@@ -89,14 +95,37 @@ main:
       - title: Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
       - title: Stage Management, Production Electrics, Lighting 💡
 
+  - title: "Education:"
+    web: false
+    print: tru
+    size: h3
+    items:
+      - title: Studying BSc Computing @ University of Buckingham _(2020 - 2021)_ 🎓
+      - title: AAB in Computer Science, Maths & Business Studies at A Level _(2012 - 2019)_ 📜
+
+  - title: "Location:"
+    web: false
+    print: true
+    size: h3
+    items:
+      - title: High Wycombe, Buckinghamshire, United Kingdom 📍
+      - title: Approximately 45 minutes outside central London 🚇
+
+  - title: "References:"
+    web: false
+    print: true
+    size: h3
+    items:
+      - title: Raven Douglas, _Co-Founder and Chief Commercial Officer, Rythm (raven@rythm.fm)_
+        link: mailto:raven@rythm.fm
+      - title: Sven Sauleau, _Systems Engineer, Cloudflare (sven@cloudflare.com)_
+        link: mailto:sven@cloudflare.com
+      - title: Luke Hashman, _Former Station Controller, Blink FM, Wycombe Youth Action (ljhashman@gmail.com)_
+        link: mailto:ljhashman@gmail.com
+      - title: Andrew Balaam, _Team Leader (SLST) & Teacher, Royal Grammar School (acb@rgshw.com)_
+        link: mailto:acb@rgshw.com
+
 rail: []
-#rail:
-#  - title: "Education:"
-#    content: |
-#      * Studying BSc Computing @ University of Buckingham.
-#      * AAB in Computer Science, Maths & Business Studies at A Level.
-#      * 9 in Maths with an A in Additional Maths (FSMQ), Computing, Physics & Geography at GCSE.
-#      * 8/6 in English Lit/Lang and a B in Biology, Chemistry, Art, French & RS at GCSE.
 
 contact:
   email: me@mattcowley.co.uk
