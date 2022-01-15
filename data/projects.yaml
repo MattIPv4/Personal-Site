@@ -81,7 +81,8 @@
     position: center
   desc: |
     * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure reliability of service for
-    cdnjs, as we continue to serve [over 210 billion requests a month](https://github.com/cdnjs/cf-stats) to
+    cdnjs, the world's largest public CDN, as we continue to serve
+    [over 230 billion requests a month](https://github.com/cdnjs/cf-stats) to
     [over 13% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
 
     * Assisting external contributors wanting to add libraries to cdnjs by developing
@@ -93,8 +94,8 @@
     [status account](https://twitter.com/cdnjsStatus)), providing support to those who ask reach out to us on social and
     triaging any reported issues to be passed onto the team for further investigation.
 
-    * Continuing to work with sponsoring companies such as [Heroku](https://www.heroku.com/),
-    [Algolia](https://www.algolia.com/), and [Atlassian Statuspage](https://www.atlassian.com/software/statuspage) to
+    * Continuing to work with sponsoring companies such as [Algolia](https://www.algolia.com/),
+    [Atlassian Statuspage](https://www.atlassian.com/software/statuspage), and [Sentry](https://sentry.io/welcome/) to
     retain and grow the sponsorships that we have for their services that help keep cdnjs running.
 
 - title: Restarter v3
