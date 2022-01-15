@@ -22,7 +22,7 @@
     "build:print:html": "SITE_ENV=print node index.js",
     "build:print:export": "node print.js",
     "build:print:clean": "rm build/print.html",
-    "dev": "nodemon -e html,js,scss,yaml --watch templates --watch js --watch scss --watch images --watch \\*.yaml --exec \"npm run build && npm run dev:serve\"",
+    "dev": "nodemon -e html,js,scss,yaml --watch templates --watch js --watch scss --watch images --watch data --exec \"npm run build && npm run dev:serve\"",
     "dev:serve": "http-server build"
   },
   "repository": {

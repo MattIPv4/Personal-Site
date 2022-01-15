@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -27,7 +27,7 @@ const mdExtLinks = md => md.replace(/<a(.+?)>/g, '<a$1 target="_blank" rel="noop
 const environmentFilter = item => environment === 'web' ? item.web ?? true : environment === 'print' ? item.print ?? true : true;
 
 // Load in the main config yaml
-const config = parse(readFileSync(path.join(__dirname, 'config.yaml'), 'utf8'));
+const config = parse(readFileSync(path.join(__dirname, 'data', 'config.yaml'), 'utf8'));
 config.meta.description = config.meta.description.replace(/\s*[\r\n]\s*/g, ' ');
 config.meta.keywords = config.meta.keywords.join(', ');
 for (const link of config.contact.links) {
@@ -44,7 +44,7 @@ for (const item of config.rail) {
 config.main = config.main.filter(environmentFilter);
 
 // Load in all the projects
-const projects = parse(readFileSync(path.join(__dirname, 'projects.yaml'), 'utf8')).filter(environmentFilter);
+const projects = parse(readFileSync(path.join(__dirname, 'data', 'projects.yaml'), 'utf8')).filter(environmentFilter);
 for (const project of projects) {
     project.slug = project.title.toLowerCase()
         .replace(/^[a-z0-9-_]/g, '-')
