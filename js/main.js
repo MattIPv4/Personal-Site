@@ -27,12 +27,12 @@ const loadCSS = style => {
 // Load a theme's styling & custom JS
 const loadTheme = theme => {
     // Load theme styling
-    loadCSS('css/' + theme + '.css');
+    loadCSS('css/themes/' + theme + '.css');
 
     // Load theme custom JS
     const js = document.createElement('script');
     js.setAttribute('onload', 'window._theme()');
-    js.setAttribute('src', 'js/' + theme + '.js');
+    js.setAttribute('src', 'js/themes/' + theme + '.js');
     document.body.appendChild(js);
 };
 
