@@ -1,12 +1,9 @@
-title: Matt (IPv4) Cowley
+title: Matt Cowley
 
 meta:
   description: |
-    Community Platform Manager @ DigitalOcean 🦈
-    Maintainer of cdnjs.com @ Cloudflare ⛅️
-    Web Developer @ Rythm 🎧
-    Developer Relations @ js.org 📝
-    Open-source maintainer & avid supporter 💻
+    Chaotic open-source engineer and dev advocate 🛠
+    Doing things @ DigitalOcean 🦈, cdnjs/Cloudflare ⛅️, js.org 📝
 
   keywords:
     - matt
@@ -84,6 +81,7 @@ main:
     items:
       - title: 20 y/o based near London, UK 📍
       - title: Chaotic open-source engineer 🛠
+      - title: Online as @MattIPv4 👀
 
   - title: "What I'm interested in:"
     web: true
