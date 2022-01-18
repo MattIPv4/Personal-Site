@@ -147,3 +147,18 @@ contact:
     - title: "**discord**_.mattcowley.co.uk_"
       username: "v4#1503"
       url: https://discord.mattcowley.co.uk/
+
+footer:
+  title: "TODO: Put a proper footer here"
+  subtitle: © Matt Cowley {{YEAR}}
+  items:
+    - links:
+        - title: Twitter
+          url: https://twitter.mattcowley.co.uk/
+        - title: GitHub
+          url: https://github.mattcowley.co.uk/
+        - title: Email
+          url: mailto:me@mattcowley.co.uk
+    - links:
+        - title: Open-source on GitHub
+          url: https://github.com/MattIPv4/Personal-Site

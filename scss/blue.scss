@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -50,7 +50,8 @@ html {
       }
 
       h3,
-      .project-link {
+      .project-link,
+      footer {
         a,
         a:visited {
           color: $link;
@@ -95,6 +96,15 @@ html {
 
       .projects {
         padding: 1em 0 0;
+      }
+
+      footer {
+        p {
+          &:first-of-type {
+            font-style: italic;
+            opacity: .8;
+          }
+        }
       }
     }
 

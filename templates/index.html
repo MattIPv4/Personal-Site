@@ -1,7 +1,7 @@
 <!--
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -154,7 +154,9 @@
             </div>
 
             <!-- Contact -->
-            <h3 class="email">Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></h3>
+            <h3 class="email">
+                Get in touch: <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a>
+            </h3>
             <ul class="contact">
                 <each loop="item in config.contact.links">
                     <li>
@@ -192,6 +194,21 @@
             </scope>
         </each>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>{{ config.footer.title }}</p>
+        <each loop="item in config.footer.items">
+            <ul>
+                <each loop="link in item.links">
+                    <li>
+                        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+                    </li>
+                </each>
+            </ul>
+        </each>
+        <p><small>{{ config.footer.subtitle }}</small></p>
+    </footer>
 
     <if condition="config.google.adsense">
         <!-- Ad -->

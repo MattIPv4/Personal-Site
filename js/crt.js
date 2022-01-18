@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -32,4 +32,11 @@ window._theme = () => {
     const bg = document.createElement('div');
     bg.className = 'scanlines';
     document.body.appendChild(bg);
+
+    // Footer TODO highlight
+    const todo = document.createElement('span');
+    const footerP = document.querySelector('footer p');
+    todo.textContent = footerP.textContent.split(' ')[0];
+    footerP.textContent = ' ' + footerP.textContent.split(' ').slice(1).join(' ');
+    footerP.insertBefore(todo, footerP.firstChild);
 };

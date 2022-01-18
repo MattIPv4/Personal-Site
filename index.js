@@ -30,6 +30,7 @@ const environmentFilter = item => environment === 'web' ? item.web ?? true : env
 const config = parse(readFileSync(path.join(__dirname, 'data', 'config.yaml'), 'utf8'));
 config.meta.description = config.meta.description.replace(/\s*[\r\n]\s*/g, ' ');
 config.meta.keywords = config.meta.keywords.join(', ');
+config.footer.subtitle = config.footer.subtitle.replace(/{{YEAR}}/g, new Date().getFullYear());
 for (const link of config.contact.links) {
     link.title = mdExtLinks(md.renderInline(link.title).replace(/<(\/?)em>/g, '<$1small>'));
 }
