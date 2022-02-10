@@ -32,24 +32,21 @@
   headline: Helping millions of developers easily build, test, manage, and scale applications of any size - faster than ever before.
   links:
     - https://digitalocean.com/community
-    - https://github.com/do-community/
+    - https://github.com/do-community
   image:
     file: digitalocean
     position: center
   desc: |
-    * Architecting and developing a brand new stack to support the Community website and the marketing site, based on a
-    [Next.js](https://nextjs.org/) client statically exported and served by a CDN, integrating with a set of Node.js API
-    micro-services to provide static and dynamic content as well as refreshing exported pages on the CDN, all deployed
-    on multi-DC Kubernetes infrastructure.
+    * Architecting and leading the development a brand new unified stack to support the Community and marketing sites,
+    based on a [Next.js](https://nextjs.org/) client statically exported and served by a CDN, integrating with a set of
+    Node.js API micro-services to provide interactivity for content as well as refreshing exported pages on the CDN,
+    all deployed on multi-DC Kubernetes infrastructure.
 
-    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) as the engineer developing the
-    internal API service that integrates with [GitHub](https://github.com/) and [GitLab](https://gitlab.com/) to track
-    contributors and power the program, as well as assisting in handling social and support through the
-    [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our Freshdesk support system.
-
-    * Maintaining the legacy Rails Community platform, evolving the feature-set provided on the site to better the
-    experience for our Community users and internal teams across the Q&A section, Community Tools listings, and vast
-    collection of tutorial content.
+    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) as the lead engineer,
+    developing the internal API service that integrates with [GitHub](https://github.com/) and
+    [GitLab](https://gitlab.com/) to track contributors and power the program. Maintaining an OpenAPI specification and
+    collaborating with an external team to produce the user-facing website, as well as assisting in handling social and
+    support through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our support system.
 
     * Leading and co-ordinating the continued development of our
     [open-source Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
