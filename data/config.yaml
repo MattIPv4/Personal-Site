@@ -63,8 +63,8 @@ main:
     web: true
     print: true
     items:
-      - title: Community Platform Manager @ DigitalOcean 🦈️
-        link: https://digitalocean.com/community
+      - title: Senior Web Developer @ DigitalOcean 🦈️
+        link: https://digitalocean.com
       - title: Maintainer of cdnjs.com @ Cloudflare ⛅
         link: https://cdnjs.com
       - title: Developer Relations @ js.org 📝

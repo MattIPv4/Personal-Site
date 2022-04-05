@@ -19,7 +19,7 @@
 #    Thing
 
 - title: DigitalOcean
-  role: Community Platform Manager
+  role: Senior Web Developer
   web: true
   print: true
   tags:
@@ -31,31 +31,32 @@
     end: ~
   headline: Helping millions of developers easily build, test, manage, and scale applications of any size - faster than ever before.
   links:
-    - https://digitalocean.com/community
-    - https://github.com/do-community
+    - https://digitalocean.com
+    - https://github.com/digitalocean
   image:
     file: digitalocean
     position: center
   desc: |
     * Architecting and leading the development a brand new unified stack to support the Community and marketing sites,
-    based on a [Next.js](https://nextjs.org/) client statically exported and served by a CDN, integrating with a set of
+    based on a [Next.js](https://nextjs.org) client statically exported and served by a CDN, integrating with a set of
     Node.js API micro-services to provide interactivity for content as well as refreshing exported pages on the CDN,
     all deployed on multi-DC Kubernetes infrastructure.
 
-    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) as the lead engineer,
-    developing the internal API service that integrates with [GitHub](https://github.com/) and
-    [GitLab](https://gitlab.com/) to track contributors and power the program. Maintaining an OpenAPI specification and
+    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com) as the lead engineer,
+    developing the internal API service that integrates with [GitHub](https://github.com) and
+    [GitLab](https://gitlab.com) to track contributors and power the program. Maintaining an OpenAPI specification and
     collaborating with an external team to produce the user-facing website, as well as assisting in handling social and
     support through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our support system.
 
-    * Leading and co-ordinating the continued development of our
-    [open-source Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
-    such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx). Working with community contributions to
-    triage issues reported on GitHub effectively, shipping new features based on community issues and pull requests.
+    * Leading and co-ordinating the continued development of our open-source projects and
+    [Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
+    such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx) and
+    [do-markdownit](https://github.com/digitalocean/do-markdownit). Working with community contributors to triage issues
+    reported on GitHub effectively, shipping new features based on community issues and pull requests.
 
     * Running outreach programs for super-users on the Community site and open-source contributors, rewarding active
     members answering questions and new contributors to
-    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean/). Thanking them for
+    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean). Thanking them for
     getting involved with our community and rewarding them with a swag pack.
 
 - title: cdnjs / Cloudflare
@@ -71,8 +72,8 @@
     end: ~
   headline: "The #1 free and open source CDN built to make life easier for developers."
   links:
-    - https://cdnjs.com/
-    - https://github.com/cdnjs/
+    - https://cdnjs.com
+    - https://github.com/cdnjs
   image:
     file: cdnjs
     position: center
