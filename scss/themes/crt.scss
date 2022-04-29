@@ -214,13 +214,14 @@ body {
   }
 
   .scanlines {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0) 50%,
-      rgba(0, 0, 0, .3) 70%,
-      rgba(255, 255, 255, .75)
-    );
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, .3) 70%,
+        rgba(255, 255, 255, .75)
+      );
     background-size: 100% .5rem;
     height: 100%;
     left: 0;
