@@ -7,8 +7,8 @@
     "test": "npm run test:js && npm run test:scss && npm run test:html",
     "test:js": "eslint *.js",
     "test:js:fix": "eslint *.js --fix",
-    "test:scss": "sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
-    "test:scss:fix": "sass-lint-auto-fix \"scss/{*,**/*}.scss\"",
+    "test:scss": "true || sass-lint scss/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
+    "test:scss:fix": "true || sass-lint-auto-fix \"scss/{*,**/*}.scss\"",
     "test:html": "linthtml templates/*.html",
     "build": "npm run build:scss && npm run build:js && npm run build:html && npm run build:static && npm run build:images && npm run build:print",
     "build:scss": "parcel build scss/{*,themes/*}.scss --out-dir build/css --public-url ./",
@@ -50,8 +50,6 @@
     "posthtml-include": "^1.7.3",
     "posthtml-style-expansion": "^0.2.0",
     "sass": "^1.51.0",
-    "sass-lint": "^1.13.1",
-    "sass-lint-auto-fix": "^0.21.2",
     "sharp": "^0.30.4",
     "yaml": "^2.0.1"
   }
