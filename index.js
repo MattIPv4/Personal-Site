@@ -48,8 +48,9 @@ const buildScss = async () => {
         .filter(file => file.endsWith('.scss') && !file.split('/').slice(-1)[0].startsWith('_'));
 
     // Compile all the files
-    const results = await Promise.all(files.map(file => sass.compileAsync(file, { sourceMap: true })
-        .then(res => ({ file, css: res.css, map: res.sourceMap }))));
+    const results = await Promise.all(files.map(file =>
+        sass.compileAsync(file, { style: 'compressed', sourceMap: true, sourceMapIncludeSources: true })
+            .then(res => ({ file, css: res.css, map: res.sourceMap }))));
 
     // Export the results
     for (const result of results) {
