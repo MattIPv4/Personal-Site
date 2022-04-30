@@ -16,10 +16,12 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-$blue1: darken(#56ccf2, 50%);
-$blue2: darken(#2f80ed, 50%);
-$link: lighten(#2f80ed, 20%);
-$link-subtle: lighten(#2f80ed, 30%);
+@use "sass:color";
+
+$blue1: color.adjust(#56ccf2, $lightness: -50%);
+$blue2: color.adjust(#2f80ed, $lightness: -50%);
+$link: color.adjust(#2f80ed, $lightness: 20%);
+$link-subtle: color.adjust(#2f80ed, $lightness: 30%);
 $link-active: #2f80ed;
 
 html {

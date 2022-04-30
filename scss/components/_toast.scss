@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,17 +16,19 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
+@use "sass:color";
+
 $width: 18rem;
 $base: #2f80ed;
-$bg: lighten(desaturate($base, 75%), 50%);
-$text: darken(desaturate(invert($bg), 90%), 25%);
-$button: lighten($base, 15%);
+$bg: color.adjust(color.adjust($base, $saturation: -75%), $lightness: 50%);
+$text: color.adjust(color.adjust(invert($bg), $saturation: -90%), $lightness: -25%);
+$button: color.adjust($base, $lightness: 15%);
 
 .toast {
   background: $bg;
   border-radius: .25rem;
   bottom: 1rem;
-  box-shadow: 4px 4px 0 0 darken($bg, 10%);
+  box-shadow: 4px 4px 0 0 color.adjust($bg, $lightness: -10%);
   color: $text;
   font-size: 1rem;
   line-height: 1.25;
@@ -88,7 +90,7 @@ $button: lighten($base, 15%);
 
     &:hover,
     &:focus {
-      background: darken($button, 10%);
+      background: color.adjust($button, $lightness: -10%);
     }
   }
 }
