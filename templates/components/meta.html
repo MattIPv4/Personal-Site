@@ -1,0 +1,79 @@
+<!--
+ *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
+ *  <https://github.com/MattIPv4/Personal-Site/>
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published
+ *   by the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *   along with this program. If not, please see
+ *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
+-->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{{ config.title }}{{ (typeof(extraTitle) !== 'undefined' && extraTitle) || '' }}</title>
+
+<!-- Basic meta -->
+<meta name="title"
+      content="{{ config.title }}{{ (typeof(extraTitle) !== 'undefined' && extraTitle) || '' }}"/>
+<meta name="description"
+      content="{{ (typeof(extraDescription) !== 'undefined' && extraDescription) || config.meta.description }}"/>
+<meta name="keywords"
+      content="{{ config.meta.keywords }}"/>
+<link rel="image_src"
+      content="{{ config.meta.banner }}"/>
+<meta name="theme-color"
+      content="{{ config.meta.color }}"/>
+
+<!-- Icons -->
+<link rel="icon" type="image/png"
+      href="{{ config.meta.icon }}"/>
+<link rel="shortcut-icon" type="image/png"
+      href="{{ config.meta.icon }}"/>
+<link rel="apple-touch-icon" type="image/png"
+      href="{{ config.meta.icon }}"/>
+
+<!-- Canonical -->
+<link rel="canonical"
+      href="{{ config.meta.url }}{{ (typeof(extraUrl) !== 'undefined' && extraUrl) || '' }}"/>
+<meta name="canonicalURL"
+      content="{{ config.meta.url }}{{ (typeof(extraUrl) !== 'undefined' && extraUrl) || '' }}"/>
+
+<!-- Twitter meta -->
+<meta name="twitter:card"
+      content="summary_large_image">
+<meta name="twitter:site"
+      content="{{ config.meta.twitter }}"/>
+<meta name="twitter:creator"
+      content="{{ config.meta.twitter }}"/>
+<meta name="twitter:title"
+      content="{{ config.title }}{{ (typeof(extraTitle) !== 'undefined' && extraTitle) || '' }}"/>
+<meta name="twitter:description"
+      content="{{ (typeof(extraDescription) !== 'undefined' && extraDescription) || config.meta.description }}"/>
+<meta name="twitter:image"
+      content="{{ config.meta.banner }}"/>
+<meta name="twitter:url"
+      content="{{ config.meta.url }}{{ (typeof(extraUrl) !== 'undefined' && extraUrl) || '' }}"/>
+
+<!-- OG meta -->
+<meta prefix="og: http://ogp.me/ns#" property="og:title"
+      content="{{ config.title }}{{ (typeof(extraTitle) !== 'undefined' && extraTitle) || '' }}"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:type"
+      content="website"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:locale"
+      content="en_GB"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:site_name"
+      content="{{ config.title }}"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description"
+      content="{{ (typeof(extraDescription) !== 'undefined' && extraDescription) || config.meta.description }}"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url"
+      content="{{ config.meta.url }}{{ (typeof(extraUrl) !== 'undefined' && extraUrl) || '' }}"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:image"
+      content="{{ config.meta.banner }}"/>
