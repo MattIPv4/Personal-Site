@@ -97,31 +97,6 @@
             </each>
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>{{ config.footer.title }}</p>
-            <each loop="item in config.footer.items">
-                <ul>
-                    <each loop="link in item.links">
-                        <li>
-                            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
-                        </li>
-                    </each>
-                </ul>
-            </each>
-            <p><small>{{ config.footer.subtitle }}</small></p>
-        </footer>
-
-        <if condition="config.google.adsense">
-            <!-- Ad -->
-            <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle" style="display:flex;justify-content:center"
-                 data-ad-client="{{ config.google.adsense && config.google.adsense.client }}"
-                 data-ad-slot="{{ config.google.adsense && config.google.adsense.slot }}"
-                 data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </if>
+        <include src="components/footer.html"></include>
     </block>
 </extends>

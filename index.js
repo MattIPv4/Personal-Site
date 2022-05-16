@@ -129,6 +129,9 @@ const buildHtml = async () => {
         project.desc = mdExtLinks(md.render(project.desc));
     }
 
+    // Load in playlists
+    const playlists = yaml.parse(readFileSync(join(__dirname, 'data', 'playlists.yaml'), 'utf8'));
+
     // Get the source files
     const pages = join(__dirname, 'templates', 'pages');
     const files = environment === 'print'
@@ -141,7 +144,7 @@ const buildHtml = async () => {
 
         // Render it
         const rootCfg = { encoding: 'utf8', root: join(__dirname, 'templates') };
-        const exprCfg = { locals: { environment, config, projects } };
+        const exprCfg = { locals: { environment, config, projects, playlists } };
         const rendered = await posthtml([
             posthtmInclude({ ...rootCfg }),
             posthtmExtend({ ...rootCfg, expressions: { ...exprCfg } }),
