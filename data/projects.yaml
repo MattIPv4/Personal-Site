@@ -157,37 +157,6 @@
     hosted via [Cloudflare Workers](https://workers.cloudflare.com/), responding to user-run commands with Discord's new
     [Interactions (Slash Commands)](https://discord.com/developers/docs/interactions/slash-commands) feature.
 
-- title: Rythm
-  role: Web Developer
-  web: true
-  print: true
-  tags:
-    - Engineering
-  dates:
-    start: March 2021
-    end: Janurary 2022
-    other:
-      - start: November 2017
-        end: May 2018
-  headline: You, your friends, and some good tunes. Rythm makes it possible to listen to your favorite music with all your friends.
-  links:
-    - https://rythm.fm
-  image:
-    file: rythm
-    position: center
-  desc: |
-    * Working with the team at Rythm to deliver a unique website experience for the over 20 million communities using
-    Rythm and exploring the features of the service, utilising [Nuxt.js](https://nuxtjs.org/) statically exported via a
-    custom CI pipeline and deployed to internal Kubernetes infrastructure for resilliancy.
-
-    * Developing a fully client-side checkout experience for new customers, integrating directly with an in-house
-    payments API as well as with Chargebee and Stripe to provide a seamless flow for the user, allowing them to quickly
-    gain access to paid features of the service online.
-
-    * Previously, working with a team of developers to build the original web dashboard for Rythm in PHP (Laravel),
-    integrating with the private API for the bot. Also, developing ancilliary support bots for the team, such as support
-    automation and donations integrations, and assisting in providing technical customer support.
-
 - title: js.org
   role: Developer Relations
   web: true
@@ -272,6 +241,37 @@
     * Expanding the community beyond Discord into a
     [large network of sub-communities on Reddit](https://www.reddit.com/user/SupremeDesigner/m/jetbrains_community/),
     including [r/JetBrains](https://www.reddit.com/r/Jetbrains/) and [r/PyCharm](https://www.reddit.com/r/pycharm/).
+
+- title: Rythm
+  role: Web Developer
+  web: true
+  print: true
+  tags:
+    - Engineering
+  dates:
+    start: March 2021
+    end: Janurary 2022
+    other:
+      - start: November 2017
+        end: May 2018
+  headline: You, your friends, and some good tunes. Rythm makes it possible to listen to your favorite music with all your friends.
+  links:
+    - https://rythm.fm
+  image:
+    file: rythm
+    position: center
+  desc: |
+    * Working with the team at Rythm to deliver a unique website experience for the over 20 million communities using
+    Rythm and exploring the features of the service, utilising [Nuxt.js](https://nuxtjs.org/) statically exported via a
+    custom CI pipeline and deployed to internal Kubernetes infrastructure for resilliancy.
+
+    * Developing a fully client-side checkout experience for new customers, integrating directly with an in-house
+    payments API as well as with Chargebee and Stripe to provide a seamless flow for the user, allowing them to quickly
+    gain access to paid features of the service online.
+
+    * Previously, working with a team of developers to build the original web dashboard for Rythm in PHP (Laravel),
+    integrating with the private API for the bot. Also, developing ancilliary support bots for the team, such as support
+    automation and donations integrations, and assisting in providing technical customer support.
 
 - title: Young Theatre
   role: Chief In-House Electrician
