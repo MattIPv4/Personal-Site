@@ -172,7 +172,7 @@ const buildHtml = async () => {
         // Write the file
         writeFileSync(
             join(__dirname, 'build', `${environment === 'print' ? 'print.html' : relative(pages, file)}`),
-            minified,
+            environment === 'print' ? minified.replace(/^<!DOCTYPE html>\s*<html[^>]*>/, '<html>') : minified,
             { flag: 'w+' }
         );
     }

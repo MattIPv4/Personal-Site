@@ -23,9 +23,8 @@ const run = async () => {
     const html5ToPDF = new html5ToPdf({
         inputPath: path.join(__dirname, 'build', 'print.html'),
         outputPath: path.join(__dirname, 'build', 'print.pdf'),
-        pdf: {
-            preferCSSPageSize: true
-        },
+        pdf: { preferCSSPageSize: true },
+        renderDelay: 250,
         launchOptions: { args: [ '--no-sandbox' ] }
     });
 

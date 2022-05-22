@@ -67,6 +67,12 @@
         <script src="js/main.js"></script>
         <script async src="js/toast.js"></script>
     </if>
+
+    <if condition="environment === 'print'">
+        <!-- Print emoji -->
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+                onload="twemoji.parse(document.body, { folder: 'svg', ext: '.svg', className: 'twemoji' })"></script>
+    </if>
 </div>
 </body>
 </html>
