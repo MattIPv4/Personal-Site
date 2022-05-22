@@ -51,6 +51,10 @@
     [GitLab](https://gitlab.com) to track contributors and power the program. Maintaining an OpenAPI specification and
     collaborating with an external team to produce the user-facing website, as well as assisting in handling social and
     support through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our support system.
+    
+    * A host on a weekly, hour-long chat-show-style livestream broadcast on multiple platforms including Twitch and
+    YouTube. Also, part of the team that helps deliver the yearly deploy conference, a production streamed to a
+    dedicated event website with real-time chat rooms in Discord.
 
     * Building, maintaining, and advocating for, many open-source projects and
     [Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
@@ -82,8 +86,8 @@
     file: cdnjs
     position: center
   desc: |
-    * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure reliability of service for
-    cdnjs, the world's largest public CDN, as we continue to serve
+    * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure the reliability of service
+    for cdnjs, the world's largest public CDN, as we continue to serve
     [over 230 billion requests a month](https://github.com/cdnjs/cf-stats) to
     [over 13% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
 
@@ -114,14 +118,14 @@
     file: restarter
     position: center
   desc: |
-    * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python all the way back
-    in 2017, and is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve
-    over 19,000 servers with assorted utility and moderation functionality.
+    * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python back in 2017, and
+    is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve over 19,000
+    Discord servers and communities with assorted utility and moderation functionality.
 
     * The bot runs in a distributed fashion across multiple processes, tied together through network calls and a shared
-    database backing the whole system. Included in the bot are a wide range of utiltiy functions designed to make
+    database backing the whole system. Included in the bot is a wide range of utility functions designed to make
     running a Discord server easier, such as [ChannelReacts](https://restarter.mattcowley.co.uk/docs/#channelreacts),
-    one of the most popular features in the bot, which allows server administrators to set the bot to automatically
+    one of the most popular features of the bot, which allows server administrators to set the bot to automatically
     [add reactions](https://support.discord.com/hc/en-us/articles/360041139231-Adding-Emojis-and-Reactions) to new
     messages posted in a channel.
 
@@ -140,7 +144,7 @@
   dates:
     start: August 2019
     end: ~
-  headline: Ever wanted to make DNS requests from the comfort of your Discord server? Well now you can, thanks to the @1.1.1.1 bot.
+  headline: 1.1.1.1 works from a Discord server, thanks to the 1.1.1.1 bot. Invite the bot to your Discord server to start using DNS over Discord.
   links:
     - https://developers.cloudflare.com/1.1.1.1/other-ways-to-use-1.1.1.1/dns-over-discord
     - https://dns-over-discord.v4.wtf/invite
@@ -207,8 +211,8 @@
     file: pogchamp
     position: center
   desc: |
-    * This web-app reveals the new PogChamp emote for [Twitch](https://www.twitch.tv/), mirroring the style that Twitch
-    used in many of their motion-graphics, as well as documenting the history of the PogChamp of the Day.
+    * This web app reveals the new PogChamp emote for [Twitch](https://www.twitch.tv/), mirroring the style that Twitch
+    used in many of their motion graphics, as well as documenting the history of the PogChamp of the Day.
 
     * The entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on
     GitHub Actions and Pages to operate, with automation build using the
@@ -248,7 +252,7 @@
 - title: Rythm
   role: Web Developer
   web: true
-  print: true
+  print: false
   tags:
     - Engineering
   dates:
@@ -257,7 +261,7 @@
     other:
       - start: November 2017
         end: May 2018
-  headline: You, your friends, and some good tunes. Rythm makes it possible to listen to your favorite music with all your friends.
+  headline: You, your friends, and some good tunes. Rythm makes it possible to listen to your favourite music with all your friends.
   links:
     - https://rythm.fm
   image:
@@ -266,14 +270,14 @@
   desc: |
     * Working with the team at Rythm to deliver a unique website experience for the over 20 million communities using
     Rythm and exploring the features of the service, utilising [Nuxt.js](https://nuxtjs.org/) statically exported via a
-    custom CI pipeline and deployed to internal Kubernetes infrastructure for resilliancy.
+    custom CI pipeline and deployed to internal Kubernetes infrastructure for resiliency.
 
     * Developing a fully client-side checkout experience for new customers, integrating directly with an in-house
     payments API as well as with Chargebee and Stripe to provide a seamless flow for the user, allowing them to quickly
     gain access to paid features of the service online.
 
-    * Previously, working with a team of developers to build the original web dashboard for Rythm in PHP (Laravel),
-    integrating with the private API for the bot. Also, developing ancilliary support bots for the team, such as support
+    * Previously, worked with a team of developers to build the original web dashboard for Rythm in PHP (Laravel),
+    integrating with the private API for the bot. Also, developing ancillary support bots for the team, such as support
     automation and donations integrations, and assisting in providing technical customer support.
 
 - title: Young Theatre
@@ -299,7 +303,7 @@
     * Responsible for continual maintenance of all electrical equipment within the theatre company, including lighting
     fixtures, power distribution, control equipment, etc.
 
-    * Training new members on the crew on basics electrical saftey, how to wire common connectors used in the theatre,
+    * Training new members of the crew on basics electrical safety, how to wire common connectors used in the theatre,
     and the basics of power and lighting in the venue.
 
     * Responsible for the installation, wiring and checking of any practical effects used in productions, ensuring they
@@ -315,23 +319,23 @@
   dates:
     start: October 2014
     end: September 2017
-  headline: A local, youth run radio station that broadcasts online to all and via FM radio to areas of South Bucks.
+  headline: A local, youth-run radio station that broadcasts online to all and via FM radio to areas of South Bucks.
   links:
     - https://internetradiouk.com/blink-fm/
   image:
     file: blink-fm
     position: bottom
   desc: |
-    * Responsible for co-ordinating with different presenters to establish an ongoing, flexible schedule for when shows
+    * Responsible for coordinating with different presenters to establish an ongoing, flexible schedule for when shows
     are on air, ensuring that all content follows
     [Ofcom guidelines](https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-codes/broadcast-code) and is safe to
     broadcast on air.
 
-    * Providing assistance to youth presenters in the studio to ensure that their shows run smoothly and are broadcast
-    successfully, training and aiding them in using studio equipment including the Auto DJ and Myriad systems.
+    * Assisting youth presenters in the studio to ensure that their shows run smoothly and are broadcast successfully,
+    training and aiding them in using studio equipment including the Auto DJ and Myriad systems.
 
     * Working with the Blink team and the parent team at Wycombe Youth Action to continue to grow the radio station,
-    including aquiring new and improved equipment, as well as developing a new website and graphics package for the
+    including acquiring new and improved equipment, as well as developing a new website and graphics package for the
     station to boost the brand.
 
 #MagicCap:
