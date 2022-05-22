@@ -27,9 +27,15 @@ body {
   font-size: 10px;
 }
 
+@page {
+  size: a4 portait;
+  margin: 2em;
+}
+
 .content {
   display: flex;
-  margin: .5em;
+  margin: 0;
+  padding: 0;
 
   a {
     text-decoration: none;

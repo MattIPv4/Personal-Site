@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -23,6 +23,9 @@ const run = async () => {
     const html5ToPDF = new html5ToPdf({
         inputPath: path.join(__dirname, 'build', 'print.html'),
         outputPath: path.join(__dirname, 'build', 'print.pdf'),
+        pdf: {
+            preferCSSPageSize: true
+        },
         launchOptions: { args: [ '--no-sandbox' ] }
     });
 
