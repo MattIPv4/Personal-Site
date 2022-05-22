@@ -37,10 +37,14 @@
     file: digitalocean
     position: center
   desc: |
-    * Architecting and leading the development a brand new unified stack to support the Community and marketing sites,
+    * Architecting and leading the development of a new unified stack to support the Community and marketing sites,
     based on a [Next.js](https://nextjs.org) client statically exported and served by a CDN, integrating with a set of
     Node.js API micro-services to provide interactivity for content as well as refreshing exported pages on the CDN,
     all deployed on multi-DC Kubernetes infrastructure.
+    
+    * Collaborating with stakeholders across the company to understand their needs and requirements for the site,
+    working with the team to form timelines and concrete deliverables that can be communicated outward, and delivering
+    on those requirements with continual improvements to the stack.
 
     * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com) as the lead engineer,
     developing the internal API service that integrates with [GitHub](https://github.com) and
@@ -48,7 +52,7 @@
     collaborating with an external team to produce the user-facing website, as well as assisting in handling social and
     support through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our support system.
 
-    * Leading and co-ordinating the continued development of our open-source projects and
+    * Building, maintaining, and advocating for, many open-source projects and
     [Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
     such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx) and
     [do-markdownit](https://github.com/digitalocean/do-markdownit). Working with community contributors to triage issues
@@ -83,14 +87,12 @@
     [over 230 billion requests a month](https://github.com/cdnjs/cf-stats) to
     [over 13% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
 
-    * Assisting external contributors wanting to add libraries to cdnjs by developing
-    [updated documentation for cdnjs on GitHub](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md), as well
-    as ensuring we can respond on GitHub to issues that are being created and reviewing any pull requests submitted by
-    contributors to add new libraries.
-
-    * Responsible for managing the [cdnjs Twitter account](https://twitter.com/cdnjs) (and
-    [status account](https://twitter.com/cdnjsStatus)), providing support to those who ask reach out to us on social and
-    triaging any reported issues to be passed onto the team for further investigation.
+    * Assisting external contributors wanting to add libraries to cdnjs by ensuring we respond on GitHub to issues that
+    are being created and reviewing any pull requests submitted by contributors to add new libraries. Providing support
+    to users that reach out to the [cdnjs Twitter account](https://twitter.com/cdnjs) and triaging any reported issues.
+    
+    * Developing and maintaining the [cdnjs website](https://github.com/cdnjs/static-website),
+    [cdnjs API](https://github.com/cdnjs/api-server), and related tooling (such as the status page and metrics worker).
 
     * Continuing to work with sponsoring companies such as [Algolia](https://www.algolia.com/),
     [Atlassian Statuspage](https://www.atlassian.com/software/statuspage), and [Sentry](https://sentry.io/welcome/) to
@@ -114,7 +116,7 @@
   desc: |
     * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python all the way back
     in 2017, and is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve
-    over 12,000 servers with assorted utility and moderation functionality.
+    over 19,000 servers with assorted utility and moderation functionality.
 
     * The bot runs in a distributed fashion across multiple processes, tied together through network calls and a shared
     database backing the whole system. Included in the bot are a wide range of utiltiy functions designed to make
@@ -140,7 +142,7 @@
     end: ~
   headline: Ever wanted to make DNS requests from the comfort of your Discord server? Well now you can, thanks to the @1.1.1.1 bot.
   links:
-    - https://developers.cloudflare.com/1.1.1.1/fun-stuff/dns-over-discord
+    - https://developers.cloudflare.com/1.1.1.1/other-ways-to-use-1.1.1.1/dns-over-discord
     - https://dns-over-discord.v4.wtf/invite
   image:
     file: dns-over-discord
@@ -183,8 +185,9 @@
     active file to ensure all subdomains are valid, liaising with contributors on subdomains which have failed checks
     to resolve any issues.
 
-    * Working with the js.org team and external contributors to develop new PR review and management systems through
-    continuous integration (CI), working to remove the need for intesive human review of every domain request.
+    * Working with the js.org team and external contributors to continually improve the PR review process and domain
+    management systems through continuous integration (CI) and automation, removing the need for manual human
+    intervention where possible.
 
 - title: PogChamp of the Day
   role: Standalone Project
@@ -289,6 +292,10 @@
     file: youngtheatre-panto2016
     position: top
   desc: |
+    * Part of the crew for over 30 productions, both in-house and visiting. Often the production/stage electrician
+    during performances put on by the theatre company, responsible for practical effects and overall power distribution
+    during productions.
+    
     * Responsible for continual maintenance of all electrical equipment within the theatre company, including lighting
     fixtures, power distribution, control equipment, etc.
 
@@ -297,9 +304,6 @@
 
     * Responsible for the installation, wiring and checking of any practical effects used in productions, ensuring they
     are safe to be used on stage.
-
-    * Acting production electrician or stage electrics during performances put on by the theatre company, responsible
-    for practical effects and overall power distribution during productions.
 
 - title: Blink FM
   role: Programme Controller
