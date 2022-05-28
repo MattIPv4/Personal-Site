@@ -40,7 +40,8 @@ const pickTheme = () => {
     // Define all themes
     const themes = [
         'crt',
-        'swift'
+        'swift',
+        'terminal'
     ];
 
     // Allow URL ?theme selection
