@@ -23,7 +23,12 @@
         <ul>
             <each loop="link in item.links">
                 <li>
-                    <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+                    <if condition="link.url.startsWith('/')">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </if>
+                    <else>
+                        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+                    </else>
                 </li>
             </each>
         </ul>

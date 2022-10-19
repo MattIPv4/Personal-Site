@@ -151,6 +151,11 @@ footer:
   subtitle: © Matt Cowley {{YEAR}}
   items:
     - links:
+        - title: Home
+          url: /
+        - title: Playlists
+          url: /playlists
+    - links:
         - title: Twitter
           url: https://twitter.mattcowley.co.uk/
         - title: GitHub

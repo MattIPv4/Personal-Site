@@ -21,6 +21,17 @@ body {
   background: #000;
 }
 
+@mixin blue-heading {
+  color: rgba(129, 243, 253, 1);
+  letter-spacing: -.01rem;
+  text-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
+
+  &::selection {
+    background: rgba(129, 243, 253, 1);
+    color: #fff;
+  }
+}
+
 body {
   color: rgba(20, 253, 206, 1);
   font-size: 18px;
@@ -93,22 +104,31 @@ body {
     }
 
     h2,
-    h4,
-    h5 {
-      color: rgba(239, 253, 255, 1);
-      letter-spacing: 0;
-      text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+    h3 {
+      @include blue-heading;
+    }
 
-      &::selection,
-      *::selection {
-        background: rgba(239, 253, 255, 1);
-        color: #111;
-      }
+    h2 {
+      opacity: .8;
+      font-size: 2.25rem;
+    }
+
+    h3 {
+      opacity: .7;
+      font-size: 2rem;
     }
 
     h4,
     h5 {
+      color: rgba(239, 253, 255, 1);
       font-size: 1.4em;
+      letter-spacing: 0;
+      text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+
+      &::selection {
+        background: rgba(239, 253, 255, 1);
+        color: #111;
+      }
 
       &::before {
         content: "(";
@@ -121,63 +141,36 @@ body {
       }
     }
 
-    h2,
-    h3 {
-      &,
-      * {
-        color: rgba(129, 243, 253, 1);
-        letter-spacing: -.01rem;
-        text-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
-
-        &::selection {
-          background: rgba(129, 243, 253, 1);
-          color: #fff;
-        }
-      }
-    }
-
-    h2 {
-      opacity: .8;
-
-      &,
-      * {
-        font-size: 2.25rem;
-      }
-    }
-
-    h3 {
-      opacity: .7;
-
-      &,
-      * {
-        font-size: 2rem;
-      }
-    }
-
     h4,
     h3.email {
       margin-top: 45px;
     }
 
-    h3,
-    ul,
-    .project-link,
-    footer {
-      a {
-        &,
-        &:visited {
-          color: rgba(239, 253, 255, 1);
-          text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
-        }
+    a {
+      &,
+      &:visited {
+        color: rgba(239, 253, 255, 1);
+        text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+      }
 
-        &:hover,
-        &:focus {
-          color: rgba(178, 255, 253, 1);
-        }
+      &:hover,
+      &:focus {
+        color: rgba(178, 255, 253, 1);
+      }
 
-        &::selection {
-          background: rgba(239, 253, 255, 1);
-          color: #111;
+      &::selection {
+        background: rgba(239, 253, 255, 1);
+        color: #111;
+      }
+    }
+
+    .items {
+      &.hidden-links {
+        a {
+          &,
+          &:visited {
+            @include blue-heading;
+          }
         }
       }
     }
