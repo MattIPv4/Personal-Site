@@ -63,7 +63,7 @@ main:
     web: true
     print: true
     items:
-      - title: Senior Web Developer @ DigitalOcean 🦈️
+      - title: Senior Software Engineer I @ DigitalOcean 🦈️
         link: https://digitalocean.com
       - title: Maintainer of cdnjs.com @ Cloudflare ⛅
         link: https://cdnjs.com
@@ -86,8 +86,8 @@ main:
     print: true
     size: h3
     items:
+      - title: Software Engineering, Full-stack Development (Node.js, Vue, React) 🖥
       - title: Community Management, Developer Relations, Open-Source Advocacy 🥑
-      - title: Software Engineering, Full-stack Development (Node, Vue, React, Next, Nuxt) 🖥
       - title: Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
       - title: Stage Management, Production Electrics, Lighting 💡
 
@@ -134,17 +134,17 @@ contact:
       username: "@MattIPv4"
       url: https://github.mattcowley.co.uk/
 
-    - title: "**twitch**_.mattcowley.co.uk_"
-      username: "@MattIPv4"
-      url: https://twitch.mattcowley.co.uk/
+    - title: "**discord**_.mattcowley.co.uk_"
+      username: "v4#1503"
+      url: https://discord.mattcowley.co.uk/
 
     - title: "**sponsors**_.mattcowley.co.uk_"
       username: "@MattIPv4"
       url: https://sponsors.mattcowley.co.uk/
 
-    - title: "**discord**_.mattcowley.co.uk_"
-      username: "v4#1503"
-      url: https://discord.mattcowley.co.uk/
+    - title: "**twitch**_.mattcowley.co.uk_"
+      username: "@MattIPv4"
+      url: https://twitch.mattcowley.co.uk/
 
 footer:
   title: "TODO: Put a proper footer here"
