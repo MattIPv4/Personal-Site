@@ -37,24 +37,18 @@
     file: digitalocean
     position: center
   desc: |
-    * Architecting and leading the development of a new unified stack to support the Community and marketing sites,
+    * Architecting and leading the development of a unified stack to support the Community and WWW (marketing) sites,
     based on a [Next.js](https://nextjs.org) client statically exported and served by a CDN, integrating with a set of
     Node.js API micro-services to provide interactivity for content as well as refreshing exported pages on the CDN,
-    all deployed on multi-DC Kubernetes infrastructure.
-    
-    * Collaborating with stakeholders across the company to understand their needs and requirements for the site,
-    working with the team to form timelines and concrete deliverables that can be communicated outward, and delivering
-    on those requirements with continual improvements to the stack.
+    all deployed on multi-DC Kubernetes infrastructure. Collaborating with stakeholders across the company to
+    understand their needs and requirements for the site, ensuring we're doing what's best for them and our wider
+    community, and delivering on those requirements with continual improvements to the stack.
 
-    * Part of the core team for [Hacktoberfest](https://hacktoberfest.digitalocean.com) as the lead engineer,
-    developing the internal API service that integrates with [GitHub](https://github.com) and
-    [GitLab](https://gitlab.com) to track contributors and power the program. Maintaining an OpenAPI specification and
-    collaborating with an external team to produce the user-facing website, as well as assisting in handling social and
-    support through the [Hacktoberfest Twitter account](https://twitter.com/hacktoberfest) and our support system.
-    
-    * A host on a weekly, hour-long chat-show-style livestream broadcast on multiple platforms including Twitch and
-    YouTube. Also, part of the team that helps deliver the yearly deploy conference, a production streamed to a
-    dedicated event website with real-time chat rooms in Discord.
+    * Part of the core team for [Hacktoberfest](https://hacktoberfest.com) as the lead engineer, developing the internal
+    API service that integrates with [GitHub](https://github.com) and [GitLab](https://gitlab.com) to track PR/MRs each
+    year. Maintaining an internal OpenAPI specification for the development team to use when building the user-facing
+    website. Leading the [Hacktoberfest Discord](https://discord.gg/hacktoberfest) community of 60 thousand members, and
+    working with the volunteer moderation team to ensure a welcoming and inclusive environment for all participants.
 
     * Building, maintaining, and advocating for, many open-source projects and
     [Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
@@ -185,38 +179,13 @@
     their custom js.org subdomains on the [js.org GitHub repository](https://github.com/js-org/js.org), ensuring they
     meet our standards for being granted a free subdomain.
 
-    * Building out [automation to handle the annual cleanup](https://github.com/MattIPv4/js.org-cleanup) of the js.org
+    * Building out [automation to handle the annual cleanup](https://github.com/js-org/js.org-cleanup) of the js.org
     active file to ensure all subdomains are valid, liaising with contributors on subdomains which have failed checks
     to resolve any issues.
 
     * Working with the js.org team and external contributors to continually improve the PR review process and domain
     management systems through continuous integration (CI) and automation, removing the need for manual human
     intervention where possible.
-
-- title: PogChamp of the Day
-  role: Standalone Project
-  web: true
-  print: false
-  tags:
-    - Engineering
-    - Open-source
-  dates:
-    start: January 2021
-    end: ~
-  headline: Your new PogChamp is... View the new Twitch PogChamp and the history of the PogChamp of the Day at pogchamp.today
-  links:
-    - https://pogchamp.today/
-    - https://github.com/MattIPv4/pogchamp
-  image:
-    file: pogchamp
-    position: center
-  desc: |
-    * This web app reveals the new PogChamp emote for [Twitch](https://www.twitch.tv/), mirroring the style that Twitch
-    used in many of their motion graphics, as well as documenting the history of the PogChamp of the Day.
-
-    * The entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on
-    GitHub Actions and Pages to operate, with automation build using the
-    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) to detect new PogChamp emotes.
 
 - title: JetBrains Community
   role: Community Manager
@@ -338,6 +307,31 @@
     including acquiring new and improved equipment, as well as developing a new website and graphics package for the
     station to boost the brand.
 
+#- title: PogChamp of the Day
+#  role: Standalone Project
+#  web: true
+#  print: false
+#  tags:
+#    - Engineering
+#    - Open-source
+#  dates:
+#    start: January 2021
+#    end: ~
+#  headline: Your new PogChamp is... View the new Twitch PogChamp and the history of the PogChamp of the Day at pogchamp.today
+#  links:
+#    - https://pogchamp.today/
+#    - https://github.com/MattIPv4/pogchamp
+#  image:
+#    file: pogchamp
+#    position: center
+#  desc: |
+#    * This web app reveals the new PogChamp emote for [Twitch](https://www.twitch.tv/), mirroring the style that Twitch
+#    used in many of their motion graphics, as well as documenting the history of the PogChamp of the Day.
+#
+#    * The entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on
+#    GitHub Actions and Pages to operate, with automation build using the
+#    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) to detect new PogChamp emotes.
+#
 #MagicCap:
 #  display: true
 #  type: "Web / Application"
