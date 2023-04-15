@@ -1,7 +1,7 @@
 <!--
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -36,12 +36,12 @@
     <p><small>{{ config.footer.subtitle }}</small></p>
 </footer>
 
-<if condition="config.google.adsense">
+<if condition="config.google.adsense?.client && config.google.adsense?.slot">
     <!-- Ad -->
     <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle" style="display:flex;justify-content:center"
-         data-ad-client="{{ config.google.adsense && config.google.adsense.client }}"
-         data-ad-slot="{{ config.google.adsense && config.google.adsense.slot }}"
+         data-ad-client="{{ config.google.adsense?.client || '' }}"
+         data-ad-slot="{{ config.google.adsense?.slot || '' }}"
          data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
