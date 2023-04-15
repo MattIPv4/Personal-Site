@@ -49,8 +49,8 @@
     "posthtml-style-expansion": "^0.2.0",
     "sass": "^1.62.0",
     "sharp": "^0.32.0",
-    "stylelint": "^14.16.1",
-    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard-scss": "^8.0.0",
     "yaml": "^2.2.1"
   }
 }

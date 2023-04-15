@@ -4,6 +4,6 @@
     "alpha-value-notation": "number",
     "color-function-notation": "legacy",
     "no-descending-specificity": null,
-    "number-leading-zero": "never"
+    "media-feature-range-notation": "prefix"
   }
 }
