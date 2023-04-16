@@ -126,25 +126,25 @@ rail: []
 contact:
   email: me@mattcowley.co.uk
   links:
-    - title: "**twitter**_.mattcowley.co.uk_"
+    - title: "v4.fyi/**twitter**"
       username: "@MattIPv4"
-      url: https://twitter.mattcowley.co.uk/
+      url: https://v4.fyi/twitter
 
-    - title: "**github**_.mattcowley.co.uk_"
+    - title: "v4.fyi/**github**"
       username: "@MattIPv4"
-      url: https://github.mattcowley.co.uk/
+      url: https://v4.fyi/github
 
-    - title: "**discord**_.mattcowley.co.uk_"
+    - title: "v4.fyi/**discord**"
       username: "v4#1503"
-      url: https://discord.mattcowley.co.uk/
+      url: https://v4.fyi/discord
 
-    - title: "**sponsors**_.mattcowley.co.uk_"
+    - title: "v4.fyi/**sponsors**"
       username: "@MattIPv4"
-      url: https://sponsors.mattcowley.co.uk/
+      url: https://v4.fyi/sponsors
 
-    - title: "**twitch**_.mattcowley.co.uk_"
+    - title: "v4.fyi/**twitch**"
       username: "@MattIPv4"
-      url: https://twitch.mattcowley.co.uk/
+      url: https://v4.fyi/twitch
 
 footer:
   title: "TODO: Put a proper footer here"
@@ -156,12 +156,12 @@ footer:
         - title: Playlists
           url: /playlists
         - title: Resume
-          url: /print.pdf
+          url: /resume
     - links:
         - title: Twitter
-          url: https://twitter.mattcowley.co.uk/
+          url: https://v4.fyi/twitter
         - title: GitHub
-          url: https://github.mattcowley.co.uk/
+          url: https://v4.fyi/github
         - title: Email
           url: mailto:me@mattcowley.co.uk
     - links:
