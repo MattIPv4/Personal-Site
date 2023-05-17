@@ -72,13 +72,13 @@ body {
   }
 
   .print-cmd,
-  .contact li a b {
+  .contact li a strong {
     color: #00aba4;
     transition: color .2s;
   }
 
-  .contact li a:focus b,
-  .contact li a:hover b {
+  .contact li a:focus strong,
+  .contact li a:hover strong {
     color: #007873;
   }
 

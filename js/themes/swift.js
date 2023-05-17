@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2021 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -17,6 +17,7 @@
  */
 
 const hello = () => {
+    // Add a rainbow "Hello" to the start
     const colors = [
         '#97C774',
         '#B63E98',
@@ -24,8 +25,6 @@ const hello = () => {
         '#DB3E41',
         '#1BABA5'
     ];
-    const title = document.querySelector('.content h1');
-    title.textContent = ', I\'m ' + title.textContent + '. ';
     const hello = document.createElement('span');
     const wave = document.createElement('span');
     wave.textContent = '👋 ';
@@ -38,7 +37,13 @@ const hello = () => {
         span.textContent = char;
         hello.appendChild(span);
     }
+
+    // Preserve the title
+    const title = document.querySelector('.content h1');
+    title.textContent = ', I\'m ' + title.textContent + '. ';
     title.insertBefore(hello, title.childNodes[0] || null);
+
+    // Add a cursor after
     const cur = document.createElement('span');
     cur.className = 'cursor';
     cur.textContent = '|';
@@ -68,6 +73,8 @@ const taglines = () => {
 };
 
 const email = () => {
+    // Add "let Contact = email(" and ", 25)" before and after
+    // Replaces the existing heading
     const elm = document.querySelector('.content .email');
     const lett = document.createElement('span');
     lett.className = 'let';
@@ -95,7 +102,7 @@ const email = () => {
 };
 
 const contact = () => {
-    // Before
+    // Add "let Me = links([" before
     const h3Before = document.createElement('h3');
     const lett = document.createElement('span');
     lett.className = 'let';
@@ -112,17 +119,20 @@ const contact = () => {
     h3Before.style.marginBottom = '0';
     document.querySelector('.content .contact').insertAdjacentElement('beforeBegin', h3Before);
 
-    // Links
+    // Wrap the links in quotes
     const elms = document.querySelectorAll('.contact a');
     for (let i = 0; i < elms.length; i++) {
+        // Wrap the link in a span
         const elm = elms[i];
         const span = document.createElement('span');
-        span.appendChild(elm.querySelector('strong'));
-        span.appendChild(elm.querySelector('small'));
-        elm.insertBefore(span, elm.firstChild);
+        while (elm.firstChild) span.appendChild(elm.firstChild);
+        elm.appendChild(span);
+
+        // Don't include the handle
+        elm.appendChild(span.lastChild);
     }
 
-    // After
+    // Add "], false)" after
     const h3After = document.createElement('h3');
     const start = document.createTextNode('], ');
     const bool = document.createElement('span');
@@ -137,7 +147,8 @@ const contact = () => {
 };
 
 const projects = () => {
-    // Before
+    // Add "class FeaturedProjects {" before
+    // Replaces the existing heading
     const elm = document.querySelector('.content .featured');
     const classs = document.createElement('span');
     classs.className = 'let';
@@ -153,7 +164,7 @@ const projects = () => {
     elm.appendChild(name);
     elm.appendChild(open);
 
-    // After
+    // Add "} /* End FeaturedProjects class */"
     const h3 = document.createElement('h3');
     const close = document.createElement('span');
     close.className = 'func-cmd';
