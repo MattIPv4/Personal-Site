@@ -34,9 +34,9 @@
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.4",
     "copyfiles": "^2.4.1",
-    "esbuild": "^0.17.16",
+    "esbuild": "^0.17.19",
     "esbuild-plugin-yaml": "^0.0.1",
-    "eslint": "^8.38.0",
+    "eslint": "^8.40.0",
     "html-minifier": "^4.0.0",
     "html5-to-pdf": "^4.0.1",
     "http-server": "^14.1.1",
@@ -47,10 +47,10 @@
     "posthtml-extend": "^0.6.5",
     "posthtml-include": "^1.7.4",
     "posthtml-style-expansion": "^0.2.0",
-    "sass": "^1.62.0",
-    "sharp": "^0.32.0",
-    "stylelint": "^15.4.0",
-    "stylelint-config-standard-scss": "^8.0.0",
-    "yaml": "^2.2.1"
+    "sass": "^1.62.1",
+    "sharp": "^0.32.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "yaml": "^2.2.2"
   }
 }
