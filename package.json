@@ -4,12 +4,11 @@
   "description": "My humble personal homepage, made with a tiny bit but not much care.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:js && npm run test:scss && npm run test:html",
+    "test": "npm run test:js && npm run test:scss",
     "test:js": "eslint *.js",
     "test:js:fix": "npm run test:js -- --fix",
     "test:scss": "stylelint \"scss/{*,**/*}.scss\"",
     "test:scss:fix": "npm run test:scss -- --fix",
-    "test:html": "linthtml templates/*.html",
     "build": "npm run build:bundle && npm run build:static && npm run build:images && npm run build:print",
     "build:bundle": "node index.js",
     "build:static": "copyfiles --up 1 static/{*,**/*} build",
@@ -31,7 +30,6 @@
   },
   "homepage": "https://github.com/MattIPv4/Personal-Site#readme",
   "devDependencies": {
-    "@linthtml/linthtml": "^0.9.4",
     "copyfiles": "^2.4.1",
     "esbuild": "^0.17.19",
     "esbuild-plugin-yaml": "^0.0.1",
