@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -122,7 +122,7 @@ const buildHtml = async () => {
     const projects = yaml.parse(readFileSync(join(__dirname, 'data', 'projects.yaml'), 'utf8')).filter(environmentFilter);
     for (const project of projects) {
         project.slug = project.title.toLowerCase()
-            .replace(/^[a-z0-9-_]/g, '-')
+            .replace(/[^a-z0-9-_]/g, '-')
             .replace(/-{2,}/g, '-')
             .replace(/(^-+|-+$)/g, '');
         project.headline = mdExtLinks(md.renderInline(project.headline));

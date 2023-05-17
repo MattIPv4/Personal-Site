@@ -99,7 +99,7 @@
 - title: Alveus Sanctuary
   role: Open-source Maintainer
   web: true
-  print: false
+  print: true
   tags:
     - Engineering
     - Open-source
@@ -217,46 +217,46 @@
     management systems through continuous integration (CI) and automation, removing the need for manual human
     intervention where possible.
 
-- title: JetBrains Community
-  role: Community Manager
-  web: true
-  print: false
-  tags:
-    - Community
-    - Open-source
-  dates:
-    start: April 2018
-    end: ~
-  headline: JetBrains Community is the Reddit and Discord community for all things JetBrains.
-  links:
-    - https://discord.gg/jetbrains
-    - https://www.reddit.com/r/jetbrains/
-  image:
-    file: jetbrains-community
-    position: center
-  desc: |
-    * Creating and managing a large community of JetBrains users and team members on
-    [Discord](https://discord.com/invite/jetbrains) where community members can all chat and interact with each other in
-    a safe environment, asking for and receiving help around JetBrains products and projects as well as having open
-    discussion about almost anything.
-
-    * Working with the team at JetBrains to create [unique branding](https://github.com/JetBrains-Community/brand)
-    in-line with overall JetBrains branding for the community and to ensure that our operations align with what they
-    expect of a user group.
-
-    * Expanding the community beyond Discord into a
-    [large network of sub-communities on Reddit](https://www.reddit.com/user/SupremeDesigner/m/jetbrains_community/),
-    including [r/JetBrains](https://www.reddit.com/r/Jetbrains/) and [r/PyCharm](https://www.reddit.com/r/pycharm/).
+#- title: JetBrains Community
+#  role: Community Manager
+#  web: true
+#  print: false
+#  tags:
+#    - Community
+#    - Open-source
+#  dates:
+#    start: April 2018
+#    end: ~
+#  headline: JetBrains Community is the Reddit and Discord community for all things JetBrains.
+#  links:
+#    - https://discord.gg/jetbrains
+#    - https://www.reddit.com/r/jetbrains/
+#  image:
+#    file: jetbrains-community
+#    position: center
+#  desc: |
+#    * Creating and managing a large community of JetBrains users and team members on
+#    [Discord](https://discord.com/invite/jetbrains) where community members can all chat and interact with each other in
+#    a safe environment, asking for and receiving help around JetBrains products and projects as well as having open
+#    discussion about almost anything.
+#
+#    * Working with the team at JetBrains to create [unique branding](https://github.com/JetBrains-Community/brand)
+#    in-line with overall JetBrains branding for the community and to ensure that our operations align with what they
+#    expect of a user group.
+#
+#    * Expanding the community beyond Discord into a
+#    [large network of sub-communities on Reddit](https://www.reddit.com/user/SupremeDesigner/m/jetbrains_community/),
+#    including [r/JetBrains](https://www.reddit.com/r/Jetbrains/) and [r/PyCharm](https://www.reddit.com/r/pycharm/).
 
 - title: Rythm
   role: Web Developer
   web: true
-  print: false
+  print: true
   tags:
     - Engineering
   dates:
     start: March 2021
-    end: Janurary 2022
+    end: January 2022
     other:
       - start: November 2017
         end: May 2018
@@ -281,7 +281,7 @@
 
 - title: Young Theatre
   role: Chief In-House Electrician
-  web: true
+  web: false
   print: true
   tags:
     - Live Production
@@ -310,7 +310,7 @@
 
 - title: Blink FM
   role: Programme Controller
-  web: true
+  web: false
   print: true
   tags:
     - Live Production
@@ -361,7 +361,7 @@
 #    * The entire application was built to be [open-source on GitHub](https://github.com/MattIPv4/pogchamp), relying on
 #    GitHub Actions and Pages to operate, with automation build using the
 #    [Twitch API](https://dev.twitch.tv/docs/v5/reference/chat#get-chat-emoticons-by-set) to detect new PogChamp emotes.
-#
+
 #MagicCap:
 #  display: true
 #  type: "Web / Application"
@@ -384,7 +384,7 @@
 #    the UI. However, I soon became heavily involved with the project, responsible for the majority of the user interface
 #    but also the user experience that it provided. I now also handle a large amount of organization administration,
 #    reviewing PRs and managing error reports.
-#
+
 #PyDMXControl:
 #  display: true
 #  type: "Python"
@@ -401,7 +401,7 @@
 #    Python has always been a language I love to work in and after setting up a load of DMX controlled lights in my
 #    office I needed a programatic way to control them all. With this in mind I found a basic Python usb wrapper for the
 #    uDMX device and built myself a custom, powerful Python module for controlling DMX fixtures using uDMX.
-#
+
 #macOSNotifJS:
 #  display: false
 #  type: "Web / Plugin"
@@ -422,7 +422,7 @@
 #    Creating a custom Javascript plugin to render macOS style notifications on a webpage. Written in ES6 making use
 #    of webpack and babel to allow most browsers to run the plugin. Created as an open source project to allow any
 #    user online to contribute to the project.
-#
+
 #BotBlock:
 #  display: false
 #  type: "Web / API"
@@ -444,7 +444,7 @@
 #    Making bots on Discord is fun but getting them out to the general users on Discord is rather hard. There are so
 #    many bot lists to publish your bot on that it becomes a headache, so I created BotBlock. BotBlock provides a
 #    single list of all known bot lists on Discord and a central API for bot developers to use.
-#
+
 #Unreal Designs:
 #  display: false
 #  type: "Web / Business"
@@ -465,7 +465,7 @@
 #    Unreal Designs is a business that I started up as a way to sell my web and graphic design skills to clients
 #    alongside a couple of my friends who also wanted to sell their skills. The business has been successful and
 #    long lasting, bringing in many clients for the team and building up our experience.
-#
+
 #Discord Bots:
 #  display: false
 #  type: "Web / Application"
@@ -487,4 +487,3 @@
 #    Producing bots to give other users a better experience on Discord resulted in my creation of a couple of music
 #    streaming bots based on the Discord.py library as well as some other utility bots. As part of this I produced
 #    a site for them all, featuring their homepages as well as a large backend for stats logging.
-#
