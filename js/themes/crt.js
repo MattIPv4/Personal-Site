@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -23,9 +23,9 @@ window._theme = () => {
     const heading = document.querySelector('.content h1');
     heading.textContent = '👋 Hi, I\'m ' + heading.textContent;
 
-    // Typing
+    // Cursor
     const span = document.createElement('span');
-    span.textContent = '_';
+    span.textContent = '';
     heading.appendChild(span);
 
     // Custom BG

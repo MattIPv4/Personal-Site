@@ -40,13 +40,13 @@ const hello = () => {
 
     // Preserve the title
     const title = document.querySelector('.content h1');
-    title.textContent = ', I\'m ' + title.textContent + '. ';
+    title.textContent = ', I\'m ' + title.textContent + '.';
     title.insertBefore(hello, title.childNodes[0] || null);
 
     // Add a cursor after
     const cur = document.createElement('span');
     cur.className = 'cursor';
-    cur.textContent = '|';
+    cur.textContent = '';
     title.appendChild(cur);
 };
 
