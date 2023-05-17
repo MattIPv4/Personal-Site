@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,21 +16,35 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-const path = require('path');
-const html5ToPdf = require('html5-to-pdf');
+const path = require('node:path');
+const { unlink } = require('node:fs/promises');
+const httpServer = require('http-server');
+const puppeteer = require('puppeteer');
 
 const run = async () => {
-    const html5ToPDF = new html5ToPdf({
-        inputPath: path.join(__dirname, 'build', 'print.html'),
-        outputPath: path.join(__dirname, 'build', 'print.pdf'),
-        pdf: { preferCSSPageSize: true },
-        renderDelay: 250,
-        launchOptions: { args: [ '--no-sandbox' ] }
+    // Start the server up
+    const server = httpServer.createServer({
+        root: path.join(__dirname, 'build')
     });
+    await new Promise(resolve => server.listen(resolve));
+    const address = server.server.address();
+    const url = typeof address === 'string' ? address : `http://localhost:${address.port}`;
 
-    await html5ToPDF.start();
-    await html5ToPDF.build();
-    await html5ToPDF.close();
+    // Navigate to the print page
+    const browser = await puppeteer.launch({ args: [ '--no-sandbox' ] });
+    const page = await browser.newPage();
+    await page.goto(`${url}/print.html`);
+
+    // Export the PDF and exit
+    await page.pdf({
+        preferCSSPageSize: true,
+        path: path.join(__dirname, 'build', 'print.pdf')
+    });
+    await browser.close();
+    await server.close();
+
+    // Remove the print page
+    await unlink(path.join(__dirname, 'build', 'print.html'));
 };
 
 run().then(() => console.log('Exported')).catch(err => {
