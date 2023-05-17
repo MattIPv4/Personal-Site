@@ -42,7 +42,6 @@
     "posthtml-expressions": "^1.11.0",
     "posthtml-extend": "^0.6.5",
     "posthtml-include": "^1.7.4",
-    "posthtml-style-expansion": "^0.2.0",
     "puppeteer": "^20.2.1",
     "sass": "^1.62.1",
     "sharp": "^0.32.1",

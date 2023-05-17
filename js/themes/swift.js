@@ -180,6 +180,7 @@ const projects = () => {
 window._theme = () => {
     delete window._theme;
 
+    // TODO: All these decorations should be pseudo-elements
     hello();
     taglines();
     email();

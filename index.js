@@ -34,11 +34,7 @@ const posthtml = require('posthtml');
 const posthtmlExpressions = require('posthtml-expressions');
 const posthtmInclude = require('posthtml-include');
 const posthtmExtend = require('posthtml-extend');
-const posthtmlStyleExpansion = require('posthtml-style-expansion');
 const htmlMinifier = require('html-minifier');
-
-const environment = process.env.SITE_ENV || 'web';
-
 const getFilesInDir = dir => readdirSync(dir, { withFileTypes: true }).flatMap(file => file.isDirectory()
     ? getFilesInDir(join(dir, file.name))
     : join(dir, file.name));
@@ -98,7 +94,6 @@ const buildJs = async () => {
 const buildHtml = async () => {
     const md = markdown();
     const mdExtLinks = md => md.replace(/<a(.+?)>/g, '<a$1 target="_blank" rel="noopener">');
-    const environmentFilter = item => environment === 'web' ? item.web ?? true : environment === 'print' ? item.print ?? true : true;
 
     // Load in the main config yaml
     const config = yaml.parse(readFileSync(join(__dirname, 'data', 'config.yaml'), 'utf8'));
@@ -116,10 +111,9 @@ const buildHtml = async () => {
     for (const item of config.rail) {
         item.content = mdExtLinks(md.render(item.content));
     }
-    config.main = config.main.filter(environmentFilter);
 
     // Load in all the projects
-    const projects = yaml.parse(readFileSync(join(__dirname, 'data', 'projects.yaml'), 'utf8')).filter(environmentFilter);
+    const projects = yaml.parse(readFileSync(join(__dirname, 'data', 'projects.yaml'), 'utf8'));
     for (const project of projects) {
         project.slug = project.title.toLowerCase()
             .replace(/[^a-z0-9-_]/g, '-')
@@ -134,9 +128,7 @@ const buildHtml = async () => {
 
     // Get the source files
     const pages = join(__dirname, 'templates', 'pages');
-    const files = environment === 'print'
-        ? [ join(pages, 'index.html') ]
-        : getFilesInDir(pages).filter(file => file.endsWith('.html'));
+    const files = getFilesInDir(pages).filter(file => file.endsWith('.html'));
 
     for (const file of files) {
         // Get the source html
@@ -144,12 +136,11 @@ const buildHtml = async () => {
 
         // Render it
         const rootCfg = { encoding: 'utf8', root: join(__dirname, 'templates') };
-        const exprCfg = { locals: { environment, config, projects, playlists } };
+        const exprCfg = { locals: { config, projects, playlists } };
         const rendered = await posthtml([
             posthtmInclude({ ...rootCfg }),
             posthtmExtend({ ...rootCfg, expressions: { ...exprCfg } }),
-            posthtmlExpressions({ ...exprCfg }),
-            environment === 'print' ? posthtmlStyleExpansion({ root: join(__dirname, 'build'), encoding: 'utf-8' }) : null
+            posthtmlExpressions({ ...exprCfg })
         ].filter(x => !!x)).process(html).then(result => result.html);
 
         // Minify it
@@ -171,8 +162,8 @@ const buildHtml = async () => {
 
         // Write the file
         writeFileSync(
-            join(__dirname, 'build', `${environment === 'print' ? 'print.html' : relative(pages, file)}`),
-            environment === 'print' ? minified.replace(/^<!DOCTYPE html>\s*<html[^>]*>/, '<html>') : minified,
+            join(__dirname, 'build', relative(pages, file)),
+            minified,
             { flag: 'w+' }
         );
     }
