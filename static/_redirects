@@ -30,7 +30,8 @@
 
 # Slack workspace
 # slack.mattcowley.co.uk
-/slack      https://slack.mattcowley.co.uk # Redirect to the subdomain as the invite changes regularly
+# Redirect to the subdomain as the invite changes regularly
+/slack      https://slack.mattcowley.co.uk
 
 # GitHub sponsors
 # sponsors.mattcowley.co.uk
