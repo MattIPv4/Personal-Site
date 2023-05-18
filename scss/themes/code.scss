@@ -16,6 +16,14 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
+@use "sass:color";
+
+$command: #00aba4;
+$text: #dc3b3b;
+$comment: #52bc57;
+$function: #8884c5;
+$scheme: #d18e62;
+
 html,
 body {
   background: #292b37;
@@ -24,95 +32,71 @@ body {
 .content {
   h1 {
     margin: .5em 0 .75em;
+
+    &::before {
+      content: "👋 Hello, I'm ";
+    }
+
+    &::after {
+      animation: blink 1.2s linear infinite;
+      content: ". ";
+
+      @keyframes blink {
+        0% {
+          content: ". ";
+        }
+
+        50% {
+          content: ". ";
+        }
+
+        50.1% {
+          content: ".|";
+        }
+
+        100% {
+          content: ".|";
+        }
+      }
+    }
   }
 
   h2,
-  h3 {
+  h3:not(.featured) {
+    color: $text;
     font-size: 1.5em;
     margin: 25px 0;
+
+    &::before {
+      color: $command;
+      content: "print(\"";
+    }
+
+    &::after {
+      color: $command;
+      content: "\")";
+    }
   }
 
   h4,
-  h5 {
+  h5,
+  h3.featured {
     font-size: 1.35em;
   }
 
   h4,
   h5,
-  h3.email {
+  h3.email,
+  h3.featured {
     margin: 45px 0 25px;
   }
 
-  .cursor {
-    animation: blink 1.2s linear infinite;
-
-    &::after {
-      content: "|";
-    }
-
-    @keyframes blink {
-      0% {
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 0;
-      }
-
-      50.1% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-
-  .print-cmd,
-  .contact li a strong {
-    color: #00aba4;
-    transition: color .2s;
-  }
-
-  .contact li a:focus strong,
-  .contact li a:hover strong {
-    color: #007873;
-  }
-
-  .print-txt {
-    color: #dc3b3b;
-  }
-
-  .let {
-    color: #b73999;
-  }
-
-  .let-var {
-    color: #d18e62;
-  }
-
-  .func-cmd {
-    color: #94c66e;
-  }
-
-  .func-txt,
-  a,
-  a:visited {
-    color: #8884c5;
-  }
-
-  a:focus,
-  a:hover {
-    color: #4d4985;
-  }
-
-  .comment,
+  h3.featured,
   h4,
   h5,
   .contact li a i,
   footer p {
-    color: #52bc57;
+    color: $comment;
     text-decoration: none;
 
     &::before {
@@ -124,46 +108,63 @@ body {
     }
   }
 
+  h3.email {
+    a {
+      &::before {
+        color: $scheme;
+        content: "mailto:";
+      }
+    }
+  }
+
+  a,
+  a:visited {
+    color: $function;
+  }
+
+  a:focus,
+  a:hover {
+    color: color.adjust($function, $lightness: -10%);
+  }
+
   .contact {
     flex-direction: column;
-    margin: 0 0 0 3em;
 
-    @media only screen and (max-width: 768px) {
-      margin: 0 0 0 1em;
+    &::before,
+    &::after {
+      color: $command;
+      font-size: 1.5em;
+    }
+
+    &::before {
+      content: "links([";
+    }
+
+    &::after {
+      content: "])";
     }
 
     li {
       font-size: 1.5em;
-      margin: 0;
+      margin: 0 0 0 1em;
 
       &:not(:last-child) {
         @media only screen and (max-width: 768px) {
-          margin: 0 0 .25em;
+          margin-top: .25em;
         }
       }
 
       a {
         text-decoration: none;
 
-        span {
-          &::before {
-            color: #fff;
-            content: "\"";
-          }
+        &::before {
+          color: $scheme;
+          content: "link:";
+        }
 
-          &::after {
-            color: #fff;
-            content: "\", ";
-          }
-
-          strong {
-            text-decoration: underline;
-          }
-
-          small {
-            font-size: 1em;
-            text-decoration: underline;
-          }
+        &::after {
+          color: $command;
+          content: ",";
         }
 
         br {
@@ -175,7 +176,7 @@ body {
         }
 
         i {
-          margin: 0 0 0 1em;
+          margin: 0 0 0 .5em;
         }
       }
     }

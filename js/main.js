@@ -25,35 +25,25 @@ const loadCSS = style => {
     document.head.appendChild(link);
 };
 
-// Load a theme's styling & custom JS
-const loadTheme = theme => {
-    // Load theme styling
-    loadCSS('css/themes/' + theme + '.css');
-
-    // Load theme custom JS
-    const js = document.createElement('script');
-    js.setAttribute('onload', 'window._theme()');
-    js.setAttribute('src', 'js/themes/' + theme + '.js');
-    document.body.appendChild(js);
-};
-
 const pickTheme = () => {
-    // Define all themes
+    // Define all themes and pick one
     const themes = [
         'crt',
-        'swift',
+        'code',
         'terminal'
+        // 'blue'
     ];
+    let theme = themes[Math.floor(Math.random() * themes.length)];
 
     // Allow URL ?theme selection
     const url = new URL(window.location.href);
-    const theme = url.searchParams.get('theme');
-    if (theme && themes.indexOf(theme.toString().toLowerCase()) !== -1) {
-        return loadTheme(theme.toString().toLowerCase());
+    const param = url.searchParams.get('theme');
+    if (param && themes.indexOf(param.toString().toLowerCase()) !== -1) {
+        theme = param.toString().toLowerCase();
     }
 
     // Random theme
-    loadTheme(themes[Math.floor(Math.random() * themes.length)]);
+    loadCSS('css/themes/' + theme + '.css');
 };
 
 const handleProject = (project, event) => {

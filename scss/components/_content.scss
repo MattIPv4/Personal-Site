@@ -26,6 +26,25 @@ body {
   min-height: 100vh;
 }
 
+.twemoji {
+  width: 1em;
+  vertical-align: text-bottom;
+}
+
+[data-show-web="false"] {
+  @media screen {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+[data-show-print="false"] {
+  @media print {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -34,11 +53,6 @@ body {
 
   @media only screen and (max-width: 960px) {
     padding: 1em;
-  }
-
-  .twemoji {
-    width: 1em;
-    vertical-align: text-bottom;
   }
 
   .intro {
