@@ -24,6 +24,8 @@ $brand: #0069ff;
     background: #fff;
     color: #000;
     font-size: 10px;
+    height: auto;
+    min-height: unset;
   }
 
   @page {
@@ -33,6 +35,7 @@ $brand: #0069ff;
 
   .content {
     display: flex;
+    flex-flow: row wrap;
     margin: 0;
     padding: 0;
 
@@ -49,18 +52,25 @@ $brand: #0069ff;
       }
     }
 
+    h1,
+    h3.featured {
+      align-self: end;
+      margin: 0 0 .1em;
+    }
+
+    h1,
     .intro {
       flex-basis: 30%;
+    }
+
+    .intro {
       flex-direction: column;
       margin: 0;
       padding: 0 1.5em 0 0;
+      order: 2;
 
       > * {
         flex-basis: auto;
-      }
-
-      h1 {
-        margin: 0 0 .1em;
       }
 
       .main {
@@ -122,13 +132,14 @@ $brand: #0069ff;
       }
     }
 
+    h3.featured,
     .projects {
       flex-basis: 70%;
-      padding: 1em 0 0;
+    }
 
-      > h2 {
-        margin: 1em 0;
-      }
+    .projects {
+      padding: 1em 0 0;
+      order: 2;
 
       .project {
         .project-info {
@@ -137,9 +148,10 @@ $brand: #0069ff;
               color: $brand;
               font-size: 1.6em;
               position: relative;
+              display: inline-block;
 
               &::before {
-                background: rgba(0, 0, 0, .2);
+                border-top: 1px solid rgba(0, 0, 0, .2);
                 content: "";
                 display: block;
                 height: 1px;
@@ -152,6 +164,12 @@ $brand: #0069ff;
             .project-title {
               font-size: 1.3em;
               font-weight: 400;
+              display: inline-block;
+
+              &::before {
+                content: "@ ";
+                margin-left: 1.25ch;
+              }
             }
 
             .project-dates {
@@ -163,6 +181,14 @@ $brand: #0069ff;
             }
 
             .project-tags {
+              &::before {
+                content: "(";
+              }
+
+              &::after {
+                content: ")";
+              }
+
               .project-tag {
                 background: transparent;
                 border-radius: 0;
