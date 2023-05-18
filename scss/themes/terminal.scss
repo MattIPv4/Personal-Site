@@ -116,33 +116,29 @@ body {
         top: 1.25rem;
       }
 
+      &:not([open]) {
+        .project-info {
+          &::after {
+            display: block;
+            color: $light;
+            content: "[...]";
+            position: absolute;
+            bottom: -1.5em;
+          }
+        }
+      }
+
       .project-info {
-        &.has-js {
-          border: 2px solid transparent;
-          margin: 0 -.5em 1.5em;
-          padding: 0 .5em;
-          position: relative;
+        border: 2px solid transparent;
+        margin: 0 -.5em 1.5em;
+        padding: 0 .5em;
+        position: relative;
 
-          &:hover,
-          &:focus {
-            border: 2px dashed $white;
-            background: none;
-            border-radius: 0;
-          }
-
-          &[aria-expanded="false"] {
-            &::after {
-              display: block;
-              color: $light;
-              content: "[...]";
-              position: absolute;
-              bottom: -1.5em;
-            }
-          }
-
-          + .project-desc {
-            margin: -.5em 0 0;
-          }
+        &:hover,
+        &:focus {
+          border: 2px dashed $white;
+          background: none;
+          border-radius: 0;
         }
 
         .project-meta {
@@ -168,6 +164,10 @@ body {
             }
           }
         }
+      }
+
+      .project-desc {
+        margin: -.5em 0 0;
       }
     }
   }

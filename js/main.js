@@ -46,43 +46,24 @@ const pickTheme = () => {
     loadCSS('css/themes/' + theme + '.css');
 };
 
-const handleProject = (project, event) => {
-    // Don't trigger if clicking on link
-    if (event.target.nodeName === 'A') return;
-
-    // Don't do anything else
-    event.preventDefault();
-
-    // Get the desc
-    const desc = project.querySelector('.project-desc');
-    const toExpand = desc.style.display === 'none';
-
-    // Toggle desc visibility
-    desc.style.display = toExpand ? '' : 'none';
-
-    // Toggle aria
-    project.querySelector('.project-info').setAttribute('aria-expanded', toExpand ? 'true' : 'false');
-};
-
-const handleProjects = () => {
-    // Get all the projects
-    const projects = [...document.querySelectorAll('.project')];
-
-    for (const project of projects) {
-        // Register the click handler
-        project.querySelector('.project-info')
-            .addEventListener('click', e => handleProject(project, e));
-        project.querySelector('.project-info')
-            .addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && handleProject(project, e));
-
-        // Hide the desc by default
-        project.querySelector('.project-desc').style.display = 'none';
-
-        // Enable the hover styles
-        project.querySelector('.project-info').classList.add('has-js');
-    }
+const printDetails = () => {
+    window.matchMedia('print').addEventListener('change', evt => {
+        if (evt.matches) {
+            const elms = document.body.querySelectorAll('details:not([open])');
+            for (const e of elms) {
+                e.setAttribute('open', '');
+                e.setAttribute('data-restore', '');
+            }
+        } else {
+            const elms = document.body.querySelectorAll('details[data-restore]');
+            for (const e of elms) {
+                e.removeAttribute('open');
+                e.removeAttribute('data-restore');
+            }
+        }
+    });
 };
 
 // Go!
 pickTheme();
-handleProjects();
+printDetails();

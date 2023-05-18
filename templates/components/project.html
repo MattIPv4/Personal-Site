@@ -16,18 +16,13 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
 -->
 
-<div
+<details
     class="project"
+    id="project-{{ slug }}"
     data-show-web="{{ web ?? true }}"
     data-show-print="{{ print ?? true }}"
 >
-    <div id="project-{{ slug }}"
-         class="project-info"
-         aria-expanded="false"
-         aria-controls="project-{{ slug }}-desc"
-         tabindex="0"
-         role="button"
-    >
+    <summary class="project-info">
         <div class="project-meta">
             <p class="project-role">{{ role }}</p>
             <p class="project-title">{{ title }}</p>
@@ -81,12 +76,9 @@
                  width="284"
             />
         </div>
-    </div>
+    </summary>
 
-    <div id="project-{{ slug }}-desc"
-         class="project-desc"
-         aria-labelledby="project-{{ slug }}"
-    >
+    <div class="project-desc">
         {{{ desc }}}
     </div>
-</div>
+</details>

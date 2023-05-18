@@ -23,26 +23,19 @@
     .project-info {
       display: flex;
       flex-direction: row;
+      border-radius: .25em;
+      cursor: pointer;
+      margin: -1em;
+      padding: 1em 1em 0;
+      transition: background-color .2s linear;
+
+      &:hover,
+      &:focus {
+        background: rgba(255, 255, 255, .05);
+      }
 
       @media only screen and (max-width: 768px) {
         flex-direction: column;
-      }
-
-      &.has-js {
-        border-radius: .25em;
-        cursor: pointer;
-        margin: -1em;
-        padding: 1em 1em 0;
-        transition: background-color .2s linear;
-
-        &:hover,
-        &:focus {
-          background: rgba(255, 255, 255, .05);
-        }
-
-        + .project-desc {
-          margin: 1.5em 0 0;
-        }
       }
 
       .project-meta {
@@ -146,6 +139,7 @@
 
     .project-desc {
       font-size: 1.15em;
+      margin: 1.5em 0 0;
 
       ul {
         list-style: disc;
