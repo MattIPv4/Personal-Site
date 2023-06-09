@@ -138,6 +138,10 @@ contact:
       username: "@mattipv4"
       url: https://v4.fyi/discord
 
+    - title: "v4.fyi/**bluesky**"
+      username: "@v4.wtf"
+      url: https://v4.fyi/bluesky
+
     - title: "v4.fyi/**sponsors**"
       username: "@MattIPv4"
       url: https://v4.fyi/sponsors

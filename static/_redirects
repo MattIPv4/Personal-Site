@@ -46,6 +46,10 @@
 /twitter    https://twitter.com/MattIPv4
 /tweets     https://twitter.com/MattIPv4
 
+# Bluesky profile
+# bluesky.mattcowley.co.uk
+/bluesky    https://bsky.app/profile/v4.wtf
+
 # CV
 # cv.mattcowley.co.uk
 /cv         /print.pdf
