@@ -33,6 +33,13 @@ const run = async () => {
     const page = await browser.newPage();
     await page.goto(typeof address === 'string' ? address : `http://localhost:${address.port}`);
 
+    // Switch to print mode and scroll to the bottom
+    // Ensures the PDF call knows the correct document height
+    await page.emulateMediaType('print');
+    await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+    });
+
     // Export the PDF and exit
     await page.pdf({
         preferCSSPageSize: true,
