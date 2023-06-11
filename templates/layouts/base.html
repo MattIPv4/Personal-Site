@@ -1,7 +1,7 @@
 <!--
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -21,18 +21,13 @@
 <head>
     <block name="head"></block>
 
-    <if condition="environment === 'web'">
-        <!-- Preload -->
-        <link rel="preload" href="js/main.js" as="script"/>
-        <link rel="preload" href="js/toast.js" as="script"/>
-        <link rel="preload" href="css/base.css" as="style"/>
-        <link rel="preload" href="js/themes/crt.js" as="script"/>
-        <link rel="preload" href="css/themes/crt.css" as="style"/>
-        <link rel="preload" href="js/themes/swift.js" as="script"/>
-        <link rel="preload" href="css/themes/swift.css" as="style"/>
-        <link rel="preload" href="js/themes/terminal.js" as="script"/>
-        <link rel="preload" href="css/themes/terminal.css" as="style"/>
-    </if>
+    <!-- Preload -->
+    <link rel="preload" href="js/main.js" as="script"/>
+    <link rel="preload" href="js/toast.js" as="script"/>
+    <link rel="preload" href="css/base.css" as="style"/>
+    <link rel="preload" href="css/themes/crt.css" as="style"/>
+    <link rel="preload" href="css/themes/swift.css" as="style"/>
+    <link rel="preload" href="css/themes/terminal.css" as="style"/>
 
     <!-- Google Analytics -->
     <script>
@@ -42,15 +37,8 @@
     </script>
     <script async defer src="https://www.google-analytics.com/analytics.js"></script>
 
-    <if condition="environment === 'web'">
-        <!-- Global styles -->
-        <link rel="stylesheet" href="css/base.css"/>
-    </if>
-
-    <if condition="environment === 'print'">
-        <!-- Print styles -->
-        <link expand="true" rel="stylesheet" href="css/print.css"/>
-    </if>
+    <!-- Global styles -->
+    <link rel="stylesheet" href="css/base.css" />
 
     <!-- Async font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400&display=swap&subset=latin-ext"
@@ -64,17 +52,13 @@
 <div class="content">
     <block name="content"></block>
 
-    <if condition="environment === 'web'">
-        <!-- Theme loader -->
-        <script src="js/main.js"></script>
-        <script async src="js/toast.js"></script>
-    </if>
+    <!-- Theme loader -->
+    <script src="js/main.js"></script>
+    <script async src="js/toast.js"></script>
 
-    <if condition="environment === 'print'">
-        <!-- Print emoji -->
-        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
-                onload="twemoji.parse(document.body, { folder: 'svg', ext: '.svg', className: 'twemoji' })"></script>
-    </if>
+    <!-- Print emoji -->
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+            onload="twemoji.parse(document.body, { folder: 'svg', ext: '.svg', className: 'twemoji' })"></script>
 </div>
 </body>
 </html>

@@ -17,7 +17,6 @@
  */
 
 const path = require('node:path');
-const { unlink } = require('node:fs/promises');
 const httpServer = require('http-server');
 const puppeteer = require('puppeteer');
 
@@ -28,12 +27,18 @@ const run = async () => {
     });
     await new Promise(resolve => server.listen(resolve));
     const address = server.server.address();
-    const url = typeof address === 'string' ? address : `http://localhost:${address.port}`;
 
     // Navigate to the print page
     const browser = await puppeteer.launch({ args: [ '--no-sandbox' ] });
     const page = await browser.newPage();
-    await page.goto(`${url}/print.html`);
+    await page.goto(typeof address === 'string' ? address : `http://localhost:${address.port}`);
+
+    // Switch to print mode and scroll to the bottom
+    // Ensures the PDF call knows the correct document height
+    await page.emulateMediaType('print');
+    await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+    });
 
     // Export the PDF and exit
     await page.pdf({
@@ -42,9 +47,6 @@ const run = async () => {
     });
     await browser.close();
     await server.close();
-
-    // Remove the print page
-    await unlink(path.join(__dirname, 'build', 'print.html'));
 };
 
 run().then(() => console.log('Exported')).catch(err => {

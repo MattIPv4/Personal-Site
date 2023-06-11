@@ -1,7 +1,7 @@
 <!--
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -25,19 +25,16 @@
 
     <block name="content">
         <!-- Intro -->
-        <if condition="environment === 'web'">
-            <h1>{{ config.title }}</h1>
-        </if>
+        <h1>{{ config.title }}</h1>
         <div class="intro">
-            <if condition="environment === 'print'">
-                <h1>{{ config.title }}</h1>
-            </if>
-
             <div class="main{{ config.rail.length ? '' : ' full' }}">
                 <!-- Main Items -->
                 <div class="items hidden-links">
                     <each loop="item in config.main">
-                        <div>
+                        <div
+                            data-show-web="{{ item.web ?? true }}"
+                            data-show-print="{{ item.print ?? true }}"
+                        >
                             <h4>{{ item.title }}</h4>
                             <each loop="subitem in item.items">
                                 <{{{ item.size }}}>
@@ -83,13 +80,8 @@
         </div>
 
         <!-- Projects -->
-        <if condition="environment === 'web'">
-            <h3 class="featured">Featured Projects and Experience</h3>
-        </if>
+        <h3 class="featured">Featured Projects and Experience</h3>
         <div class="projects">
-            <if condition="environment === 'print'">
-                <h2>Projects and Experience</h2>
-            </if>
             <each loop="item in projects">
                 <scope with="item">
                     <include src="components/project.html"></include>

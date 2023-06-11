@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -20,78 +20,50 @@
 const loadCSS = style => {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('media', 'screen');
     link.setAttribute('href', style);
     document.head.appendChild(link);
 };
 
-// Load a theme's styling & custom JS
-const loadTheme = theme => {
-    // Load theme styling
-    loadCSS('css/themes/' + theme + '.css');
-
-    // Load theme custom JS
-    const js = document.createElement('script');
-    js.setAttribute('onload', 'window._theme()');
-    js.setAttribute('src', 'js/themes/' + theme + '.js');
-    document.body.appendChild(js);
-};
-
 const pickTheme = () => {
-    // Define all themes
+    // Define all themes and pick one
     const themes = [
         'crt',
-        'swift',
+        'code',
         'terminal'
+        // 'blue'
     ];
+    let theme = themes[Math.floor(Math.random() * themes.length)];
 
     // Allow URL ?theme selection
     const url = new URL(window.location.href);
-    const theme = url.searchParams.get('theme');
-    if (theme && themes.indexOf(theme.toString().toLowerCase()) !== -1) {
-        return loadTheme(theme.toString().toLowerCase());
+    const param = url.searchParams.get('theme');
+    if (param && themes.indexOf(param.toString().toLowerCase()) !== -1) {
+        theme = param.toString().toLowerCase();
     }
 
     // Random theme
-    loadTheme(themes[Math.floor(Math.random() * themes.length)]);
+    loadCSS('css/themes/' + theme + '.css');
 };
 
-const handleProject = (project, event) => {
-    // Don't trigger if clicking on link
-    if (event.target.nodeName === 'A') return;
-
-    // Don't do anything else
-    event.preventDefault();
-
-    // Get the desc
-    const desc = project.querySelector('.project-desc');
-    const toExpand = desc.style.display === 'none';
-
-    // Toggle desc visibility
-    desc.style.display = toExpand ? '' : 'none';
-
-    // Toggle aria
-    project.querySelector('.project-info').setAttribute('aria-expanded', toExpand ? 'true' : 'false');
-};
-
-const handleProjects = () => {
-    // Get all the projects
-    const projects = [...document.querySelectorAll('.project')];
-
-    for (const project of projects) {
-        // Register the click handler
-        project.querySelector('.project-info')
-            .addEventListener('click', e => handleProject(project, e));
-        project.querySelector('.project-info')
-            .addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && handleProject(project, e));
-
-        // Hide the desc by default
-        project.querySelector('.project-desc').style.display = 'none';
-
-        // Enable the hover styles
-        project.querySelector('.project-info').classList.add('has-js');
-    }
+const printDetails = () => {
+    window.matchMedia('print').addEventListener('change', evt => {
+        if (evt.matches) {
+            const elms = document.body.querySelectorAll('details:not([open])');
+            for (const e of elms) {
+                e.setAttribute('open', '');
+                e.setAttribute('data-restore', '');
+            }
+        } else {
+            const elms = document.body.querySelectorAll('details[data-restore]');
+            for (const e of elms) {
+                e.removeAttribute('open');
+                e.removeAttribute('data-restore');
+            }
+        }
+    });
 };
 
 // Go!
 pickTheme();
-handleProjects();
+printDetails();

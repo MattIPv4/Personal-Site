@@ -16,27 +16,86 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
+$green: rgb(20, 253, 206);
+$blue: rgb(129, 243, 253);
+$light: rgb(239, 253, 255);
+
 html,
 body {
   background: #000;
 }
 
 @mixin blue-heading {
-  color: rgba(129, 243, 253, 1);
+  color: rgba($blue, 1);
   letter-spacing: -.01rem;
-  text-shadow: 0 .1rem .5rem rgba(129, 243, 253, 1);
+  text-shadow: 0 .1rem .5rem rgba($blue, 1);
 
   &::selection {
-    background: rgba(129, 243, 253, 1);
+    background: rgba($blue, 1);
     color: #fff;
   }
 }
 
 body {
-  color: rgba(20, 253, 206, 1);
+  color: rgba($green, 1);
   font-size: 18px;
   line-height: 1.2;
-  text-shadow: 0 .1rem .5rem rgba(20, 253, 206, .75);
+  text-shadow: 0 .1rem .5rem rgba($green, .75);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  &::before {
+    animation: crt-bg 900ms infinite;
+    background: $blue;
+
+    @keyframes crt-bg {
+      0% {
+        opacity: .1 * 1;
+      }
+
+      20% {
+        opacity: .1 * .9;
+      }
+
+      40% {
+        opacity: .1 * 1;
+      }
+
+      60% {
+        opacity: .1 * .95;
+      }
+
+      80% {
+        opacity: .1 * .9;
+      }
+
+      100% {
+        opacity: .1 * 1;
+      }
+    }
+  }
+
+  &::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, .3) 70%,
+      rgba(255, 255, 255, .75)
+    );
+    background-size: 100% .5rem;
+    opacity: .05;
+  }
 
   .content {
     h1,
@@ -44,15 +103,15 @@ body {
     h3,
     ul li a {
       animation: crt-output 10ms infinite;
-    }
 
-    @keyframes crt-output {
-      0% {
-        opacity: .95;
-      }
+      @keyframes crt-output {
+        0% {
+          opacity: .95;
+        }
 
-      100% {
-        opacity: 1;
+        100% {
+          opacity: 1;
+        }
       }
     }
 
@@ -65,10 +124,10 @@ body {
     }
 
     h1 {
-      color: rgba(129, 243, 253, 1);
+      color: rgba($blue, 1);
       font-size: 4em;
       letter-spacing: .1em;
-      text-shadow: 0 .1rem 1rem rgba(129, 243, 253, .75);
+      text-shadow: 0 .1rem 1rem rgba($blue, .75);
 
       @media only screen and (max-width: 768px) {
         font-size: 2.5em;
@@ -76,16 +135,17 @@ body {
 
       &::selection,
       *::selection {
-        background: rgba(129, 243, 253, 1);
+        background: rgba($blue, 1);
         color: #fff;
       }
 
-      span {
-        animation: blink 1.2s linear infinite;
+      &::before {
+        content: "👋 Hi, I'm ";
+      }
 
-        &::after {
-          content: "_";
-        }
+      &::after {
+        animation: blink 1.2s linear infinite;
+        content: "_";
 
         @keyframes blink {
           0% {
@@ -124,13 +184,13 @@ body {
 
     h4,
     h5 {
-      color: rgba(239, 253, 255, 1);
+      color: rgba($light, 1);
       font-size: 1.4em;
       letter-spacing: 0;
-      text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+      text-shadow: 0 .1rem 1rem rgba($light, .95);
 
       &::selection {
-        background: rgba(239, 253, 255, 1);
+        background: rgba($light, 1);
         color: #111;
       }
 
@@ -153,17 +213,17 @@ body {
     a {
       &,
       &:visited {
-        color: rgba(239, 253, 255, 1);
-        text-shadow: 0 .1rem 1rem rgba(239, 253, 255, .95);
+        color: rgba($light, 1);
+        text-shadow: 0 .1rem 1rem rgba($light, .95);
       }
 
       &:hover,
       &:focus {
-        color: rgba(178, 255, 253, 1);
+        color: rgba($blue, 1);
       }
 
       &::selection {
-        background: rgba(239, 253, 255, 1);
+        background: rgba($light, 1);
         color: #111;
       }
     }
@@ -200,68 +260,11 @@ body {
     footer {
       p {
         span {
-          background: rgba(129, 243, 253, 1);
+          background: rgba($blue, 1);
           color: #fff;
           margin: -2px;
           padding: 2px;
         }
-      }
-    }
-  }
-
-  .scanlines {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0) 50%,
-        rgba(0, 0, 0, .3) 70%,
-        rgba(255, 255, 255, .75)
-      );
-    background-size: 100% .5rem;
-    height: 100%;
-    left: 0;
-    opacity: .15;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    &::before {
-      animation: crt-bg 900ms infinite;
-      background: rgba(129, 243, 253, .65);
-      content: "";
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-
-    @keyframes crt-bg {
-      0% {
-        opacity: 1;
-      }
-
-      20% {
-        opacity: .9;
-      }
-
-      40% {
-        opacity: 1;
-      }
-
-      60% {
-        opacity: .95;
-      }
-
-      80% {
-        opacity: .9;
-      }
-
-      100% {
-        opacity: 1;
       }
     }
   }
