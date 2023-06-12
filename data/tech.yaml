@@ -1,0 +1,105 @@
+# Preferred order: system, keyboard, mouse, video out/in, audio out/in, misc io, other
+
+- text: Primary System
+  items:
+    - text: MacBook Pro 2019 13"
+      items:
+        - text: 2.8 GHz Quad-Core Intel Core i7
+        - text: 16 GB 2133 MHz LPDDR3 RAM
+        - text: 1 TB NVMe SSD
+    - text: BM-60 ISO Keyboard (white)
+      items:
+        - text: Gateron Pro Yellow Switches
+        - text: Chalk Keycaps
+    - text: Logitech MX Master 3
+    - text: Video Output
+      items:
+        - text: HP Omen Accelerator
+          items:
+            - text: AMD Radeon RX 580 8 GB
+        - text: Dell U2421HE 23.5" 1080p x2
+          items:
+            - text: 1x via AVerMedia Live Gamer MINI GC311
+        - text: HP V22 21.5" 1080p (vertical)
+    - text: Audio Output
+      items:
+        - text: MouKey MAMX 1
+        - text: beyerdynamic DT 770 Pro 80 Ohm
+    - text: Audio Input
+      items:
+        - text: Shure SM7B
+          items:
+            - text: Superlux E205 (backup)
+        - text: FetHead
+        - text: Scarlett Solo
+          items:
+            - text: Direct Monitoring via MouKey MAMX 1
+    - text: Misc. IO
+      items:
+        - text: Elgato Stream Deck
+        - text: ORICO 10-Port USB 3.0 Hub
+        - text: USB-C to 1Gbps Ethernet Adapter
+    - text: Desk
+      items:
+        - text: ?? # TODO: find model
+        - text: Duronic Sit-Stand Desk Topper
+
+- text: Work System
+  items:
+    - text: MacBook Pro 2021 16"
+      items:
+        - text: Apple M1 Pro
+        - text: 32 GB LPDDR5 RAM
+        - text: 500 GB NVMe SSD
+    - text: Video Output
+      items:
+        - text: Dell D6000 Dock w/ DisplayLink
+        - text: Via primary system displays x3
+    - text: Audio Output
+      items:
+        - text: Via primary system MouKey MAMX 1
+    - text: Misc. IO
+      items:
+        - text: Ethernet via Dell D6000 Dock
+        - text: USB 3.0 Bi-Directional Switch
+          items:
+            - text: Primary system IO (Keyboard, Audio Interface, etc.)
+
+- text: Secondary System
+  items:
+    - text: Custom Build (2014)
+      items:
+        - text: 3.5 GHz Quad-Core Intel Core i5-4690
+        - text: 8 GB 2176 MHz DDR3 RAM
+        - text: AMD Radeon RX 590 8 GB
+        - text: Storage
+          items:
+            - text: 480 GB SATA SSD (Gaming OS)
+            - text: 128 GB SATA SSD (Streaming OS)
+            - text: 256 GB SATA SSD (Steam Library)
+            - text: 1.8 TB SATA HDD (Misc. Files)
+        - text: ASUS Z97M-PLUS Motherboard
+        - text: InWin GT1 Case
+        - text: Windows 10 Pro (dual boot)
+    - text: BM-65 ISO Keyboard (black)
+      items:
+        - text: Gateron Yellow Switches
+          items:
+            - text: Gateron Black Switches (WASD + Space)
+        - text: Black/Red Pudding Keycaps
+    - text: Logitech G203 Prodigy
+    - text: Video Output
+      items:
+        - text: HP 22w 21.5" 1080p x2
+    - text: Audio Output
+      items:
+        - text: Via primary system MouKey MAMX 1
+    - text: Audio Input
+      items:
+        - text: t.bone SC 440 USB
+
+# TODO: Raspberry Pi 4 (spec + software)
+# TODO: Camera + lenses
+# TODO: Networking
+# TODO: Retired gear (old MBP, old server)
+# TODO: Tools?
