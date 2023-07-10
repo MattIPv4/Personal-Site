@@ -1,7 +1,12 @@
-.idea/
-web.config
-.user.ini
-.sass-cache/
-.cache/
+# NPM
 node_modules/
+
+# Build
 build/
+
+# IDEs
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
