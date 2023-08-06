@@ -98,8 +98,23 @@
       items:
         - text: t.bone SC 440 USB
 
-# TODO: Raspberry Pi 4 (spec + software)
+- text: Networking
+  items:
+    - text: Ubiquiti Security Gateway
+    - text: Ubiquiti Cloud Key Gen2 Plus
+      items:
+        - text: 5 TB HDD
+        - text: Ubiquiti U-PoE-af
+    - text: Ubiquiti USW-Flex-Mini Switch
+    - text: Ubiquiti US-24 Switch x2
+    - text: Ubiquiti UAP-AC-Pro Access Point x2
+      items:
+        - text: Ubiquiti U-PoE-af x2
+    - text: Raspberry Pi 4 Model B
+      items:
+        - text: 4 GB RAM
+        - text: Running alexjustesen/speedtest-tracker
+
 # TODO: Camera + lenses
-# TODO: Networking
 # TODO: Retired gear (old MBP, old server)
 # TODO: Tools?
