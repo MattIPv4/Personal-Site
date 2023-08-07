@@ -115,6 +115,24 @@
         - text: 4 GB RAM
         - text: Running alexjustesen/speedtest-tracker
 
-# TODO: Camera + lenses
+- text: Photography
+  items:
+    - text: Canon EOS 1200D
+    - text: Canon EF-S 18-55mm f/3.5-5.6 IS II
+      items:
+        - text: Hama UV Filter 58mm
+    - text: Canon EF 50mm f/1.8 STM
+      items:
+        - text: Hama UV Filter 49mm
+    - text: Canon EF 38-76mm f/4.5-5.6
+      items:
+        - text: Hama UV Filter 52mm
+    - text: Canon EF 80-200mm f/4.5-5.6 II
+      items:
+        - text: Hama UV Filter 52mm
+    - text: Canon EF 75-300mm f/4-5.6 III
+      items:
+        - text: Hoya Skylight Filter 58mm
+
 # TODO: Retired gear (old MBP, old server)
 # TODO: Tools?
