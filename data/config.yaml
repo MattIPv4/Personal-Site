@@ -63,7 +63,7 @@ main:
     web: true
     print: true
     items:
-      - title: Senior Software Engineer I @ DigitalOcean 🦈️
+      - title: Senior Software Engineer II @ DigitalOcean 🦈️
         link: https://digitalocean.com
       - title: Maintainer of cdnjs.com @ Cloudflare ⛅
         link: https://cdnjs.com
