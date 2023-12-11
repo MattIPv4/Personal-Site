@@ -36,14 +36,22 @@ const run = async () => {
     // Switch to print mode and scroll to the bottom
     // Ensures the PDF call knows the correct document height
     await page.emulateMediaType('print');
-    await page.evaluate(() => {
-        window.scrollTo(0, document.body.scrollHeight);
-    });
+    await page.evaluate(() => new Promise(resolve => {
+        window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(() => {
+                window.scrollTo(0, document.body.scrollHeight);
+                resolve();
+            });
+        });
+    }));
 
     // Export the PDF and exit
     await page.pdf({
-        preferCSSPageSize: true,
-        path: path.join(__dirname, 'build', 'print.pdf')
+        format: 'A4',
+        path: path.join(__dirname, 'build', 'print.pdf'),
+        displayHeaderFooter: true,
+        headerTemplate: '<div></div>',
+        footerTemplate: '<div style="font-size: 8px; font-family: \'Courier New\', monospace; width: 100%; text-align: center;">mattcowley.co.uk</div>'
     });
     await browser.close();
     await server.close();
