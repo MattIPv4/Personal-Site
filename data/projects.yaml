@@ -56,45 +56,10 @@
     [do-markdownit](https://github.com/digitalocean/do-markdownit). Working with community contributors to triage issues
     reported on GitHub effectively, shipping new features based on community issues and pull requests.
 
-    * Running outreach programs for super-users on the Community site and open-source contributors, rewarding active
-    members answering questions and new contributors to
-    [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean). Thanking them for
-    getting involved with our community and rewarding them with a swag pack.
-
-- title: cdnjs / Cloudflare
-  role: Open-source Maintainer
-  web: true
-  print: true
-  tags:
-    - Community
-    - Engineering
-    - Open-source
-  dates:
-    start: October 2018
-    end: ~
-  headline: "The #1 free and open source CDN built to make life easier for developers."
-  links:
-    - https://cdnjs.com
-    - https://github.com/cdnjs
-  image:
-    file: cdnjs
-    position: center
-  desc: |
-    * Working with the team at [Cloudflare](https://cloudflare.com) to maintain and ensure the reliability of service
-    for cdnjs, the world's largest public CDN, as we continue to serve
-    [over 230 billion requests a month](https://github.com/cdnjs/cf-stats) to
-    [over 13% of websites on the internet](https://w3techs.com/technologies/details/cd-cdnjs).
-
-    * Assisting external contributors wanting to add libraries to cdnjs by ensuring we respond on GitHub to issues that
-    are being created and reviewing any pull requests submitted by contributors to add new libraries. Providing support
-    to users that reach out to the [cdnjs Twitter account](https://twitter.com/cdnjs) and triaging any reported issues.
-    
-    * Developing and maintaining the [cdnjs website](https://github.com/cdnjs/static-website),
-    [cdnjs API](https://github.com/cdnjs/api-server), and related tooling (such as the status page and metrics worker).
-
-    * Continuing to work with sponsoring companies such as [Algolia](https://www.algolia.com/),
-    [Atlassian Statuspage](https://www.atlassian.com/software/statuspage), and [Sentry](https://sentry.io/welcome/) to
-    retain and grow the sponsorships that we have for their services that help keep cdnjs running.
+#     * Running outreach programs for super-users on the Community site and open-source contributors, rewarding active
+#     members answering questions and new contributors to
+#     [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean). Thanking them for
+#     getting involved with our community and rewarding them with a swag pack.
 
 - title: Alveus Sanctuary
   role: Open-source Maintainer
@@ -122,41 +87,98 @@
     available for anyone to view and contribute to, as well as providing a centralized place for other open-source
     projects related to Alveus to live, allowing a community of developers to come together to help the sanctuary.
     
-    * Supporting the team at Alveus in launching new, interactive features to engage with viewers of the
+    * Supporting the team at Alveus in launching new interactive features to engage with viewers of the Twitch
     [livestreams](https://www.twitch.tv/alveussanctuary), such as giveaways and push notifications, allowing them to
     grow the community, provide more education to the world, and raise more funds to continue operating.
 
-- title: Restarter v3
-  role: Standalone Project
+- title: cdnjs / Cloudflare
+  role: Open-source Maintainer
   web: true
-  print: false
+  print: true
   tags:
+    - Community
     - Engineering
+    - Open-source
   dates:
-    start: September 2017
+    start: October 2018
     end: ~
-  headline: A utility bot for Discord servers, featuring automatic channel reactions, reaction roles, server logging, moderation, and so much more.
+  headline: "The #1 free and open source CDN built to make life easier for developers."
   links:
-    - https://restarter.mattcowley.co.uk
+    - https://cdnjs.com
+    - https://github.com/cdnjs
   image:
-    file: restarter
+    file: cdnjs
     position: center
   desc: |
-    * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python back in 2017, and
-    is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve over 19,000
-    Discord servers and communities with assorted utility and moderation functionality.
+    * Working with external contributors and the team at [Cloudflare](https://cloudflare.com) to maintain and ensure the
+    reliability of service for cdnjs, the world's largest public CDN. Responding to
+    [GitHub issues and pull requests](https://github.com/cdnjs/packages), adding new libraries to the CDN for developers
+    to use, and ensuring existing libraries remain up-to-date.
 
-    * The bot runs in a distributed fashion across multiple processes, tied together through network calls and a shared
-    database backing the whole system. Included in the bot is a wide range of utility functions designed to make
-    running a Discord server easier, such as [ChannelReacts](https://restarter.mattcowley.co.uk/docs/#channelreacts),
-    one of the most popular features of the bot, which allows server administrators to set the bot to automatically
-    [add reactions](https://support.discord.com/hc/en-us/articles/360041139231-Adding-Emojis-and-Reactions) to new
-    messages posted in a channel.
+    * Developing and maintaining the [cdnjs website](https://github.com/cdnjs/static-website),
+    [cdnjs API](https://github.com/cdnjs/api-server), and related tooling (such as the status page and metrics worker).
 
-    * Alongside the utility functions, Restarter also provides server administrators and moderators with a strong set
-    of [core moderation functions](https://restarter.mattcowley.co.uk/docs/#moderation), such as the ability to ban and
-    kick users with a full [log of actions taken](https://restarter.mattcowley.co.uk/docs/#modlog), as well as features
-    to [automatically remove messages](https://restarter.mattcowley.co.uk/docs/#filtering) containing Discord invites.
+    * Continuing to work with sponsoring companies such as [Algolia](https://www.algolia.com),
+    [Atlassian Statuspage](https://www.atlassian.com), and [Sentry](https://sentry.io/welcome) to retain and grow the
+    sponsorships that we have for their services that help keep cdnjs running.
+
+- title: Jingle Jam
+  role: Open-source Maintainer
+  web: true
+  print: true
+  tags:
+    - Engineering
+    - Open-source
+  dates:
+    start: November 2023
+    end: ~
+  headline: The world's biggest gaming charity event - which has raised over £25 million for charity through their yearly fundraiser livestreams.
+  links:
+    - https://www.jinglejam.co.uk
+    - https://github.com/jinglejam
+  image:
+    file: jinglejam
+    position: center
+  desc: |
+    * Developing and maintaining an [open-source Discord bot](https://github.com/jinglejam/jinglebot) for the
+    [Jingle Jam](https://www.jinglejam.co.uk) charity event, allowing viewers to easily check the current total raised
+    and other statistics about the event, as well as providing automated update announcements in the Jingle Jam server.
+
+    * Collaborating with the [Yogscast](https://www.yogscast.com) team to provide a similar set of statistics commands
+    for the Twitch [livestream](https://www.twitch.tv/yogscast) chat bot, also maintained as an
+    [open-source project](https://github.com/TheYogscast/Jaffa3Community).
+
+# - title: Restarter v3
+#   role: Standalone Project
+#   web: true
+#   print: false
+#   tags:
+#     - Engineering
+#   dates:
+#     start: September 2017
+#     end: ~
+#   headline: A utility bot for Discord servers, featuring automatic channel reactions, reaction roles, server logging, moderation, and so much more.
+#   links:
+#     - https://restarter.mattcowley.co.uk
+#   image:
+#     file: restarter
+#     position: center
+#   desc: |
+#     * Restarter is a [Discord](https://discord.com) bot that started with version 1 written in Python back in 2017, and
+#     is now in version 3 running Node.js with [Discord.js](https://discord.js.org), having grown to serve over 19,000
+#     Discord servers and communities with assorted utility and moderation functionality.
+
+#     * The bot runs in a distributed fashion across multiple processes, tied together through network calls and a shared
+#     database backing the whole system. Included in the bot is a wide range of utility functions designed to make
+#     running a Discord server easier, such as [ChannelReacts](https://restarter.mattcowley.co.uk/docs/#channelreacts),
+#     one of the most popular features of the bot, which allows server administrators to set the bot to automatically
+#     [add reactions](https://support.discord.com/hc/en-us/articles/360041139231-Adding-Emojis-and-Reactions) to new
+#     messages posted in a channel.
+
+#     * Alongside the utility functions, Restarter also provides server administrators and moderators with a strong set
+#     of [core moderation functions](https://restarter.mattcowley.co.uk/docs/#moderation), such as the ability to ban and
+#     kick users with a full [log of actions taken](https://restarter.mattcowley.co.uk/docs/#modlog), as well as features
+#     to [automatically remove messages](https://restarter.mattcowley.co.uk/docs/#filtering) containing Discord invites.
 
 - title: DNS over Discord (1.1.1.1)
   role: Standalone Project
@@ -190,7 +212,7 @@
 - title: js.org
   role: Developer Relations
   web: true
-  print: true
+  print: false
   tags:
     - Community
     - Open-source
