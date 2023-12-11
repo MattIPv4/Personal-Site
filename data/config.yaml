@@ -2,8 +2,8 @@ title: Matt Cowley
 
 meta:
   description: |
-    Chaotic open-source engineer and dev advocate 🛠
-    Doing things @ DigitalOcean 🦈, cdnjs/Cloudflare ⛅️, js.org 📝
+    Open-source Software Engineer ⌨️
+    Software engineer by day at DigitalOcean/Hacktoberfest 🦈, open-source by night at Alveus Sanctuary 🌎 + cdnjs 🛠️ + Jingle Jam ❄️
 
   keywords:
     - matt
@@ -25,6 +25,9 @@ meta:
     - community manager
     - open source
     - open-source
+    - open source engineer
+    - open-source engineer
+    - software engineer
     - engineer
     - web dev
     - web development
@@ -35,15 +38,15 @@ meta:
     - frontend engineer
     - backend engineer
     - fullstack engineer
-    - theatre
-    - theater
-    - technical
-    - technician
-    - tech
-    - theatre technician
-    - theater technician
-    - theatre tech
-    - theater tech
+    # - theatre
+    # - theater
+    # - technical
+    # - technician
+    # - tech
+    # - theatre technician
+    # - theater technician
+    # - theatre tech
+    # - theater tech
 
   banner: https://assets.mattcowley.co.uk/header/header.png
   icon: https://assets.mattcowley.co.uk/head/transp/head_t_g.png
@@ -65,12 +68,12 @@ main:
     items:
       - title: Senior Software Engineer II @ DigitalOcean 🦈️
         link: https://digitalocean.com
-      - title: Maintainer of cdnjs.com @ Cloudflare ⛅
+      - title: Open-Source Maintainer @ Alveus Sanctuary 🌎
+        link: https://alveussanctuary.org
+      - title: Maintainer of cdnjs.com @ Cloudflare 🛠️
         link: https://cdnjs.com
-      - title: Developer Relations @ js.org 📝
-        link: https://js.org
-      - title: Open-source maintainer & avid supporter 💻
-        link: https://github.mattcowley.co.uk
+      - title: Open-Source Maintainer @ Jingle Jam ❄️
+        link: https://jinglejam.co.uk
 
   - title: "Who I am:"
     size: h3
@@ -78,7 +81,7 @@ main:
     print: false
     items:
       - title: 22 y/o based near London, UK 📍
-      - title: Chaotic open-source engineer 🛠
+      - title: Open-source software engineer ⌨️
       - title: Online as @MattIPv4 👀
 
   - title: "What I'm interested in:"
@@ -86,8 +89,8 @@ main:
     print: true
     size: h3
     items:
-      - title: Software Engineering, Full-stack Development (Node.js, Vue, React) 🖥
-      - title: Community Management, Developer Relations, Open-Source Advocacy 🥑
+      - title: Software Engineering, Full-stack Development (Node.js, React, Vue) 🖥
+      - title: Open-Source Advocacy, Community Management, Developer Relations 🥑
       - title: Live Production, Live Broadcasting (Livestreaming, Radio, Theatre) 🎙
       - title: Stage Management, Production Electrics, Lighting 💡
 
