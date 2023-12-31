@@ -50,8 +50,8 @@ const run = async () => {
         format: 'A4',
         path: path.join(__dirname, 'build', 'print.pdf'),
         displayHeaderFooter: true,
-        headerTemplate: '<div></div>',
-        footerTemplate: '<div style="font-size: 8px; font-family: \'Courier New\', monospace; width: 100%; text-align: center;">mattcowley.co.uk</div>'
+        headerTemplate: '<span></span>',
+        footerTemplate: '<a href="https://mattcowley.co.uk" style="display: inline-block; color: #111; font-size: 8px; font-weight: 400; font-family: \'Courier New\', monospace; text-align: center; text-decoration: none; margin: 0 auto;">mattcowley.co.uk</a>'
     });
     await browser.close();
     await server.close();
