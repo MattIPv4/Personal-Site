@@ -102,6 +102,14 @@ main:
       - title: BSc Computing; 1st Class Honours @ University of Buckingham _(2020 - 2021)_ 🎓
       - title: AAB in Computer Science, Maths & Business Studies at A Level _(2012 - 2019)_ 📜
 
+  - title: "Recognition:"
+    web: false
+    print: true
+    size: h3
+    items:
+      - title: OpenUK's 2022 New Year's Honours List Honouree 🏅
+        link: https://openuk.uk/2022honourslist
+
   - title: "Location:"
     web: false
     print: true
