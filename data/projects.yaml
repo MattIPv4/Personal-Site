@@ -37,29 +37,24 @@
     file: digitalocean
     position: center
   desc: |
-    * Architecting and leading the development of a unified stack to support the Community and WWW (marketing) sites,
-    based on a Next.js client statically exported and served by a CDN, integrating with a set of Node.js API
-    micro-services to provide interactivity for content as well as refreshing exported pages on the CDN, all deployed on
-    multi-DC Kubernetes infrastructure. Collaborating with stakeholders across the company to understand their needs and
-    requirements for the site, ensuring we're doing what's best for them and our wider community, and delivering on
-    those requirements with continual improvements to the stack.
+    * Leading the architecture and development of a new stack for the marketing (WWW) + community websites. Deploying a
+    static Next.js client for reliability, with Node.js microservices for interactivity. Building an in-house CMS to
+    allow marketers and content publishers across the company to easily get content onto the site, with an experience we
+    can customise to their needs.
 
-    * Part of the core team for [Hacktoberfest](https://hacktoberfest.com) as the lead engineer, developing the internal
-    API service that integrates with [GitHub](https://github.com) and [GitLab](https://gitlab.com) to track PR/MRs each
-    year. Maintaining an internal OpenAPI specification for the development team to use when building the user-facing
-    website. Leading the [Hacktoberfest Discord](https://discord.gg/hacktoberfest) community of 60 thousand members, and
-    working with the volunteer moderation team to ensure a welcoming and inclusive environment for all participants.
+    * Part of the core team for [Hacktoberfest](https://hacktoberfest.com), leading the engineering and providing
+    advice on the event direction/mechanics. Developing an API service that integrates with GitHub and GitLab to track
+    PR/MRs each year, processing millions of events in the background each day, with an OpenAPI specification shared
+    with the team for the client-side website implementation. Running the
+    [Hacktoberfest Discord](https://discord.gg/hacktoberfest) community of 70 thousand members, and working with the
+    volunteer moderation team to ensure a welcoming and inclusive environment for all participants.
 
-    * Building, maintaining, and advocating for, many open-source projects and
-    [Community Tools](https://github.com/search?q=topic%3Adigitalocean-community-tools+org%3Ado-community&type=Repositories),
-    such as [NGINXConfig](https://www.digitalocean.com/community/tools/nginx) and
+    * Building, maintaining, and advocating for, many open-source projects such as
+    [NGINXConfig](https://www.digitalocean.com/community/tools/nginx) and
     [do-markdownit](https://github.com/digitalocean/do-markdownit). Working with community contributors to triage issues
-    reported on GitHub effectively, shipping new features based on community issues and pull requests.
-
-#     * Running outreach programs for super-users on the Community site and open-source contributors, rewarding active
-#     members answering questions and new contributors to
-#     [DigitalOcean maintained open-source repositories on GitHub](https://github.com/digitalocean). Thanking them for
-#     getting involved with our community and rewarding them with a swag pack.
+    reported on GitHub effectively, shipping new features based on community issues and pull requests. Pushing for our
+    community to have the best experience possible on our website when reading tutorials, asking and answering
+    questions, or just browsing.
 
 - title: Alveus Sanctuary
   role: Open-source Maintainer
@@ -79,17 +74,17 @@
     file: alveus
     position: center
   desc: |
-    * Working with the team at [Alveus Sanctuary](https://www.alveussanctuary.org) and other volunteer developers,
-    rebuilding the entire website for the non-profit from the ground up, replacing their legacy WordPress-based site
-    that had many performance and maintainability issues with a modern Next.js-based stack.
+    * Working with the team at Alveus Sanctuary and other volunteer developers, rebuilding the entire website for the
+    non-profit from the ground up, replacing their legacy WordPress-based site that had many performance and
+    maintainability issues with a modern Next.js-based stack.
     
     * Creating an [open-source organization on GitHub](https://github.com/alveusgg) where the code for the site is
     available for anyone to view and contribute to, as well as providing a centralized place for other open-source
     projects related to Alveus to live, allowing a community of developers to come together to help the sanctuary.
     
-    * Supporting the team at Alveus in launching new interactive features to engage with viewers of the Twitch
-    [livestreams](https://www.twitch.tv/alveussanctuary), such as giveaways and push notifications, allowing them to
-    grow the community, provide more education to the world, and raise more funds to continue operating.
+    * Supporting the team at Alveus in launching new interactive features to engage with viewers of the
+    [Twitch livestreams](https://www.twitch.tv/alveussanctuary), such as giveaways and push notifications, allowing them
+    to grow the community, provide more education to the world, and raise more funds to continue operating.
 
 - title: cdnjs / Cloudflare
   role: Open-source Maintainer
@@ -110,8 +105,8 @@
     file: cdnjs
     position: center
   desc: |
-    * Working with external contributors and the team at [Cloudflare](https://cloudflare.com) to maintain and ensure the
-    reliability of service for cdnjs, the world's largest public CDN. Responding to
+    * Working with external contributors and the team at Cloudflare to maintain and ensure the reliability of service
+    for cdnjs, the world's largest public CDN. Responding to
     [GitHub issues and pull requests](https://github.com/cdnjs/packages), adding new libraries to the CDN for developers
     to use, and ensuring existing libraries remain up-to-date.
 
@@ -140,12 +135,12 @@
     file: jinglejam
     position: center
   desc: |
-    * Developing and maintaining an [open-source Discord bot](https://github.com/jinglejam/jinglebot) for the
-    [Jingle Jam](https://www.jinglejam.co.uk) charity event, allowing viewers to easily check the current total raised
-    and other statistics about the event, as well as providing automated update announcements in the Jingle Jam server.
+    * Developing and maintaining an [open-source Discord bot](https://github.com/jinglejam/jinglebot) for the Jingle Jam
+    charity event, allowing viewers to easily check the current total raised and other statistics about the event, as
+    well as providing automated update announcements in the Jingle Jam server.
 
     * Collaborating with the [Yogscast](https://www.yogscast.com) team to provide a similar set of statistics commands
-    for the Twitch [livestream](https://www.twitch.tv/yogscast) chat bot, also maintained as an
+    for the [Twitch livestream](https://www.twitch.tv/yogscast) chat bot, also maintained as an
     [open-source project](https://github.com/TheYogscast/Jaffa3Community).
 
 # - title: Restarter v3
