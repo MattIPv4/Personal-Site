@@ -115,8 +115,8 @@ main:
     print: true
     size: h3
     items:
-      - title: High Wycombe, Buckinghamshire, United Kingdom 📍
-      - title: Approximately 45 minutes outside central London 🚇
+      - title: Beaconsfield, Buckinghamshire, United Kingdom 📍
+      - title: Approximately 30 minutes outside central London 🚇
 
 #  - title: "References:"
 #    web: false
