@@ -2,8 +2,7 @@ title: Matt Cowley
 
 meta:
   description: |
-    Open-source Software Engineer ⌨️
-    Software engineer by day at DigitalOcean/Hacktoberfest 🦈, open-source by night at Alveus Sanctuary 🌎 + cdnjs 🛠️ + Jingle Jam ❄️
+    Open-source Software Engineer by night at Alveus Sanctuary 🌎 + cdnjs 🛠️ + Jingle Jam ❄️
 
   keywords:
     - matt
@@ -66,8 +65,6 @@ main:
     web: true
     print: true
     items:
-      - title: Senior Software Engineer II @ DigitalOcean 🦈️
-        link: https://digitalocean.com
       - title: Open-Source Maintainer @ Alveus Sanctuary 🌎
         link: https://alveussanctuary.org
       - title: Maintainer of cdnjs.com @ Cloudflare 🛠️

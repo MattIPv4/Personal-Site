@@ -28,7 +28,7 @@
     - Open-source
   dates:
     start: June 2019
-    end: ~
+    end: October 2024
   headline: Helping millions of developers easily build, test, manage, and scale applications of any size - faster than ever before.
   links:
     - https://digitalocean.com
@@ -55,6 +55,11 @@
     reported on GitHub effectively, shipping new features based on community issues and pull requests. Pushing for our
     community to have the best experience possible on our website when reading tutorials, asking and answering
     questions, or just browsing.
+
+    * Forming a new Availability mission within DigitalOcean focused on customer uptime. Improving the incident process
+    to drive down the resolution time for customer- and internal-impacting issues, as well as improving the
+    post-incident review process to extract learnings for future service improvement. Working with the support team to
+    improve the speed and quality of public communications on the status page during incidents.
 
 - title: Alveus Sanctuary
   role: Open-source Maintainer

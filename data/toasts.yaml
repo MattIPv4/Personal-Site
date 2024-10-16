@@ -22,7 +22,7 @@
   button: Get the 1.1.1.1 Bot
   link: https://dns-over-discord.v4.wtf
 
-- content: 🤖 Did you know you can now peform DNS lookups from Discord chat?
+- content: 🤖 Did you know you can now perform DNS lookups from Discord chat?
   button: Get the 1.1.1.1 Bot
   link: https://dns-over-discord.v4.wtf
 
@@ -37,14 +37,6 @@
 - content: 🦅 Curious about the intersection of streaming and wildlife conservation?
   button: Check out Alveus Sanctuary
   link: https://www.alveussanctuary.org/
-
-#- content: 🤔 Need help with system administration, development or anything tech-adjacent?
-#  button: Ask the DigitalOcean Community
-#  link: https://www.digitalocean.com/community/questions
-
-#- content: 📖 Want to learn more about system administration, development and beyond?
-#  button: Try the DigitalOcean Community
-#  link: https://www.digitalocean.com/community/tutorials
 
 #- content: 🤖 Looking for a utility bot for your Discord that provides logging, moderation and more?
 #  button: Try out Restarter v3
