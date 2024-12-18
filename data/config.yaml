@@ -115,20 +115,6 @@ main:
       - title: Beaconsfield, Buckinghamshire, United Kingdom 📍
       - title: Approximately 30 minutes outside central London 🚇
 
-#  - title: "References:"
-#    web: false
-#    print: true
-#    size: h3
-#    items:
-#      - title: Raven Douglas, _Co-Founder and Chief Commercial Officer, Rythm (raven@rythm.fm)_
-#        link: mailto:raven@rythm.fm
-#      - title: Sven Sauleau, _Systems Engineer, Cloudflare (sven@cloudflare.com)_
-#        link: mailto:sven@cloudflare.com
-#      - title: Luke Hashman, _Former Station Controller, Blink FM, Wycombe Youth Action (ljhashman@gmail.com)_
-#        link: mailto:ljhashman@gmail.com
-#      - title: Andrew Balaam, _Team Leader (SLST) & Teacher, Royal Grammar School (acb@rgshw.com)_
-#        link: mailto:acb@rgshw.com
-
 rail: []
 
 contact:
