@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2022 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2024 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -21,7 +21,7 @@
 $width: 18rem;
 $base: #2f80ed;
 $bg: color.adjust(color.adjust($base, $saturation: -75%), $lightness: 50%);
-$text: color.adjust(color.adjust(invert($bg), $saturation: -90%), $lightness: -25%);
+$text: color.adjust(color.adjust(color.invert($bg), $saturation: -90%), $lightness: -25%);
 $button: color.adjust($base, $lightness: 15%);
 
 .toast {

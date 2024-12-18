@@ -1,7 +1,7 @@
 /**
  *  Personal Site: My humble personal homepage, made with a tiny bit but not much care.
  *  <https://github.com/MattIPv4/Personal-Site/>
- *  Copyright (C) 2023 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
+ *  Copyright (C) 2024 Matt Cowley (MattIPv4) (me@mattcowley.co.uk)
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published
@@ -16,8 +16,8 @@
  *   <https://github.com/MattIPv4/Personal-Site/blob/master/LICENSE.md> or <http://www.gnu.org/licenses/>.
  */
 
-@import "components/reset";
-@import "components/content";
-@import "components/projects";
-@import "components/toast";
-@import "components/print";
+@use "components/reset";
+@use "components/content";
+@use "components/projects";
+@use "components/toast";
+@use "components/print";
