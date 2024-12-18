@@ -37,29 +37,25 @@
     file: digitalocean
     position: center
   desc: |
-    * Leading the architecture and development of a new stack for the marketing (WWW) + community websites. Deploying a
-    static Next.js client for reliability, with Node.js microservices for interactivity. Building an in-house CMS to
-    allow marketers and content publishers across the company to easily get content onto the site, with an experience we
-    can customise to their needs.
+    * Led the architecture, development and deployment of a new stack for the marketing (WWW) + community websites, with
+    a static Next.js client for reliability and Node.js microservices for interactivity. Built an in-house CMS for
+    streamlined content management and collaborated with the design team to create a TypeScript UI library for a new
+    design system, aligning code with Figma designs and rolled out across all marketing pages.
 
-    * Part of the core team for [Hacktoberfest](https://hacktoberfest.com), leading the engineering and providing
-    advice on the event direction/mechanics. Developing an API service that integrates with GitHub and GitLab to track
-    PR/MRs each year, processing millions of events in the background each day, with an OpenAPI specification shared
-    with the team for the client-side website implementation. Running the
-    [Hacktoberfest Discord](https://discord.gg/hacktoberfest) community of 70 thousand members, and working with the
-    volunteer moderation team to ensure a welcoming and inclusive environment for all participants.
+    * Core contributor to [Hacktoberfest](https://hacktoberfest.com), leading the engineering and shaping event
+    mechanics/direction. Built a scalable API integrating with GitHub and GitLab to track PRs/MRs each year, processing
+    millions of daily events, and maintained an OpenAPI spec for seamless client-side integration. Managed the
+    [Hacktoberfest Discord](https://discord.gg/hacktoberfest) community of 70k members, and working with the volunteer
+    moderation team to foster a welcoming and inclusive environment.
 
-    * Building, maintaining, and advocating for, many open-source projects such as
-    [NGINXConfig](https://www.digitalocean.com/community/tools/nginx) and
-    [do-markdownit](https://github.com/digitalocean/do-markdownit). Working with community contributors to triage issues
-    reported on GitHub effectively, shipping new features based on community issues and pull requests. Pushing for our
-    community to have the best experience possible on our website when reading tutorials, asking and answering
-    questions, or just browsing.
+    * Maintained and championed open-source projects like [do-markdownit](https://github.com/digitalocean/do-markdownit)
+    and [NGINXConfig](https://www.digitalocean.com/community/tools/nginx), triaging issues, shipping new features and
+    fixes, and reviewing community contributions. Advocating for open-source initiatives and encouraging broader
+    adoption of open-source work within the company. 
 
-    * Forming a new Availability mission within DigitalOcean focused on customer uptime. Improving the incident process
-    to drive down the resolution time for customer- and internal-impacting issues, as well as improving the
-    post-incident review process to extract learnings for future service improvement. Working with the support team to
-    improve the speed and quality of public communications on the status page during incidents.
+    * Part of the new Availability mission, focused on customer uptime. Improved the incident process, reducing
+    resolution times for customer-impacting issues and overhauling the post-incident review process. Collaborated with
+    the support team to refine public communications on the status page during incidents.
 
 - title: Alveus Sanctuary
   role: Open-source Maintainer
