@@ -87,6 +87,32 @@
     [Twitch livestreams](https://www.twitch.tv/alveussanctuary), such as giveaways and push notifications, allowing them
     to grow the community, provide more education to the world, and raise more funds to continue operating.
 
+- title: Node.js
+  role: Web Infrastructure Team
+  web: true
+  print: true
+  tags:
+    - Engineering
+    - Open-source
+  dates:
+    start: August 2023
+    end: ~
+  headline: Run JavaScript Everywhere. Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+  links:
+    - https://nodejs.org
+    - https://github.com/nodejs
+  image:
+    file: nodejs
+    position: center
+  desc: |
+    * Collaborating with all the open-source maintainers for the Node.js website and related services, including
+    the [Node.js website](https://github.com/nodejs/nodejs.org) itself as well as the
+    [Node.js release worker](https://github.com/nodejs/release-cloudflare-worker) that hosts Node.js downloads, to
+    improve the reliability of the services and ensure that the community can always access Node.js web resources.
+
+    * Handling communications on the [Node.js status page](https://status.nodejs.org) when issues do arise, ensuring
+    that the community is kept up-to-date with any issues that may be affecting the Node.js website and downloads.
+
 - title: cdnjs / Cloudflare
   role: Open-source Maintainer
   web: true
@@ -113,10 +139,6 @@
 
     * Developing and maintaining the [cdnjs website](https://github.com/cdnjs/static-website),
     [cdnjs API](https://github.com/cdnjs/api-server), and related tooling (such as the status page and metrics worker).
-
-    * Continuing to work with sponsoring companies such as [Algolia](https://www.algolia.com),
-    [Atlassian Statuspage](https://www.atlassian.com), and [Sentry](https://sentry.io/welcome) to retain and grow the
-    sponsorships that we have for their services that help keep cdnjs running.
 
 - title: Jingle Jam
   role: Open-source Maintainer
