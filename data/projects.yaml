@@ -18,6 +18,30 @@
 #  desc: |
 #    Thing
 
+- title: Grafana Labs
+  role: Growth Engineer
+  web: true
+  print: true
+  tags:
+    - Engineering
+  dates:
+    start: February 2025
+    end: ~
+  headline: Grafana is the open source analytics & monitoring solution for every database.
+  links:
+    - https://grafana.com
+    - https://github.com/grafana
+  image:
+    file: grafana
+    position: center
+  desc: |
+    * Collaborating with the Growth product managers and the other engineers on the Growth team to plan, develop,
+    launch, and track experiments to improve the Grafana Cloud onboarding experience for all customers.
+    
+    * Working with the team to overhaul the internal developer experience for Growth-owned code bases. Refactoring and
+    abstracting code across our projects, improving the development process from easier local setup to improved CI in
+    pull requests with ephemeral previews of the changes.
+
 - title: DigitalOcean
   role: Senior Software Engineer II
   web: true
