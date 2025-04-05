@@ -2,7 +2,7 @@ title: Matt Cowley
 
 meta:
   description: |
-    Open-source Software Engineer by night at Alveus Sanctuary 🌎 + cdnjs 🛠️ + Jingle Jam ❄️
+    Open-source Software Engineer by night at Alveus Sanctuary 🌎 + Node.js 💚 + cdnjs 🛠️
 
   keywords:
     - matt
@@ -67,10 +67,10 @@ main:
     items:
       - title: Open-Source Maintainer @ Alveus Sanctuary 🌎
         link: https://alveussanctuary.org
+      - title: Web Infrastructure Team @ Node.js 💚
+        link: https://nodejs.org
       - title: Maintainer of cdnjs.com @ Cloudflare 🛠️
         link: https://cdnjs.com
-      - title: Open-Source Maintainer @ Jingle Jam ❄️
-        link: https://jinglejam.co.uk
 
   - title: "Who I am:"
     size: h3
