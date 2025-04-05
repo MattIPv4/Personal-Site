@@ -315,7 +315,7 @@
 - title: Rythm
   role: Web Developer
   web: true
-  print: true
+  print: false
   tags:
     - Engineering
   dates:
