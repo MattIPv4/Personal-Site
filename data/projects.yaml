@@ -343,63 +343,63 @@
     integrating with the private API for the bot. Also, developing ancillary support bots for the team, such as support
     automation and donations integrations, and assisting in providing technical customer support.
 
-- title: Young Theatre
-  role: Chief In-House Electrician
-  web: false
-  print: true
-  tags:
-    - Live Production
-  dates:
-    start: February 2014
-    end: September 2019
-  headline: A youth theatre group run by young people for young people.
-  links:
-    - https://www.youngtheatre.org.uk/
-  image:
-    file: youngtheatre-panto2016
-    position: top
-  desc: |
-    * Part of the crew for over 30 productions, both in-house and visiting. Often the production/stage electrician
-    during performances put on by the theatre company, responsible for practical effects and overall power distribution
-    during productions.
+# - title: Young Theatre
+#   role: Chief In-House Electrician
+#   web: false
+#   print: true
+#   tags:
+#     - Live Production
+#   dates:
+#     start: February 2014
+#     end: September 2019
+#   headline: A youth theatre group run by young people for young people.
+#   links:
+#     - https://www.youngtheatre.org.uk/
+#   image:
+#     file: youngtheatre-panto2016
+#     position: top
+#   desc: |
+#     * Part of the crew for over 30 productions, both in-house and visiting. Often the production/stage electrician
+#     during performances put on by the theatre company, responsible for practical effects and overall power distribution
+#     during productions.
     
-    * Responsible for continual maintenance of all electrical equipment within the theatre company, including lighting
-    fixtures, power distribution, control equipment, etc.
+#     * Responsible for continual maintenance of all electrical equipment within the theatre company, including lighting
+#     fixtures, power distribution, control equipment, etc.
 
-    * Training new members of the crew on basics electrical safety, how to wire common connectors used in the theatre,
-    and the basics of power and lighting in the venue.
+#     * Training new members of the crew on basics electrical safety, how to wire common connectors used in the theatre,
+#     and the basics of power and lighting in the venue.
 
-    * Responsible for the installation, wiring and checking of any practical effects used in productions, ensuring they
-    are safe to be used on stage.
+#     * Responsible for the installation, wiring and checking of any practical effects used in productions, ensuring they
+#     are safe to be used on stage.
 
-- title: Blink FM
-  role: Programme Controller
-  web: false
-  print: true
-  tags:
-    - Live Production
-    - Live Broadcasting
-  dates:
-    start: October 2014
-    end: September 2017
-  headline: A local, youth-run radio station that broadcasts online to all and via FM radio to areas of South Bucks.
-  links:
-    - https://internetradiouk.com/blink-fm/
-  image:
-    file: blink-fm
-    position: bottom
-  desc: |
-    * Responsible for coordinating with different presenters to establish an ongoing, flexible schedule for when shows
-    are on air, ensuring that all content follows
-    [Ofcom guidelines](https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-codes/broadcast-code) and is safe to
-    broadcast on air.
+# - title: Blink FM
+#   role: Programme Controller
+#   web: false
+#   print: true
+#   tags:
+#     - Live Production
+#     - Live Broadcasting
+#   dates:
+#     start: October 2014
+#     end: September 2017
+#   headline: A local, youth-run radio station that broadcasts online to all and via FM radio to areas of South Bucks.
+#   links:
+#     - https://internetradiouk.com/blink-fm/
+#   image:
+#     file: blink-fm
+#     position: bottom
+#   desc: |
+#     * Responsible for coordinating with different presenters to establish an ongoing, flexible schedule for when shows
+#     are on air, ensuring that all content follows
+#     [Ofcom guidelines](https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-codes/broadcast-code) and is safe to
+#     broadcast on air.
 
-    * Assisting youth presenters in the studio to ensure that their shows run smoothly and are broadcast successfully,
-    training and aiding them in using studio equipment including the Auto DJ and Myriad systems.
+#     * Assisting youth presenters in the studio to ensure that their shows run smoothly and are broadcast successfully,
+#     training and aiding them in using studio equipment including the Auto DJ and Myriad systems.
 
-    * Working with the Blink team and the parent team at Wycombe Youth Action to continue to grow the radio station,
-    including acquiring new and improved equipment, as well as developing a new website and graphics package for the
-    station to boost the brand.
+#     * Working with the Blink team and the parent team at Wycombe Youth Action to continue to grow the radio station,
+#     including acquiring new and improved equipment, as well as developing a new website and graphics package for the
+#     station to boost the brand.
 
 #- title: PogChamp of the Day
 #  role: Standalone Project
