@@ -36,11 +36,20 @@
     position: center
   desc: |
     * Collaborating with the Growth product managers and the other engineers on the Growth team to plan, develop,
-    launch, and track experiments to improve the Grafana Cloud onboarding experience for all customers.
+    launch, and track experiments to improve the Grafana Cloud onboarding experience. Building new features and
+    messaging to get data flowing for users quicker and demonstrate value to drive paid plan upgrades.
+
+    * Supporting teams across Grafana in adopting OpenFeature as our new feature flag management system, including
+    writing internal documentation and best practices for using OpenFeature. Submitting improvements and fixes upstream
+    to the open-source OpenFeature projects to solve for novel use cases arising from Grafana's plugin architecture.
     
-    * Working with the team to overhaul the internal developer experience for Growth-owned code bases. Refactoring and
-    abstracting code across our projects, improving the development process from easier local setup to improved CI in
-    pull requests with ephemeral previews of the changes.
+    * Working with the team to overhaul the internal developer experience for Growth-owned code bases. Improving the
+    development process from easier local setup to improved CI in pull requests with ephemeral previews of the changes,
+    consolidating legacy code bases into a single React-based Grafana plugin.
+
+    * Building an in-house customer cohort system to allow for targeted messaging and experimentation throughout the
+    Grafana Cloud experience, replacing a previous third-party system that was expensive and often blocked by browser
+    extensions.
 
 - title: DigitalOcean
   role: Senior Software Engineer II
