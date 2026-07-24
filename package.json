@@ -44,7 +44,7 @@
     "posthtml-include": "^2.0.1",
     "puppeteer": "^23.10.4",
     "sass": "^1.83.0",
-    "sharp": "^0.33.5",
+    "sharp": "^0.35.0",
     "stylelint": "^16.12.0",
     "stylelint-config-standard-scss": "^14.0.0",
     "yaml": "^2.6.1"
