@@ -1,0 +1,61 @@
+# https://developers.cloudflare.com/pages/platform/redirects/
+
+# Amazon wishlist
+# amazon.mattcowley.co.uk
+/amazon     https://amzn.eu/hrEICTk
+/wishlist   https://amzn.eu/hrEICTk
+/wl         https://amzn.eu/hrEICTk
+
+# Discord server
+# discord.mattcowley.co.uk
+/discord    https://discord.gg/sufxTxZ
+
+# GitHub profile
+# github.mattcowley.co.uk
+/github     https://github.com/MattIPv4
+/gh         https://github.com/MattIPv4
+
+# LinkedIn profile
+# linkedin.mattcowley.co.uk
+/linkedin   https://www.linkedin.com/in/matt-ipv4-cowley
+
+# Patreon profile
+# patreon.mattcowley.co.uk
+/patreon    https://www.patreon.com/IPv4
+
+# PayPal link
+# paypal.mattcowley.co.uk
+/paypal     https://paypal.me/MattIPv4Cowley
+/pay        https://paypal.me/MattIPv4Cowley
+
+# Slack workspace
+# slack.mattcowley.co.uk
+# Redirect to the subdomain as the invite changes regularly
+/slack      https://slack.mattcowley.co.uk
+
+# GitHub sponsors
+# sponsors.mattcowley.co.uk
+/sponsors   https://github.com/sponsors/MattIPv4
+
+# Twitch profile
+# twitch.mattcowley.co.uk
+/twitch     https://www.twitch.tv/MattIPv4
+
+# Twitter profile
+# twitter.mattcowley.co.uk
+/twitter    https://twitter.com/MattIPv4
+/tweets     https://twitter.com/MattIPv4
+
+# Bluesky profile
+# bluesky.mattcowley.co.uk
+/bluesky    https://bsky.app/profile/v4.wtf
+
+# Mastodon profile
+# mastodon.mattcowley.co.uk
+/mastodon   https://hachyderm.io/@MattIPv4
+/hachyderm  https://hachyderm.io/@MattIPv4
+
+# CV
+# cv.mattcowley.co.uk
+/cv         /print.pdf
+/resume     /print.pdf
